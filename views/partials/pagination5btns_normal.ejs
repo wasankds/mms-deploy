@@ -1,0 +1,49 @@
+<div class="pg-ctn mg-t-s mg-b-s">
+
+  <!-- First Page -->
+  <form class="col-15" action="<%= pathMain %>" method="get">
+    <div class="rowg">
+      <label >หน้าแรก</label>
+      <input type="submit" class="btn-fst" name="page" value="1" title="หน้าแรก">
+    </div>
+  </form>  
+
+  <!-- Previous -->
+  <form class="col-15" action="<%= pathMain %>" method="get">
+    <div class="rowg">
+      <label >ก่อนหน้า</label>
+      <input type="submit" class="btn-pre" name="page" id="_pagePre" title="หน้าก่อนหน้า"
+             value="<%= pagePre %>" <%= pagePre == '-' ? 'disabled' : '' %> >
+    </div>
+  </form>  
+
+  <!-- Select Page -->
+  <form class="col-20" action="<%= pathMain %>" method="get">
+    <div class="rowg">
+      <label >หน้าปัจจุบัน</label>
+      <select class="al-c" name="page" onchange="this.form.submit()" title="หน้าปัจจุบัน">
+        <% for(let i=1; i<=pageLst; i++){ %>
+        <option value="<%= i %>" <%= i == pageAct ? 'selected' : '' %> ><%= i %></option>
+        <% } %>
+      </select>
+    </div>
+  </form>
+
+  <!-- Next -->
+  <form class="col-15" action="<%= pathMain %>" method="get">
+    <div class="rowg">
+      <label >ถัดไป</label>
+      <input type="submit" class="btn-nxt" name="page" id="_pageNxt" title="หน้าถัดไป"
+              value="<%= pageNxt %>" <%= pageNxt == '-' ? 'disabled' : '' %> >
+    </div>
+  </form>
+
+  <!-- Last Page -->
+  <form class="col-15" action="<%= pathMain %>" method="get">
+    <div class="rowg">
+      <label >หน้าสุดท้าย</label>
+      <input type="submit" class="btn-lst" name="page" value="<%= pageLst %>" title="หน้าสุดท้าย">
+    </div>
+  </form>
+  
+</div>

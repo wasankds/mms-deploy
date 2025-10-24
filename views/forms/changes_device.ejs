@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <title><%= title %></title>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/flex.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css-min/changes_device.min.css">
+  <% }  %>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    body{ 
+      background: white!important; 
+      width: 21cm;
+    }
+    main{ 
+      padding-top:0.5cm;
+      width: 19cm;
+      overflow: hidden;
+      margin: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 1px;
+      overflow: hidden;
+      font-size: 0.6rem; /* white-space: nowrap; */
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN CONTAINER -->
+  <main class="">
+
+    <p class="al-c fs-s"><%= title %></p>
+
+    <table>
+      <colgroup>
+        <col style="width: 2%;">
+        <col style="width: 49%;">
+        <col style="width: 49%;">
+      </colgroup>
+
+      <thead>
+        <tr >
+          <th class="ba-k bg-eee">Field</th>
+          <th class="ba-k bg-eee">Old Value</th>
+          <th class="ba-k bg-eee">New Value</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% changesHistory.forEach((obj, index) => { %>
+          <!-- แถว1 -->
+          <tr>
+            <td colspan="3" class="bl-k br-k bb-k fw-b">
+              <%= index + 1 %>.)
+              <%= obj.dateTime %>
+              [<%= obj.userId %>] <%= obj.userFullname %>
+            </td>
+          </tr>
+
+          <!-- แถว2 -->
+          <% if(obj.changes && obj.changes.length > 0) { %>
+            <% obj.changes.forEach( chg => { %>
+              <% if(chg.field !== 'triggerRows') { %>
+                <!-- ไม่ใช่ triggerRows -->
+                <tr>
+                  <td class="bl-k br-k bb-k"><%= chg.field %></td>
+                  <td class="bl-k br-k bb-k fc-red"><%= chg.oldValue %></td>
+                  <td class="bl-k br-k bb-k fc-blue"><%= chg.newValue %></td>
+                </tr>
+              <% }else if(chg.field === 'triggerRows') { %>                
+                  <!-- ถ้าเป็น triggerRows -->
+                 <tr>
+                  <td class="bl-k br-k bb-k"><%= chg.field %></td>
+
+                  <!-- old : สร้างตารางในเซลล์ -->
+                  <td class="bl-k br-k bb-k" style="vertical-align: top;">
+                    <table>
+
+                      <colgroup>
+                        <col style="width: 40%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                      </colgroup>
+
+                      <% if(chg.oldValue && chg.oldValue.length > 0) { %>
+                        <% chg.oldValue.forEach((tg, idx) => { %>
+                          <tr class="<%= idx > 0 ? 'bt-k-d' : '' %>">
+                            <td class="fc-red al-c"><%= tg.triggerStatus ? tg.triggerStatus : '-'  %></td>
+                            <td class="fc-red al-c"><%= tg.triggerKey ? tg.triggerKey : '-'  %></td>
+                            <td class="fc-red al-r"><%= tg.triggerMin ? tg.triggerMin : '-'  %></td>
+                            <td class="fc-red al-r"><%= tg.triggerMax ? tg.triggerMax : '-'  %></td>
+                          </tr>
+                        <% }) %>
+                      <% } %>
+                    </table>
+                  </td>
+
+                  <!-- new : สร้างตารางในเซลล์ -->
+                  <td class="bl-k br-k bb-k" style="vertical-align: top;">
+                    <table>
+                      <% if(chg.newValue && chg.newValue.length > 0) { %>
+                        <% chg.newValue.forEach( (tg, idx) => { %>
+                          <tr class="<%= idx > 0 ? 'bt-k-d' : '' %>">
+                            <td class="fc-blue al-c"><%= tg.triggerStatus ? tg.triggerStatus : '-'  %></td>
+                            <td class="fc-blue al-c"><%= tg.triggerKey ? tg.triggerKey : '-'  %></td>
+                            <td class="fc-blue al-r"><%= tg.triggerMin ? tg.triggerMin : '-'  %></td>
+                            <td class="fc-blue al-r"><%= tg.triggerMax ? tg.triggerMax : '-'  %></td>
+                          </tr>
+                        <% }) %>
+                      <% } %>
+                    </table>
+                  </td>
+                 </tr>
+              <% } %>
+            <% }) %>
+          <% } %>
+        <% }) %>
+      </tbody>
+    </table>    
+  </main>
+
+  <!--  -->
+  <footer class="al-c no-print mg-t-xl">
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.print()">พิมพ์
+    </button>
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.close()">ปิดหน้าต่าง
+    </button>
+  </footer>
+
+
+</body>
+</html>
+
+

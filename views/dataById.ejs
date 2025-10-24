@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <!-- Socket.IO -->
+  <!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+  <script src="/cdn/socket.io.min.js"></script>
+
+  <!-- Chart.js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
+  <script src="/cdn/chart.js"></script>
+  <script src="/cdn/chartjs-adapter-date-fns.js"></script>
+  <script src="/cdn/chartjs-plugin-datalabels.js"></script>  
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/dataById.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/dataById.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  
+  <main>
+  
+    <!--  -->
+    <section class="title <%= device.bgColor %>">
+      <span class="fw-b"><%= device.name %></span>
+      <span class="fw-b fc-gray">[<%= device.id %>]</span>
+    </section>
+
+    <!--  -->
+    <section class="card-ctn">
+
+      <!-- card สำหรับแต่ละ key -->
+      <% keyObj.forEach( obj => { %>
+      <section class="card card-<%= obj.key %>">
+
+        <!--  -->
+        <div class="card-column-1">
+
+          <div class="pd-s al-c mg-b-s bg-eee">
+            <span class="fw-b <%=  obj.fontColor %> "><%= obj.keyName %></span>
+            <span class="fc-gray">(<%= obj.keyUnit %>)</span>
+          </div>   
+          <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+            <span class="mg-l-m <%=  obj.fontColor %>  <%= obj.key %>-timestamp" title="เวลาล่าสุด">-</span>
+            <span class="mg-r-m fw-b fs-xl <%=  obj.fontColor %>  <%= obj.key %>-lastValue" title="ค่าล่าสุด">-</span>
+          </div>
+
+          <!--  -->
+          <div class="card-content-row">          
+            <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+            <div class="fc-blue <%= obj.key %>-timeInterval" title="ช่วงเวลา10นาที">-</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+            <div class="fc-plum <%= obj.key %>-min" title="ต่ำสุด">-</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-up" title="สูงสุด"></i>
+            <div class="fc-orange <%= obj.key %>-max" title="สูงสุด">-</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-chart-line" title="เฉลี่ย"></i>
+            <div class="fc-dodgerblue <%= obj.key %>-avg" title="เฉลี่ย">-</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-hashtag" title="นับ"></i>
+            <div class="fc-green <%= obj.key %>-count" title="นับ">-</div>
+          </div>
+        </div>
+
+        <!-- #2 สำหรับสร้าง Chart -->
+        <div class="card-column-2 chart-ctn-<%= obj.key %>"></div>
+
+      </section>
+      <% }) %>
+    </section>      
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const socket = io();
+    const DEVICE_ID = `<%= device.id %>`;
+    const DATA = JSON.parse(`<%- JSON.stringify(data) %>`);
+    const KEYS_OBJ = JSON.parse(`<%- JSON.stringify(keyObj) %>`);
+    const MAX_POINTS = Number("<%= MAX_POINTS %>");
+    
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/dataById.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/dataById.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+

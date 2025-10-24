@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+
+  <% if(!global.IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">  
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/manageSettingsSystem.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/manageSettingsSystem.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <%- include('partials/nav.ejs') %>
+
+  
+  <header class="header-title bg-steelblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-cog mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <main>
+
+
+    <!-- Tab links -->
+    <div class="tab">
+      <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">อิเมล์</div>
+      <!-- <div class="tabMenu" id="tab2Menu" onclick="event.preventDefault();openMenu(this,'tabcontent2')">ไอเท็ม</div> -->
+      <!-- <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">เซิร์ฟเวอร์</div> -->
+    </div>
+
+    <!-- #1 -->
+    <div id="tabcontent1" class="tabcontent">
+      <!--  -->
+      <form id="emailForm" autocomplete="off" 
+            action="<%= PATH_SAVE_EMAIL %>" 
+            method="post"
+            onsubmit="createSpinner()">
+
+        <!--  -->
+        <div class="flex-row mg-t-l">          
+          <label class="col-sm-f lh-xs" style="word-break: break-word; white-space: normal;">             
+            <span class="pd-r-s">✍</span> สำหรับการส่งอีเมล์ระบบ เช่น การแจ้งเตือนรหัสผ่านเมื่อสร้างยูสเซอร์ หรือ การแจ้งลิงค์รีเซ็ตพาสเวิร์ด</label>
+        </div>
+
+        <!-- EMAIL_WHOSEND -->
+        <div class="input-group mg-t-l">
+          <label title="EMAIL_WHOSEND">ชื่อสำหรับส่งอีเมล</label> 
+          <input class="pd-l-m mg-t-m" type="email"
+                value="<%= settingsEmail?.EMAIL_WHOSEND ?? '' %>"
+                id="EMAIL_WHOSEND" name="EMAIL_WHOSEND" 
+                required placeholder="เช่น your-email@gmail.com">
+        </div>
+
+        <!-- EMAIL_PASS -->
+        <div class="input-group mg-t-xl">
+          <label class="lh-xs" title="EMAIL_PASS">
+            <span>รหัสส่งอีเมลสำหรับแอปพลิเคชัน </span><br>
+            <span class="fs-s fc-gray">(บัญชี GMail/Google Workspace เท่านั้น)</span>
+          </label> 
+          <input class="pd-l-m mg-t-m" type="text" minlength="19" 
+                title="รหัสผ่านสำหรับแอปพลิเคชัน (Application Password) ของบัญชี GMail/Google Workspace"
+                value="<%= settingsEmail?.EMAIL_PASS ?? '' %>"
+                id="EMAIL_PASS" name="EMAIL_PASS" 
+                required 
+                pattern="[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}"
+                placeholder="เช่น xxxx xxxx xxxx xxxx">
+        </div>
+
+        <!-- Buttons/Save -->
+        <section class="flex-row justify-content-center mg-t-xxl">
+          <button class="btn-xlh btn-sm bg-save" type="submit">
+            <i class="fas fa-save"></i> บันทึก
+          </button>
+        </section>
+
+      </form>
+    </div>
+
+    <!-- #2 : ห้ามลบ  -->
+    <!-- <div id="tabcontent2" class="tabcontent">
+      <- include('partials/manageSettingsSystem_items.ejs' ) >
+    </div> -->
+
+    <!-- #3 : ห้ามลบ -->
+    <!-- <div id="tabcontent1" class="tabcontent">
+      <- include('partials/manageSettingsSystem_server.ejs' ) >
+    </div> -->
+
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!-- เริ่มต้นคลิกแท็บตอนโหลดหน้าเว็บ -->
+  <script type="text/javascript">
+    const tabNumberClicked = `<%= tabNumberClicked %>`;
+  </script>
+
+
+  <!--  -->
+  <% if(!global.IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/tabMenu.js"></script>
+  <script type="text/javascript" src="/js/manageSettingsSystem.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script type="text/javascript" src="/js-min/manageSettingsSystem.obf.js?v=<%= time %>"></script>
+  <% }  %>
+</body>
+</html>
+

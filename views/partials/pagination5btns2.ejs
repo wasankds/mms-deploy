@@ -1,0 +1,44 @@
+<div class="pg-ctn"> 
+
+  <!-- First Page -->
+  <form class="col-pg-rim" action="<%= pageRedirect %>" method="get">
+    <input type="hidden" name="rpp" value="<%= rpp %>">
+    <input type="submit" class="btn-fst" 
+            name="page" value="1" title="หน้าแรก">
+  </form>
+
+  <!-- Previous -->
+  <form class="col-pg-mid" action="<%= pageRedirect %>" method="get">
+      <input type="hidden" name="rpp" value="<%= rpp %>">
+      <input type="submit" class="btn-pre" 
+             name="page" id="_pagePre" title="หน้าก่อนหน้า"
+             value="<%= pagePre %>" <%= pagePre == '-' ? 'disabled' : '' %> >
+  </form>  
+
+  <!-- Select Page -->
+  <form class="col-pg-select" action="<%= pageRedirect %>" method="get">
+    <input type="hidden" name="rpp" value="<%= rpp %>">
+    <select class="al-c" 
+            name="page" onchange="this.form.submit()" title="หน้าปัจจุบัน">
+      <% for(let i=1; i<=pageLst; i++){ %>
+      <option value="<%= i %>" <%= i == pageAct ? 'selected' : '' %> ><%= i %></option>
+      <% } %>
+    </select>
+  </form>
+
+  <!-- Next -->
+  <form class="col-pg-mid" action="<%= pageRedirect %>" method="get">
+    <input type="hidden" name="rpp" value="<%= rpp %>">
+    <input type="submit" class="btn-nxt" 
+            name="page" id="_pageNxt" title="หน้าถัดไป"
+            value="<%= pageNxt %>" <%= pageNxt == '-' ? 'disabled' : '' %> >
+  </form>
+
+  <!-- Last Page -->
+  <form class="col-pg-rim" action="<%= pageRedirect %>" method="get">
+      <input type="hidden" name="rpp" value="<%= rpp %>">
+      <input type="submit" class="btn-lst" 
+             name="page" value="<%= pageLst %>" title="หน้าสุดท้าย">
+  </form>
+  
+</div>

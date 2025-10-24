@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <title><%= title %></title>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/flex.css?v=<%= time %>">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/quotation.css?v=<%= time %>"> 
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/same_print.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css-min/quotationPrint.min.css">
+  <% }  %>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+  </style>
+</head>
+<body>
+
+  <%
+    var watermarkClass = doc.docStatusNumber !== 2 ? 'watermark' : '';
+  %>
+  
+  <!-- MAIN CONTAINER -->
+  <main class="<%= watermarkClass %>">
+
+    <!-- PAPER FORM -->
+    <form id="paperForm" class="mg-b-xxl">
+
+      <section class="paper-ctn" id="paperCtn">
+
+        <!-- #1 : Header  -->
+        <!-- #2 : Title ใบเสนอราคา  -->
+        <%- include('print_headerZone.ejs', { isBillDoc : false }) %>
+        <!-- #3 : ข้อมูลลูกค้า -->
+        <%- include('print_customerZone.ejs', { isBillDoc : false }) %>
+        <!-- #4 -->
+        <%- include('print_tableZone.ejs', { isBillDoc : false }) %>
+
+        <!-- #5 : โซนล่าง (แต่ละเอกสารไม่เหมือนกัน) -->
+        <div class="row">
+
+          <!--  #5-1 -->
+          <div class="col-40 ba-k pd-l fs-sm bdr5">
+            <p>สำหรับลูกค้า : ยืนยันการว่าจ้างตามเงื่อนข้างต้น</p>
+            <p style="min-height: 55px;"></p>
+            <p class="al-c bt-k-d">ลายเซ็นผู้มีอำนาจ (ลงชื่อและประทับตรา)</p>
+            <p class="al-c row mg-t-m">
+              <span class="nowrap mg-l-xxl">วันที่ (</span>
+              <span class="w-100 bb-k-d"></span>
+              <span class="mg-r-xxl">)</span>
+            </p>
+          </div>
+
+          <!--  #5-2 -->
+          <div class="col-30"></div>
+
+          <!--  #5-3 -->
+          <div class="col-30">
+
+            <p id="proposerLabel">ผู้เสนอราคา</p>
+
+            <div id="proposerImageSignatureCtn">
+              <% if(doc.proposerImageSign && doc.selectProposerSignature == '1') { %>
+              <img id="proposerImageSignature" src="<%- doc.proposerImageSign ? doc.proposerImageSign : '' %>" >
+              <% } %>
+            </div>
+            <div class="al-c">
+              <div id="proposerFullnameCtn">
+                <span>(</span>
+                <input type="text"  tabindex="-1"
+                       readonly
+                       id="proposerFullname" name="proposerFullname" 
+                       value="<%= userFullname ? userFullname : '' %>">
+                <span>)</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>   <!-- 5 -->        
+
+      </section><!-- paper ctn -->
+    </form>
+
+    
+  </main>
+
+  <!--  -->
+  <% if(action == 'print') { %>
+    <%- include('partials/print_footer.ejs') %>
+  <% } %>
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script src="<%= global.DOMAIN_ALLOW %>/js/print_adjust.js"></script>
+  <% } else { %>
+  <script src="<%= global.DOMAIN_ALLOW %>/js-min/quotationPrint.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+

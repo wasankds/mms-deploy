@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <%- include('partials/meta',{ time:time}) %> -->
+  <title>Report</title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../public/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="../public/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="../public/cdn/flatpickr.min.css">
+  <script src="../public/cdn/flatpickr.js"></script>
+
+  <!-- Socket.IO -->
+  <!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+  <!-- <% if(!IS_PRODUCTION) { %> -->
+  <link rel="stylesheet" href="../public/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="../public/css/reportByEspId.css?v=<%= time %>"> 
+  <!-- <% } else { %> -->
+  <!-- <link rel="stylesheet" href="../public/css-min/reportByEspId.min.css?v=<%= time %>"> -->
+  <!-- <% }  %> -->
+</head>
+<body>
+  <!-- <%- include('partials/nav.ejs') %> -->
+  <!-- <%- include('partials/notify.ejs', {msg:msg}) %>  -->
+  <!-- <h3 class="mg-t-s mg-b-s al-c"><span class="fc-darkcyan">ห้องครัว</span><span class="fc-gray">[e002]</span></h3> -->
+
+  <div class="nav-ctn">
+    <nav>
+      <div class="nav-1 d-flex">
+        <div>
+          <a class="nav-link " href="/">
+            <i class="fas fa-house mg-r-m"></i>
+          </a>
+        </div>
+        <div>
+            <a class="nav-link active" href="/dashboard" title="แดชบอร์ด">
+              <i class="fas fas fa-tachometer-alt mg-r-m"></i>
+            </a>
+        </div>
+        <div>
+        </div>
+        <form id="nav_reportForm" method="get">
+          <select id="nav_reportType" class="" title="รายงาน">
+            <option value="">-</option>
+              <option value="/report">
+                รายงาน
+              </option>
+          </select>
+        </form>
+        <div class="mg-l-l">
+        </div>
+      </div>  
+      <div class="nav-2" title="ชื่อผู้ใช้ : wasankds รหัสผู้ใช้ : 1000 สิทธิ์การใช้งาน : O">
+        <a class="nowrap " href="/user">
+          <i class="fas fa-user fc-liblue"></i>
+          <span class="nowrap">wasankds</span>
+        </a>
+        <form id="navForm" class="dp-n">
+          <input type="hidden" id="userId_login" value="1000">
+          <input type="hidden" id="username_login" value="wasankds">
+        </form>
+      </div>
+      <div class="nav-3">
+        <button class="nav-link nav-dropdown-toggle" id="navDropdownBtn" type="button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-dropdown-menu" id="navDropdownMenu" style="display: none;">
+          <a href="/manage/settings" class="nav-link " title="ตั้งค่า"><i class="fas fa-sliders-h mg-r-m"></i> ตั้งค่า
+          </a>
+          <a href="/manage/users" class="nav-link " title="จัดการผู้ใช้"><i class="fas fa-users-cog mg-r-m"></i> จัดการผู้ใช้งาน
+          </a>
+          <a href="/manage/sessions" class="nav-link " title="จัดการเซสชั่น"><i class="fas fa-user-clock mg-r-m"></i> จัดการเซสชั่น
+          </a>
+          <a class="nav-link" href="/logout" title="Logout">
+            <i class="fas fa-sign-out-alt mg-r-m"></i> ออกจากระบบ
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!--  -->
+    <section class="title bg-liblue">
+      <span class="fw-b">โรงจอดรถ</span>
+      <a class="clickable" href="/report/e001" target="_blank" title="ดูรายงาน">
+        <span class="fw-b fc-gray">[e001]</span>
+      </a>
+    </section>
+
+    <section class="card-ctn">    
+
+      <!--  -->
+      <section class="card card-t">
+        <div class="card-column-1">
+          <div class="pd-s al-c mg-b-s bg-eee" title="เวลาและค่าล่าสุด">
+            <span class="fw-b fc-darkcyan">อุณหภูมิ</span>
+            <span class="fc-gray">(°C)</span>
+          </div>   
+          <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+            <span class="mg-l-m fc-darkcyan t-timestamp">10:44:10</span>
+            <span class="mg-r-m fw-b fs-xl fc-darkcyan t-lastValue">33.00</span>
+          </div>
+          <div class="card-content-row">          
+            <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+            <div class="fc-blue t-timeInterval">2025-09-15 10:40</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+            <div class="fc-plum t-min">26.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-up" title="สูงสุด"></i>
+            <div class="fc-orange t-max">43.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-chart-line" title="เฉลี่ย"></i>
+            <div class="fc-dodgerblue t-avg">33.22</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-hashtag" title="นับ"></i>
+            <div class="fc-green t-count">24</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-column-2 chart-ctn-t"></div>
+      </section>
+
+      <!--  -->
+      <section class="card card-h">
+        <div class="card-column-1">
+          <div class="pd-s al-c mg-b-s bg-eee" title="เวลาและค่าล่าสุด">
+            <span class="fw-b fc-dodgerblue">ความชื้น</span>
+            <span class="fc-gray">(%)</span>
+          </div>   
+          <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+            <span class="mg-l-m fc-dodgerblue h-timestamp">10:44:05</span>
+            <span class="mg-r-m fw-b fs-xl fc-dodgerblue h-lastValue">20.00</span>
+          </div>
+          <div class="card-content-row">          
+            <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+            <div class="fc-blue h-timeInterval">2025-09-15 10:40</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+            <div class="fc-plum h-min">20.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-up" title="สูงสุด"></i>
+            <div class="fc-orange h-max">99.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-chart-line" title="เฉลี่ย"></i>
+            <div class="fc-dodgerblue h-avg">60.57</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-hashtag" title="นับ"></i>
+            <div class="fc-green h-count">26</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-column-2 chart-ctn-h"></div>
+      </section>
+
+      <!--  -->
+      <section class="card card-i">
+        <div class="card-column-1">
+          <div class="pd-s al-c mg-b-s bg-eee" title="เวลาและค่าล่าสุด">
+            <span class="fw-b fc-slateblue">กระแสไฟฟ้า</span>
+            <span class="fc-gray">(A)</span>
+          </div>   
+          <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+            <span class="mg-l-m fc-slateblue i-timestamp">10:44:10</span>
+            <span class="mg-r-m fw-b fs-xl fc-slateblue i-lastValue">187.00</span>
+          </div>
+          <div class="card-content-row">          
+            <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+            <div class="fc-blue i-timeInterval">2025-09-15 10:40</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+            <div class="fc-plum i-min">157.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-arrow-up" title="สูงสุด"></i>
+            <div class="fc-orange i-max">200.00</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-chart-line" title="เฉลี่ย"></i>
+            <div class="fc-dodgerblue i-avg">182.71</div>
+          </div>
+          <div class="card-content-row">
+            <i class="fas fa-hashtag" title="นับ"></i>
+            <div class="fc-green i-count">27</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="card-column-2 chart-ctn-i"></div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!--  -->
+  <!-- <%- include('partials/footer') %> -->
+
+  <script type="text/javascript" src="../public/js/reportByEspId_data.js?v=<%= time %>"></script>
+  <script>
+    // const socket = io();
+    // const ID = `<%= id %>`;
+    const DATA = [...DATA_TO_LoAD];
+    const KEYS_CALC = ["t","h","i"];
+    const KEYS = [
+      { key : 't', keyName : 'อุณหภูมิ', keyUnit: '°C' , bgColor: 'bg-dkcyan', fontColor : 'fc-darkcyan'   } , 
+      { key : 'h', keyName : 'ความชื้น', keyUnit: '%' , bgColor: 'bg-dodgerblue', fontColor : 'fc-dodgerblue' } ,
+      { key : 'i', keyName : 'กระแสไฟฟ้า', keyUnit: 'A' , bgColor: 'bg-lislateblue', fontColor : 'fc-slateblue' } , 
+      { key : 'v', keyName : 'โวลต์', keyUnit: 'V' , bgColor: 'bg-goldrod', fontColor : 'fc-goldrod' } ,
+      { key : 'd', keyName : 'ระยะทาง', keyUnit: 'cm' , bgColor: 'bg-forestgreen', fontColor : 'fc-forestgreen' } ,
+      { key : 'g', keyName : 'แก๊ส', keyUnit: 'ADC' , bgColor: 'bg-orchid', fontColor : 'fc-darkorchid' } ,
+    ]
+  </script>
+  <!-- <% if(!IS_PRODUCTION) { %> -->
+  <script type="text/javascript" src="../public/js/script_all.js"></script>
+  <!-- <script type="text/javascript" src="../public/js/nav.js"></script> -->
+  <!-- <script type="text/javascript" src="../public/js/notify.js"></script> -->
+  <script type="text/javascript" src="../public/js/reportByEspId.js"></script>
+  <!-- <% } else { %> -->
+  <!-- <script src="../public/js-min/reportByEspId.obf.js"></script> -->
+  <!-- <% }  %> -->
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fontsAnuphan.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/home.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/home.min.css?v=<%= time %>">
+  <% }  %>
+  <style>
+    a:link {  text-decoration: none; }
+    a:visited {  text-decoration: none; }
+    a:hover { filter: brightness(1.2); }
+    a:active {text-decoration: none; }
+  </style>
+</head>
+ 
+<body>
+
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <%- include('partials/nav.ejs') %>
+
+  <main>
+
+    <!--  -->
+    <section class="mg-b-xl">
+      <div class="">
+        <h1 class="al-c">
+          <i class="fa-solid fa-house mg-r-l"></i> 
+          <span><%= dataSettings && dataSettings.COMPANY_NAME ? dataSettings.COMPANY_NAME : 'หน้าแรก' %></span>
+        </h1>
+      </div>
+    </section>
+    
+    <!--  -->
+    <section class="flex-row">
+      <% var homeMenu = global.NAV_LEFT_1.slice(1) %>
+      <% homeMenu.forEach(item => { %>
+        <div class="col-1 <%= item.menuColor %>">
+          <a href="<%= item.path %>" class="">
+            <div class="al-c">
+              <i class="<%= item.icon %>"></i> <%= item.title %>
+              <!-- <h3 class="mg-t-l"><%= item.title %></h3> -->
+            </div>
+          </a>
+        </div>
+      <% }) %>
+    </section>
+
+    <!--  -->
+    <section class="mg-t-xl">
+      <div class="">
+        <h3 class="al-c">
+          <i class="fa-solid fa-database mg-r-l fs-xl"></i> 
+          <span>คลังสินค้า</span>
+        </h3>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="row">
+      <% var entitiesMenu = global.NAV_LEFT_2 %>
+      <% entitiesMenu.forEach(item => { %>
+        <div class="col-3 <%= item.menuColor %>"">
+          <a href="<%= item.path %>" class="">
+            <div class="al-c">
+              <i class="<%= item.icon %>"></i>
+              <h3 class=" mg-t-l"><%= item.title %></h3>
+            </div>
+          </a>
+        </div>
+      <% }) %>
+    </section>
+
+    
+    <!--  -->
+    <section class="mg-t-xl">
+      <div class="">
+        <h3 class="al-c">
+          <i class="fa-solid fa-database mg-r-l fs-xl"></i> 
+          <span>เอนทิตี้</span>
+        </h3>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="row">
+      <% var entitiesMenu = global.NAV_LEFT_3 %>
+      <% entitiesMenu.forEach(item => { %>
+        <div class="col-3 menu-silver">
+          <a href="<%= item.path %>" class="">
+            <div class="al-c">
+              <i class="<%= item.icon %>"></i>
+              <h3 class=" mg-t-l"><%= item.title %></h3>
+            </div>
+          </a>
+        </div>
+      <% }) %>
+    </section>
+
+    <!--  -->
+    <section class="mg-t-xl">
+      <div class="">
+        <h3 class="al-c">
+          <i class="fa-solid fa-cog mg-r-l fs-xl"></i> 
+          <span>ตั้งค่า</span>
+        </h3>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="row">
+
+      <% var rightMenu = global.NAV_RIGHT %>
+      <% rightMenu.forEach(item => { %>
+        <div class="col-3 menu-silver">
+          <a href="<%= item.path %>" class="">
+            <div class="al-c">
+              <i class="<%= item.icon %>"></i>
+              <h3 class=" mg-t-l"><%= item.title %></h3>
+            </div>
+          </a>
+        </div>
+      <% }) %>
+    </section>
+
+
+  </main>  
+
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script type="text/javascript" src="/js-min/home.obf.js?v=<%= time %>"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+

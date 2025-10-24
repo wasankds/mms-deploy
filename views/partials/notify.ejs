@@ -1,0 +1,10 @@
+
+<%  if(msg != null && msg.length > 0) { %>
+  <%  for(let i=0; i< msg.length ; i++){ %>
+    <div class="<%= msg[i]['class'] %> page-notify">
+    <% msg[i]['text'].split('{{sep}}').forEach( txt => { %>
+      <p><%= txt %></p>
+    <% }) %>
+    </div>
+  <% } %>
+<% } %>

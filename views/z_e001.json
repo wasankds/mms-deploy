@@ -1,0 +1,1541 @@
+[
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:00",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 67
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:00",
+    "min": 69,
+    "max": 69,
+    "avg": 69,
+    "count": 67
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:10",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 67
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:10",
+    "min": 69,
+    "max": 69,
+    "avg": 69,
+    "count": 67
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:20",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 76
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:20",
+    "min": 68,
+    "max": 69,
+    "avg": 68.58,
+    "count": 76
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:30",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:30",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:40",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 81
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:40",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 81
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 00:50",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 00:50",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:00",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:00",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:10",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:10",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:20",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:20",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:30",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:30",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:40",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:40",
+    "min": 68,
+    "max": 68,
+    "avg": 68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 01:50",
+    "min": 29.8,
+    "max": 30.2,
+    "avg": 30.15,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 01:50",
+    "min": 68,
+    "max": 69,
+    "avg": 68.14,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:00",
+    "min": 29.9,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:00",
+    "min": 68,
+    "max": 69,
+    "avg": 68.03,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:10",
+    "min": 29.8,
+    "max": 30.2,
+    "avg": 30.05,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:10",
+    "min": 68,
+    "max": 69,
+    "avg": 68.46,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:20",
+    "min": 29.8,
+    "max": 30.2,
+    "avg": 29.91,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:20",
+    "min": 68,
+    "max": 70,
+    "avg": 69.14,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:30",
+    "min": 29.8,
+    "max": 30.2,
+    "avg": 30.05,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:30",
+    "min": 68,
+    "max": 70,
+    "avg": 68.94,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:40",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 02:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 02:50",
+    "min": 69,
+    "max": 70,
+    "avg": 69.69,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:00",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:10",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:10",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:20",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:20",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:30",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:30",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:40",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 03:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 03:50",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:00",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:10",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:10",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:20",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:20",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:30",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:30",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:40",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 04:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 04:50",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:00",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:10",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:10",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:20",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:20",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:30",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:30",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:40",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 05:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 05:50",
+    "min": 70,
+    "max": 70,
+    "avg": 70,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:00",
+    "min": 70,
+    "max": 71,
+    "avg": 70.42,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:10",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:10",
+    "min": 70,
+    "max": 71,
+    "avg": 70.15,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:20",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:20",
+    "min": 70,
+    "max": 71,
+    "avg": 70.96,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:30",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:30",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:40",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 06:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 06:50",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:00",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:10",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:10",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:20",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:20",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:30",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:30",
+    "min": 71,
+    "max": 71,
+    "avg": 71,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:40",
+    "min": 29.3,
+    "max": 29.8,
+    "avg": 29.7,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:40",
+    "min": 71,
+    "max": 73,
+    "avg": 71.14,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 07:50",
+    "min": 28.5,
+    "max": 29.3,
+    "avg": 28.86,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 07:50",
+    "min": 73,
+    "max": 80,
+    "avg": 77.7,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:00",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:00",
+    "min": 80,
+    "max": 82,
+    "avg": 80.63,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:10",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:10",
+    "min": 80,
+    "max": 82,
+    "avg": 81.18,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:20",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:20",
+    "min": 80,
+    "max": 81,
+    "avg": 80.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:30",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:30",
+    "min": 79,
+    "max": 80,
+    "avg": 79.68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:40",
+    "min": 28.5,
+    "max": 28.9,
+    "avg": 28.61,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:40",
+    "min": 80,
+    "max": 80,
+    "avg": 80,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 08:50",
+    "min": 28.5,
+    "max": 28.9,
+    "avg": 28.76,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 08:50",
+    "min": 80,
+    "max": 81,
+    "avg": 80.37,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:00",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:00",
+    "min": 80,
+    "max": 81,
+    "avg": 80.27,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:10",
+    "min": 28.5,
+    "max": 28.5,
+    "avg": 28.5,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:10",
+    "min": 80,
+    "max": 81,
+    "avg": 80.21,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:20",
+    "min": 28.5,
+    "max": 28.9,
+    "avg": 28.66,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:20",
+    "min": 80,
+    "max": 80,
+    "avg": 80,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:30",
+    "min": 28.9,
+    "max": 28.9,
+    "avg": 28.9,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:30",
+    "min": 80,
+    "max": 82,
+    "avg": 80.89,
+    "count": 80
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:40",
+    "min": 28.9,
+    "max": 28.9,
+    "avg": 28.9,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:40",
+    "min": 81,
+    "max": 81,
+    "avg": 81,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 09:50",
+    "min": 28.9,
+    "max": 28.9,
+    "avg": 28.9,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 09:50",
+    "min": 80,
+    "max": 81,
+    "avg": 80.22,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:00",
+    "min": 28.9,
+    "max": 29.3,
+    "avg": 29.02,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:00",
+    "min": 79,
+    "max": 80,
+    "avg": 79.35,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:10",
+    "min": 29.3,
+    "max": 29.3,
+    "avg": 29.3,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:10",
+    "min": 77,
+    "max": 80,
+    "avg": 78.29,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:20",
+    "min": 29.3,
+    "max": 29.3,
+    "avg": 29.3,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:20",
+    "min": 77,
+    "max": 79,
+    "avg": 78.2,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:30",
+    "min": 29.3,
+    "max": 29.8,
+    "avg": 29.39,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:30",
+    "min": 76,
+    "max": 78,
+    "avg": 76.99,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:40",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:40",
+    "min": 76,
+    "max": 77,
+    "avg": 76.31,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 10:50",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 10:50",
+    "min": 77,
+    "max": 79,
+    "avg": 77.97,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:00",
+    "min": 29.8,
+    "max": 29.8,
+    "avg": 29.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:00",
+    "min": 76,
+    "max": 78,
+    "avg": 77.38,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:10",
+    "min": 29.8,
+    "max": 30.2,
+    "avg": 29.86,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:10",
+    "min": 75,
+    "max": 78,
+    "avg": 76.31,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:20",
+    "min": 30.2,
+    "max": 30.2,
+    "avg": 30.2,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:20",
+    "min": 71,
+    "max": 76,
+    "avg": 73.73,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:30",
+    "min": 30.2,
+    "max": 30.8,
+    "avg": 30.45,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:30",
+    "min": 71,
+    "max": 74,
+    "avg": 72.92,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:40",
+    "min": 30.8,
+    "max": 30.8,
+    "avg": 30.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:40",
+    "min": 71,
+    "max": 72,
+    "avg": 71.26,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 11:50",
+    "min": 30.8,
+    "max": 31.3,
+    "avg": 30.83,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 11:50",
+    "min": 71,
+    "max": 72,
+    "avg": 71.02,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:00",
+    "min": 31.3,
+    "max": 31.3,
+    "avg": 31.3,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:00",
+    "min": 70,
+    "max": 71,
+    "avg": 70.96,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:10",
+    "min": 31.3,
+    "max": 31.3,
+    "avg": 31.3,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:10",
+    "min": 69,
+    "max": 70,
+    "avg": 69.42,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:20",
+    "min": 31.3,
+    "max": 31.8,
+    "avg": 31.56,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:20",
+    "min": 69,
+    "max": 70,
+    "avg": 69.25,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:30",
+    "min": 31.8,
+    "max": 31.8,
+    "avg": 31.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:30",
+    "min": 65,
+    "max": 69,
+    "avg": 67.95,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:40",
+    "min": 31.8,
+    "max": 32.3,
+    "avg": 32.12,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:40",
+    "min": 66,
+    "max": 68,
+    "avg": 67.4,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 12:50",
+    "min": 32.3,
+    "max": 32.8,
+    "avg": 32.4,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 12:50",
+    "min": 67,
+    "max": 67,
+    "avg": 67,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:00",
+    "min": 32.8,
+    "max": 32.8,
+    "avg": 32.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:00",
+    "min": 65,
+    "max": 67,
+    "avg": 65.84,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:10",
+    "min": 32.8,
+    "max": 32.8,
+    "avg": 32.8,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:10",
+    "min": 62,
+    "max": 67,
+    "avg": 64.32,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:20",
+    "min": 32.8,
+    "max": 32.8,
+    "avg": 32.8,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:20",
+    "min": 63,
+    "max": 66,
+    "avg": 64.68,
+    "count": 79
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:30",
+    "min": 32.8,
+    "max": 33.3,
+    "avg": 33.13,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:30",
+    "min": 63,
+    "max": 65,
+    "avg": 63.51,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:40",
+    "min": 33.3,
+    "max": 33.3,
+    "avg": 33.3,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:40",
+    "min": 61,
+    "max": 63,
+    "avg": 61.36,
+    "count": 78
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 13:50",
+    "min": 33.3,
+    "max": 33.3,
+    "avg": 33.3,
+    "count": 28
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 13:50",
+    "min": 61,
+    "max": 61,
+    "avg": 61,
+    "count": 28
+  },
+  {
+    "id": "e001",
+    "key": "t",
+    "timeInterval": "2025-09-15 14:00",
+    "min": 25,
+    "max": 45,
+    "avg": 34.03,
+    "count": 36
+  },
+  {
+    "id": "e001",
+    "key": "h",
+    "timeInterval": "2025-09-15 14:00",
+    "min": 22,
+    "max": 100,
+    "avg": 56.03,
+    "count": 35
+  },
+  {
+    "id": "e001",
+    "key": "i",
+    "timeInterval": "2025-09-15 14:00",
+    "min": 151,
+    "max": 200,
+    "avg": 178.15,
+    "count": 34
+  }
+]

@@ -1,0 +1,459 @@
+<html>
+  <head>
+    <title>BR Print</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style> 
+      @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+      *{
+        font-family: 'Anuphan','Sarabun','sans-serif';
+        font-size:10px;
+        box-sizing:border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{ 
+        background-color: white;
+        max-width: 793px;  
+        margin: auto;
+        font-size: 16px;
+      }
+      .main-ctn{ max-width: 793px; }
+      input{color: black;}
+  
+      .row,
+      .row-in, 
+      .row-sub-title{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .col-full{flex-basis:100%;max-width:100%;overflow:hidden; }
+      .col-01{ flex-basis:1%; max-width:1%;}
+      .col-02{ flex-basis:2%; max-width:2%;}
+      .col-03{ flex-basis:3%; max-width:3%;}
+      .col-04{ flex-basis:4%; max-width:4%;}
+      .col-05{ flex-basis:5%; max-width:5%;}
+      .col-06{ flex-basis:6%; max-width:6%;}
+      .col-07{ flex-basis:7%; max-width:7%;}
+      .col-08{ flex-basis:8%; max-width:8%;}
+      .col-09{ flex-basis:9%; max-width:9%;}
+      .col-10{ flex-basis:10%; max-width:10%;overflow: hidden;white-space: nowrap;}
+      .col-11{ flex-basis:11%; max-width:11%;overflow: hidden;white-space: nowrap;}
+      .col-12{ flex-basis:12%; max-width:12%;overflow: hidden;white-space: nowrap;}
+      .col-13{ flex-basis:13%; max-width:13%;overflow: hidden;white-space: nowrap;}
+      .col-14{ flex-basis:14%; max-width:14%;overflow: hidden;white-space: nowrap;}
+      .col-15{ flex-basis:15%; max-width:15%;overflow: hidden;white-space: nowrap;}
+      .col-16{ flex-basis:16%; max-width:16%;overflow: hidden;white-space: nowrap;}
+      .col-17{ flex-basis:17%; max-width:17%;overflow: hidden;white-space: nowrap;}
+      .col-18{ flex-basis:18%; max-width:18%;overflow: hidden;white-space: nowrap;}
+      .col-19{ flex-basis:19%; max-width:19%;overflow: hidden;white-space: nowrap;}
+      .col-20{ flex-basis:20%; max-width:20%;overflow: hidden;white-space: nowrap;}
+      .col-21{ flex-basis:21%; max-width:21%;overflow: hidden;white-space: nowrap;}
+      .col-22{ flex-basis:22%; max-width:22%;overflow: hidden;white-space: nowrap;}
+      .col-23{ flex-basis:23%; max-width:23%;overflow: hidden;white-space: nowrap;}
+      .col-24{ flex-basis:24%; max-width:24%;overflow: hidden;white-space: nowrap;}
+      .col-25{ flex-basis:25%; max-width:25%;overflow: hidden;white-space: nowrap;}
+      .col-26{ flex-basis:26%; max-width:26%;overflow: hidden;white-space: nowrap;}
+      .col-27{ flex-basis:27%; max-width:27%;overflow: hidden;white-space: nowrap;}
+      .col-28{ flex-basis:28%; max-width:28%;overflow: hidden;white-space: nowrap;}
+      .col-29{ flex-basis:29%; max-width:29%;overflow: hidden;white-space: nowrap;}
+      .col-30{ flex-basis:30%; max-width:30%;overflow: hidden;white-space: nowrap;}
+      .col-31{ flex-basis:31%; max-width:31%;overflow: hidden;white-space: nowrap;}
+      .col-32{ flex-basis:32%; max-width:32%;overflow: hidden;white-space: nowrap;}
+      .col-33{ flex-basis:33%; max-width:33%;overflow: hidden;white-space: nowrap;}
+      .col-34{ flex-basis:34%; max-width:34%;overflow: hidden;white-space: nowrap;}
+      .col-35{ flex-basis:35%; max-width:35%;overflow: hidden;white-space: nowrap;}
+      .col-36{ flex-basis:36%; max-width:36%;overflow: hidden;white-space: nowrap;}
+      .col-37{ flex-basis:37%; max-width:37%;overflow: hidden;white-space: nowrap;}
+      .col-38{ flex-basis:38%; max-width:38%;overflow: hidden;white-space: nowrap;}
+      .col-39{ flex-basis:39%; max-width:39%;overflow: hidden;white-space: nowrap;}
+      .col-40{ flex-basis:40%; max-width:40%;overflow: hidden;white-space: nowrap;}
+      .col-41{ flex-basis:41%; max-width:41%;overflow: hidden;white-space: nowrap;}
+      .col-42{ flex-basis:42%; max-width:42%;overflow: hidden;white-space: nowrap;}
+      .col-43{ flex-basis:43%; max-width:43%;overflow: hidden;white-space: nowrap;}
+      .col-44{ flex-basis:44%; max-width:44%;overflow: hidden;white-space: nowrap;}
+      .col-45{ flex-basis:45%; max-width:45%;overflow: hidden;white-space: nowrap;}
+      .col-46{ flex-basis:46%; max-width:46%;overflow: hidden;white-space: nowrap;}
+      .col-47{ flex-basis:47%; max-width:47%;overflow: hidden;white-space: nowrap;}
+      .col-48{ flex-basis:48%; max-width:48%;overflow: hidden;white-space: nowrap;}
+      .col-50{ flex-basis:50%; max-width:50%;overflow: hidden;white-space: nowrap;}
+      .col-51{ flex-basis:51%; max-width:51%;overflow: hidden;white-space: nowrap;}
+      .col-52{ flex-basis:52%; max-width:52%;overflow: hidden;white-space: nowrap;}
+      .col-53{ flex-basis:53%; max-width:53%;overflow: hidden;white-space: nowrap;}
+      .col-55{ flex-basis:55%; max-width:55%;overflow: hidden;white-space: nowrap;}
+      .col-56{ flex-basis:56%; max-width:56%;overflow: hidden;white-space: nowrap;}
+      .col-57{ flex-basis:57%; max-width:57%;overflow: hidden;white-space: nowrap;}
+      .col-58{ flex-basis:58%; max-width:58%;overflow: hidden;white-space: nowrap;}
+      .col-59{ flex-basis:59%; max-width:59%;overflow: hidden;white-space: nowrap;}
+      .col-60{ flex-basis:60%; max-width:60%;overflow: hidden;white-space: nowrap;}
+      .col-61{ flex-basis:61%; max-width:61%;overflow: hidden;white-space: nowrap;}
+      .col-62{ flex-basis:62%; max-width:62%;overflow: hidden;white-space: nowrap;}
+      .col-63{ flex-basis:63%; max-width:63%;overflow: hidden;white-space: nowrap;}
+      .col-64{ flex-basis:64%; max-width:64%;overflow: hidden;white-space: nowrap;}
+      .col-65{ flex-basis:65%; max-width:65%;overflow: hidden;white-space: nowrap;}
+      .col-66{ flex-basis:66%; max-width:66%;overflow: hidden;white-space: nowrap;}
+      .col-67{ flex-basis:67%; max-width:67%;overflow: hidden;white-space: nowrap;}
+      .col-68{ flex-basis:68%; max-width:68%;overflow: hidden;white-space: nowrap;}
+      .col-69{ flex-basis:69%; max-width:69%;overflow: hidden;white-space: nowrap;}
+      .col-70{ flex-basis:70%; max-width:70%;overflow: hidden;white-space: nowrap;}
+      .col-73{ flex-basis:73%; max-width:73%;overflow: hidden;white-space: nowrap;}
+      .col-74{ flex-basis:74%; max-width:74%;overflow: hidden;white-space: nowrap;}
+      .col-75{ flex-basis:75%; max-width:75%;overflow: hidden;white-space: nowrap;}
+      .col-80{ flex-basis:80%; max-width:80%;overflow: hidden;white-space: nowrap;}
+      .col-83{ flex-basis:83%; max-width:83%;overflow: hidden;white-space: nowrap;}
+      .col-85{ flex-basis:85%; max-width:85%;overflow: hidden;white-space: nowrap;}
+      .col-86{ flex-basis:86%; max-width:86%;overflow: hidden;white-space: nowrap;}
+      .col-90{ flex-basis:90%; max-width:90%;overflow: hidden;white-space: nowrap;}
+      .col-95{ flex-basis:95%; max-width:95%;overflow: hidden;white-space: nowrap;}
+      /*  */
+      .al-l{ text-align: left!important; }
+      .al-c{ text-align: center!important; }
+      .al-r{ text-align: right!important; }
+      .btn-close{ padding:0px 5px;font-size:1.5rem;color:red;  }
+      .btn-print{ padding:20px 10px;font-size:1.5rem;color:blue; }
+      /*  */
+      .fc-blue{ color: blue!important; }
+      .fw-b{ font-weight:bold!important; }
+      .bg-red{ background-color: rebeccapurple!important;}
+      /*  */
+      .fs-xxl{ font-size:1.75rem!important;}
+      .fs-xl{ font-size:1.5rem!important;}
+      .fs-l{ font-size:1.3rem!important;}
+      .fs-m{ font-size:1.1rem!important;}
+      .fs-s{ font-size:0.85rem!important;}
+      .fs-xs{ font-size:0.7rem!important;}
+      .fs-xxs{ font-size:0.65rem!important;}
+      
+      .bd-b{ border-bottom:1px dashed black;} 
+      .ba{ border: 1px solid black!important;border-radius: 3px;}
+      .bl{ border-left: 1px solid black!important; }
+      .br{ border-right: 1px solid black!important; }
+      .bt{border-top: 1px solid black!important;}
+      .bb{border-bottom: 1px solid black!important;}
+      /*** Margin ***/
+      .mg-t-s{ margin-top: 3px!important;}
+      .mg-t-m{ margin-top: 5px!important;}
+      .mg-t-l{ margin-top: 7px!important;}
+      .mg-t-xl{ margin-top: 10px!important;}
+      .mg-t-xxl{ margin-top: 15px!important;}
+      .mg-t-3xl{ margin-top: 20px!important;}
+      .mg-b-s{ margin-bottom: 3px!important;}
+      .mg-b-m{ margin-bottom: 5px!important;}
+      .mg-b-l{ margin-bottom: 7px!important;}
+      .mg-b-xl{ margin-bottom: 10px!important;}
+      .mg-b-xxl{ margin-bottom: 15px!important;}
+      .mg-b-3xl{ margin-bottom: 12px!important;}
+      .mg-l-xs{ margin-left: 1px!important;}
+      .mg-l-s{ margin-left: 3px!important;}
+      .mg-l-m{ margin-left: 5px!important;}
+      .mg-l-l{ margin-left: 7px!important;}
+      .mg-l-xl{ margin-left: 10px!important;}
+      .mg-r-xs{ margin-right: 1px!important;}
+      .mg-r-s{ margin-right: 3px!important;}
+      .mg-r-m{ margin-right: 5px!important;}
+      .mg-r-l{ margin-right: 7px!important;}
+      .mg-r-xl{ margin-right: 10px!important;}
+      /*** Padding  ***/
+      .pd-n{padding:0px!important;}
+      .pd-s{padding:3px!important;}
+      .pd-m{padding:5px!important;}
+      .pd-l{padding:7px!important;}
+      .pd-xl{padding:10px!important;}
+      /*** Padding TOP ***/
+      .pd-t-s{padding-top:3px!important;}
+      .pd-t-m{padding-top:5px!important;}
+      .pd-t-l{padding-top:7px!important;}
+      .pd-t-xl{padding-top:10px!important;}
+      .pd-t-xxl{padding-top:15px!important;}
+      /*** Padding LEFT ***/
+      .pd-l-s{padding-left:3px!important;}
+      .pd-l-m{padding-left:5px!important;}
+      .pd-l-l{padding-left:7px!important;}
+      .pd-l-xl{padding-left:10px!important;}
+      .pd-l-xxl{padding-left:15px!important;}
+      /*** Padding RIGHT ***/
+      .pd-r-s{padding-right:3px!important;}
+      .pd-r-m{padding-right:5px!important;}
+      .pd-r-l{padding-right:7px!important;}
+      .pd-r-xl{padding-right:10px!important;}
+      .pd-r-xxl{padding-right:15px!important;}
+      /*** Padding bottom ***/
+      .pd-b-s{padding-bottom:3px!important;}
+      .pd-b-m{padding-bottom:5px!important;}
+      .pd-b-l{padding-bottom:7px!important;}
+      .pd-b-xl{padding-bottom:10px!important;}
+      .pd-b-xxl{padding-bottom:15px!important;}
+      /*  */
+      .lh-s{line-height: 0.9rem;}
+      .lh-n{line-height: 1.0rem;}
+      .lh-m{line-height: 1.1rem;}
+      .lh-l{line-height: 1.2rem;}
+      .lh-xl{line-height: 1.45rem;}
+      .lh-xxl{line-height: 1.75rem;}
+      .lh-3xl{line-height: 2.25rem;}
+      
+      /*** ***/
+      table{ 
+        width: 793px;
+        border-collapse: collapse;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      table thead th{
+        line-height: 1.75rem;
+        font-size: 1.2rem;
+      }
+      table th,
+      table td{
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1.2rem;
+        line-height: 2.0rem;
+        padding: 0 3px;   
+      }        
+      
+      table th.bd,
+      table td{ border: 1px solid black; }
+      
+      .page-break{ page-break-after: always; }
+  
+      @media print {
+  
+        table tr {
+          page-break-inside: avoid;
+        }
+  
+        @page {
+          size: A4 ;
+          margin: 0.75cm 1cm;
+        }
+        .noprint{ display: none; }
+        input{color: black;}
+      }
+  
+      #inFactoryCtn, #onSiteCtn{
+        padding: 3px 7px;
+      }
+  
+      #inFactoryCtn.active,
+      #onSiteCtn.active{
+        border: 1px solid black;
+        border-radius: 3px;
+        /* padding: 3px; */
+      }
+    </style> 
+  </head>
+  <body>
+    <div class="main-ctn">
+      
+      <!-- Table#1 : ข้อมูล -->
+      <table>
+        <thead>
+
+          <tr>
+            <th colspan="7">
+              <p class="al-c col-full fs-xxl pd-l"><?= title_1 ?></p>
+            </th>
+          </tr>
+
+          <tr>
+            <th colspan="7">
+              <div class="row mg-t-l pd-b-l">                
+                <p class="col-50 al-l fs-xl"><?= title_2 ?></p>                
+                <div class="row-sub-title col-25 al-l">
+                  <div class="<?= place == 'inFactory' ? 'active' : '' ?>" id="inFactoryCtn">
+                    <label class="fs-l" for="inFactory">ในโรงงาน</label>
+                  </div>
+                  <div class="<?= place == 'onSite' ? 'active' : '' ?> mg-l-l" id="onSiteCtn">
+                    <label class="fs-l" for="onSite">งานไซต์</label>
+                  </div>
+                </div>
+                <div class="al-l col-25 row-sub-title">
+                  <label class="fs-l">Job&nbsp;:&nbsp;</label>
+                  <label class="fs-l"><?= jobNo ?></label>
+                </div>
+              </div>
+            </th>
+          </tr>
+
+          <tr>
+            <th colspan="7" class="bd">
+              <div class="row">
+                <p class="al-l col-50 pd-l">
+                  <span class="fs-l">เลขที่เอกสาร :</span>
+                  <span class="fs-l"><?= docId ?></span>
+                </p>
+                <p class="al-r col-50 pd-l">
+                  <span class="fs-l">สถานะเอกสาร :</span>
+                  <span class="fs-l"><?= docStatusShow ?></span>
+                </p>
+              </div>
+            </th>
+          </tr>
+
+          <!--  -->
+          <tr>
+            <th colspan="5" class="bd">
+              <div class="row">
+                <p class="al-l col-full pd-l">
+                  <span class="fs-l">วันที่เบิก :</span>
+                  <span class="fs-l"><?= dateBorrowShow ?></span>
+                </p>
+              </div>      
+            </th>
+            <th colspan="2" class="bd">        
+              <div class="row">
+                <p class="al-l col-full pd-l">
+                  <span class="fs-l">วันที่คืน :</span>
+                  <span class="fs-l"><?= dateReturnShow ?></span>
+                </p>
+              </div>      
+            </th>
+          </tr>
+
+          <!--  -->
+          <tr>
+            <th class="al-c bd pd-s">ลำดับ</th>
+            <th class="al-c bd pd-s">รหัส</th>
+            <th class="al-c bd pd-s">ชื่อ</th>
+            <th class="al-c bd pd-s">รายละเอียด</th>
+            <th class="al-c bd pd-s">หน่วยนับ</th>            
+            <th class="al-c bd pd-s">สถานะ</th>
+            <th class="al-c bd pd-s">หมายเหตุ</th>
+          </tr>
+        </thead>
+
+        <!-- รายการไอเท็ม -->
+        <tbody id="tableBody">
+          <?!=  dataBDetail_Html ?>
+        </tbody>  
+      </table>      
+
+      <!-- Table#2 : ลายเซ็น -->
+      <table>
+        <tr>
+          <th class="bd" width="60%">
+            <div class="row">
+              <p class="al-l col-full pd-s" >
+                <span class="fs-m">หมายเหตุ : กรุณาตรวจสอบเครื่องจักร/เครื่องมือ/อุปกรณ์ก่อนนำไปใช้งาน</span>
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="fs-m">กรณีพบว่าชำรุด ไม่อนุญาตให้เบิกไปใช้งาน</span>
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-50 row-in al-l  pd-s pd-t-xl">
+                <p class="fs-m col-12 al-r">ลงชื่อ</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-18">ผู้เบิก</p>
+              </div>
+              <div class="col-50 row-in al-l  pd-s pd-t-xl">
+                <p class="fs-m col-12 al-r">ลงชื่อ</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-18">ผู้จ่าย</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50 row-in al-l  pd-s pd-t-l">
+                <p class="fs-m col-12 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"><?= borrowerFullname ?></p>
+                <p class="fs-m col-18">)</p>
+              </div>
+              <div class="col-50 row-in al-l  pd-s pd-t-l">
+                <p class="fs-m col-12 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"><?= giverFullname ?></p>
+                <p class="fs-m col-18">)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-50 row-in al-l pd-s pd-t-xl">
+                <p class="fs-m col-12 al-r">ลงชื่อ</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-18">ผู้อนุมัติ</p>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50 row-in al-l pd-s pd-t-l">
+                <p class="fs-m col-12 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-18">)</p>
+              </div>
+            </div>
+          </th>
+
+          <!--  -->
+          <th class="bd" width="40%">
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">ลงชื่อ</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-15">ผู้คืน</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"><?= returnerFullname ?></p>
+                <p class="fs-m col-15">)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">ลงชื่อ</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-15">ผู้รับคืน</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"><?= receiverFullname ?></p>
+                <p class="fs-m col-15">)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">ลงชื่อ</p>
+                <p class="fs-m col-65 al-c bb"></p>
+                <p class="fs-m col-20">ผู้ตรวจสอบ</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"><?= checkerFullname ?></p>
+                <p class="fs-m col-15">)</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">ลงชื่อ</p>
+                <p class="fs-m col-65 al-c bb"></p>
+                <p class="fs-m col-20">ผู้อนุมัติ</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-full row-in al-l pd-s">
+                <p class="fs-m col-15 al-r">(</p>
+                <p class="fs-m col-70 al-c bb"></p>
+                <p class="fs-m col-15">)</p>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </table>      
+
+      <!-- ปุ่ม Print -->
+      <div class="row noprint" style="margin-top: 10px;">
+        <input class="col-20 btn-close" type="button" value="Close" onclick="window.close();">
+        <div   class="col-50"></div>
+        <input class="col-30 btn-print" type="button" value="Print" onclick="window.print();">              
+      </div>
+    
+    </div>
+  </body>
+</html>

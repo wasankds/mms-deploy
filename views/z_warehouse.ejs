@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <!-- jQuery -->
+  <!-- <script src="/cdn/jquery.js"></script> -->
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="/cdn/bootstrap.min.css"> -->
+  <!-- <script src="/cdn/bootstrap.bundle.min.js"></script> -->
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="/cdn/flatpickr.min.css"> -->
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/alink.css">
+  <link rel="stylesheet" href="/css/toast.css">
+  <link rel="stylesheet" href="/css/flex.css">
+  <link rel="stylesheet" href="/css/flexNew.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/modal.css">
+  <link rel="stylesheet" href="/css/inputDoc.css">
+  <link rel="stylesheet" href="/css/doc_tableRowImage.css">
+  <link rel="stylesheet" href="/css/same.css">
+  <link rel="stylesheet" href="/css/warehouse.css">
+  <% }else{ %>
+  <link rel="stylesheet" href="/css-min/warehouse.min.css?v=<%= time %>">
+  <% } %>
+
+</head>
+
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  
+<body>
+
+  <!-- Toolbar -->
+  <header class="header-ctn">
+    <section class="header-toolbar ">
+
+      <!--  -->
+      <form class="header-toolbar-1 flex-row w-100 dp-n ">
+        
+        <button class="col-sm-2 btn btn-sm bg-load nowrap" id="btnLoadLastDoc" title="โหลดเอกสารล่าสุด">
+          <i class="fa fa-download mg-r-s"></i>ล่าสุด
+        </button>        
+
+        <input class="col-sm-7 al-c bdr3 no-x" type="search" autocomplete="off" 
+               title="เลขที่/ปี-เดือน-วัน"
+               required pattern=".{2,}"
+               placeholder="เลขที่/ปี-เดือน-วัน" id="sip" name="sip"> 
+
+        <button class="col-sm-1 btn btn-sm bg-search" id="btnSearchDocs" title="ค้นหาเอกสาร">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      
+      <!-- เริ่มต้นยังไม่แสดง -->
+      <form class="header-toolbar-2 w-100 dp-n">
+        <div class="flex-row">
+          <button class="col-sm-1 btn btn-sm bg-clear" title="ล้างผลการค้นหา" 
+                  id="btnClearSearch" ><i class="fa fa-broom"></i></button>
+          <select class="col-sm-7 al-l bdr3 w-100" 
+                  id="selectDocToLoad" name="selectDocToLoad"></select>
+          <input class="col-sm-1 al-c  bdr3" type="text" 
+                  id="searchResNum" readonly>
+          <button class="col-sm-1 btn btn-sm bg-load" type="submit" 
+                  id="btnLoadDoc" title="โหลดเอกสาร">
+            <i class="fa fa-download"></i>
+          </button> 
+        </div>
+      </form>
+
+      <!--  -->
+      <!-- data-show-price : กรณีต้องการแสดงราคาในดหมดปุ่มใส่ 1 -->
+      <div class="header-toolbar-3">
+        <button class="btn btn-sm bg-switch" 
+                data-show-price="0"
+                id="btnModeButton">
+          <i class="fa fa-hand-pointer pd-r-m"></i>โหมดปุ่ม
+        </button>
+
+        <button class="btn btn-sm bg-load mg-l-s" title="แสดงแถบเครื่องค้นหา"
+                id="btnShowSearch">
+            <i class="fa fa-toolbox mg-r-s"></i>เครื่องมือโหลด
+        </button>
+      </div>
+      
+      <!--  -->
+      <div class="header-toolbar-4">
+        <button class="btn btn-sm bg-new mg-l-l"  title="สร้างเอกสารใหม่"
+                id="btnNewDoc">
+          <i class="fa fa-file-circle-plus mg-r-s"></i>ใหม่
+        </button>
+      </div>
+
+      <!--  -->
+      <div class="header-toolbar-5">
+        <div class="d-flex align-items-center">
+          <button class="btn btn-sm bg-finish mg-l-l" title="จบเอกสาร"
+                  id="btnFinishDoc" >
+            <i class="fa fa fa-flag-checkered mg-r-s"></i>จบ
+          </button>
+          <button class="btn btn-sm bg-cancel mg-l-l" title="ยกเลิกเอกสาร"
+                  id="btnCancelDoc" >
+            <i class="fa fa fa-times-circle mg-r-s"></i>ยกเลิก
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </header> 
+
+
+  <!-- MAIN CONTAINER -->
+  <main>
+
+    <!-- FORM -->
+    <form id="mainForm" action="<%= PATH_MAIN %>" method="post" autocomplete="off">
+
+      <!--  ฝั่ง - ไปตรวจสอบบน Server  -->
+      <input type="hidden" id="warehouseType" value="<%= WAREHOUSE_TYPE %>">
+
+      <!-- #1 : Title -->
+      <section>
+
+        <!-- #1.1 -->
+        <div class="flex-main">
+          <div class="flex-5 flex-row">
+
+            <!--  -->
+            <div class="col-sm-5 flex-row">
+              <input class="col-sm-7 al-c bdr3-left" type="text" 
+                     placeholder="เลขที่เอกสาร" title="เลขที่เอกสาร"
+                     readonly data-alway-readonly="1"
+                     style="border-right: none;"
+                     id="docId" name="docId">
+              <input class="col-sm-3 al-c bdr3-right" type="text" 
+                     placeholder="สถานะ" title="<%= DOC_STATUS_TITLE %>"
+                     readonly data-alway-readonly="1" 
+                     name="docStatusNumber" id="docStatusNumber">
+            </div>
+
+            <!--  -->
+            <div class="col-sm-5 flex-row">
+              <input class="col-sm-3 al-c bdr3-left no-arrow" type="number" 
+                     placeholder="ไอดีสาขา" title="ไอดีสาขา"
+                     readonly data-alway-readonly="1"
+                     style="border-right: none;"
+                     id="branchId" name="branchId" value="<%= branchId %>">
+              <input class="col-sm-7 al-c bdr3-right" type="text" 
+                     placeholder="ชื่อสาขา" title="ชื่อสาขา"
+                     readonly data-alway-readonly="1"
+                     id="branchName" name="branchName" value="<%= branchName %>">
+            </div>
+
+          </div>
+
+          <!--  -->
+          <div class="flex-5 flex-row">
+            <input class="col-sm-2-5 al-c bdr3-left no-arrow" type="number" 
+                   placeholder="ไอดียูสเซอร์" title="ไอดียูสเซอร์"
+                   readonly data-alway-readonly="1" 
+                   style="border-right: none;"
+                   id="userId" name="userId" value="<%= userId %>">
+            <input class="col-sm-7-5 al-c bdr3-right" type="text" 
+                   placeholder="ชื่อสกุลผู้ใช้" title="ชื่อสกุลผู้ใช้"
+                   readonly data-alway-readonly="1"
+                   id="userFullname" name="userFullname" value="<%= userFullname %>">
+          </div>
+        </div><!-- #1.2 -->
+
+        <!-- #1.3 -->
+        <div class="flex-column">        
+          <!--  -->
+          <% if(['in', 'out'].includes(WAREHOUSE_TYPE)){ %>
+          <div class="col-5 flex-row">
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s">
+                <span>เอกสารอ้างอิง</span>
+              </label>
+              <input class="al-c bdr3" type="text" title="เอกสารอ้างอิง"
+                      name="refId" id="refId"
+                      placeholder="เอกสารอ้างอิง">
+            </div>
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-calendar-alt"></i>
+                <span>วันที่</span>
+              </label>
+              <input class="al-c bg-white clickable bdr3" type="date"
+                     required tabindex="-1"
+                     id="docDateTh" name="docDateTh">
+            </div>
+          </div>
+          <% }else{ %>
+          <div class="col-5 flex-row mg-t-m">
+            <label class="col-sm-2 al-r pd-r-s">
+              <i class="fas fa-calendar-alt"></i>
+              <span>วันที่</span>
+            </label>
+            <input class="col-sm-8 al-c bg-white clickable bdr3" type="date"
+                   required tabindex="-1"
+                   id="docDateTh" name="docDateTh">
+          </div>
+          <% } %>
+  
+        
+          <!--  -->
+          <% if(['in', 'out'].includes(WAREHOUSE_TYPE)){ %>
+          <div class="col-5 flex-row">
+            <div class="col-sm-9 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-image"></i>
+                <span>อัปโหลดภาพเอกสารอ้างอิง</span>
+              </label>
+              <!-- ไม่ต้องระบุ name เพราะจะไปจับจาก id แยกต่างหาก -->
+              <input class="al-l ba-8 bdr3 pd-l-s" type="file" 
+                     style="padding-top: 2px;"
+                     title="ไฟล์ภาพ .jpg, .jpeg, .png ไม่เกิน 10MB"
+                     accept="image/jpeg, image/jpg, image/png"
+                     id="refImage">
+            </div>
+  
+            <div class="col-sm-1 input-group">
+              <label class="pd-r-s">&nbsp;</label>
+              <button class="btn btn-sm bg-333" type="button"
+                      disabled
+                      id="btnViewImage" title="ดูภาพเอกสารแนบ">
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>          
+          </div>
+           <% } %>
+
+        </div> <!-- #1.3 -->
+
+
+      </section> 
+
+      <!--#2 : ค้นหา/เพิ่มไอเท็ม -->
+      <div class="flex-row mg-t-m">
+        <div class="col-sm-f modalCtn">
+          <input class="al-c bg-ligreen bdr3" type="text" 
+                 id="searchItems"  placeholder="ค้นหาไอเท็ม"
+                 onfocus="popModalItems(event)" 
+                 oninput="popModalItems(event)" >
+          <div class="modal"><div class="modal-list"></div></div>
+        </div>
+      </div>
+
+      <!-- #3 : กรณีโหมดปุ่ม  -->
+      <section>
+        <!-- เก็บปุ่ม Category/Pagination/Items -->
+        <div class="dp-n categoryButtonsCtn"></div>
+        <div class="dp-n paginationCtn"></div>
+        <div class="dp-n itemsButtonsCtn"></div>
+      </section> 
+
+      <!-- #4 -->
+      <div id="tableRowCtn"> <!-- <div id="tableListCtn"> -->
+
+        <!-- สำหรับสร้างรายการ -->
+        <div class="al-c mg-t-l fw-b <%= CLASS_COLOR %>">
+          <i class="<%= FA %>"></i>
+          <span><%= LIST_TITLE %></span>
+        </div>
+        <!--  -->
+        <div id="listCtn"></div>
+
+        <!--  -->
+        <% if(WAREHOUSE_TYPE == 'in'){ %>
+        <section class="row justify-content-end mg-t-m" id="mainTotalCtn">
+          <label class="mg-r-m">รวม</label>
+          <input class="bdr3 al-r pd-r-m" type="text" placeholder="รวมเงิน" 
+                  readonly data-alway-readonly="1"
+                  id="totalAmount" name="totalAmount">
+        </section>
+        <% } %>
+      </div>
+
+      <!-- #5 ปุ่มท้ายหน้า -->
+      <div class="al-c bt mg-t-l pd-t-m">
+        <div class="d-flex justify-content-between">
+
+          <!--  -->
+          <button class="btn btn-sm bg-save" id="btnSave" title="บันทึก">
+            <i class="fa fa fa-save mg-r-s"></i>บันทึก
+          </button>
+
+          <!--  -->
+          <div>
+            <button class="btn btn-sm bg-print" id="btnPrint" title="พิมพ์">
+              <i class="fa  fa-solid fa-print mg-r-s"></i>พิมพ์
+            </button>
+            <button class="btn btn-sm btn-sm bg-download" id="btnDownloadImage" title="ดาวน์โหลดภาพ">
+              <i class="fa fa fa-download mg-r-s"></i>ภาพ
+            </button>
+          </div>
+          
+          <!--  -->
+          <button class="btn btn-sm bg-change " id="btnPrintChanges" title="พิมพ์ข้อมูลการเปลี่ยนแปลง">
+            <i class="fa fa-solid fa-print mg-r-s"></i>Changes
+          </button>
+        </div>
+      </div>
+        
+    </form>
+    
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+  
+  <script>    
+    const PREFIX = `<%= PREFIX %>` ;
+    const PATH_MAIN =  `<%= PATH_MAIN %>` ; 
+    const PATH_FETCH =  `<%= PATH_FETCH %>` ; 
+    const PATH_SEARCH =  `<%= PATH_SEARCH %>` ; 
+    const PATH_SAVE =  `<%= PATH_SAVE %>` ; 
+    const PATH_LOAD =  `<%= PATH_LOAD %>` ; 
+    const PATH_LOAD_LAST =  `<%= PATH_LOAD_LAST %>` ; 
+    const PATH_PRINT =  `<%= PATH_PRINT %>` ; 
+    const PATH_CHANGES =  `<%= PATH_CHANGES %>` ; 
+    const PATH_STATUS =  `<%= PATH_STATUS %>` ; 
+    const PATH_VIEW_IMAGE =  `<%= PATH_VIEW_IMAGE %>` ;
+    const PATH_FETCH_IMAGE =  `<%= PATH_FETCH_IMAGE %>` ; 
+    // สำหรับโหลดหรือค้นหาเลย
+    const DOC_ID =  `<%= DOC_ID %>`;
+    const SIP = `<%= SIP %>` ;
+  </script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/doc_print.js"></script>
+  <script type="text/javascript" src="/js/doc_tools.js"></script>  
+  <script type="text/javascript" src="/js/doc_formAction.js"></script>  
+  <script type="text/javascript" src="/js/doc_crud.js"></script>  
+  <script type="text/javascript" src="/js/doc_modal.js"></script>
+  <script type="text/javascript" src="/js/doc_tableRows.js"></script>
+  <script type="text/javascript" src="/js/warehouse.js"></script>
+  <% }else{ %>
+  <script type="text/javascript" src="/js-min/warehouse.obf.js?v=<%= time %>"></script>
+  <% } %>
+
+</body>
+</html>
+
+
+
+<!-- <script type="text/javascript" src="/js/doc_crudSame.js"></script> -->
+<!-- <script type="text/javascript" src="/js/doc_print.js"></script> -->

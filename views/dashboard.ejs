@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+ 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="/cdn/flatpickr.min.css"> -->
+  <!-- <script src="/cdn/flatpickr.js"></script> -->
+  <!-- Socket.IO -->
+  <!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+  <script src="/cdn/socket.io.min.js"></script>
+  <!-- ช่วยในการสร้าง Masonry Layout -->
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+  <script src="/cdn/masonry.pkgd.min.js"></script>
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/dashboard.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/dashboard.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %>   
+
+
+  <main>
+
+    <header class="header">
+      <span class="gc-ligray">[Header]</span>
+    </header>
+
+
+    <section class="card-container">
+
+    <!-- สร้าง block จาก ids  -->
+    <% dataAll.forEach( obj => { %>
+
+    <section class="card <%= obj.id %>-card">
+
+      <!-- หัวข้อการ์ด -->
+      <div class="card-header <%= obj.bgColor %>">
+
+        <span class="card-header-left">            
+          <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
+        </span>
+
+        <span class="card-header-center">            
+          <a class="clickable" href="<%= PATH_DATA %>/<%= obj.id %>" target="_blank" title="ดูข้อมูล">
+            <span class="fw-b fc-black"><%= obj.name %></span>
+            <span class="fw-b fc-gray">[<%= obj.id %>]</span>
+          </a>
+        </span>
+
+        <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
+        <span class="card-header-right clickable">
+          <a href="<%= PATH_REPORT %>/<%= obj.id %>" target="_blank" title="ดูรายงาน">
+            <i class="fas fa-file-alt fc-black" title="ดูรายงาน"></i>
+          </a>
+        </span>
+
+      </div>
+
+      <!-- คอลัมน์ใหญ่ -->
+      <% obj.data.forEach( item => { %>
+      <div class="card-column">
+
+        <!-- Column Title -->
+        <div class="pd-s al-c bg-eee lh-xs" title="เวลาและค่าล่าสุด">
+          <span class="fw-b <%= item.fontColor %>"><%= item.keyName ? item.keyName : item.key %></span>
+          <span class="fc-gray"><%= item.keyUnit ? `(${item.keyUnit})` : '' %></span>
+        </div>
+
+        <!-- Last Value -->
+        <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+          <span class="mg-l-m <%= item.fontColor %> <%= obj.id %>-<%= item.key %>-timestamp">-</span>
+          <span class="mg-r-m fw-b fs-xl <%= item.fontColor %> <%= obj.id %>-<%= item.key %>-lastValue">-</span>
+        </div>
+
+        <!--  -->
+        <div class="card-content-row-2">          
+          <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+          <div class="fc-blue <%= obj.id %>-<%= item.key %>-timeInterval"><%= item.timeInterval %></div>
+        </div>
+
+        <%
+          const trigerMin_byKey = dataDevices.find( id => id.id==obj.id )?.keys.find( k => k.key == item.key )?.trigerMin;
+          const trigerMax_byKey = dataDevices.find( id => id.id==obj.id )?.keys.find( k => k.key == item.key )?.trigerMax;
+        %>
+        <div class="card-content-row-3">
+          <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+          <span class="fc-gray" title="แจ้งเตือนต่ำ" ><%= trigerMin_byKey ? `[${trigerMin_byKey}]` : '' %></span>
+          <div class="fc-plum <%= obj.id %>-<%= item.key %>-min"><%= item.min %></div>
+        </div>
+
+        <div class="card-content-row-3">
+          <i class="fas fa-arrow-up" title="สูงสุด"></i>
+          <span class="fc-gray" title="แจ้งเตือนสูง"><%= trigerMax_byKey ? `[${trigerMax_byKey}]` : '' %></span>
+          <div class="fc-orange <%= obj.id %>-<%= item.key %>-max"><%= item.max %></div>
+        </div>
+
+        <div class="card-content-row-2">
+          <i class="fas fa-chart-line" title="เฉลี่ย"></i>
+          <div class="fc-dodgerblue <%= obj.id %>-<%= item.key %>-avg"><%= item.avg %></div>
+        </div>
+
+        <div class="card-content-row-2">
+          <i class="fas fa-hashtag" title="นับ"></i>
+          <div class="fc-green <%= obj.id %>-<%= item.key %>-count"><%= item.count %></div>
+        </div>
+
+      </div>        
+      <% }) %>
+
+      <% if(obj.data.length%2==1){ %>
+      <div class="card-column bg-eee"></div>
+      <% } %>
+
+    </section>
+
+    <% }) %>
+    </section>
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const ids = JSON.parse(`<%- JSON.stringify(ids) %>`)  ;
+    const dataDevices = JSON.parse(`<%- JSON.stringify(dataDevices) %>`)  ;
+    const socket = io();
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/dashboard.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/dashboard.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<div class="flex-row justify-content-between bb-d lh-n mg-b-m ">
+  <div class="mg-l-m fw-b">
+    <i class="fas fa-clock" title="เวลา"></i>
+    <span class="<= item.fontColor > <= obj.id >-<= item.key >-timestamp">-</span>
+  </div>
+  <div class="<= item.fontColor > mg-r-m fw-b fs-xl <= obj.id >-<= item.key >-lastValue">-</div>
+</div>
+
+<div class="al-c">
+  <div class="fc-gray">
+    <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+    <span class="<= obj.id >-<= item.key >-timeInterval"><= item.timeInterval ></span>
+  </div>
+</div>
+
+<div class="flex-row justify-content-between mg-b-m">
+  <div class="pd-l-s fc-plum <= obj.id >-<= item.key >-min"><= item.min ></div>
+  <div class="fc-orange <= obj.id >-<= item.key >-max"><= item.max ></div>
+  <div class="pd-r-s fc-dodgerblue <= obj.id >-<= item.key >-avg"><= item.avg %></div>
+</div> 
+-->      

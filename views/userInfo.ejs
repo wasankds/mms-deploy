@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta') %>
+  <title><%= title %></title>
+  <!-- Font Awesome -->   
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/userInfo.css?v=<%= time %>">
+  <% } else { %>
+  <!-- < include('partials/local_fjb.ejs') > -->
+  <link rel="stylesheet" href="/css-min/userInfo.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <% 
+    const isItem = user != null // && user.length > 0
+    const item = isItem ? user : {}
+
+    const isFlashPassword = pwd && pwd.length > 0    
+    const itemPassword = isFlashPassword ? pwd[0] : {}
+  %>
+
+<body>
+
+  <header class="header-title bg-forestgreen">
+    <p class="al-c fc-white">
+      <i class="fas fa-user mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+
+   <main>
+
+    <!-- LEFT -->
+    <section class="">
+
+      <form id="mainForm" class="" autocomplete="off" 
+            onsubmit="createSpinner()"
+            action="<%= PATH_SAVE %>" method="post">        
+
+
+        <!-- #1 : Toolbar-->
+        <div class="toolbar-ctn">
+          <button type="submit" class="btn btn-sm bg-save pd-r-l pd-l-l">
+            <i class="fas fa-save pd-r-m"></i>บันทึก
+          </button>
+        </div>
+
+        <!-- User Information -->
+        <div class="form-body">
+
+          <!-- Row1 -->
+          <div class="row">
+
+            <div class="col-f flex-row">
+              <!--  -->
+              <div class="col-sm-4 input-group">
+                <label class="pd-r-s al-l lh-label" title="User ID">
+                  <i class="fas fa-id-badge mg-r-m"></i>รหัสผู้ใช้
+                </label>
+                <input class="al-c no-arrow" type="number" id="userId" name="userId" 
+                       placeholder="User ID" readonly
+                       value="<%= isItem ? item.userId : '' %>">
+              </div>
+  
+              <!--  -->
+              <div class="col-sm-6 input-group">
+                <label class="pd-r-s al-l lh-label" title="_id">
+                  <i class="fas fa-id-card mg-r-m"></i><span>_id</span>
+                </label>
+                <input class="al-c" type="text" id="_id" name="_id" 
+                       placeholder="_id" readonly
+                       value="<%= isItem ? item._id : '' %>">
+              </div>
+            </div>
+
+          </div> <!-- Row1 -->
+
+
+          <!-- Row2 -->
+          <div class="flex-row mg-t-s">
+            <div class="col-sm-6 input-group">
+              <label class="pd-r-s al-l" title="username">
+                <i class="fas fa-user"></i> ชื่อผู้ใช้ *
+              </label>
+              <input class="pd-l-m al-l" type="text" 
+                    id="username" name="username" placeholder="Username" 
+                    required 
+                    pattern="<%= USERNAME_PATTERN %>"
+                    title="<%= USERNAME_DESCRIPTION %>"
+                    value="<%= isItem ? item.username : '' %>">
+            </div>
+
+            <!--  -->
+            <div class="col-sm-2 input-group">
+              <label class="pd-r-s al-l" title="Active Status">
+                <i class="fas fa-user-check"></i> สถานะ *
+              </label>
+              <select class="col-25 al-c" name="userIsActive" id="userIsActive" disabled>
+                <option value="<%= isItem && item.userIsActive %>">
+                  <%= isItem && item.userIsActive %>
+                </option>
+              </select>
+            </div>
+  
+            <div class="col-sm-2 input-group">
+              <label for="userAuthority" class="pd-r-s al-l" title="สิทธิ์การใช้งาน">
+                <i class="fas fa-user-tag"></i> สิทธิ์ *
+              </label>
+              <select class="pd-l-m al-c" name="userAuthority" id="userAuthority" disabled >
+                <option value="<%= isItem && item.userAuthority %>">
+                  <%= isItem && item.userAuthority %>
+                </option>
+              </select>
+            </div> 
+
+
+          </div> <!-- Row3 -->
+
+
+          <!-- Row4 -->
+          <div class="row mg-t-s">
+
+            <div class="col-f flex-row">
+
+              <div class="col-sm-6 input-group">
+                <label class="pd-r-s al-l lh-label" title="Email">
+                  <i class="fas fa-envelope"></i> อิเมล์ *
+                </label>
+                <input type="email" class="al-l pd-l-m" 
+                       required
+                       id="userEmail" name="userEmail" placeholder="Email"
+                       value="<%= isItem ? item.userEmail : '' %>">
+              </div>
+  
+              <div class="col-sm-4 input-group">
+                <label class="pd-r-s al-l lh-label" title="Phone">
+                  <i class="fas fa-phone "></i> โทรศัพท์
+                </label>
+                <input type="text" class="al-l pd-l-m"
+                       title="<%= PHONE_DESCRIPTION %>" 
+                       pattern="<%= PHONE_PATTERN %>"
+                       id="userPhone" name="userPhone" placeholder="Phone"
+                       value="<%= isItem ? item.userPhone : '' %>">
+              </div>
+            </div>
+
+          </div> <!-- Row4 -->
+
+
+          <!-- Row5 -->
+          <div class="row mg-t-s">
+
+            <div class="col-f flex-row">
+              <div class="col-sm-2 input-group">
+                <label class="pd-r-s al-l lh-label" title="Prefix">
+                  <i class="fas fa-user-circle"></i> คำนำหน้า
+                </label>
+                <input type="text" class="al-l pd-l-m" 
+                        value="<%= isItem ? item.userPrefix : '' %>"
+                        id="userPrefix" name="userPrefix" placeholder="Prefix">
+              </div>
+              <div class="col-sm-4 input-group">
+                <label class="pd-r-s al-l lh-label" title="First Name">
+                  <i class="fas fa-user"></i> ชื่อ  *
+                </label>
+                <input type="text" class="al-l pd-l-m" 
+                        value="<%= isItem ? item.userFirstname : '' %>"
+                        id="userFirstname" name="userFirstname" placeholder="First Name" required>
+              </div>
+              <div class="col-sm-4 input-group">
+                <label class="pd-r-s al-l lh-label" title="Last Name">
+                  <i class="fas fa-user"></i> นามสกุล
+                </label>
+                <input type="text" class="al-l pd-l-m" 
+                        value="<%= isItem ? item.userLastname : '' %>"
+                        id="userLastname" name="userLastname" placeholder="Last Name">
+              </div>
+            </div>
+          </div> <!-- Row5 -->
+
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <!-- Change Password -->
+    <section class="mg-t-l">
+        
+      <form class="" autocomplete="off" 
+            onsubmit="createSpinner()"
+            action="<%= PATH_CHANGE_PASSWORD %>" method="post">
+        
+        <input type="hidden" name="_id" value="<%= isItem ? item._id : '' %>">
+        <input type="hidden" name="userId" value="<%= isItem ? item.userId : '' %>">
+
+
+        <!-- Toolbar-->
+        <div class="toolbar-ctn">
+          <button type="submit" class="btn  btn-sm bg-save pd-r-l pd-l-l">
+            <i class="fas fa-save pd-r-m"></i>บันทึก
+          </button>
+
+          <label class="fc-gray">เปลี่ยนรหัสผ่าน</label>
+
+          <button type="button" class="btn btn-sm bg-view pd-r-l pd-l-l" id="btnViewPassword">
+            <i class="fas fa-eye pd-r-m"></i>แสดงรหัสผ่าน
+          </button>
+        </div>
+
+        <!--  -->
+        <div class="form-body">
+
+          <!--  -->
+          <div class="flex-row">
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s al-l lh-label" title="พาสเวิร์ดใหม่">
+                  <i class="fas fa-key mg-r-m"></i>พาสเวิร์ดใหม่
+              </label>
+              <input class="al-c" type="password" id="newPassword" name="newPassword" 
+                      placeholder="พาสเวิร์ดใหม่"
+                      required
+                      pattern="<%= PASSWORD_PATTERN %>"
+                      title="<%= PASSWORD_DESCRIPTION %>"
+                      value="<%= itemPassword ? itemPassword.newPassword : '' %>">
+            </div>
+
+            <!--  -->
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s al-l lh-label" title="ยืนยันพาสเวิร์ดใหม่">
+                <i class="fas fa-key mg-r-m"></i>ยืนยันพาสเวิร์ดใหม่
+              </label>
+              <input class="al-c" type="password" id="confirmPassword" name="confirmPassword" 
+                      placeholder="ยืนยันพาสเวิร์ดใหม่"
+                      required
+                      pattern="<%= PASSWORD_PATTERN %>"
+                      title="<%= PASSWORD_DESCRIPTION %>"
+                      value="<%= itemPassword ? itemPassword.confirmPassword : '' %>">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <section class="mg-t-l pd-l fc-ba bdr3 bg-999 fs-n fc-white ">
+      <!-- <p class="">หมายเหตุ :</p>ห -->
+      <p class="">การเปลี่ยน "ชื่อผู้ใช้" หรือ "อิเมล์" ระบบจะล็อกเอ้าท์อัตโนมัติและคุณจะต้องเข้าสู่ระบบใหม่อีกครั้ง</p>
+    </section>
+    
+  </main>  
+
+  <script type="text/javascript">
+    var PATH_MAIN = `<%= PATH_MAIN %>` ;     
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/userInfo.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/userInfo.obf.js"></script>
+  <% }  %>  
+
+</body>
+</html>
+
+
+

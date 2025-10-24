@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/proguessBar.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/reportDocs.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/reportDocs.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <main>    
+    <!--  -->
+    <section class="main-left">
+
+      <!-- Toolbar#1 -->
+      <div class="flex-row">
+        <h3 class="col-sm-w100 al-c" id="docTitle"><%= title %></h3>
+      </div>
+
+      <% if(['O','S'].includes(user.userAuthority)){ %>
+      <!-- Toolbar#1 -->
+      <div class="flex-row">
+        <button class="btn btn-sm bg-clear nowrap" type="button" 
+                onclick="clearSelectOne(this)"><i class="fa fa-broom"></i>
+        </button> 
+        <label class="col-sm-1-5 al-r pd-r-s">สาขา</label>
+        <div class="col-sm-w100 flex-row">
+          <div class="col-sm-8 modalCtn">
+            <input class="al-l pd-l-m " type="text" 
+                    id="searchBranch" placeholder="สาขา" 
+                    onclick="clearSearchModal(this)" 
+                    onfocus="popModalBranches(event)" 
+                    oninput="popModalBranches(event)" 
+                    autocomplete="off" tabindex="-1">
+            <div class="modal"><div class="modal-list"></div></div>
+          </div>
+          <input class="col-sm-2 al-c no-arrow" type="number" placeholder="ไอดี"                 
+                 id="branchId"  readonly>
+        </div>
+      </div>
+      <% } %>
+
+
+      <!-- Toolbar#2 -->
+      <% if(['O','S','A'].includes(user.userAuthority)){ %>
+      <div class="flex-row ">
+        <button class="btn btn-sm bg-clear nowrap" type="button" 
+                onclick="clearSelectOne(this)"><i class="fa fa-broom"></i>
+        </button> 
+        <label class="col-sm-1-5 al-r pd-r-s">ยูสเซอร์</label>
+        <div class="col-sm-w100 flex-row">
+          <div class="col-sm-8 modalCtn">
+            <input class="al-l pd-l-m" type="text" 
+                    id="searchUser" placeholder="ยูสเซอร์" 
+                    onclick="clearSearchModal(this)" 
+                    onfocus="popModalUsers(event)" 
+                    oninput="popModalUsers(event)" 
+                    autocomplete="off" tabindex="-1">
+            <div class="modal"><div class="modal-list"></div></div>
+          </div>
+          <input class="col-sm-2 al-c no-arrow" type="number" placeholder="ไอดี"
+                 readonly id="userId">
+        </div>
+      </div>
+      <% } %>
+
+
+
+      <!-- Toolbar#3 -->
+      <!-- 
+      <div class="flex-main">
+        <label class="col-2">ไอเท็ม</label>
+        <div class="col-8 flex-row lh-4xs h-100 w-100">
+          <div class="col-sm-7 modalCtn">
+            <input class="al-l pd-l-m w-100" type="text" 
+                    id="searchItem" placeholder="ค้นหาไอเท็ม" 
+                    onclick="clearSearchModal(this)" 
+                    onfocus="popModalItems(event)" 
+                    oninput="popModalItems(event)" 
+                    autocomplete="off">
+            <div class="modal"><div class="modal-list"></div></div>
+          </div>
+          <input class="col-sm-3 al-c lh-4xs" type="text" id="itemId" placeholder="ไอเท็มไอดี" readonly>
+        </div>
+      </div> 
+      -->
+
+
+
+      <!-- Toolbar#4 -->
+      <!-- 
+      <div class="flex-row">
+        <label class="pd-r-m">เลขที่เอกสาร</label>
+        <div class="col-sm-w100 modalCtn">
+          <input class="al-c pd-l-m" type="text" 
+                  id="docId" placeholder="ค้นหาเอกสาร" 
+                  onclick="clearSearchModal(this)" 
+                  onfocus="popModalDocId(event)" 
+                  oninput="popModalDocId(event)" 
+                  autocomplete="off">
+          <div class="modal"><div class="modal-list"></div></div>
+        </div>
+      </div> 
+      -->
+
+
+    </section>
+    
+    <!--  -->
+    <section class="main-right">
+      
+      <!-- right#1 -->
+      <!-- <div class="flex-row space-between">
+        
+        <button class="nowrap btn btn-sm bg-print " type="button" onclick="window.print();">
+          <i class="fa fa-print"></i> พิมพ์
+        </button>        
+        
+        <button class="btn btn-sm bg-move " type="button"
+                data-toggle="842px"
+                onclick="adjustWidthToggle(this);">
+          <i class="fa fa-arrows-alt-h"></i>
+        </button>
+
+      </div> -->
+
+      <!-- right#2 -->
+      <div class="flex-row">
+        
+        <label class="al-r pd-r-s">เดือน</label>
+        <select class="col-sm-w100 al-c" id="selectMonth" name="selectMonth">          
+          <% monthDocs.forEach( m => { %>
+          <option value="<%= m.month %>"><%= m.monthName %></option>
+          <% }) %>
+        </select>
+
+        <!-- ปฏิทินเอกสาร -->
+        <button class="btn btn-sm bg-mediumseagreen" 
+                type="button" id="btnCalendar" 
+                title="ปฏิทินเอกสารรายเดือน"
+                onclick="concludeDocsCalendar();">
+          <i class="fa fa-calendar mg-r-s"></i>ปฏิทิน
+        </button>
+
+        <button class="btn btn-sm bg-cornblue " type="button" 
+              id="btnConcludeDocReport"
+              title="สรุปเอกสารรายเดือน" 
+              onclick="concludeDocs('month');">
+           <i class="fa fa-file-alt"></i> สรุป
+        </button>
+      </div>
+
+      <!--  -->
+      <div class="flex-row">
+        <label class="al-r pd-r-s">วันที่</label>
+        <input class="col-sm-w100 al-c bg-white clickable bdr3" type="date" 
+              id="selectDateTh">
+        <!-- ปฏิทินเอกสาร -->
+        <button class="btn btn-sm bg-deepskyblue" 
+                type="button" id="btnConcludeByDate"
+                title="สรุปเอกสารรายวัน"
+                onclick="concludeDocs('date');">
+          <i class="fa fa-file-alt mg-r-s"></i>สรุป
+        </button>
+      </div>
+
+      <!-- right#3 -->
+      <!-- <div class="flex-row space-between mg-t-m">
+        <button class="btn btn-sm bg-cornblue " type="button" 
+                id="btnConcludeDocReport" 
+                onclick="concludeReport(this,'docsReport');">
+          <i class="fa fa-file-alt"></i> สรุปเอกสาร
+        </button>
+      </div> -->
+
+    </section>
+
+    <!--  -->
+    <section class="main-bottom" id="resultTableCtn"></section>
+  </main>
+
+
+  <!-- Progress Bar -->
+  <!-- 
+  <div id="progressBarCtn">
+    <div id="progressText">กำลังสร้างรายงาน...</div>
+    <div class="progressBar-bg">
+      <div id="progressBar">0%</div>
+    </div>
+  </div> 
+  -->
+
+
+  <%- include('partials/footer') %>
+
+  <script type="text/javascript">
+    const DOMAIN_ALLOW = `<%= global.DOMAIN_ALLOW %>`
+    const USER_AUTHORITY = `<%= user.userAuthority %>`
+
+    const PATH_MAIN = `<%= PATH_MAIN %>`
+    const PATH_DOC = `<%= PATH_DOC %>`
+    const PATH_CONCLUDE = `<%= PATH_CONCLUDE %>`
+    const PATH_CALENDAR = `<%= PATH_CALENDAR %>`
+    const PATH_LOAD = `<%= PATH_LOAD %>`
+    // const PATH_REPORT_ITEMS2 = `<= PATH_REPORT_ITEMS2 >`
+    // const PATH_REPORT_ITEMS1 = `<= PATH_REPORT_ITEMS1 >`
+
+    const DATA_USERS = JSON.parse(`<%- dataUsersJson %>`) ;
+    const DATA_BRANCHES = JSON.parse(`<%- dataBranchesJson %>`) ;
+    const DATA_DOC_CONCLUDE = JSON.parse(`<%- dataDocConclude %>`) ;
+    // const DATA_ITEMS = JSON.parse(`<- dataItemsJson >`) ;    
+  </script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/report_windows.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/report_modal.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/reportDocs.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/reportDocs.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+<!-- ใช้กับปฏิทินเท่านั้น -->
+<template id="windowTemplate">
+  <div class="window-ctn pd-xs" name="windowCtn">
+
+    <!-- TITLE -->
+    <!-- <div class="window-title" name="windowTitle">
+      <p>
+        <span name="titleText_a" class="titleText1 fc-white pd-l-"></span>
+        <span name="titleText_b" class="titleText2 fc-lime"></span>
+        <span name="titleText_c" class="titleText3 fc-yellow"></span>    
+        <span name="btnClose"    class="close-window"   onclick="closeWindow(this)">&#10006</span>
+        <span name="btnCopy"     class="expand-window"  onclick="copyTable(this)">copy</span>
+        <span class="clickable expand-window" 
+              data-direction="up"
+              onclick="moveWindow(this)">&#8679;</span>
+        <span class="clickable expand-window" 
+              data-direction="down"
+              onclick="moveWindow(this)">&#8681;</span>
+      </p>
+    </div>
+    <div class="window-title2" name="windowTitle2"></div> 
+    -->
+
+    <!-- TABLE CTN -->
+    <div class="" name="tableCtn"></div>
+  </div>
+</template>
+

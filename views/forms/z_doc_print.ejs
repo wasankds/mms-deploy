@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <title><%= title %></title>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/flex.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css-min/doc_print.min.css">
+  <% }  %>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    body{ 
+      font-size: 0.75rem;
+      background: white!important; 
+      width: 80mm;
+    }
+    main{ 
+      padding:0.5cm;
+      width: 80mm;
+      overflow: hidden;
+      margin: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 1px;
+      overflow: hidden;
+      font-size: 0.7rem; /* white-space: nowrap; */
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN CONTAINER -->
+  <main>
+    <p class="al-c fw-b mg-b-l fs-m underline"><%= doc.docTitle %></p>
+    <p class="al-l ">เลขที่เอกสาร : <span class="fw-b box-black"><%= doc.docId %></span></p>
+    <p class="al-l ">สถานะ : 
+      <span class="fw-b box-black"><%= doc.docStatusNumber %></span>
+      <span class="fw-b"><%= doc.statusName %></span>
+    </p>
+    <p class="al-l">วันที่และเวลา : <span class="fw-b"><%= doc.docDateTime %></span></p>
+    <p class="al-l mg-t-m">สาขา : <span class="fw-b">[<%= doc.branchId %>] <%= doc.branchName %></span></p>
+    <p class="al-l">ยูสเซอร์ : <span class="fw-b">[<%= doc.userId %>] <%= doc.userFullname %></span></p>
+    <% if(doc.totalAmount) { %>
+    <p class="al-l mg-t-m">รวม : <span class="fw-b"><%= doc.totalAmount %></span></p>
+    <% } %>
+
+    <% if(doc.tableRows && doc.tableRows.length > 0) { %>
+      <% doc.tableRows.forEach( (obj, index) => { %>
+      <div class="pd-t-m pd-b-m bb-d <%= index == 0 ? 'bt-d mg-t-m' : '' %>">
+        <p class="al-l"><%= index+1 %>.) [<%= obj.itemId  %>]</p>
+        <p class="al-l fw-b"><%= obj.description %></p>
+        <p class="al-l">
+          <span>จำนวน</span>
+          <span class="fw-b box-black"><%= obj.quantity ? obj.quantity : '-' %></span>
+          <span class="fw-b"><%= obj.unit %></span>
+          <span>x</span>
+          <span class="fw-b"><%= obj.price ? obj.price : '-' %></span>
+          <span>=</span>
+          <span class="fw-b"><%= obj.amount ? obj.amount : '-' %></span>
+        </p>
+      </div>
+      <% }) %>
+    <% } %>
+    
+    <section class="mg-t-s al-c">      
+      <p class="fs-s">
+        <%= dataSettings.COMPANY_NAME %>
+      </p>
+      <p class="fs-ss">
+        <%= global.SYS_NAME %> <%= global.SYS_NAME2 %> v.<%= global.SYS_VERSION %>
+      </p>
+    </section>
+  </main>
+
+  <!--  -->
+  <% if(action == 'print') { %>
+  <footer class="al-c no-print mg-t-xl">
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.print()">พิมพ์
+    </button>
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.close()">ปิดหน้าต่าง
+    </button>
+  </footer>
+  <% } %>
+
+</body>
+</html>
+
+
+
+<!-- 
+
+
+console.log("changesHistory ===> ", changesHistory)
+    changesHistory ===>  [
+      {
+        dateTime: '2025-08-20 14:43',
+        userId: 1000,
+        userFullname: 'นาย Wasan Khunnadiloksawet',
+        changes: [
+          [Object], [Object],
+          [Object], [Object],
+          [Object], [Object],
+          [Object], [Object],
+          [Object]
+        ]
+      },
+      {
+        dateTime: '2025-08-20 14:42',
+        userId: 1000,
+        userFullname: 'นาย Wasan Khunnadiloksawet',
+        changes: [ [Object], [Object], [Object] ]
+      }
+    ]
+
+    console.log("changesHistory[0].changes ===> ", changesHistory[0].changes)
+    changesHistory[0].changes ===>  [
+      { field: 'customerId', oldValue: 10001, newValue: 10002 },
+      {
+        field: 'customerName',
+        oldValue: 'FinSide Co.,Ltd',
+        newValue: 'นายสมชาย ใจดี'
+      },
+      {
+        field: 'customerAddress1',
+        oldValue: '999999 Soi Bangna 9999',
+        newValue: '123 ถนนสุขุมวิท แขวงคลองตันเหนือ เขตวัฒนา'
+      },
+      {
+        field: 'customerAddress2',
+        oldValue: 'ถนนบางนา-ตราด  ต.บางแก้ว อ.บางพลี  จ.สมุทรปราการ  11111',
+        newValue: 'กรุงเทพมหานคร 10110'
+      },
+      {
+        field: 'customerContact',
+        oldValue: '0811234567, finside@gmail.com',
+        newValue: 'โทรฯ, 012-345-6789, www.example.com'
+      },
+      { field: 'customerTaxId', oldValue: '1234567890123', newValue: '' },
+      { field: 'totalAmount', oldValue: 4500, newValue: 2500 },
+      { field: 'netAmount', oldValue: 4500, newValue: 2500 },
+      {
+        field: 'tableRows',
+        oldValue: [ [Object], [Object], [Object], [Object], [Object] ],
+        newValue: [ [Object], [Object], [Object], [Object] ]
+      }
+    ]
+
+    console.log("changesHistory[0].changes[8].oldValue ===> ", changesHistory[0].changes[8].oldValue)
+    console.log("changesHistory[0].changes ===> ", changesHistory[0].changes[8].newValue)
+
+    
+-->

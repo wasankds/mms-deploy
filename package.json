@@ -1,0 +1,73 @@
+{
+  "type": "module",
+  "name": "mms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mms.js",
+  "scripts": {
+    "min-1": "node commandSystem/min_css_js.js",
+    "min-2": "node commandSystem/delete_min_js.js",
+    "min-3": "node commandSystem/min_routes.js",
+    "min-4": "node commandSystem/min_mymodule.js",
+    "min-c": "node commandSystem/min_commandSystem.js",
+    "min-all" : "npm run min-1 && npm run min-2 && npm run min-3 && npm run min-4 && npm run min-c",
+
+    "create-f": "node commandSystem-min/create_folders.js",
+    "create-i": "node commandSystem-min/create_dbCollectionIndex.js",
+    "create-all": "npm run create-f && npm run create-i",
+
+    "clear-db-docs": "node commandSystem-min/clear_db_docs.js",
+    "clear-db-data": "node commandSystem-min/clear_db_data.js",
+    "clear-db-entire": "node commandSystem-min/clear_db_entire.js",
+
+    "app": "node mpos.js",
+    "dev": "nodemon mpos.js",
+    "kill-win": "taskkill /f /im node.exe",
+    "kill-mac": "pkill -9 node",
+    "kill-linux": "pkill -9 node",
+
+    "mongo-v": "mongod --version",
+    "node-v": "node --version",
+
+    "start": "pm2 start mpos.js -i 0",
+    "start1": "pm2 start mpos.js -i 1",
+    "stop": "pm2 stop mpos.js",
+    "restart": "pm2 restart mpos.js",
+    "delete": "pm2 delete mpos.js",
+
+    "start-name": "pm2 start --name='mpos-main' mpos.js -i 0",
+    "stop-name": "pm2 stop mpos-main",
+    "start1-name": "pm2 start mpos.js --name='mpos-main' -i 1",
+    "restart-name": "pm2 restart mpos-main",
+    "delete-name": "pm2 delete mpos-main",
+
+    "git1": "git add . && git commit -m \"%date% %time%\" && git push origin main",
+    "use-nvm": "nvm use 22.16.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^5.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "esbuild": "^0.25.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "javascript-obfuscator": "^4.1.1",
+    "luxon": "^3.5.0",
+    "mongodb": "^6.3.0",
+    "multer": "^2.0.0",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.10.1",
+    "puppeteer": "^24.16.2",
+    "request": "^2.88.2",
+    "sharp": "^0.34.3",
+    "socket.io": "^4.8.1",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,68 @@
+<!-- <section class="window-ctn pd-xs col-100" > -->
+
+  <div class="window-title" name="windowTitle">
+    <p class="bg-orange">
+      <span class="titleText1 fc-white pd-l-m">อุปกรณ์ที่ไม่ถูกเบิกเลย : </span>
+      <span class="titleText2 fc-yellow  fw-b"></span>
+      <span class="close-window" onclick="closeWindow(this)">✖</span>
+      <span class="expand-window" onclick="copyTable(this)">copy</span>
+      <span class="clickable expand-window" 
+            data-direction="up"
+            onclick="moveWindow(this)">&#8679;</span>
+      <span class="clickable expand-window" 
+            data-direction="down"
+            onclick="moveWindow(this)">&#8681;</span>
+    </p>
+  </div>
+
+  <div class="table-ctn" name="tableCtn">
+    <table>
+      <tr class="bg-111 lh-xxl">
+        <th class="al-c bg-111">ลำดับ</th>
+        <th class="al-c bg-111">ไอเท็มไอดี</th>
+        <th class="al-c bg-111">สถานะ</th>
+        <th class="al-c bg-111">ชื่อไอเท็ม</th>
+        <th class="al-c bg-111">คำอธิบาย</th>
+      </tr>
+
+      <% data.forEach( (item, index) => {
+        const itemId = item.itemId
+        const itemStatus = item.itemStatus
+        const itemName = item.itemName
+        const itemDesc = item.itemDesc
+        const itemNameSlice = itemName.length > 30 ? `${itemName.slice(0,30)}...` : itemName
+        const itemDescSlice = itemDesc.length > 30 ? `${itemDesc.slice(0,30)}...` : itemDesc
+        const classColor = index%2==0 ?  'bg-line-swap' : 'bg-main-dark'
+
+        if(itemStatus == 'ปกติ'){
+          var itemStatusColor = 'fc-lime'
+        }else if(itemStatus == 'เบิก'){
+          var itemStatusColor = 'fc-yellow'
+        }else if(itemStatus == 'ชำรุด'){      
+          var itemStatusColor = 'fc-orange'
+        }else if(itemStatus == 'สูญหาย'){
+          var itemStatusColor = 'fc-red'
+        }else if(itemStatus == 'ส่งซ่อม'){     
+          var itemStatusColor = 'fc-pink'
+        }else if(itemStatus == 'จำหน่ายซาก'){
+          var itemStatusColor = 'fc-mgt'
+        }else if(itemStatus == 'ประจำสถานี'){
+          var itemStatusColor = 'fc-ligray' 
+        }else{
+          var itemStatusColor = '' 
+        }
+        %>
+        <tr class="al-r <%= classColor %>">
+          <td class="al-c <%= itemStatusColor %>"><%= index+1 %></td>
+          <td class="al-l <%= itemStatusColor %>"><%= itemId %></td>
+          <td class="al-c <%= itemStatusColor %>"><%= itemStatus %></td>
+          <td class="al-l <%= itemStatusColor %>" title="<%= itemName %>"><%= itemNameSlice %></td>
+          <td class="al-l <%= itemStatusColor %>" title="<%= itemDesc %>"><%= itemDescSlice %></td>
+        </tr>
+
+      <%      
+        })
+      %>
+    </table>
+  </div>
+

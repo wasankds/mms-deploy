@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+ 
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>"> 
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/devices.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/devices.min.css?v=<%= time %>">
+  <% }  %>
+
+</head>
+<body>
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <% 
+    // item คือข้อมูลที่จะโหลดในฟอร์ม อาจไม่มีส่งมา
+    const isItem = item != null 
+  %>
+
+  <header class="header-title bg-slateblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-microchip mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <main> 
+
+    
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** LEFT *****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- LEFT -->
+    <section class="main-left">
+
+      <form id="mainForm" class="" autocomplete="off" 
+            onsubmit="createSpinner()"
+            action="<%= PATH_SAVE %>" method="post">
+
+        <!-- hidden -->
+        <input type="hidden" name="rpp" value="<%= rpp %>">
+        <input type="hidden" name="sip" value="<%= sip %>">
+        <input type="hidden" name="page" value="<%= page %>">
+        
+        <!-- #1 : Toolbar-->
+        <div class="toolbar-ctn">
+
+          <!-- ล้างฟอร์ม -->
+          <button class="btn btn-sm bg-clear" id="btnClearForm" title="ล้างฟอร์ม">
+            <i class="fas fa-broom"></i>
+          </button>
+
+          <!-- สร้างใหม่ ให้ล้างฟอร์มไปเลย -->
+          <!-- <button class="btn btn-sm bg-new" id="btnCreateNew" title="สร้างผู้ใช้ใหม่ทันที หลังล็อกอินต้องเปลี่ยนรหัสผ่านทันที">
+            <i class="fas fa-user-plus"></i>
+          </button> -->
+
+          <button class="btn btn-sm bg-print" title="พิมพ์"
+                  onclick="event.preventDefault();printDevicesJs(event)">
+            <i class="fas fa-print"></i>
+          </button>
+
+          <button type="submit" class="btn btn-sm bg-save" title="บันทึก">
+            <i class="fas fa-save"></i>
+          </button>
+        </div>
+
+        <!-- Information -->
+        <div class="form-body">
+
+          <!-- Row1 -->
+          <div class="flex-row">
+
+            <div class="col-f flex-row">
+              <!--  -->
+              <div class="col-sm-4 input-group">
+                <label class="pd-r-s al-l lh-label" title="User ID">
+                  <i class="fas fa-id-badge mg-r-m"></i>ไอดี
+                </label>
+                <select class="al-c"  title="<%= global.DEVICE_DESCRIPTION %>"
+                        id="deviceId" name="deviceId" required >
+                  <% if(isItem){ %>
+                    <option value="<%= item.deviceId %>" selected><%= item.deviceId %></option>
+                  <% } %>
+                </select>
+              </div>
+  
+              <!--  -->
+              <div class="col-sm-6 input-group">
+                <label class="pd-r-s al-l lh-label" title="_id">
+                  <i class="fas fa-id-card mg-r-m"></i><span>_id</span>
+                </label>
+                <input class="al-c" type="text" id="_id" name="_id" 
+                       placeholder="_id" readonly
+                       value="<%= isItem ? item._id : '' %>">
+              </div>
+            </div>
+
+          </div> <!-- Row1 -->
+
+          <!-- Row2 -->
+          <div class="flex-row mg-t-s">
+            <div class="col-sm-f input-group">
+              <label class="pd-r-s al-l" title="deviceName">
+                <i class="fas fa-microchip"></i> ชื่อ *
+              </label>
+              <input class="pd-l-m al-l" type="text" 
+                    id="deviceName" name="deviceName" placeholder="Device Name" 
+                    required 
+                    value="<%= isItem ? item.deviceName : '' %>">
+            </div>          
+          </div> <!-- Row2 -->
+
+          <!-- Row3 -->
+          <div class="flex-row mg-t-s">
+            <div class="col-sm-6 input-group">
+              <label class="pd-r-s al-l" title="deviceBgClassColor">
+                <i class="fas fa-fill-drip mg-r-s"></i> สีพื้นหลัง *
+              </label>
+              <select class="al-c <%= isItem && item.deviceBgClassColor ? item.deviceBgClassColor : '' %>" 
+                      required
+                      id="deviceBgClassColor" name="deviceBgClassColor">
+                <% global.DEVICES_COLOR.forEach( obj => { %>
+                  <option value="<%= obj.bgClassColor %>" <%= isItem && item.deviceBgClassColor === obj.bgClassColor ? 'selected' : '' %>>
+                    <%= obj.bgName %>
+                  </option>
+                <% }) %>
+              </select>
+            </div>          
+            <!--  -->
+            <div class="col-sm-4 input-group">
+              <label class="pd-r-s al-l" title="Active Status">
+                <i class="fas fa-power-off"></i> สถานะ
+              </label>
+              <%
+                const deviceStatus_color = isItem && item.deviceStatus == 'active' ? 'bg-green' : 'bg-red'
+              %>
+              <select class="al-c fc-white <%= deviceStatus_color %>" 
+                      onchange="toActive(this)"
+                      name="deviceStatus" id="deviceStatus">
+                <% if( isItem ){ %>
+                  <option value="">-</option>
+                  <option <%= item.deviceStatus == 'active' ? 'selected' : '' %> value="active">active</option>
+                <% }else{ %>
+                  <option value="">-</option>
+                  <option value="active">active</option>
+                <% } %>
+              </select>
+            </div>
+          </div> <!-- Row3 -->
+
+          <!-- Row#Add -->
+          <section class="mg-t-l">
+                            
+            <div class="flex-row">
+              <div class="col-md-12">
+                <label class="text-white pd-r-l">ทริกเกอร์แจ้งเตือน</label>
+
+                <button type="button" class="btn btn-sm bg-add pd-l-l pd-r-l" 
+                        id="btnAddTrigger" title="เพิ่มทริกเกอร์แจ้งเตือน">
+                  <i class="fas fa-plus-circle"></i>
+                </button>
+
+                <button type="button" class="btn btn-sm bg-undo pd-l-l pd-r-l" 
+                        id="btnUndoTrigger">
+                  <i class="fas fa-undo"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Triggers --> 
+            <div class="mg-t-m" id="triggerRowsCtn" >
+            <% if( isItem && item.triggerRows && item.triggerRows.length > 0 ){ %>
+            <% item.triggerRows.forEach( (obj,index) => { %>
+              <div class="flex-row">
+                <input class="btn al-c col-sm-0-5 bg-up" type="button" value="&#9650;" tabindex = "-1" 
+                      onclick="moveListUp(this)">
+                <input class="btn al-c col-sm-0-5 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+                      onclick="moveListDn(this)">
+
+                <%
+                  const colorStatusClass = obj.triggerStatus == 'active' ? 'bg-green' : 'bg-red'
+                %>
+                <select class="col-sm-2 triggerStatus al-c fc-white <%= colorStatusClass %>" 
+                        name="triggerStatus"  required
+                        onchange="toActive(this)">
+                  <% if( obj.triggerStatus == 'active'  ){ %>     
+                  <option value="active" selected>active</option>
+                  <option value="">-</option>
+                  <% } else { %>
+                  <option value="">-</option>
+                  <option value="active">active</option>
+                  <% } %>
+                </select>
+
+                <select class="col-sm-2-5 triggerKey al-c" name="triggerKey">
+                  <option value="<%= obj.triggerKey %>"><%= obj.triggerKey %></option>
+                </select>
+                      
+                <input class="col-sm-2 triggerMin al-r pd-r-s no-arrow" type="number" 
+                       placeholder="Trigger Min"
+                       value="<%= obj.triggerMin %>"
+                       name="triggerMin">
+
+                <input class="col-sm-2 triggerMax al-r pd-r-s no-arrow" type="number" 
+                       placeholder="Trigger Max"
+                       value="<%= obj.triggerMax %>"
+                       name="triggerMax">
+                <input class="btn al-c col-sm-0-5 bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+                       onclick="removeTriggerRow(this)">
+              </div>
+            <% }) %>
+            <% } %>
+            </div>
+          </section>
+
+        </div>
+
+      </form>
+
+      <!-- 
+      **********************************************************
+      **********************************************************
+      **********************************************************
+      *********************** Upload Form ***********************
+      **********************************************************
+      **********************************************************
+      **********************************************************
+      -->
+
+     
+
+    </section>
+      
+    
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** RIGHT ****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- RIGHT -->
+    <section class="main-right">
+
+      <!-- Search -->
+      <form class="toolbar-ctn pd-b-m" 
+            action="<%= PATH_MAIN %>" method="get" 
+            onsubmit="createSpinner()">
+
+        <input type="hidden" name="load_id" value="<%= load_id %>">
+        
+        <div class="flex-row">
+          <input class="flex-9 al-c clickable" type="search"
+                 id="sip" name="sip" placeholder="ไอดี, ชื่อ"
+                 value="<%= sip ? sip : '' %>">        
+          <button class="btn btn-sm bg-search pd-l-l pd-r-l" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="flex-row">
+          <label class="al-r pd-r-s">แถว/หน้า</label>
+          <select class="al-c" 
+                  name="rpp" id="rpp" onchange="this.form.submit()">
+            <option value="20" <%= rpp == '20' ? 'selected' : '' %> >20</option>
+            <option value="30" <%= rpp == '30' ? 'selected' : '' %> >30</option>
+            <option value="50" <%= rpp == '50' ? 'selected' : '' %> >50</option>
+            <option value="100" <%= rpp == '100' ? 'selected' : '' %> >100</option>
+          </select>
+        </div>
+
+      </form>
+
+      <!-- Pagination5btns -->
+      <div class="pgMainCtn">
+        <%- include('partials/pagination5btns3.ejs') %>
+      </div>
+
+      <!-- ตาราง -->
+      <section class="">
+      
+        <!-- ตาราง -->
+        <div id="tableCtn" class="table-ctn">
+
+          <table>
+
+            <colgroup>
+              <col style="width: 1%;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+              <col style="width: 1%;">
+              <col style="width: 1%;">
+            </colgroup>
+
+            <thead id="tableHeader">
+              <tr>
+                <th class="al-c pd-l-s pd-r-s"><i class="fas fa-edit"></i></th>
+                <th class="al-c clickable" onclick="sortTableJs(this, 1)" title="ไอดี">
+                  <i class="fas fa-id-badge"></i>
+                </th>
+                <th class="al-c clickable" onclick="sortTableJs(this, 2)" title="ชื่อ">
+                  <i class="fas fa-user"></i> 
+                </th>
+                <th class="al-c pd-l-s pd-r-s" onclick="sortTableJs(this, 3)" title="Delete">
+                  <i class="fas fa-trash-alt"></i>
+                </th>
+                <th class="al-c pd-l-s pd-r-s" onclick="sortTableJs(this, 4)" title="Changes">
+                  <i class="fas fa-exchange-alt"></i>
+                </th>
+
+              </tr>
+            </thead>
+
+            <tbody id="tableContent">
+              <% data.forEach( (obj,index) => { %>
+              <%
+                const lineSwap = index%2 == 0 ? 'bg-line-swap' : ''
+                const classLoad = obj._id == load_id ? 'bg-load-active' : 'bg-load-inactive'
+              %>
+
+              <tr class="<%= index%2 == 0 ? 'bg-line-swap' : 'bg-main-color' %>">
+
+                <!-- 1.) mg-s  มีผลต่อความสูงของแถว -->
+                <td class="al-c">
+                  <form action="<%= PATH_LOAD %>" method="post" style="width: 100%">
+                    <!-- hidden-loop -->
+                    <input type="hidden" name="_id" value="<%= obj._id %>">
+                    <!-- hidden : เหมือนกันหมด -->
+                    <input type="hidden" name="load_id" value="<%= obj._id %>">
+                    <input type="hidden" name="rpp" value="<%= rpp %>">
+                    <input type="hidden" name="sip" value="<%= sip %>">
+                    <input type="hidden" name="page" value="<%= page %>">
+                    <button type="submit" class="pd-l-l pd-r-l pd-t-s pd-b-s <%= classLoad %>">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                  </form>
+                </td>
+
+                <!-- 2.) deviceId -->
+                <td class="al-c" title="<%= obj.deviceId %>"><%= obj.deviceId??'-' %></td>
+                
+                <!-- 3.) deviceName -->
+                <td class="al-l pd-l-s" title="<%= obj.deviceName %>"><%= obj.deviceName??'-' %></td>
+
+                <!-- 4.) ปุ่มลบ -->
+                <td class="al-c">
+                  <% if(obj.isCanDelete && obj.canDelete != false){ %>
+                    <form class="" action="<%= PATH_DELETE %>" method="post">
+                      <!-- hidden-loop -->
+                      <!-- <input type="hidden" name="_id" value="<= obj._id >"> -->
+                      <input type="hidden" name="_id_toDelete" value="<%= obj._id %>">
+                      <input type="hidden" name="Id_toDelete" value="<%= obj.deviceId %>">
+                      <!-- hidden : เหมือนกันหมด -->
+                      <input type="hidden" name="load_id" value="<%= load_id %>">
+                      <input type="hidden" name="rpp" value="<%= rpp %>">
+                      <input type="hidden" name="sip" value="<%= sip %>">
+                      <input type="hidden" name="page" value="<%= page %>">
+                      <!-- btn-delete ใช้สำหรับ Swal -->
+                      <button type="button" class="btn-delete bg-delete pd-l-l pd-r-l pd-t-s pd-b-s">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </form>
+                  <% }else{ %>
+                    <span>-</span>
+                  <% } %>
+                </td>
+
+                <!-- 5.) ประวัติการเปลี่ยนแปลง -->
+                <td class="al-c pd-l-s pd-r-s" title="ประวัติการเปลี่ยนแปลง">
+                  <% if(obj.changesHistoryCount > 0) { %>
+                    <form action="<%= PATH_CHANGES %>" method="post">
+                      <input type="hidden" name="deviceId" value="<%= obj.deviceId %>">
+                      <!-- btn-print-changes ใช้สำหรับ Swal -->
+                      <button type="button" class="btn-print-changes bg-change pd-l-l pd-r-l pd-t-s pd-b-s">
+                        <i class="fas fa-print"></i>
+                      </button>
+                    </form>
+                  <% }else{ %>
+                    <span>-</span>
+                  <% } %>
+                </td>
+
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>  
+
+      </section>
+
+    </section>
+
+  </main>  
+
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script type="text/javascript">
+    var PATH_MAIN = `<%= PATH_MAIN %>` ;     
+    var PATH_FETCH = `<%= PATH_FETCH %>` ;
+    var PATH_PRINT = `<%= PATH_PRINT %>` ;   
+    var PATH_ADD_TRIGGER = `<%= PATH_ADD_TRIGGER %>` ;  
+    var PREFIX = '<%= PREFIX %>' ; 
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/devices.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/devices.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- triggerRowTemplate -->
+<template id="triggerRowTemplate">
+  <div class="flex-row">
+    <input class="btn al-c col-sm-0-5 bg-up" type="button" value="&#9650;" tabindex = "-1" 
+           onclick="moveListUp(this)">
+    <input class="btn al-c col-sm-0-5 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+           onclick="moveListDn(this)">
+
+    <select  class="col-sm-2 triggerStatus al-c fc-white" 
+             name="triggerStatus"  required
+             onchange="toActive(this)">
+      <option value="active" selected>active</option>
+      <option value="-">-</option>
+    </select>
+
+    <select class="col-sm-2-5 triggerKey al-c" name="triggerKey">      
+    </select>
+           
+    <input class="col-sm-2 triggerMin al-r pd-r-s no-arrow" type="number" 
+           placeholder="Trigger Min"
+           name="triggerMin">
+
+    <input class="col-sm-2 triggerMax al-r pd-r-s no-arrow" type="number" 
+           placeholder="Trigger Max"
+           name="triggerMax">
+    <input class="btn al-c col-sm-0-5 bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+           onclick="removeTriggerRow(this)">
+  </div>
+</template> 

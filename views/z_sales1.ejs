@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fontsAnuphan.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flex.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/doc_input.css?v=<%= time %>"> <!-- ใช้ซ้ำทุกเอกสาร -->
+  <link rel="stylesheet" href="/css/doc_table.css?v=<%= time %>">  
+  <link rel="stylesheet" href="/css/quotation.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/quotation.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <!-- Top Toolbar -->
+  <header class="header-ctn">
+    <section class="header-toolbar">
+
+    <!-- 1 -->
+     <form class="header-toolbar-1 search-form" onsubmit="event.preventDefault();">
+
+        <!-- ใช้สำหรับระบุว่าจะค้นหาที่คอเล็กชั่นไหน -->
+        <input type="hidden" name="collName" value="<%= COLL_NAME %>">
+
+        <input class="al-c bdr3 no-x" type="search" autocomplete="off"                  
+                title="เลขที่/ปี-เดือน-วัน/ลูกค้า"
+                placeholder="เลขที่/ปี-เดือน-วัน/ลูกค้า" name="sip">
+        <button class="btn-xlh btn-sm bg-search btn-search-docs" title="ค้นหาเอกสาร">
+          <i class="fa fa-search"></i>
+        </button>
+
+        <button class="btn-xlh btn-sm bg-clear mg-l-m btn-clear-search" title="ล้างผลการค้นหา" >
+          <i class="fa fa-broom"></i>
+        </button>
+        <select class="al-l w-100 h-100 bdr3 fs-m select-doc-to-load" 
+                style="min-width:350px;"></select>
+
+        <input class="al-c bdr3 h-100 search-res-num" type="text" style="width:60px;" readonly>
+
+        <!--  -->
+        <button class="btn-xlh btn-sm bg-load btn-load-doc" title="โหลดเอกสาร">
+          <i class="fa fa-download"></i>
+        </button>        
+      </form>
+
+      <!-- 2 -->
+      <div class="header-toolbar-2">
+        <button class="btn-xlh btn-sm bg-cancel" 
+                id="btnCancelDoc"  title="ยกเลิกเอกสาร (ไม่สามารถแก้ไขได้) เสนอลูกค้าแล้ว แต่ลูกค้าไม่ตอบสนอง">
+          <i class="fa fa-ban mg-r-s"></i>ยกเลิก
+        </button>
+
+        <button class="btn-xlh btn-sm bg-finish mg-l-l" 
+                id="btnFinishDoc"  title="จบเอกสาร (ไม่สามารถแก้ไขได้) เสนอลูกค้าแล้ว ลูกค้าซื้อหรือว่าจ้างตามเอกสารนี้">
+          <i class="fa fa-flag-checkered mg-r-s"></i>จบ
+        </button>
+      </div>
+
+      <!-- 3 -->
+      <div class="header-toolbar-3" >
+        <button class="btn-xlh bg-change pd-l-l pd-r-l" id="btnPrintChanges" title="พิมพ์ข้อมูลการเปลี่ยนแปลง">
+          <i class="fa-solid fa-print mg-r-s"></i>Changes
+        </button>
+
+        <button class="btn-xlh btn-sm bg-download mg-l-l" id="btnDownloadImage" title="ดาวน์โหลดภาพ">
+          <i class="fa fa fa-download mg-r-s"></i>ภาพ
+        </button>
+
+        <button class="btn-xlh btn-sm bg-download mg-l-l" id="btnDownloadPDF" title="ดาวน์โหลด PDF">
+          <i class="fa fa fa-download mg-r-s"></i>PDF
+        </button>
+
+        <button class="btn-xlh bg-print pd-l-l pd-r-l mg-l-l" id="btnPrint" title="พิมพ์">
+          <i class="fa-solid fa-print mg-r-s"></i>HTML
+        </button>
+      </div>
+
+      <!-- 4 -->
+      <div class="header-toolbar-4">
+        <button class="btn-xlh btn-sm bg-save" id="btnSave" title="บันทึก">
+          <i class="fa fa fa-save mg-r-s"></i>บันทึก
+        </button>
+      </div>
+
+      <!-- 5 -->
+      <div class="header-toolbar-5">
+        <button class="btn-xlh btn-sm bg-new" 
+                id="btnClone" title="ทำสำเนา">
+          <i class="fa fa-file-circle-plus mg-r-s"></i>ทำสำเนา
+        </button>
+
+        <button class="btn-xlh btn-sm bg-clear mg-l-xl"
+                id="btnReload" title="โหลดใหม่">
+          <i class="fa fa-rotate-right mg-r-m"></i>โหลดใหม่
+        </button>
+      </div>
+
+    </section>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="watermark">
+
+    <!-- PAPER FORM -->
+    <form id="paperForm" class="mg-b-xxl" autocomplete="off">
+
+      <section class="paper-ctn" id="paperCtn">
+
+        <!-- #1 : Paper Header  -->
+        <%- include('doc_paperHeader.ejs') %>
+        <!-- #2 : Title  -->
+        <%- include('doc_paperTitle.ejs', { isBillDoc: false, }) %>
+        <!-- #3 : ข้อมูลลูกค้า -->
+        <%- include('doc_customerZone.ejs', { isBillDoc: false, }) %>
+        <!-- #4 : ตาราง -->
+        <div id="tableListCtn">
+          <%- 
+            include('doc_tableZone.ejs', { 
+              isBillDoc : false,
+              show : 'remark' 
+            }) 
+          %>
+        </div>
+
+        <!-- #5 : สำหรับลูกค้า -->
+        <div class="row" id="bottomZoneCtn">
+
+          <!--  #5-1 -->
+          <div class="col-40 ba-k pd-l fs-sm bdr5">
+            <p>สำหรับลูกค้า : ยืนยันการว่าจ้างตามเงื่อนข้างต้น</p>
+            <p style="min-height: 55px;"></p>
+            <p class="al-c bt-k-d">ลายเซ็นผู้มีอำนาจ (ลงชื่อและประทับตรา)</p>
+            <p class="al-c row mg-t-m">
+              <span class="nowrap mg-l-xxl">วันที่ (</span>
+              <span class="w-100 bb-k-d"></span>
+              <span class="mg-r-xxl">)</span>
+            </p>
+          </div>
+
+          <!--  #5-2 -->
+          <div class="col-30"></div>
+
+          <!--  #5-3 -->
+          <div class="col-30">
+
+            <!--  -->
+            <select class="select-signature" tabindex="-1"
+                    id="selectProposerSignature" name="selectProposerSignature"
+                    title="เลือกแสดงลายเซ็นหรือไม่">
+              <option value="1" selected>แสดง</option>
+              <option value="0">ซ่อน</option>
+            </select> 
+
+            <!--  -->
+            <p id="proposerLabel">ผู้เสนอราคา</p>
+            
+            <!-- ภาพลายเซ็น -->
+            <div id="proposerImageSignatureCtn">
+              <% if(userImageSignature_Src) { %>
+              <img id="proposerImageSignature"
+                   onerror="this.style.display='none';"
+                   src="<%- userImageSignature_Src ? userImageSignature_Src : '' %>" 
+                   alt="ลายเซ็นผู้เสนอราคา">
+              <% } %>
+            </div>
+
+            <!-- ผู้เสนอราคา -->
+            <div class="al-c">
+
+              <!-- มาจาก Session : ดึง userId มาเลย  -->
+              <input type="hidden" id="proposerId" name="proposerId" tabindex="-1"
+                     value="<%= userId ? userId : '' %>">
+
+              <!--  -->     
+              <div id="proposerFullnameCtn">
+                <span>(</span>
+                <input type="text"  tabindex="-1"
+                       readonly
+                       id="proposerFullname" name="proposerFullname" 
+                       value="<%= userFullname ? userFullname : '' %>">
+                <span>)</span>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- 5 -->  
+        
+        
+      </section><!-- paper ctn -->
+    </form>
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const USER_ID_SESSION = `<%= userId %>` ;
+
+    const PATH_MAIN = `<%= PATH_MAIN %>` ; 
+    const PATH_FETCH = `<%= PATH_FETCH %>` ; 
+    const PATH_SEARCH = `<%= PATH_SEARCH %>` ; 
+    const PATH_SAVE = `<%= PATH_SAVE %>` ; 
+    const PATH_LOAD = `<%= PATH_LOAD %>` ; 
+    const PATH_PRINT = `<%= PATH_PRINT %>` ; 
+    const PATH_CHANGES = `<%= PATH_CHANGES %>` ; 
+    const PATH_STATUS = `<%= PATH_STATUS %>` ; 
+    const DOC_ID = `<%= DOC_ID %>` ; 
+    const SIP = `<%= SIP %>` ; 
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/doc_table.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/doc_modal.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/doc_print.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/doc_crudSame.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/doc_formAction.js?v=<%= time %>"></script>  
+  <script type="text/javascript" src="/js/doc_domContentLoaded.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/quotation.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/quotation.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+<!--  -->
+<!-- <section class="window-ctn pd-xs col-100" > -->
+
+<!-- 
+<div class="window-title bg-window-2" name="windowTitle">
+  <p class="bg-cornblue">
+    <span class="titleText1 fc-white pd-l-m">สรุปเอกสารเดือน : </span>
+    <span class="titleText2 fc-yellow fw-b"><= title ></span>
+    <span class="titleText2 fc-lime fw-b">( จำนวนเอกสาร = <= data.length >)</span>
+    <span class="close-window" onclick="closeWindow(this)">✖</span>
+    <span class="expand-window" onclick="copyTable(this)">copy</span>
+    <span class="clickable expand-window" 
+          data-direction="up"
+          onclick="moveWindow(this)">&#8679;</span>
+    <span class="clickable expand-window" 
+          data-direction="down"
+          onclick="moveWindow(this)">&#8681;</span>
+  </p>
+</div> 
+-->
+
+<div class="table-ctn" name="tableCtn">
+  <table>
+
+    <thead>
+      <tr class="<%= titleClassColor %> al-l">
+        <th class="<%= titleClassColor %>">
+          <p>
+            <span class="clickable close-window" onclick="closeWindow(this)">✖</span>
+            <span class="expand-window" onclick="copyTable(this)">copy</span>
+            <span class="clickable expand-window" 
+                  data-direction="up"
+                  onclick="moveWindow(this)">&#8679;</span>
+            <span class="clickable expand-window" 
+                  data-direction="down"
+                  onclick="moveWindow(this)">&#8681;</span>              
+          </p>
+        </th>
+        <th class="ov-hide" colspan="10">
+          <p>
+            <span class="fc-white pd-l-m"><%= titleConclude %> : </span>
+            <span class="fc-yellow"><%= title %></span>
+            <span class="fc-lime">[<%= data.length %>]</span>
+          </p>
+        </th>
+      </tr>
+
+      <!--  -->
+      <tr class="lh-xxl">
+        <th class="bg-eee">เลขที่เอกสาร</th>
+        <th class="bg-eee">สถานะ</th>
+        <th class="bg-eee">วันที่และเวลา</th>
+        <th class="bg-eee">รวม</th>
+        <th class="bg-eee">สาขา</th>
+        <th class="bg-eee">ยูสเซอร์</th>
+      </tr>
+    </thead>
+
+    <!--  -->
+    <% 
+      let sum_1_totalAmount = 0 
+      let sum_2_totalAmount = 0 
+      let sum_10_totalAmount = 0 
+    %>
+    <tbody>
+      <% data.forEach( (doc,index) => { %>
+      <% 
+        if(doc.docStatusNumber == 1) {
+          sum_1_totalAmount += (doc.totalAmount ?? 0)
+        }else if(doc.docStatusNumber == 2) {
+          sum_2_totalAmount += (doc.totalAmount ?? 0)
+        }else if(doc.docStatusNumber == 10) {
+          sum_10_totalAmount += (doc.totalAmount ?? 0)
+        }
+      %>
+      <tr class="al-r" >
+        <td class="al-c" style="background-color: white">
+          <span class="<%= doc.docStatusColor %> clickable"
+                onclick="reportByDocId('<%= doc.docId %>')"><%= doc.docId %></span>
+        </td>
+
+        <td class="al-l <%= doc.docStatusColor %>">[<%= doc.docStatusNumber %>] <%= doc.docStatus %></td>
+        <td class="al-c fc-blue" title="<%= doc.docDateTime %>"><%= doc.docDateTime %></td>
+        <td class="al-r fc-blue pd-r-s"><%= doc.totalAmount ?? '-' %></td>
+
+        <!--  -->
+        <td class="al-l">
+          <span class="fc-steelblue">[<%= doc.branchId %>]</span>
+          <span class="fc-slateblue"><%= doc.branchName.length > 20 ? doc.branchName.slice(0, 20) + '...' : doc.branchName %></span>
+        </td>
+
+        <!--  -->
+        <td class="al-l">
+          <span class="fc-plum">[<%= doc.userId %>]</span>
+          <span class="fc-mgt"><%= doc.userFullname.length > 20 ? doc.userFullname.slice(0, 20) + '...' : doc.userFullname %></span>
+        </td>
+      </tr>
+      <% }) %>
+      <!-- 1 -->
+      <tr>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r mg-r-m">รวม [1]</th>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r fc-blue"><%= sum_1_totalAmount > 0 ? sum_1_totalAmount : '-' %></th>
+        <th class="bg-eee al-l" colspan="2"></th>
+      </tr>
+      <!-- 2 -->
+      <tr>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r mg-r-m">รวม [2]</th>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r fc-blue"><%= sum_2_totalAmount > 0 ? sum_2_totalAmount : '-' %></th>
+        <th class="bg-eee al-l" colspan="2"></th>
+      </tr>
+      <!-- 10 -->
+      <tr>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r mg-r-m">รวม [10]</th>
+        <th class="bg-eee"></th>
+        <th class="bg-eee al-r fc-blue"><%= sum_10_totalAmount > 0 ? sum_10_totalAmount : '-' %></th>
+        <th class="bg-eee al-l" colspan="2"></th>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- </section> -->

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta') %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+
+  <% if (!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/termAndConditions.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/termAndConditions.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+
+
+<body>
+
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <%- include('partials/nav.ejs') %>
+
+  <header class="header-title bg-darkcyan">
+    <p class="al-c fc-white">
+      <i class="fas fa-file-contract mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <!--  -->
+  <main >
+
+    <p class="al-c fc-blue fs-n">
+      เว็บไซต์นี้ได้รับการพัฒนาขึ้นเพื่อการใช้งานภายในหน่วยงานโดยเฉพาะ ไม่ได้เปิดให้บุคคลทั่วไปใช้งาน
+    </p>
+
+    <h3>1. การเป็นเจ้าของลิขสิทธิ์</h3>
+    <p>
+      เว็บไซต์และเนื้อหาทั้งหมดที่ปรากฏบนเว็บไซต์นี้ รวมถึงแต่ไม่จำกัดเพียง รหัสซอร์สโค้ด, การออกแบบ, ข้อความ, กราฟิก,
+      โลโก้, รูปภาพ, วิดีโอ, และซอฟต์แวร์ เป็นลิขสิทธิ์ของ 
+      <span class="fc-cornblue"><%= SYS_OWNER_FULLNAME %></span>
+    </p>
+
+    <h3>2. การสงวนลิขสิทธิ์</h3>
+    <p>
+      ลิขสิทธิ์ทั้งหมดของเว็บไซต์นี้ถูกสงวนไว้ตามกฎหมาย ผู้ใช้งานจะต้องปฏิบัติตามกฎหมายลิขสิทธิ์และกฎหมายที่เกี่ยวข้องอื่น
+      ๆ อย่างเคร่งครัด
+    </p>
+
+    <h3>3. ข้อจำกัดในการใช้งาน</h3>
+    <p> ผู้ใช้งานตกลงที่จะไม่ดำเนินการดังต่อไปนี้ :  </p>
+    <ul >
+      <li>
+        <span class="fc-cornblue">ห้ามดัดแปลง : </span> ห้ามทำการแก้ไข, ดัดแปลง, ปรับปรุง, หรือสร้างงานต่อเนื่องจากเว็บไซต์หรือเนื้อหาใด ๆ
+        ของเว็บไซต์ไม่ว่าด้วยวัตถุประสงค์ใด ๆ
+      </li>
+      <li>
+        <span class="fc-cornblue">ห้ามจำหน่ายต่อ : </span> ห้ามจำหน่าย, ให้เช่า, ให้สิทธิ์การใช้งานช่วง, เผยแพร่, ส่งต่อ, หรือกระทำการใด ๆ
+        เพื่อการค้ากับเว็บไซต์หรือเนื้อหาใด ๆ ของเว็บไซต์
+      </li>
+      <li>
+        <span class="fc-cornblue">ห้ามทำซ้ำ : </span> ห้ามทำซ้ำ, คัดลอก, เผยแพร่ซ้ำ, ดาวน์โหลด, แสดงผล, โพสต์, หรือส่งต่อเนื้อหาใด ๆ
+        ของเว็บไซต์ในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรล่วงหน้า
+      </li>
+      <li>
+        <span class="fc-cornblue">ห้ามใช้เพื่อวัตถุประสงค์ที่ไม่เหมาะสม : </span> ห้ามใช้เว็บไซต์เพื่อวัตถุประสงค์ที่ผิดกฎหมาย, เป็นอันตราย, คุกคาม,
+        หมิ่นประมาท, ลามกอนาจาร, หรือก่อให้เกิดความเสียหายแก่ผู้อื่น
+      </li>
+    </ul>
+
+
+    <h3>4. การใช้งานตามสภาพ</h3>
+    <p>
+      เว็บไซต์นี้ให้บริการ "ตามสภาพ" (as is) และ "ตามที่มีอยู่" (as available) ซึ่งหมายความว่าผู้ใช้งานจะได้รับประโยชน์จากเว็บไซต์ในรูปแบบและคุณสมบัติที่มีอยู่จริงในปัจจุบัน
+    </p>    
+
+
+    <p class="al-c mg-t-xl">
+      หากมีข้อสงสัยหรือต้องการสอบถามเพิ่มเติมเกี่ยวกับข้อกำหนดและเงื่อนไขเหล่านี้
+      โปรดติดต่อเราที่
+    </p>
+    <p class="al-c mg-t-xl">
+      <span class="fc-cornblue">อิเมล์  :  <%= SYS_OWNER_EMAIL %> </span>
+      <span class="fc-cornblue">โทรศัพท์  :  <%= SYS_OWNER_PHONE %></span>
+    </p>
+
+  </main>
+
+  <%- include('partials/footer.ejs') %>
+  
+  <!--  -->
+  <% if (!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/termAndConditions.obf.js"></script>
+  <% }  %>
+</body>
+</html>
+

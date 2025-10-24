@@ -1,0 +1,175 @@
+<!-- <section class="window-ctn pd-xs col-100" > -->
+
+  <!-- 
+  <div class="window-title" name="windowTitle">
+    <p class="bg-dodgerblue">
+      <span class="titleText1 fc-white pd-l-m">ประวัติการยืมคืนไอเท็ม เดือน : </span>
+      <span class="titleText2 fc-yellow  fw-b"><%= title %></span>
+      <span class="close-window" onclick="closeWindow(this)">✖</span>
+      <span class="expand-window" onclick="copyTable(this)">copy</span>
+      <span class="clickable expand-window" 
+            data-direction="up"
+            onclick="moveWindow(this)">&#8679;</span>
+      <span class="clickable expand-window" 
+            data-direction="down"
+            onclick="moveWindow(this)">&#8681;</span>
+    </p>
+  </div> 
+  -->
+
+  <div class="table-ctn" name="tableCtn">
+    <table>
+
+      <colgroup>
+        <col style="width: 1%;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: 40px;">
+        <col style="width: 40px;">
+        <col style="width: 60px;">
+        <col style="width: 70px;">
+        <col style="width: 90px;">
+        <col style="width: 80px;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+      </colgroup>
+
+      <!--  -->
+      <thead>
+        <!--  -->
+        <tr class="bg-goldenrod al-l">
+          <th class="bg-goldenrod">
+            <p >
+              <span class="clickable close-window" onclick="closeWindow(this)">✖</span>
+              <span class="expand-window" onclick="copyTable(this)">copy</span>
+              <span class="clickable expand-window" 
+                    data-direction="up"
+                    onclick="moveWindow(this)">&#8679;</span>
+              <span class="clickable expand-window" 
+                    data-direction="down"
+                    onclick="moveWindow(this)">&#8681;</span>              
+            </p>
+          </th>
+          <th class="ov-hide" colspan="11">
+            <p class="">
+              <span class="fc-white pd-l-m">ประวัติไอเท็มเดือน : </span>
+              <span class="fc-yellow"><%= title %></span>
+              <span class="fc-lime">(จำนวน=<%= data.length %>)</span>
+            </p>
+          </th>
+        </tr>
+
+        <!--  -->
+        <tr class="lh-xxl">
+          <th class="al-c bg-eee">ลำดับ</th>
+          <th class="al-c bg-eee">ไอดี</th>
+          <th class="al-c bg-eee">ชื่อไอเท็ม</th>
+          <th class="al-c bg-eee">จำนวน</th>
+          <th class="al-c bg-eee">หน่วย</th>
+          <th class="al-c bg-eee">ราคา</th>
+          <th class="al-c bg-eee">รวม</th>
+          <th class="al-c bg-eee">เลขที่เอกสาร</th>
+          <th class="al-c bg-eee">วันที่</th>
+          <th class="al-c bg-eee">ลูกค้า</th>
+          <th class="al-c bg-eee">ผู้เสนอ</th>
+        </tr>
+      </thead>
+
+      <!--  -->
+      <tbody>
+      <% 
+        data.forEach( (item, index) => {
+          const itemId = item.itemId
+          const docs = item.docs
+          
+          // ถ้ามีเอกสาร
+          if(docs && docs.length > 0){ 
+
+            // วนลูปสร้างแถวเอกสาร - โดยซ้ำ item
+            docs.forEach( (doc, jndex) => {
+              var classColor = docs.length > 1 ? 'bg-white' : 'bg-white' ; 
+              const tableRows = doc.tableRows[0]
+        %>
+              <tr class="al-r <%= classColor %>">
+                <td class="al-c" style="background-color:white;">
+                  <%= jndex == 0 ? Number(index+1) : null %>
+                </td>
+                <!-- Item -->
+                <td class="al-l"><%= tableRows.itemId %></td>
+                <% let descriptionShow = tableRows.description.length > 70 ? tableRows.description.substring(0, 70) + '...' : tableRows.description  %>
+                <td class="al-l fc-blue"><%= descriptionShow %></td>
+                <td class="al-c fc-blue"><%= tableRows.quantity %></td>
+                <td class="al-c fc-gray"><%= tableRows.unit %></td>
+                <td class="al-c fc-blue"><%= tableRows.price %></td>
+                <td class="al-c fc-blue"><%= tableRows.amount %></td>
+                <!-- Doc -->
+                <td class="al-c">
+                  <a href="<%= global.DOMAIN_ALLOW %>/quotation?docId=<%= doc.docId %>" target="_blank">
+                    <span class="<%= doc.docStatusColor %>">[<%= doc.docStatusNumber %>]</span>
+                    <span class="<%= doc.docStatusColor %>"><%= doc.docId %></span>
+                  </a>
+                </td>
+                <td class="al-c <%= doc.docStatusColor %>">                  
+                  <%= doc.docDate %>
+                </td>
+                <td class="al-c fc-mgt" title="[<%= doc.customerId ? doc.customerId : '-' %>] <%= doc.customerName %>">
+                  <%= doc.customerId ? doc.customerId : '-' %>
+                </td>
+                <td class="al-c fc-plum" title="[<%= doc.proposerId %>] <%= doc.proposerFullname %>">
+                  <%= doc.proposerId %>
+                </td>
+              </tr>
+      <%
+            })  // forEach - in
+          }   // if
+        })  // forEach
+      %>
+      </tbody>
+    </table>
+  </div>
+
+<!-- </section> -->
+
+<!-- 
+
+  dataItemsInDoc ===> {
+    docs: [
+      [Object], [Object],
+      [Object], [Object],
+    ],
+    itemId: '001-011'
+  },
+
+  dataItemsInDoc[0] ===>  [
+    {
+      docs: [
+        {
+          docId: '25/08-00014',
+          docDate: '2025-08-19',
+          customerId: 1,
+          customerName: 1,
+          proposerId: 1,
+          proposerFullname: 1,
+          docStatusNumber: 1,
+          docStatus: 'สร้าง',
+          docStatusColor: 'fc-dodgerblue',
+          tableRows : [
+            {index: 1,itemId: '',no: '4',description: '',unit: '',price: '',quantity: '',amount: ''},
+            {index: 2,itemId: '',no: '5',description: '',unit: '',price: '',quantity: '',amount: ''}
+          ]
+        },
+        {
+          docId: '25/08-00006',
+          docDate: '2025-08-17',
+          customerId: 1,
+          customerName: 1,
+          proposerId: 1,
+          proposerFullname: 1,
+          docStatusNumber: 1,
+          docStatus: 'สร้าง',
+          docStatusColor: 'fc-dodgerblue'
+        },
+      ],
+      itemId: '1000001'
+    },
+-->

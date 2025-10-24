@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="/cdn/flatpickr.min.css"> -->
+  <!-- <script src="/cdn/flatpickr.js"></script> -->
+
+  <!-- Chart.js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> -->
+  <script src="/cdn/chart.js"></script>
+  <script src="/cdn/chartjs-adapter-date-fns.js"></script>
+  <script src="/cdn/chartjs-plugin-datalabels.js"></script>  
+
+  <% if(!IS_PRODUCTION) { %> 
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/proguessBar.css?v=<%= time %>">  
+  <link rel="stylesheet" href="/css/inputDoc.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/reportById.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/reportById.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %>   
+
+  <!-- Toolbar -->
+  <header class="header-ctn">
+    <section class="header-toolbar ">
+      
+      <!--  -->
+      <div class="header-toolbar-1">
+        <div class="flex-row">
+          <label class="mg-r-s lh-tb" for="selectDaysNumber">จำนวนวันย้อนหลัง</label>
+          <select class="al-c bdr3"  title="จำนวนวันย้อนหลัง"  
+                  style="min-width: 50px;"
+                  id="selectDaysNumber" name="selectDaysNumber">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="7">7</option>
+          </select>
+          <button class="btn btn-sm bg-load" title="เตรียมข้อมูล"
+                  id="btnGenerateReport"><i class="fa fa-gears mg-r-m"></i>เตรียมข้อมูล
+          </button>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="header-toolbar-2">
+        <div class="flex-row">
+          <label class="mg-r-s mg-l-xxl lh-tb" for="selectValueType">ประเภทข้อมูล</label>
+          <select class="al-c bdr3"  title="ประเภทข้อมูล"  
+                  style="min-width: 50px;"
+                  id="selectValueType" name="selectValueType">
+            <option value="avg">ค่าเฉลี่ย</option>
+            <option value="max">ค่าสูงสุด</option>
+            <option value="min">ค่าต่ำสุด</option>
+          </select>
+          <button class="btn btn-sm bg-create" title="สร้างกราฟ"
+                  id="btnCreateChart"><i class="fa fa-chart-line mg-r-m"></i>สร้างกราฟ
+          </button>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="header-toolbar-3">
+        <!-- <button class="btn btn-sm bg-switch" 
+                id="btnModeButton"><i class="fa fa-hand-pointer pd-r-m"></i>โหมดปุ่ม
+        </button>
+        <button class="btn btn-sm bg-load mg-l-s" title="แสดงแถบเครื่องค้นหา"
+                id="btnShowSearch"><i class="fa fa-download mg-r-s"></i>โหลด
+        </button> -->
+      </div>
+      
+      <!--  -->
+      <div class="header-toolbar-4">
+        <!-- <button class="btn btn-sm bg-new"  title="สร้างเอกสารใหม่"
+                id="btnNewDoc">
+          <i class="fa fa-file-circle-plus mg-r-s"></i>ใหม่
+        </button> -->
+      </div>
+
+      <!--  -->
+      <div class="header-toolbar-5">
+        <!-- <div class="d-flex align-items-center">
+          <button class="btn btn-sm bg-finish" title="จบเอกสาร"
+                  id="btnFinishDoc" >
+            <i class="fa fa fa-flag-checkered mg-r-s"></i>จบ
+          </button>
+          <button class="btn btn-sm bg-cancel mg-l-s" title="ยกเลิกเอกสาร"
+                  id="btnCancelDoc" >
+            <i class="fa fa fa-times-circle mg-r-s"></i>ยกเลิก
+          </button>
+        </div> -->
+      </div>
+
+    </section>
+  </header> 
+
+  <main class="">
+    <div class="chart-main-ctn"></div>
+  </main>
+
+  <%- include('partials/progressBar') %>
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    // const ids = JSON.parse(`<- JSON.stringify(ids) >`)  ;
+    // const socket = io();
+    const PATH_REPORT = JSON.parse(`<%- JSON.stringify(PATH_REPORT) %>`);
+    const DEVICE = JSON.parse(`<%- JSON.stringify(device) %>`);
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/reportById_progressBar.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/reportById.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/reportById.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<div class="flex-row justify-content-between bb-d lh-n mg-b-m ">
+  <div class="mg-l-m fw-b">
+    <i class="fas fa-clock" title="เวลา"></i>
+    <span class="<= item.fontColor > <= obj.id >-<= item.key >-timestamp">-</span>
+  </div>
+  <div class="<= item.fontColor > mg-r-m fw-b fs-xl <= obj.id >-<= item.key >-lastValue">-</div>
+</div>
+
+<div class="al-c">
+  <div class="fc-gray">
+    <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+    <span class="<= obj.id >-<= item.key >-timeInterval"><= item.timeInterval ></span>
+  </div>
+</div>
+
+<div class="flex-row justify-content-between mg-b-m">
+  <div class="pd-l-s fc-plum <= obj.id >-<= item.key >-min"><= item.min ></div>
+  <div class="fc-orange <= obj.id >-<= item.key >-max"><= item.max ></div>
+  <div class="pd-r-s fc-dodgerblue <= obj.id >-<= item.key >-avg"><= item.avg %></div>
+</div> 
+-->      
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<header class="header-ctn">
+  <section class="header-toolbar ">
+
+    <form class="header-toolbar-1 flex-row w-100">
+      <button class="col-sm-2 btn btn-sm bg-load nowrap" id="btnLoadLastDoc" title="โหลดเอกสารล่าสุด">
+        <i class="fa fa-download mg-r-s"></i>ล่าสุด
+      </button>
+      <input class="col-sm-7 al-c bdr3" type="search" autocomplete="off" 
+              title="เลขที่/ปี-เดือน-วัน"
+              required pattern=".{2,}"
+              placeholder="เลขที่/ปี-เดือน-วัน" id="sip" name="sip">
+      <button class="col-sm-1 btn btn-sm bg-search" id="btnSearchDocs" title="ค้นหาเอกสาร">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+    
+    <form class="header-toolbar-2 w-100">
+      <div class="flex-row">
+        <button class="col-sm-1 btn btn-sm bg-clear" title="ล้างผลการค้นหา" 
+                id="btnClearSearch" ><i class="fa fa-broom"></i></button>
+        <select class="col-sm-7 al-l bdr3 w-100" 
+                id="selectDocToLoad" name="selectDocToLoad"></select>
+        <input class="col-sm-1 al-c  bdr3" type="text" 
+                id="searchResNum" readonly>
+        <button class="col-sm-1 btn btn-sm bg-load" type="submit" 
+                id="btnLoadDoc" title="โหลดเอกสาร">
+          <i class="fa fa-download"></i>
+        </button> 
+      </div>
+    </form>
+
+    <div class="header-toolbar-3">
+      <button class="btn btn-sm bg-switch" 
+              id="btnModeButton">
+        <i class="fa fa-hand-pointer pd-r-m"></i>โหมดปุ่ม
+      </button>
+      <button class="btn btn-sm bg-load mg-l-s" title="แสดงแถบเครื่องค้นหา"
+              id="btnShowSearch">
+          <i class="fa fa-download mg-r-s"></i>โหลด
+      </button>
+    </div>
+    
+    <div class="header-toolbar-4">
+      <button class="btn btn-sm bg-new"  title="สร้างเอกสารใหม่"
+              id="btnNewDoc">
+        <i class="fa fa-file-circle-plus mg-r-s"></i>ใหม่
+      </button>
+    </div>
+
+    <div class="header-toolbar-5">
+      <div class="d-flex align-items-center">
+        <button class="btn btn-sm bg-finish" title="จบเอกสาร"
+                id="btnFinishDoc" >
+          <i class="fa fa fa-flag-checkered mg-r-s"></i>จบ
+        </button>
+        <button class="btn btn-sm bg-cancel mg-l-s" title="ยกเลิกเอกสาร"
+                id="btnCancelDoc" >
+          <i class="fa fa fa-times-circle mg-r-s"></i>ยกเลิก
+        </button>
+      </div>
+    </div>
+
+  </section>
+</header>  
+
+-->
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title><%= title %></title>
+
+  <% if(!global.IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/utils.css">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/flex.css">
+  <% } else { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css-min/print_users.min.css">
+  <% }  %>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    body{
+      max-width: 21cm;
+      margin: auto; 
+    }
+    main{ 
+      padding-top:0.5cm;
+      width: 19cm;
+      overflow: hidden;
+      margin: auto;
+    }
+    footer{ 
+      width: 19cm;
+      margin: auto;
+    }
+
+    p{ 
+      font-size: 0.85rem;
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 1px;
+      overflow: hidden;
+      font-size: 0.6rem; /* white-space: nowrap; */
+      background: white;
+    }
+
+    .page-break-after { 
+      page-break-after: always; 
+      border-bottom: 1px dashed gray ;
+      padding-bottom: 10px;
+    } 
+
+    @media print {  .no-print { display: none; } }
+  </style>
+</head>
+<body>
+
+  <main class="">
+    
+    <!--  -->
+    <p class="al-c fs-s"><%= title %> [<%= dateTime %>]</p>  
+
+    <table>
+
+      <!-- <colgroup>
+        <col style="width: 15%;">
+        <col style="width: 85%;">
+      </colgroup> -->
+
+      <thead>
+        <tr >
+          <th class="ba-k bg-eee">ไอดี</th>
+          <th class="ba-k bg-eee">ชื่อผู้ใช้</th>
+          <th class="ba-k bg-eee">สิทธิ์</th>
+          <th class="ba-k bg-eee">ชื่อ</th>
+          <th class="ba-k bg-eee">อิเมล์</th>
+          <th class="ba-k bg-eee">โทรศัพท์</th>          
+        </tr>
+      </thead>
+
+      <% usersFind.forEach( (user,index) => { %>
+      <tbody>
+
+        <%
+          const colorActive = user.userIsActive === 'active' ? '' : 'strike fc-777' ;
+        %>
+        <tr>
+          <td class="<%= colorActive %> ba-k al-c"><%= user.userId %></td>
+          <td class="<%= colorActive %> ba-k pd-l-s"><%= user.username %></td>
+          <td class="<%= colorActive %> ba-k al-c"><%= user.userAuthority %></td>
+          <td class="<%= colorActive %> ba-k pd-l-s">
+            <%= user.userPrefix %>
+            <%= user.userFirstname %>
+            <%= user.userLastname %>
+          </td>
+          <td class="<%= colorActive %> ba-k pd-l-s"><%= user.userEmail %></td>
+          <td class="<%= colorActive %> ba-k pd-l-s"><%= user.userPhone %></td>
+        </tr>
+      </tbody>
+      <% }) %>
+    </table>
+  </main>
+
+  <!--  -->
+  <footer class="d-flex justify-content-between al-c no-print mg-t-l">
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.print()">พิมพ์
+    </button>
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.close()">ปิดหน้าต่าง
+    </button>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>"> 
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/itemsCategory.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/itemsCategory.min.css?v=<%= time %>">
+  <% }  %>
+
+</head>
+<body>
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <% 
+    const isItem = item != null
+  %>
+
+  <main>
+    
+    <!-- Title -->
+    <section class="main-title">
+      <h1 class="al-c">
+        <i class="fas fa-layer-group mg-r-m"></i> 
+        <span><%= title %></span>
+      </h1>
+    </section>
+    
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** LEFT *****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- LEFT -->
+    <section class="main-left">
+
+      <form id="mainForm" class="" autocomplete="off" 
+            onsubmit="createSpinner()"
+            action="<%= PATH_SAVE %>" method="post">
+
+        <!-- hidden -->
+        <input type="hidden" name="rpp" value="<%= rpp %>">
+        <input type="hidden" name="sip" value="<%= sip %>">
+        <input type="hidden" name="page" value="<%= page %>">
+        
+        <!--  -->
+        <input type="hidden" id="_id" name="_id" value="<%= isItem ? item._id : '' %>">
+
+        <!-- #1 : Toolbar-->
+        <div class="toolbar-ctn d-flex justify-content-between">
+          <button type="button" class="btn  btn-sm  bg-new pd-r-l pd-l-l" 
+                  onclick="event.preventDefault();newJs(event)">
+            <i class="fas fa-plus-circle pd-r-m"></i>สร้างใหม่
+          </button>
+
+          <button type="button" class="btn btn-sm bg-print pd-r-l pd-l-l"
+                  onclick="event.preventDefault();printJs(event)">
+            <i class="fas fa-print pd-r-m"></i>พิมพ์
+          </button>
+
+          <button type="submit" class="btn  btn-sm  bg-save pd-r-l pd-l-l">
+            <i class="fas fa-save pd-r-m"></i>บันทึก
+          </button>
+        </div>
+
+        <!-- User Information -->
+        <div class="form-body">
+
+          <!-- Row1 -->
+          <div class="row">
+            <!--  -->
+            <div class="col-5 input-group">
+              <label class="pd-r-s al-l " title="เลขที่">
+                <i class="fas fa-hashtag mg-r-m"></i>เลขที่
+              </label>
+              <input class="al-c" type="number" id="categoryId" name="categoryId" 
+                     required readonly   
+                     placeholder="เลขที่" readonly
+                     value="<%= isItem ? item.categoryId : '' %>">
+            </div>
+
+            <!--  -->
+            <div class="col-5 input-group">
+              <label class="pd-r-s al-l " title="สถานะ">
+                <i class="fas fa-flag"></i> สถานะ
+              </label>
+              <select class="al-c" name="categoryStatus" id="categoryStatus">
+                <% if( isItem ){ %>
+                  <option <%= item.categoryStatus == 'active' ? '' : 'selected' %> value="">-</option>
+                  <option <%= item.categoryStatus == 'active' ? 'selected' : '' %> value="active">active</option>
+                <% }else{ %>
+                  <option value="-">-</option>
+                  <option value="active">active</option>
+                <% } %>
+              </select>
+            </div>
+
+          </div> <!-- Row1 -->
+
+          <!-- Row2 -->
+          <div class="row mg-t-s">
+
+            <!--  -->
+            <div class="col-5 input-group">
+              <label class="pd-r-s al-l" title="categoryName">
+                <i class="fas fa-font"></i> ชื่อหมวดหมู่ *
+              </label>
+              <input class="pd-l-m al-l" type="text"
+                     id="categoryName" name="categoryName" placeholder="ชื่อหมวดหมู่"
+                     required
+                     value="<%= isItem ? item.categoryName : '' %>">
+            </div>  
+
+            <!--  -->
+            <div class="col-5 input-group">
+              <label class="pd-r-s al-l " title="สี">
+                <i class="fas fa-palette"></i> สี
+              </label>
+              <select class="al-c" name="categoryColor" id="categoryColor">
+                <option <%= isItem && item.categoryColor == '' ? '' : 'selected' %> value="">-</option>
+                <option <%= isItem && item.categoryColor == 'CornFlowerBlue' ? 'selected' : '' %> value="CornFlowerBlue">ฟ้าดอกไม้</option>
+                <option <%= isItem && item.categoryColor == 'DodgerBlue' ? 'selected' : '' %> value="DodgerBlue">ฟ้าสด</option>
+                <option <%= isItem && item.categoryColor == 'SteelBlue' ? 'selected' : '' %> value="SteelBlue">เหล็กน้ำเงิน</option>
+                <option <%= isItem && item.categoryColor == 'GoldenRod' ? 'selected' : '' %> value="GoldenRod">ทอง</option>
+                <option <%= isItem && item.categoryColor == 'DarkSeagreen' ? 'selected' : '' %> value="DarkSeagreen">เขียวน้ำทะเล</option>
+                <option <%= isItem && item.categoryColor == 'Plum' ? 'selected' : '' %> value="Plum">ชมพู</option>
+                <option <%= isItem && item.categoryColor == 'Magenta' ? 'selected' : '' %> value="Magenta">ม่วง</option>
+              </select>
+            </div>
+
+          </div> <!-- Row2 -->
+
+        </div>
+
+      </form>
+
+    </section>
+      
+    
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** RIGHT ****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- RIGHT -->
+    <section class="main-right">
+
+      <!-- Search -->
+      <form class="row toolbar-ctn pd-b-m" 
+            action="<%= PATH_MAIN %>" method="get" 
+            onsubmit="createSpinner()">
+
+        <!-- -->
+        <input type="hidden" name="load_id" value="<%= load_id %>">
+        
+        <!--  -->
+        <div class="flex-row flex-nowarp w-100">
+          <button class="col-sm-1 btn btn-sm bg-search pd-l-l pd-r-l" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <input class="col-sm-5 al-c clickable" type="search"
+                 id="sip" name="sip" placeholder="เลขที่, ชื่อ"
+                 value="<%= sip ? sip : '' %>">
+          <label class="col-sm-2 al-r pd-r-s">แถว/หน้า</label>
+          <select class="col-sm-2 al-c" 
+                  name="rpp" id="rpp" onchange="this.form.submit()">
+            <option value="10" <%= rpp == '10' ? 'selected' : '' %> >10</option>
+            <option value="20" <%= rpp == '20' ? 'selected' : '' %> >20</option>
+            <option value="30" <%= rpp == '30' ? 'selected' : '' %> >30</option>
+            <option value="50" <%= rpp == '50' ? 'selected' : '' %> >50</option>
+            <option value="100" <%= rpp == '100' ? 'selected' : '' %> >100</option>
+            <option value="200" <%= rpp == '200' ? 'selected' : '' %> >200</option>
+            <option value="500" <%= rpp == '500' ? 'selected' : '' %> >500</option>
+            <option value="1000" <%= rpp == '1000' ? 'selected' : '' %> >1000</option>
+            <option value="2000" <%= rpp == '2000' ? 'selected' : '' %> >2000</option>
+          </select>
+        </div>
+
+      </form>
+
+      <!-- Pagination5btns -->
+      <div class="pgMainCtn">
+        <%- include('partials/pagination5btns3.ejs') %>
+      </div>
+
+
+      <!-- Pagination5btns/ตาราง -->
+      <section class="">
+
+        <!-- 
+        **********************************************************
+        **********************************************************
+        **********************************************************
+        *********************** Table ****************************
+        **********************************************************
+        **********************************************************
+        **********************************************************
+        -->
+
+        <!-- ตาราง -->
+        <div id="tableCtn" class="table-ctn">
+
+          <table>
+
+            <!--  -->
+            <colgroup>
+              <col style="width: 1%;">
+              <col style="width: auto;">
+              <col style="width: auto;">
+              <col style="width: 1%;">
+            </colgroup>
+
+            <!--  -->
+            <thead id="tableHeader">
+              <tr>
+                <th class="al-c pd-l-s pd-r-s"><i class="fas fa-edit"></i></th>
+                <th class="al-c clickable" onclick="sortTableJs(this, 1)" title="เลขที่">
+                    <i class="fas fa-hashtag"></i>
+                </th>
+                <th class="al-c clickable" onclick="sortTableJs(this, 2)" title="ชื่อ">
+                  <i class="fas fa-font"></i> 
+                </th>
+                <th class="al-c pd-l-s pd-r-s"><i class="fas fa-trash-alt"></i></th>
+              </tr>
+            </thead>
+
+            <tbody id="tableContent">
+              <% data.forEach( (obj,index) => { %>
+              <%
+                const lineSwap = index%2 == 0 ? 'bg-line-swap' : ''
+                const classLoad = obj._id == load_id ? 'bg-load-active' : 'bg-load-inactive'
+                const class1Color = obj.categoryStatus == 'active' ? 'fc-blue' : 'fc-gray fx-x'
+              %>
+
+              <!-- mg-s ที่ปุ่มมีผลต่อความสูงของแถว -->
+              <tr class="<%= index%2 == 0 ? 'bg-line-swap' : 'bg-main-color' %>">
+
+                <td class="al-c" title="<%= (page-1)*rpp+(index+1) %>">
+                  <form action="<%= PATH_LOAD %>" method="post" style="width: 100%">
+                    <!-- hidden-loop -->
+                    <input type="hidden" name="_id" value="<%= obj._id %>">
+                    <input type="hidden" name="load_id" value="<%= obj._id %>">
+                    <input type="hidden" name="rpp" value="<%= rpp %>">
+                    <input type="hidden" name="sip" value="<%= sip %>">
+                    <input type="hidden" name="page" value="<%= page %>">
+                    <button type="submit" class="mg-s pd-l-l pd-r-l pd-t-s pd-b-s <%= classLoad %>">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                  </form>
+                </td>
+
+                <td class="pd-l-s al-c nowrap t-categoryId <%= class1Color %>" title="<%= obj.categoryId %>">
+                  <%= obj.categoryId %>
+                </td>
+
+                <td class="pd-l-s nowrap <%= class1Color %>" title="<%= obj.categoryName %>">
+                  <%= obj.categoryName && obj.categoryName.length > 30 ? obj.categoryName.substring(0, 30) + '...' : obj.categoryName %>
+                </td>
+
+                <td class="al-c">
+                  <% if(obj.isCanDelete  && obj.canDelete != false  ){ %>
+                    <form class="" action="<%= PATH_DELETE %>" method="post">
+                      <!-- hidden-loop -->
+                      <input type="hidden" name="idToDelete" value="<%= obj._id %>">
+                      <input type="hidden" name="categoryId" value="<%= obj.categoryId %>">
+                      <!-- hidden -->
+                      <input type="hidden" name="load_id" value="<%= load_id %>">
+                      <input type="hidden" name="rpp" value="<%= rpp %>">
+                      <input type="hidden" name="sip" value="<%= sip %>">
+                      <input type="hidden" name="page" value="<%= page %>">
+                      <!--  -->
+                      <!-- btn-delete ใช้สำหรับ SWal -->
+                      <button type="submit" class="mg-s btn-delete bg-delete pd-l-l pd-r-l pd-t-s pd-b-s">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </form>
+                  <% }else{ %>
+                    <span class="fc-gray">-</span>
+                  <% } %>
+                </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>  
+
+      </section>
+
+    </section>
+
+  </main>  
+
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script type="text/javascript">
+    var PATH_MAIN = `<%= PATH_MAIN %>` ;     
+    var PREFIX = '<%= PREFIX %>' ; 
+    var PATH_PRINT = `<%= PATH_PRINT %>` ;
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/itemsCategory.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/itemsCategory.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

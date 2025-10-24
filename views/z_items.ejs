@@ -1,0 +1,733 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/paginationItems.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>"> 
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/items.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/items.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <%
+    const isItem = item != null
+  %>
+
+  <main >
+
+    <!-- Title -->
+    <section class="main-title">
+      <h1 class="al-c">
+        <i class="fas fa-box mg-r-m"></i> 
+        <span><%= title %></span>
+      </h1>
+    </section>
+
+    <!-- Main Form -->
+    <form action="<%= PATH_SAVE %>" id="mainFormCtn"
+          method="post"  enctype="multipart/form-data">
+
+      <input type="hidden" name="loadId" value="<%= loadId %>">
+      <input type="hidden" name="page" value="<%= pageAct %>">
+      <input type="hidden" name="rpp" value="<%= rpp %>">
+      <input type="hidden" name="sip" value="<%= sip %>">  
+      <input type="hidden" name="scid" value="<%= scid %>">
+      <input type="hidden" name="sis" value="<%= sis %>">
+
+      <!-- Toolbar -->
+      <section id="toolbarCtn">
+        
+        <button type="submit" class="btn btn-sm bg-save pd-r-l pd-l-l">
+          <i class="fas fa-save pd-r-m"></i>บันทึก
+        </button>
+
+        <button class="btn btn-sm bg-print pd-r-l pd-l-l" id="btnPrintItems">
+          <i class="fas fa-print pd-r-m"></i>พิมพ์
+        </button>
+
+        <button class="btn btn-sm bg-new pd-r-l pd-l-l" id="btnCreateNew">
+          <i class="fas fa-plus-circle pd-r-m"></i>สร้างใหม่
+        </button>
+
+        <button class="btn btn-sm bg-clear pd-r-l pd-l-l" id="btnClearForm">
+          <i class="fas fa-eraser pd-r-m"></i>ล้าง
+        </button>
+
+  
+      </section>
+  
+      <!-- 
+      **********************************************************
+      **********************************************************
+      **********************************************************
+      *********************** Form *****************************
+      **********************************************************
+      **********************************************************
+      **********************************************************
+      -->
+
+      <!-- Form -->
+      <section id="formCtn">
+        
+        <!-- #1  -->
+        <div class="row">
+
+          <div class="col-f flex-row">
+
+            <!--  -->
+            <div class="col-sm-4-5 input-group">
+              <label class="mg-r-l" title="<%= ITEM_TYPE_DESCRIPTION %>">
+                <i class="fas fa-id-badge"></i>
+                <span>ไอดี/บาร์โค้ด</span><span class="fc-blue mg-l-m">*</span>
+              </label>
+              <input class="al-c" type="text" placeholder="ไอดี/บาร์โค้ด"
+                      required                      
+                      id="itemId" name="itemId" 
+                      <%= isItem && item.itemId ? 'readonly' : '' %>
+                      title="<%= ITEM_TYPE_DESCRIPTION %>"
+                      pattern="<%= ITEM_TYPE_PATTERN %>"
+                      value="<%= isItem ? item.itemId : '' %>" >
+            </div>
+
+            <!--  -->
+            <div class="col-sm-5-5 input-group">
+              <label class="mg-r-l" title="_id">
+                <span>_id</span>
+              </label>
+              <input class="al-c" type="text" placeholder="_id"                    
+                     readonly
+                     id="_id" name="_id" 
+                     value="<%= isItem ? item._id : '' %>" >
+            </div>
+          </div>
+        </div> <!-- #1  -->
+
+
+        <!-- #2 -->
+        <div class="flex-main">
+        
+          <!--  -->
+          <div class="flex-4 flex-row">
+
+            <!--  -->
+            <div class="col-sm-3-5 input-group">
+              <label class="mg-r-s" title="Item ID">
+                <i class="fas fa-box"></i>
+                <span>แพคเกจ</span><span class="fc-blue mg-l-m">*</span>
+              </label>
+              <%
+                const color_itemPackageType = (isItem && item.itemPackageType == 'set') ? 'bg-gold' : 'bg-deepskyblue'; 
+              %>
+              <select class="al-c <%= color_itemPackageType %>" title="สินค้าเป็นเซ็ตหรือเดี่ยว" 
+                      required
+                      id="itemPackageType" name="itemPackageType">
+                <option value="">-</option>
+                <option value="set" <%= (isItem && item.itemPackageType == 'set') ? 'selected' : '' %> >เซ็ต</option>
+                <option value="single" <%= (isItem && item.itemPackageType == 'single') ? 'selected' : '' %> >เดี่ยว</option>
+              </select>
+            </div>
+
+            <!--  -->
+            <div class="col-sm-6-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-layer-group"></i>
+                <span>หมวดหมู่</span><span class="fc-blue mg-l-m">*</span>
+                <!-- <a class="mg-l-m clickable fc-green" title="เพิ่มหมวดหมู่ใหม่"
+                   id="newCategory"><i class="fas fa-plus-circle pd-r-m"></i>
+                </a> -->
+              </label>
+  
+              <!--  -->
+              <!-- <input class="al-c dp-n" type="text"  autocomplete="off"
+                     placeholder="หมวดหมู่ใหม่"
+                     id="categoryNew" name="categoryNew" > -->
+              <!--  -->
+              <select class="al-l pd-l-m" title="หมวดหมู่"
+                      required
+                      id="categoryId" name="categoryId" >
+                <option value="">-</option>      
+                <% dataItemsCategory.forEach( obj => { %>
+                <option value="<%= obj.categoryId %>" <%= ( isItem && item.categoryId == obj.categoryId) ? 'selected' : '' %>>
+                  [<%= obj.categoryId %>] <%= obj.categoryName %>
+                </option>
+                <% }) %>
+              </select>
+            </div>
+          </div>
+  
+          <!--  -->
+          <div class="flex-6 flex-row">
+
+            <!--  -->
+            <div class="col-sm-3 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-flag"></i>
+                <span>สถานะ</span>
+                <span class="fc-blue">*</span>
+              </label>
+              <%
+                let color_itemStatus = (isItem && item.itemStatus == 'active') ? 'bg-mediumspringgreen' : 'bg-lired';
+              %>
+              <select class="al-c <%= color_itemStatus %>" title="สถานะ จะไปปรากฎในหน้าจัดการคลังสินค้า" id="itemStatus" name="itemStatus">
+                <option value="">-</option>              
+                <option value="active" <%= (isItem && item.itemStatus == 'active') ? 'selected' : '' %> >active</option>              
+              </select>
+            </div>
+
+            <!--  -->
+            <div class="col-sm-3-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-store"></i>
+                <span>วางขาย</span><span class="fc-blue mg-l-m">*</span>
+              </label>
+              <%
+                let color_itemOnSale = (isItem && item.itemOnSale == '1') ? 'bg-mediumspringgreen' : 'bg-lired';
+              %>
+
+              <select class="al-c <%= color_itemOnSale %>" title="วางขาย จะไปปรากฎในหน้าขาย" 
+                      required
+                      id="itemOnSale" name="itemOnSale">
+                <option value="">-</option>
+                <option value="1" <%= (isItem && item.itemOnSale == '1') ? 'selected' : '' %> >วางขาย</option>
+                <option value="0" <%= (isItem && item.itemOnSale == '0') ? 'selected' : '' %> >ไม่วางขาย</option>              
+              </select>
+            </div>
+
+            <!--  -->
+            <div class="col-sm-3-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-warehouse"></i>
+                <span>สถานะสต็อก</span><span class="fc-blue mg-l-m">*</span>
+              </label>
+              <%
+                let color_itemStock = (isItem && item.itemStock == '1') ? 'bg-mediumspringgreen' : 'bg-lired';
+              %>
+
+              <select class="al-c <%= color_itemStock %>" title="สินค้าที่มีจำนวนเบิกได้/ไม่จำกัดจำนวน " 
+                      required
+                      id="itemStock" name="itemStock">
+                <option value="">-</option>
+                <option value="1" <%= (isItem && item.itemStock == '1') ? 'selected' : '' %> >สต็อก</option>
+                <option value="0" <%= (isItem && item.itemStock == '0') ? 'selected' : '' %> >ไม่มีสต็อก</option>              
+              </select>
+            </div>
+          </div>
+
+        </div> <!-- #2 -->
+
+        <!-- #3 -->
+        <div class="flex-main">
+
+          <!--  -->
+          <div class="flex-5 flex-row">
+
+            <div class="col-sm-7-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-font"></i>
+                <span>ชื่อ</span><span class="fc-blue mg-l-m">*</span>
+              </label>
+              <input class="al-l pd-l-m" type="text" 
+                    placeholder="ชื่อ" title="ชื่อ" 
+                    id="itemName" name="itemName" 
+                    value="<%= isItem ? item.itemName : '' %>">
+            </div>
+
+            <div class="col-sm-2-5 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>ราคาขาย</span>
+              </label>
+              <input class="al-r pd-l-m" type="number" 
+                    placeholder="ราคา (บาท)" title="ราคา (บาท)"
+                    id="itemPrice" name="itemPrice" 
+                    value="<%= isItem ? item.itemPrice : '' %>">
+            </div>
+            
+          </div>
+
+          <!--  -->
+          <div class="flex-5 flex-row">
+            <!--  -->
+            <div class="col-sm-4 input-group">
+              <label class="pd-r-s">
+                <i class="fas fa-balance-scale"></i>
+                <span>หน่วย</span><span class="fc-blue mg-l-m">*</span>
+              </label>          
+              <input class="al-c" type="text" 
+                     placeholder="หน่วย" title="Unit"
+                     required
+                     id="itemUnit" name="itemUnit" 
+                     value="<%= isItem ? item.itemUnit : '' %>">
+            </div>
+            <!--  -->
+            <div class="col-sm-6 input-group">
+              <label class="pd-r-s" title="วันที่ลงทะเบียน">
+                <i class="fas fa-calendar-alt mg-r-s"></i>วันที่ลงทะเบียน
+              </label>
+              <input type="date" class="al-c bg-white" 
+                     id="itemRegisterDateTh" name="itemRegisterDateTh"                   
+                     value="<%= isItem ? item.itemRegisterDate : '' %>">
+            </div>
+          </div>
+
+        </div> <!-- #3 -->
+  
+        <!-- #4 -->
+        <div class="">
+          <!--  -->
+          <div class="col-f input-group">
+            <label class="pd-r-s">
+              <i class="fas fa-align-left"></i>
+              <span>รายละเอียด</span>
+            </label>
+            <input class="al-l pd-l-m" type="text" 
+                   placeholder="รายละเอียด" title="รายละเอียด" 
+                   id="itemDesc" name="itemDesc" 
+                   value="<%= isItem ? item.itemDesc : '' %>">
+          </div>
+        </div> <!-- #4 -->
+
+        <!-- #5 -->
+        <div class="">   
+          <div class="col-f input-group">
+            <label class="pd-r-s">
+              <i class="fas fa-image"></i>
+              <span>อัปโหลดภาพ</span>
+            </label>
+            <input class="al-l pd-l-m" type="file" 
+                   title="ไฟล์ภาพ .jpg, .jpeg, .png ไม่เกิน 10MB"
+                   accept="image/jpeg, image/jpg, image/png"
+                   id="itemImage" name="itemImage" >
+          </div>
+        </div>  <!-- #5 -->
+
+      </section>
+  
+      <!-- Image -->
+      <section id="imageMainCtn" class="bg-liblue d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-f al-c" id="imageCtn">
+            <% if( isItem && item.itemImageDataUrl){ %>
+              <a href="<%= PATH_VIEW %>/<%= item.itemImage %>" target="_blank">
+                <img src="<%= item.itemImageDataUrl %>" alt="Item Image">
+              </a>
+            <% }else{ %>  
+              <div class="al-c fs-m">ไม่มีภาพ</div>
+            <% } %>  
+          </div>
+        </div>
+      </section>
+
+      <!-- สินค้าในเซ็ต -->
+      <section id="itemsInSetMainCtn">
+
+        <!--  -->
+        <div class="flex-row justify-content-between">
+
+          <div class="col-sm-5">
+            <label class="text-white mg-l-s">ไอเท็มในเซ็ต</label>
+            <button type="button" class="btn btn-sm bg-undo" 
+                    id="btnUndoItemInSet">
+              <i class="fas fa-undo mg-r-m"></i>ย้อน
+            </button>
+          </div>
+
+          <div class="col-sm-5 modalCtn">
+            <input class="al-c w-100" type="text" autocomplete="off"
+                   placeholder="เลือกไอเท็มในเซ็ต" title="เลือกไอเท็มในเซ็ต" 
+                   id="chooseItemInSet"
+                   onfocus="popModalItems(event)" 
+                   oninput="popModalItems(event)" >
+            <div class="modal">
+              <div class="modal-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- รายการ -->
+        <div id="itemsInSetCtn">
+          <% if( isItem && item.itemPackageType == 'set' && item.itemsInSet.length > 0 ){ %>
+          <% item.itemsInSet.forEach( ( item, index ) => { %>
+          <div class="mg-t-s itemsInSetRow">
+            <div class="flex-row">
+              <input class="col-sm-7 al-l pd-l-s" type="text" placeholder="ไอดีไอเท็มที่อยู่ในเซ็ต"
+                    readonly
+                    name="itemIdInset" value="<%= item.itemId %>">
+              <input class="col-sm-2 al-c pd-l-s" type="text" placeholder="หน่วยนับ"
+                    readonly
+                    name="itemUnitInset" value="<%= item.itemUnit %>">
+              <button class="col-sm-1 btn btn-sm bg-red" 
+                      onclick="removeItemFromSet(event)"><i class="fas fa-trash"></i></button>
+            </div>
+            <div class="flex-row">
+              <input class="col-sm-1-5 al-r" type="number" placeholder="จำนวนไอเท็มที่อยู่ในเซ็ต"
+                     required min="1" step="1"
+                     oninvalid="this.setCustomValidity('จำนวนต้องมากกว่า 0')"
+                     oninput="this.setCustomValidity('')"
+                    name="itemAmountInset" value="<%= item.itemAmount %>">
+              <input class="col-sm-8-5 al-l pd-l-s" type="text" placeholder="ชื่อไอเท็มที่อยู่ในเซ็ต"
+                    readonly
+                    name="itemNameInset" value="<%= item.itemName %>">
+            </div>
+          </div>
+          <% }) %>
+          <% } %>
+        </div>
+
+      </section>
+
+    </form>
+
+
+    <!--  
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    **************************** Search ***********************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- #4 : ค้นหา -->
+    <form  class="bb2" id="searchForm" action="<%= PATH_MAIN %>" method="get">
+
+      <!-- hidden -->
+      <input type="hidden" name="loadId" value="<%= loadId %>">
+      <input type="hidden" name="page" value="<%= pageAct %>">
+
+      <!--  -->
+      <div class="search-1 flex-row flex-nowarp">
+        <button class="col-sm-1 btn btn-sm bg-search pd-l-l pd-r-l" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+        <input class="col-sm-7 al-c clickable" type="search" autocomplete="off" 
+               placeholder="ไอดี/ชื่อ/รายละเอียด"
+               name="sip" value="<%= sip %>">
+        <input class="col-sm-2 al-c" type="text" readonly value="<%= totalDocs %>">
+      </div>
+
+      <!--  -->
+      <div class="search-2 flex-row flex-nowarp">
+
+        <select class="col-sm-5 al-l" title="ค้นหาตามหมวดหมู่" id="scid" name="scid"  >
+          <option value="">-</option>
+          <% dataItemsCategory.forEach( obj => { %>
+          <option value="<%= obj.categoryId %>" <%= obj.categoryId == scid ? 'selected' : ''  %>>
+            [<%= obj.categoryId %>] <%= obj.categoryName %>
+          </option>
+          <% }) %>
+        </select>
+
+        <!-- ค้นหาตามสถานะ -->
+        <select class="col-sm-5 al-c" title="ค้นหาตามสถานะ" id="sis" name="sis">
+          <option value="">-</option>
+          <option value="active" <%= sis == 'active' ? 'selected' : '' %>>active</option>
+        </select>
+      </div>
+
+      <!-- แถว/หน้า -->
+      <div class="search-3 flex-row flex-nowarp">
+        <label class="col-sm-5 al-r mg-r-s">แถว/หน้า</label>
+        <select class="col-sm-5 al-c" name="rpp" id="rpp" onchange="this.form.submit()">
+          <option value="20" <%= rpp==20 ? 'selected' : '' %> >20</option>
+          <option value="25" <%= rpp==25 ? 'selected' : '' %> >25</option>
+          <option value="30" <%= rpp==30 ? 'selected' : '' %> >30</option>
+          <option value="50" <%= rpp==50 ? 'selected' : '' %> >50</option>
+          <option value="100" <%= rpp==100 ? 'selected' : '' %> >100</option>
+          <option value="200" <%= rpp==200 ? 'selected' : '' %> >200</option>
+          <option value="500" <%= rpp==500 ? 'selected' : '' %> >500</option>
+          <!-- <option value="1000" <= rpp==1000 ? 'selected' : '' > >1000</option> -->
+          <!-- <option value="2000" <= rpp==2000 ? 'selected' : '' > >2000</option> -->
+        </select>
+      </div>
+      
+    </form>
+      
+
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** Pagination ***********************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <section id="pgCtn">
+      <%- include('partials/paginationItems.ejs' ) %>
+    </section>
+
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** Table ****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!-- Table -->
+    <section class="table-ctn" id="tableCtn" >
+
+      <colgroup>
+        <col style="width: 1%;">
+        <col style="width: 1%;">
+        <col style="width: 1%;">
+        <col style="width: 1%;">
+        <col style="width: 1%;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: 1%;">
+      </colgroup>
+
+      <table>
+        <thead id="tableHeader">
+          <tr>
+            <th class="al-c bg-white"><i class="fas fa-edit"></i></th>
+            <th class="al-c"><i class="fas fa-image"></i></th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 2)" title="สถานะ">
+              <i class="fas fa-flag"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 3)" title="วางขาย">
+              <i class="fas fa-store"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 4)" title="สถานะสต็อก">
+              <i class="fas fas fa-warehouse"></i>
+            </th> 
+            <th class="al-c clickable" onclick="sortTableJs(this, 5)" title="แพคเกจ">
+              <i class="fas fas fa-box"></i>
+            </th> 
+            <th class="al-c clickable" onclick="sortTableJs(this, 6)" title="ไอดี">
+              <i class="fas fa-id-badge"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 7)" title="ชื่อ">
+              [<i class="fas fa-money-bill-wave"></i>]
+              <i class="fas fa-font"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 8)" title="หน่วย">
+              <i class="fas fa-balance-scale"></i>
+            </th>   
+            <th class="al-c clickable" onclick="sortTableJs(this, 9)" title="หมวดหมู่">
+              <i class="fas fa-layer-group"></i>
+            </th>         
+            <th class="al-c"><i class="fas fa-trash-alt"></i></th>
+          </tr>
+        </thead>
+
+        <!--  -->
+        <tbody id="tableContent">
+
+          <% dataItems.forEach( (obj, index) => { %>
+          <tr class="<%= index%2 == 0 ? 'bg-line-swap' : 'bg-main-color' %>">
+
+            <% 
+              const class1Color = obj.itemStatus == 'active' ? 'fc-blue' : 'fc-gray fx-x'
+              const class2Color = obj.itemStatus == 'active' ? '' : 'fx-x'
+              const class3Color = obj.itemStatus == 'active' ? 'fc-green' : 'fc-gray  fx-x'  
+            %>
+
+            <!-- 1 : ปุ่มโหลด -->
+            <!-- mg-t-s mg-b-s มีผลต่อความสูงของแถว -->
+            <td class="al-c bg-white">
+              <!--  -->
+              <form action="<%= PATH_LOAD %>" method="post">
+                <!-- hidden -->
+                <input type="hidden" name="loadId" value="<%= obj.itemId %>">
+                <input type="hidden" name="page" value="<%= pageAct %>">
+                <input type="hidden" name="rpp" value="<%= rpp %>">
+                <input type="hidden" name="sip" value="<%= sip %>">
+                <input type="hidden" name="scid" value="<%= scid %>">
+                <input type="hidden" name="sis" value="<%= sis %>">
+                <button class="pd-l-m pd-r-m pd-t-s pd-b-s <%= loadId ==  obj.itemId ? 'bg-load-active' : 'bg-load' %>"
+                        title="<%= (page-1)*rpp+(index+1) %>"
+                        type="submit">
+                  <i class="fas fa-edit"></i>
+                </button>
+              </form>
+            </td>
+
+            <!-- 2 ✓ -->
+            <td class="al-c">
+              <% if(obj.itemImage){ %>
+                <a href="<%= PATH_VIEW %>/<%= obj.itemImage %>" target="_blank">
+                  <i class="fas fa-image"></i>
+                </a>
+              <% } else { %>
+                <span class="fc-gray">-</span>
+              <% } %>
+            </td>
+
+            <!-- 3 -->
+            <td class="al-c <%= class3Color %>" title="<%= obj.itemStatus %>"><%- obj.itemStatus ? '&#10003;' : '-' %></td>
+
+            <!-- 4 -->
+            <td class="al-c <%= class3Color %>" title="<%= obj.itemOnSale %>"><%- obj.itemOnSale == '1' ? '&#10003;' : '-' %></td>
+
+            <!-- 5 -->
+            <td class="al-c <%= class3Color %>" title="<%= obj.itemStock %>"><%- obj.itemStock == '1' ? '&#10003;' : '-' %></td>
+
+            <!-- 6 -->
+            <%
+              const itemPackageType_Show = obj.itemPackageType == 'single' ? 'เดี่ยว' : 'เซ็ต'
+              const itemsInSet_Count =  obj.itemsInSet && obj.itemsInSet.length > 0 ? `[${obj.itemsInSet.length}]` : '' ; 
+            %>
+            <td class="al-l pd-l-s <%= class2Color %>" title="แพคเกจ">
+              <span><%= itemsInSet_Count %></span>
+              <span><%= itemPackageType_Show %></span>
+            </td> 
+
+            <!-- 7 -->
+            <td class="al-l pd-l-s nowrap t-itemId <%= class1Color %>" title="<%= obj.itemId %>"><%= obj.itemId %></td>
+
+            <!-- 8 -->
+            <td class="al-l pd-l-s nowrap " title="<%= obj.itemName %>">
+              <span class="<%= class3Color %>">[<%= obj.itemPrice %>]</span>
+              <span class="<%= class2Color %>"><%= obj.itemName.length > 20 ? obj.itemName.substring(0, 20) + '...' : obj.itemName %></span>
+            </td>   
+
+            <!-- 9 -->
+            <td class="al-c <%= class2Color %>"><%= obj.itemUnit %></td>     
+
+            <!-- 10 -->
+            <td class="al-l pd-l-s <%= class2Color %>">
+              <span class="fc-cornblue">[<%= obj.categoryId %>]</span>
+              <span><%= obj.categoryName %></span>
+            </td>               
+
+            <!-- 11 -->
+            <td class="al-c">
+              <% if(obj.itemStatus == 'เบิก'){ %>
+                <span class="fc-gray" title="ไอเท็มอยู่ในสถานะเบิก ลบไม่ได้">x</span>
+              <% }else if(obj.isCanDelete && obj.canDelete != false ){ %>
+                <form action="<%= PATH_DELETE %>"  method="post" class="al-c">
+                  <!-- hidden -->
+                  <input type="hidden" name="_id" value="<%= obj._id %>">
+                  <input type="hidden" name="loadId" value="<%= loadId %>">
+                  <input type="hidden" name="page" value="<%= pageAct %>">
+                  <input type="hidden" name="rpp" value="<%= rpp %>">
+                  <input type="hidden" name="sip" value="<%= sip %>">
+                  <input type="hidden" name="scid" value="<%= scid %>">
+                  <input type="hidden" name="sis" value="<%= sis %>">
+                  <input type="hidden" name="itemIdToDelete" value="<%= obj.itemId %>">
+
+                  <!-- btn-delete ใช้สำหรับ SWal -->
+                  <button class="btn-delete btn-delete pd-l-m pd-r-m pd-t-s pd-b-s bg-delete"
+                          type="submit"><i class="fas fa-trash-alt"></i>
+                  </button>
+                </form>
+              <% }else{ %>
+                <span class="fc-gray">-</span>
+              <% } %>
+            </td>
+
+          </tr>
+          <% }) %>
+
+        </tbody>
+      </table>
+
+    </section>  
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    var PATH_FETCH = `<%= PATH_FETCH %>` ;
+    var PATH_PRINT = `<%= PATH_PRINT %>` ;
+    var PREFIX = `<%= PREFIX %>` ;
+    var userAuthority = `<%= user.userAuthority %>` ;
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <!-- <script type="text/javascript" src="/js/items_modal.js?v=<%= time %>"></script> -->
+  <script type="text/javascript" src="/js/items.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/items.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+<!--  -->
+<template id="templateItemInSet">
+  <div class="mg-t-s itemsInSetRow">
+    <div class="flex-row">
+      <input class="col-sm-7 al-l pd-l-s" type="text" placeholder="ไอดีไอเท็มที่อยู่ในเซ็ต"
+             readonly
+             name="itemIdInset">
+      <input class="col-sm-2 al-c pd-l-s" type="text" placeholder="หน่วยนับ"
+             readonly
+             name="itemUnitInset">
+      <button class="col-sm-1 btn btn-sm bg-red" 
+              onclick="removeItemFromSet(event)"><i class="fas fa-trash"></i></button>
+    </div>
+    <div class="flex-row">
+      <input class="col-sm-1-5 al-r" type="number" placeholder="จำนวนไอเท็มที่อยู่ในเซ็ต"
+             required min="1" step="1"
+             oninvalid="this.setCustomValidity('จำนวนต้องมากกว่า 0')"
+            oninput="this.setCustomValidity('')"
+             name="itemAmountInset">
+      <input class="col-sm-8-5 al-l pd-l-s" type="text" placeholder="ชื่อไอเท็มที่อยู่ในเซ็ต"
+            readonly
+            name="itemNameInset">
+    </div>
+  </div>
+</template>
+
+
+
+
+<!--  -->
+<!-- <div class="col-sm-5 input-group">
+  <label class="mg-r-s" title="Item ID">
+    <i class="fas fa-id-badge"></i>
+    <span>SKU</span><span class="fc-blue mg-l-m">*</span>
+  </label>
+  <input class="al-c" type="text" 
+          placeholder="SKU"
+          id="itemSku" name="itemSku" 
+          required
+          <= isItem && item.itemSku ? 'readonly' : '' >
+          title="<= ITEM_TYPE_DESCRIPTION >"
+          pattern="<= ITEM_TYPE_PATTERN >"
+          value="<= isItem ? item.itemSku : '' >" >
+</div> -->

@@ -1,0 +1,119 @@
+<!--  -->
+<div class="nav-ctn">
+
+  <nav>
+
+    <!-- Zone 1: Left -->
+    <div class="nav-1 d-flex">
+
+      <!-- ปุ่มหน้าแรก -->
+      <div>
+        <a class="nav-link <%= title == global.PAGE_HOME ? 'active' : '' %>" href="/" >
+          <i class="fas fa-house mg-r-m"></i>
+        </a>
+      </div>
+     
+      <!-- ปุ่ม#1 -->
+      <div>
+        <% NAV_LEFT.forEach( (obj) => { %>
+          <% if (!user.isAuth || !obj.userAuthorities.includes(user.userAuthority)) return; %>
+          <a class="nav-link <%= title == obj.title ? 'active' : '' %>" 
+             href="<%= obj.path %>" 
+             title="<%= obj.title %>">
+            <i class="fas <%= obj.icon %> mg-r-m"></i>
+          </a>
+          <% if (obj.separator) { %>
+            <span class="nav-link fc-liblue">|</span>
+          <% } %>
+        <% }) %>
+      </div>
+
+      <!-- select report -->
+      <!-- 
+      <form id="nav_reportForm" method="get">
+        <select id="nav_reportType" class="" title="รายงาน">
+          <option value="">-</option>
+          <% NAV_REPORT.forEach( (obj) => { %>
+            <% if (!user.isAuth || !obj.userAuthorities.includes(user.userAuthority)) return; %>
+            <option value="<%= obj.path %>" <%= title == obj.title ? 'selected' : '' %>>
+              <%= obj.title %>
+            </option>
+          <% }) %>          
+        </select>
+      </form> 
+      -->
+
+ 
+    </div>  
+
+    <!-- Zone 2: User Info -->
+    <% if (user.isAuth) { %>
+    <% const title = `ชื่อผู้ใช้ : ${user.username}\nรหัสผู้ใช้ : ${user.userId}\nสิทธิ์การใช้งาน : ${user.userAuthority}` %>
+    <div class="nav-2" title="<%= title %>">
+      <a class="nowrap <%= title == PAGE_USER_INFO ? 'active' : '' %>" href="/user">
+        <i class="fas fa-user fc-liblue"></i>
+        <span class="nowrap"><%= user.username %></span>
+      </a>
+      <!-- hidden  -->
+      <form id="navForm" class="dp-n">
+        <input type="hidden" id="userId_login" value="<%= user.userId %>">
+        <input type="hidden" id="username_login" value="<%= user.username %>">
+        <input type="hidden" id="userFullname_login" value="<%= user.userFullname %>">
+        <input type="hidden" id="userAuthority_login" value="<%= user.userAuthority %>">
+      </form>
+    </div>
+    <% } %>
+    
+    <!-- Zone 3: Right -->
+    <% if (user.isAuth) { %>
+    <div class="nav-3">
+
+      <!--  -->
+      <button class="nav-link nav-dropdown-toggle" id="navDropdownBtn" type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!--  -->
+      <div class="nav-dropdown-menu" id="navDropdownMenu">
+        
+        <!--  -->
+        <% if( ['O','A'].includes(user.userAuthority) ){ %>
+        <a href="/manage/settings" class="nav-link <%= title == PAGE_MANAGE_SETTINGS ? 'active' : '' %>"  
+           title="ตั้งค่า"><i class="fas fa-sliders-h mg-r-m"></i> <%= PAGE_MANAGE_SETTINGS %>
+        </a>
+
+        <a href="/manage/users" class="nav-link <%= title == PAGE_MANAGE_USERS ? 'active' : '' %>"  
+          title="จัดการผู้ใช้"><i class="fas fa-users-cog mg-r-m"></i> <%= PAGE_MANAGE_USERS %>
+        </a>
+
+        <a href="/manage/sessions" class="nav-link <%= title == PAGE_MANAGE_SESSIONS ? 'active' : '' %>"  
+          title="จัดการเซสชั่น"><i class="fas fa-user-clock mg-r-m"></i> <%= PAGE_MANAGE_SESSIONS %>
+        </a>
+        <% } %>
+
+        <a class="nav-link" href="/term-and-conditions" title="Term and Conditions">
+          <i class="fas fa-file-contract mg-r-m"></i> <%= PAGE_TERM %>
+        </a>
+
+        <!--  -->
+        <% if(['O'].includes(user.userAuthority)){ %>
+        <a href="/manage/settings/system" class="nav-link <%= title == PAGE_MANAGE_SETTINGS_SYSTEM ? 'active' : '' %>" 
+           title="System Settings"><i class="fas fa-cog mg-r-m"></i> <%= PAGE_MANAGE_SETTINGS_SYSTEM %>
+        </a>
+        <% } %>
+
+        <!--  -->
+        <a class="nav-link" href="/logout" title="Logout">
+          <i class="fas fa-sign-out-alt mg-r-m"></i> ออกจากระบบ
+        </a>
+
+      </div>
+
+    </div>
+    <% }else{ %>
+    <div class="nav-3">
+      <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt"></i></a>
+    </div>
+    <% } %>
+  </nav>
+</div>    

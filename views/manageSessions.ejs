@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('partials/meta',{ time:time}) %>
+<title><%= title %></title>  
+
+<!-- Font Awesome -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+
+<% if(!IS_PRODUCTION) { %>
+<link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/paginationManageSessions.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/manageSessions.css?v=<%= time %>">
+<% } else { %>
+<link rel="stylesheet" href="/css-min/manageSessions.min.css?v=<%= time %>">
+<% }  %>
+</head>
+
+
+<body>
+  
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <header class="header-title bg-forestgreen">
+    <p class="al-c fc-white">
+      <i class="fas fa-user-clock mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header> 
+
+
+  <main>
+
+
+    <!-- #1 : Toolbar-->
+    <section class="toolbar-ctn">
+
+      <!-- Clear -->
+      <form class="toolbar-1" action="<%= PATH_CLEAR %>" method="get" 
+            onsubmit="createSpinner();">
+        <!-- hidden -->
+        <input type="hidden" name="rpp" value="<%= rpp %>">
+        <input type="hidden" name="page" value="<%= page %>">
+
+        <button type="submit" class="btn btn-sm bg-clear pd-l-l pd-r-l al-c nowrap">
+          <i class="fas fa-eraser"></i> ล้างเซสชั่นว่าง
+        </button>
+      </form>
+
+      <!-- Pagination5btns -->
+      <div class="toolbar-2">
+        <%- include('partials/pagination5btns2.ejs') %>
+      </div>
+
+      <!-- RPP -->
+      <form class="toolbar-3" method="get" action="<%= PATH_MAIN %>" >
+
+        <!-- hidden -->
+        <input type="hidden" name="page" value="<%= page %>">
+
+        <label class="al-r pd-r-s">แถว/หน้า</label>
+        <select class="al-c" name="rpp" id="rpp" onchange="this.form.submit()">
+          <option value="10" <%= rpp == '10' ? 'selected' : '' %> >10</option>
+          <option value="20" <%= rpp == '20' ? 'selected' : '' %> >20</option>
+          <option value="30" <%= rpp == '30' ? 'selected' : '' %> >30</option>
+          <option value="50" <%= rpp == '50' ? 'selected' : '' %> >50</option>
+          <option value="100" <%= rpp == '100' ? 'selected' : '' %> >100</option>
+        </select>
+      </form>
+      
+    </section> 
+
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** table ****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!--  -->
+    <section class="mg-t-l table-ctn">
+
+      <table>
+
+        <colgroup>
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+        </colgroup>
+
+        <!--  -->
+        <thead id="tableHeader">
+          <tr>
+            <th class="al-c clickable  bg-white"><i class="fas fa-hashtag"></i></th>
+            <th class="al-c clickable"><i class="fas fa-id-badge"></i></th>
+            <th class="al-c clickable"><i class="fas fa-tag"></i> </th>
+            <th class="al-c clickable"><i class="fas fa-user-tag"></i></th>
+            <th class="al-c clickable"><i class="fas fa-clock"></i></th>
+            <th class="al-c"><i class="fas fa-bars"></i> </th>
+          </tr>
+        </thead>
+
+        <!--  -->
+        <tbody id="tableContent">
+
+          <% data.forEach( (obj,index) => { %>
+          <tr class="bg-main-color">
+
+            <td class="al-c"><%= (page-1)*rpp+(index+1) %></td>
+            <td class="pd-l-s fc-cornblue" title="<%= obj.username %>"><%= obj.username??'-' %></td>
+            <td class="al-c fc-blue" title="<%= obj.userId %>"><%= obj.userId??'-' %></td>
+            <td class="al-c" title="<%= obj.userAuthority %>"><%= obj.userAuthority??'-' %></td>
+            <td class="pd-r-s al-r" title="<%= obj.expiresFormat %>">
+              <span class=""><%= obj.expiresFormat %></span>
+              <span class="fc-cornblue">==></span>
+              <span class="fc-blue"><%= obj.durationDaysHours %></span>
+            </td>
+
+            <td class="al-c">
+              <form class="" action="<%= PATH_DELETE %>" method="post">
+                <!-- hidden-loop -->
+                <input type="hidden" name="_id" value="<%= obj._id %>">
+                <!-- hidden -->
+                <input type="hidden" name="rpp" value="<%= rpp %>">
+                <input type="hidden" name="page" value="<%= page %>">
+                <!-- -->
+                <button type="submit" class="bg-delete pd-l-l pd-r-l pd-t-s pd-b-s">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </form>
+            </td>
+
+          </tr>
+          <% }) %>
+
+        </tbody>
+
+      </table>
+    </section>
+
+
+  </main> 
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script src="/js/script_all.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/notify.js"></script>
+  <% } else { %>
+  <script src="/js-min/manageSessions.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+

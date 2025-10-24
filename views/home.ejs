@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/home.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/home.min.css?v=<%= time %>">
+  <% }  %>
+  <style>
+    a:link {  text-decoration: none; }
+    a:visited {  text-decoration: none; }
+    a:hover { filter: brightness(1.2); }
+    a:active {text-decoration: none; }
+  </style>
+</head>
+ 
+<body>
+
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <header class="header-title bg-dodgerblue">
+    <p class="al-c fc-white">
+      <span><%= settings && settings.COMPANY_NAME ? settings.COMPANY_NAME : 'หน้าแรก' %></span>
+    </p>
+  </header>
+
+  <main>
+
+    <!--  -->
+    <section class="flex-row">
+      <% global.NAV_LEFT.forEach( item => { %>
+        <% if(item.userAuthorities.includes(user.userAuthority)) { %>
+        <div class="col-1 w-100 <%= item.menuColor %>">
+          <a href="<%= item.path %>">
+            <i class="<%= item.icon %> mg-r-xl"></i><%= item.title %>
+          </a>
+        </div>
+        <% } %>
+      <% }) %>
+    </section>
+
+    
+    <!--  -->
+    <!-- <section class="mg-t-l mg-b-l">
+      <h3 class="al-c fs-xl">
+        <i class="fa-solid fa-chart-line mg-r-l"></i> 
+        <span>รายงาน</span>
+      </h3>
+    </section> -->
+
+    <!--  -->
+    <!-- 
+    <section class="flex-row">
+      <% global.NAV_REPORT.forEach(item => { %>
+        <div class="col-1 w-100 <%= item.menuColor %>"">
+          <a href="<%= item.path %>">
+            <i class="<%= item.icon %> mg-r-xl"></i><%= item.title %>
+          </a>
+        </div>
+      <% }) %>
+    </section> 
+    -->    
+
+    <!--  -->
+    <% if(['O','A'].includes(user.userAuthority) && user.isAuth) { %>
+    <section class="mg-t-l mg-b-l">
+      <h3 class="al-c">
+        <i class="fa-solid fa-users mg-r-l"></i> 
+        <span>ผู้ใช้งานระบบ</span>
+      </h3>
+    </section>
+
+    <!--  -->
+    <section class="flex-row">
+      <% global.NAV_USERS.forEach(item => { %>
+      <div class="col-1 w-100 <%= item.menuColor %>">
+        <a href="<%= item.path %>">
+          <i class="<%= item.icon %> mg-r-xl"></i><%= item.title %>
+        </a>
+      </div>
+      <% }) %>
+    </section>
+
+    <% } %>
+
+    <!--  -->
+    <% if(['O','A'].includes(user.userAuthority) && user.isAuth) { %>
+    <section class="mg-t-l mg-b-l">
+      <h3 class="al-c">
+        <i class="fa-solid fa-cog mg-r-l"></i> 
+        <span>ตั้งค่า</span>
+      </h3>
+    </section>
+
+    <!--  -->
+    <section class="flex-row">
+      <% global.NAV_RIGHT.forEach(item => { %>
+      <div class="col-1 w-100 <%= item.menuColor %>">
+        <a href="<%= item.path %>">
+          <i class="<%= item.icon %> mg-r-xl"></i><%= item.title %>
+        </a>
+      </div>
+      <% }) %>
+    </section>
+    <% } %>
+
+
+  </main>  
+
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script type="text/javascript" src="/js-min/home.obf.js?v=<%= time %>"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+

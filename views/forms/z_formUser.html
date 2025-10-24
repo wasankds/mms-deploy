@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <script src="/js/all.js"></script> -->
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!--  -->
+  <!-- <link href="/css/styles.css" rel="stylesheet" /> -->
+  <!-- <link href="../../css/wk_all.css" rel="stylesheet" /> -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    body{
+      max-width: 21cm;
+      margin: auto; 
+    }
+    p{ 
+      font-size: 0.85rem;
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+    }
+
+    .table{ margin-bottom: 0; }
+    .table thead th ,
+    .table tbody td {
+      font-size: 0.85rem;
+      padding: 3px;
+      border: 1px solid black;
+      font-weight: 600;
+    }
+
+    .small{font-size: 0.75rem; }
+    /* ทำให้ชิดขอบซ้ายขวา */
+    .row { --bs-gutter-x: 0rem;}
+
+    /****** สำหรับลายเซ็น ******/
+    /* .signature-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    } */
+    /* .dotted-line {
+      border-bottom: 1px dotted #000;
+      flex-grow: 1;
+      margin-left: 10px;
+      margin-top: 10px;
+    } */
+    /* .signature-image {
+      position: absolute;
+      bottom: -10%;
+      transform: translateX(-50%);
+      right: 0;
+      width: 100px;
+      height: auto;
+    } */
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 1cm;
+      }
+      .table {
+        border-collapse: collapse;
+      }
+      .table th, 
+      .table td {
+        border: 1px solid black !important;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container mt-4">
+
+    <!-- Header -->
+    <div class="row mt-3 pb-2" style="border-bottom:4px solid black;">
+      
+      <!-- 
+      <div class="col-2 d-flex justify-content-center align-items-center">< logoBase64 ></div> 
+
+      <div class="col-7 ps-2">
+        <div style="line-height: 1.25rem;">
+          <span style="font-weight:800;">บริษัท ริโค่ เอเชีย จำกัด Rico Asia Co., Ltd</span><br>
+          <span class="small" style="font-weight:400;">256 ซอยพัฒนาการ 29 แขวงสวนหลวง เขตสวนหลวง</span><br>
+          <span class="small" style="font-weight:400;">กทม. 10250 เลขประจำตัวผู้เสียภาษี 0105566144488</span><br>
+          <span class="small" style="font-weight:400;">โทรศัพท์ 080-291-2222</span>
+        </div>
+      </div>       -->
+      
+      <!-- <div class="col-3">
+        <p class="text-center rounded-3 p-2" style="background-color:lightgray;">
+          <span style="font-weight:800;font-size:1.4rem;">QUOTATION</span>
+        </p>
+        <p class="text-center pt-2">
+          <span>Quotation ID : </span>
+          <span class="text-primary"><strong>< user.docId ></strong></span>
+        </p>
+      </div> -->
+
+      <!--  -->
+      <div class="col-6 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>User ID</span> : 
+          <span class="text-primary">
+            <strong><%= user.userId %></strong>
+            (<strong><%= user.userIsActive %></strong>)
+          </span>
+        </p>
+      </div> 
+
+      <div class="col-6 ps-0 pe-0 pt-1">
+        <p class="text-start">
+          <span>Main Authority</span> : 
+          <span class="text-primary"><strong><%= user.userAuthority %></strong></span>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Fullname -->
+    <div class="row mt-1 p-0">
+      <!--  -->
+      <div class="col-6 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Fullname</span> : 
+          <span class="text-primary">
+            <strong><%= user.userPrefix %></strong>
+            <strong><%= user.userFirstname %></strong>
+            <strong><%= user.userLastname %></strong>
+            (<strong><%= user.userNickname %></strong>)
+          </span>
+        </p>
+      </div> 
+    </div>
+
+    <!-- Username/Email -->
+    <div class="row mt-1 p-0">
+      <!--  -->
+      <div class="col-4 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Username</span> : 
+          <span class="text-primary"><strong><%= user.username %></strong></span>
+        </p>
+      </div> 
+      <!--  -->
+      <div class="col-5 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Email</span> : 
+          <span class="text-primary"><strong><%= user.userEmail %></strong></span>
+        </p>
+      </div> 
+      <div class="col-3 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Phone</span> : 
+          <span class="text-primary"><strong><%= user.userPhone %></strong></span>
+        </p>
+      </div> 
+    </div>
+
+    <hr class="dashed pt-1">
+    
+    <!-- Address -->
+    <div class="row p-0">
+      <div class="col-12 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Address1</span> : 
+          <span class="text-primary"><strong><%= user.userAddress1 %></strong></span>
+        </p>
+      </div> 
+    </div> 
+    <div class="row mt-1 p-0">
+      <!--  -->
+      <div class="col-12 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Address2</span> : 
+          <span class="text-primary"><strong><%= user.userAddress2 %></strong></span>
+        </p>
+      </div> 
+    </div> 
+    <div class="row mt-1 p-0">
+      <div class="col-6 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Province</span> : 
+          <span class="text-primary"><strong><%= user.userProvince %></strong></span>
+        </p>
+      </div> 
+      <div class="col-6 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Postal Code</span> : 
+          <span class="text-primary"><strong><%= user.userPostalCode %></strong></span>
+        </p>
+      </div> 
+    </div>
+
+
+    <!-- Organization/Department  -->
+    <div class="row mt-1 p-0">
+      <!--  -->
+      <div class="col-4 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Organization ID</span> : 
+          <span class="text-primary">
+            <strong>(<%= user.userOrganization %>)<%= user.organizationName %></strong>
+          </span>
+        </p>
+      </div> 
+      <!--  -->
+      <div class="col-5 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Department ID</span> : 
+          <span class="text-primary">
+            <strong>(<%= user.userDepartment %>)<%= user.departmentName %></strong>
+          </span>
+        </p>
+      </div> 
+      <!--  -->
+      <div class="col-3 ps-0 pe-0 pt-1 text-start">
+        <p>
+          <span>Position</span> : 
+          <span class="text-primary">
+            <strong><%= user.userPosition %></strong>
+          </span>
+        </p>
+      </div> 
+    </div>
+
+
+    <!--  -->
+    <div class="row mt-1 p-0">
+      <div class="col-12 ps-0 pe-0 pt-1 text-start">
+        <p><span>Usable Apps</span> : </p>
+      </div> 
+    </div>
+    <!--  -->
+    <div class="row pt-1">
+      <table class="table table-bordered mt-0" style="width: 100%;">
+        <thead>
+          <tr>
+            <th class="text-center text-white bg-secondary">No.</th>
+            <th class="text-center text-white bg-secondary">Id</th>
+            <th class="text-center text-white bg-secondary">Authority</th>
+            <th class="text-center text-white bg-secondary">Name</th>
+            <th class="text-center text-white bg-secondary">Path</th>
+            <th class="text-center text-white bg-secondary">DB</th>
+            <th class="text-center text-white bg-secondary">Authorities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <% if(user.userApps && user.userApps.length > 0){ %>
+            <% user.userApps.forEach( (obj,index) => { %>
+            <tr>
+              <td class="text-primary text-center"><%= index+1 %></td>
+              <td class="text-primary text-center"><%= obj.appId %></td>
+              <td class="text-primary text-center"><%= obj.appAuthority %></td>
+              <td class="text-primary text-start"><%= obj.appInfo.APPNAME %></td>
+              <td class="text-primary text-start"><%= obj.appInfo.PATH %></td>
+              <td class="text-primary text-start"><%= obj.appInfo.DBNAME %></td>
+              <td class="text-primary text-center"><%= obj.appInfo.AUTHORITIES %></td>
+            </tr>
+            <% }) %>
+
+            < for(let i=0;i<12-user.userApps.length;i++){ >
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            < } > 
+ 
+          <% } %> -->
+        </tbody>
+      </table>
+    </div> 
+
+
+  </main>
+
+</body>
+</html>

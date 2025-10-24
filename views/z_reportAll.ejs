@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fontsAnuphan.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <!-- <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>"> -->
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/reportAll.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/reportAll.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <main>    
+    <!--  -->
+    <section class="main-left">
+      <%- include('partials/report_toolbar_left.ejs') %>
+    </section>
+    
+    <!--  -->
+    <section class="main-right">
+      <%- include('partials/report_toolbar_right.ejs') %>
+    </section>
+
+    <!--  -->
+    <section class="main-bottom" id="resultTableCtn"></section>
+  </main>
+
+  
+
+  <%- include('partials/footer') %>
+
+  <script type="text/javascript">
+    const PATH_MAIN = `<%= PATH_MAIN %>`
+    const PATH_REPORT = `<%= PATH_REPORT %>`
+    const PATH_CALENDAR = `<%= PATH_CALENDAR %>`
+
+    const DATA_USERS = JSON.parse(`<%- dataUsersJson %>`) ;
+    const DATA_ITEMS = JSON.parse(`<%- dataItemsJson %>`) ;    
+    const DATA_DOC_CONCLUDE = JSON.parse(`<%- dataDocConclude %>`) ;
+  </script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/report_windows.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/report_modal.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/reportAll.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/reportAll.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+<!-- ใช้กับปฏิทินเท่านั้น -->
+<template id="windowTemplate">
+  <div class="window-ctn pd-xs" name="windowCtn">
+
+    <!-- TITLE -->
+    <!-- <div class="window-title" name="windowTitle">
+      <p>
+        <span name="titleText_a" class="titleText1 fc-white pd-l-"></span>
+        <span name="titleText_b" class="titleText2 fc-lime"></span>
+        <span name="titleText_c" class="titleText3 fc-yellow"></span>    
+        <span name="btnClose"    class="close-window"   onclick="closeWindow(this)">&#10006</span>
+        <span name="btnCopy"     class="expand-window"  onclick="copyTable(this)">copy</span>
+        <span class="clickable expand-window" 
+              data-direction="up"
+              onclick="moveWindow(this)">&#8679;</span>
+        <span class="clickable expand-window" 
+              data-direction="down"
+              onclick="moveWindow(this)">&#8681;</span>
+      </p>
+    </div>
+    <div class="window-title2" name="windowTitle2"></div> 
+    -->
+
+    <!-- TABLE CTN -->
+    <div class="" name="tableCtn"></div>
+  </div>
+</template>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proguess Bar</title>  
+
+
+  <!-- <% if(IS_PRODUCTION) { %> -->
+  <link rel="stylesheet" href="../public/css/utils.css">
+  <link rel="stylesheet" href="../public/css/fonts.css">
+  <!-- <link rel="stylesheet" href="../public/css/toast.css">
+  <link rel="stylesheet" href="../public/css/flex.css">
+  <link rel="stylesheet" href="../public/css/flexNew.css">
+  <link rel="stylesheet" href="../public/css/alink.css">
+  <link rel="stylesheet" href="../public/css/nav.css">
+  <link rel="stylesheet" href="../public/css/footer.css">
+  <link rel="stylesheet" href="../public/css/modal.css">
+  <link rel="stylesheet" href="../public/css/inputSales.css">
+  <link rel="stylesheet" href="../public/css/same.css"> -->
+  <link rel="stylesheet" href="../public/css/proguessBar.css">
+  <!-- <% }else{ %> -->
+
+  <!-- <% } %> -->
+
+</head>
+
+<body>
+
+
+
+  <!-- Progress Bar -->
+  <div id="progressBarCtn">
+    <div id="progressText">กำลังสร้างรายงาน...</div>
+    <div class="progressBar-bg">
+      <div id="progressBar">0%</div>
+    </div>
+  </div>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      generateReport()
+    });
+
+    
+    async function generateReport(){
+      const PATHS = [
+        'http://localhost:80/path-1', 
+        'http://localhost:80/path-2', 
+        'http://localhost:80/path-3', 
+        // 'https://tualeklek.com/path-1', 
+        // 'https://tualeklek.com/path-2', 
+        // 'https://tualeklek.com/path-3', 
+      ];
+      await fetchSequential(PATHS);
+    }
+
+
+
+    //=========================================================
+    // 
+    // 
+    const progressBarCtn = document.getElementById('progressBarCtn');
+    const progressText = document.getElementById('progressText');
+    const progressBar = document.getElementById('progressBar');
+    async function fetchSequential(paths) {
+      const progressText_startValue = 'กำลังสร้างรายงาน...'
+
+      //=== 1.) ให้แสดง Progress Bar ที่ 10% ทันที
+      progressBarCtn.style.display = 'block';
+      progressBar.style.width = '10%';
+      progressBar.innerText = '10%';
+      // showToast('เริ่มสร้างรายงาน...','blue');
+
+      //=== 2.) วน loop fetch ทีละ path
+      for (let i = 0; i < paths.length; i++) {
+
+        console.log(`กำลังสร้างรายงาน... [${i+1}/${paths.length}]`);
+
+        //== 2.1) fetch path
+        const response = await fetch(paths[i]);
+        console.log(`response = ${response}`);
+        
+        const data = await response.json();
+
+        //== 2.2) ถ้า error  - มาจาก catch(err) ของ server
+        if (!data.isCreate) {
+          // แสดงข้อความ error จาก server ถ้ามี
+          // showToast(`ล้มเหลวในขั้นตอนที่ ${i + 1}{{sep}}${data.msg}`, data.class, 5000);
+          console.log(`ล้มเหลวในขั้นตอนที่ ${i + 1}{{sep}}${data.msg}`);
+          // ล้างค่าของ Progress Bar
+          progressBarCtn.style.display = 'none';
+          progressBar.style.width = '0%';
+          progressBar.innerText = '';
+          progressText.textContent = progressText_startValue
+          break;
+        }
+
+        //== 2.3) อัปเดต Progress Bar
+        const percent = Math.round(((i + 1) / paths.length) * 100);
+        progressBar.style.width = percent + '%';
+        progressBar.innerText = percent + '%';
+        progressText.textContent = `กำลังสร้างรายงาน... [${i+1}/${paths.length}]`;
+      }
+
+      //=== 3.) เมื่อเสร็จสิ้นทั้งหมด ให้ลบ Progress Bar ทิ้ง
+      setTimeout(() => {
+        progressBarCtn.style.display = 'none';
+        progressBar.style.width = '0%';
+        progressBar.innerText = '';
+        progressText.textContent = progressText_startValue
+      }, 2000);
+
+    }
+
+
+
+
+  </script>
+</body>
+</html>

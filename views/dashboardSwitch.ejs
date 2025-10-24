@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+ 
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <!-- <script src="/cdn/sweetalert2.all.min.js"></script> -->
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="/cdn/flatpickr.min.css"> -->
+  <!-- <script src="/cdn/flatpickr.js"></script> -->
+  <!-- Socket.IO -->
+  <!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+  <script src="/cdn/socket.io.min.js"></script>
+  <!-- ช่วยในการสร้าง Masonry Layout -->
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+  <script src="/cdn/masonry.pkgd.min.js"></script>
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/dashboardSwitch.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/dashboardSwitch.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %>   
+
+
+  <main>
+
+    <header class="header">
+      <span class="gc-ligray">[Header]</span>
+    </header>
+
+
+    <section class="card-container">
+
+    <!-- สร้าง block จาก ids  -->
+    <% dataAll.forEach( obj => { %>
+
+    <section class="card <%= obj.id %>-card">
+
+      <!-- หัวข้อการ์ด -->
+      <div class="card-header <%= obj.bgColor %>">
+
+        <span class="card-header-left">            
+          <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
+        </span>
+
+        <span class="card-header-center">            
+          <!-- <a class="clickable" href="<= PATH_DATA >/<= obj.id >" target="_blank" title="ดูข้อมูล"> -->
+            <span class="fw-b fc-black"><%= obj.name %></span>
+            <span class="fw-b fc-gray">[<%= obj.id %>]</span>
+          <!-- </a> -->
+        </span>
+
+        <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
+        <span class="card-header-right clickable">
+          <!-- <a href="<= PATH_REPORT >/<= obj.id >" target="_blank" title="ดูรายงาน">
+            <i class="fas fa-file-alt fc-black" title="ดูรายงาน"></i>
+          </a> -->
+        </span>
+
+      </div>
+
+      <!-- คอลัมน์ใหญ่ -->
+      <% obj.switchData.forEach( item => { %>
+      <div class="card-column">
+
+        <!-- Column Title -->
+        <!-- <div class="pd-s al-c bg-eee lh-xs" title="เวลาและค่าล่าสุด">
+          <span class="fw-b <%= item.fontColor %>"><%= item.keyName ? item.keyName : item.key %></span>
+          <span class="fc-gray"><%= item.keyUnit ? `(${item.keyUnit})` : '' %></span>
+        </div> -->
+
+        <div class="flex-row justify-content-between lh-m">
+          <span class="mg-l-m <%= item.fontColor %> <%= obj.id %>-<%= item.key %>-timestamp">-</span>
+          
+          <!-- Toggle Switch -->
+          <span class="switch-ctn mg-r-m">
+            <input class="switch-toggle <%= obj.id %>-<%= item.key %>-switch" 
+                   type="checkbox" 
+                   data-device-id="<%= obj.id %>"
+                   data-switch-key="<%= item.key %>"
+                   id="switch-<%= obj.id %>-<%= item.key %>"
+                   <%= item.value ? 'checked' : '' %> >
+            <label class="switch-label" for="switch-<%= obj.id %>-<%= item.key %>"></label>
+          </span>
+        </div>
+
+      </div>        
+      <% }) %>
+
+      <% if(obj.switchData.length%2==1){ %>
+      <div class="card-column bg-eee"></div>
+      <% } %>
+
+    </section>
+
+    <% }) %>
+    </section>
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const ids = JSON.parse(`<%- JSON.stringify(ids) %>`)  ;
+    const dataDevices = JSON.parse(`<%- JSON.stringify(dataDevices) %>`)  ;
+    const socket = io();
+
+    const PATH_STATUS = `<%= PATH_STATUS %>`;
+
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/dashboardSwitch.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/dashboardSwitch.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<div class="flex-row justify-content-between bb-d lh-n mg-b-m ">
+  <div class="mg-l-m fw-b">
+    <i class="fas fa-clock" title="เวลา"></i>
+    <span class="<= item.fontColor > <= obj.id >-<= item.key >-timestamp">-</span>
+  </div>
+  <div class="<= item.fontColor > mg-r-m fw-b fs-xl <= obj.id >-<= item.key >-lastValue">-</div>
+</div>
+
+<div class="al-c">
+  <div class="fc-gray">
+    <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+    <span class="<= obj.id >-<= item.key >-timeInterval"><= item.timeInterval ></span>
+  </div>
+</div>
+
+<div class="flex-row justify-content-between mg-b-m">
+  <div class="pd-l-s fc-plum <= obj.id >-<= item.key >-min"><= item.min ></div>
+  <div class="fc-orange <= obj.id >-<= item.key >-max"><= item.max ></div>
+  <div class="pd-r-s fc-dodgerblue <= obj.id >-<= item.key >-avg"><= item.avg %></div>
+</div> 
+-->      

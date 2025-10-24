@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+  <!-- Flatpkr -->
+  <link rel="stylesheet" href="/cdn/flatpickr.min.css">
+  <script src="/cdn/flatpickr.js"></script>
+
+  <!-- Socket.IO -->
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/paginationItems.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>"> 
+  <link rel="stylesheet" href="/css/modal.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/dashboard.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/dashboard.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  
+
+  <main >
+
+    <!-- สร้าง block จาก ids  -->
+    <% dataAll.forEach( obj => { %>
+    <section class="mg-t-m">
+
+      <h4 class="al-c mg-b-m">
+        <span class="mg-l-m"><%= obj.name %></span>
+        <span class="fc-gray mg-l-m">[<%= obj.id %>]</span>
+      </h4>
+
+      <!--  -->
+      <div class="table-ctn">
+
+        <table class="<%= obj.id %>-table table-fix1col">
+          <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 20%;">
+            <col style="width: 13%;">
+            <col style="width: 13%;">
+            <col style="width: 13%;">
+            <col style="width: 23%;min-width: 100px;">
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th class="al-c bg-table-th"><i class="fas fa-list"></i> ค่า</th>
+              <th class="al-c"><i class="fas fa-clock"></i> ช่วงเวลา10นาที</th>
+              <th class="al-c"><i class="fas fa-arrow-down"></i> ต่ำสุด</th>
+              <th class="al-c"><i class="fas fa-arrow-up"></i> สูงสุด</th>
+              <th class="al-c"><i class="fas fa-chart-line"></i> เฉลี่ย</th>
+              <th class="al-c"><i class="fas fa-bolt"></i> ล่าสุด</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% obj.data.forEach( item => { %>
+              <tr>
+                <td class="al-l pd-l-s <%= obj.id %>-key bg-white">
+                  <span><%= item.keyName ? item.keyName : item.key %></span>
+                  <span class="fc-gray"><%= item.keyUnit ? `(${item.keyUnit})` : '' %></span>
+                </td>
+                <td class="al-c <%= obj.id %>-<%= item.key %>-timeInterval"><%= item.timeInterval %></td>
+                <td class="al-r pd-r-s fc-plum <%= obj.id %>-<%= item.key %>-min"><%= item.min %></td>
+                <td class="al-r pd-r-s fc-orange <%= obj.id %>-<%= item.key %>-max"><%= item.max %></td>
+                <td class="al-r pd-r-s fc-dodgerblue <%= obj.id %>-<%= item.key %>-avg"><%= item.avg %></td>
+                <td class="al-r pd-r-s d-flex justify-content-between">
+                  <span class="fc-gray pd-l-s <%= obj.id %>-<%= item.key %>-timestamp">-</span>
+                  <span class="fc-green pd-r-s <%= obj.id %>-<%= item.key %>-lastValue">-</span>
+                </td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>  
+
+      </div>
+    </section>
+    <% }) %>
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const ids = JSON.parse(`<%- JSON.stringify(ids) %>`)  ;
+    const socket = io();
+    // var PATH_FETCH = `<= PATH_FETCH >` ;
+    // // var PATH_PRINT = `<= PATH_PRINT >` ;
+    // // var PREFIX = `<= PREFIX >` ;
+    // // var userAuthority = `<= user.userAuthority >` ;
+    // const  dataAll = `<- JSON.stringify(dataAll) >`;
+
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <!-- <script type="text/javascript" src="/js/items_modal.js?v=<%= time %>"></script> -->
+  <script type="text/javascript" src="/js/dashboard.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/dashboard.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+

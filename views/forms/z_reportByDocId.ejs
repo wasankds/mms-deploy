@@ -1,0 +1,111 @@
+<!--  -->
+<!-- <section class="window-ctn pd-xs col-100" > -->
+
+<!-- 
+<div class="window-title bg-window-2" name="windowTitle">
+  <p class="bg-cornblue">
+    <span class="titleText1 fc-white pd-l-m">สรุปเอกสารเดือน : </span>
+    <span class="titleText2 fc-yellow fw-b"><= title ></span>
+    <span class="titleText2 fc-lime fw-b">( จำนวนเอกสาร = <= data.length >)</span>
+    <span class="close-window" onclick="closeWindow(this)">✖</span>
+    <span class="expand-window" onclick="copyTable(this)">copy</span>
+    <span class="clickable expand-window" 
+          data-direction="up"
+          onclick="moveWindow(this)">&#8679;</span>
+    <span class="clickable expand-window" 
+          data-direction="down"
+          onclick="moveWindow(this)">&#8681;</span>
+  </p>
+</div> 
+-->
+
+<div class="table-ctn" name="tableCtn">
+  <table>
+
+    <thead>
+      <tr class="<%= doc.docStatusBgColor %> al-l">
+        <th class="<%= doc.docStatusBgColor %>">
+          <p>
+            <span class="clickable close-window" onclick="closeWindow(this)">✖</span>
+            <span class="expand-window" onclick="copyTable(this)">copy</span>
+            <span class="clickable expand-window" 
+                  data-direction="up"
+                  onclick="moveWindow(this)">&#8679;</span>
+            <span class="clickable expand-window" 
+                  data-direction="down"
+                  onclick="moveWindow(this)">&#8681;</span>              
+          </p>
+        </th>
+        <th class="ov-hide" colspan="10">
+          <p>
+            <span class="fc-white pd-l-m">เลขที่เอกสาร : </span>
+            <a href="<%= global.DOMAIN_ALLOW %><%= PATH_DOC %>?docId=<%= doc.docId %>" target="_blank">
+              <span class="fc-yellow"><%= doc.docId %></span>
+            </a>
+          </p>
+        </th>
+      </tr>
+    </thead>
+
+    <!--  -->
+    <tbody>
+      <tr>
+        <td class="bg-white">วันที่และเวลา :</td>
+        <td colspan="2"><span class=""><%= doc.docDateTime %></span></td>
+        <td colspan="3">
+          <span class="al-r">สถานะ : </span>
+          <span class="al-r <%= doc.docStatusColor %>">[<%= doc.docStatusNumber %>]</span>
+          <span class="al-l <%= doc.docStatusColor %>"><%= doc.docStatus %></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="bg-white">สาขา :</td>
+        <td colspan="5">
+          <span class="fc-dkcyan">[<%= doc.branchId %>]</span>
+          <span class="fc-dkcyan"><%= doc.branchName %></span>
+        </td>
+      </tr>
+
+        
+      <tr class="bd-n">
+        <td class="bg-white">ผู้สร้างเอกสาร :</span></td>
+        <td colspan="5">
+          <span class="fc-plum">[<%= doc.userId %>]</span>
+          <span class="fc-mgt"><%= doc.userFullname %></span>
+        </td>
+      </tr>
+
+      <% if( doc.totalAmount !== null && doc.totalAmount !== undefined){ %>
+      <tr class="bd-n">
+        <td class="bg-white">ยอดรวม :</span></td>
+        <td colspan="5">
+          <span class="fc-green"><%= doc.totalAmount %></span>
+        </td>
+      </tr>
+      <% } %>
+
+      <% if(doc.tableRows && doc.tableRows.length > 0){ %>
+        <% 
+          doc.tableRows.forEach( (obj,index) => {
+          const description_Slice = obj.description.length > 37 ? obj.description.slice(0, 37) + '...' : obj.description;
+        %>
+
+        <tr class="al-r" >
+          <td class="al-l" style="background-color: white">
+            <span><%= index+1 %>.)</span>
+            <span><%= obj.itemId %></span>
+          </td>
+          <td class="al-l"><%= description_Slice %></td>
+          <td class="al-r"><%= obj.quantity %></td>
+          <td class="al-c"><%= obj.unit %></td>
+          <td class="al-r"><%= obj.price %></td>
+          <td class="al-r"><%= obj.amount %></td>
+        </tr>
+        <% }) %>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<!-- </section> -->

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales</title>  
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../public/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="../public/cdn/sweetalert2.all.min.js"></script>
+
+  <!-- jQuery -->
+  <!-- <script src="../public/cdn/jquery.js"></script> -->
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="../public/cdn/bootstrap.min.css"> -->
+  <!-- <script src="../public/cdn/bootstrap.bundle.min.js"></script> -->
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="../public/cdn/flatpickr.min.css"> -->
+
+  <!-- <% if(IS_PRODUCTION) { %> -->
+  <link rel="stylesheet" href="../public/css/utils.css">
+  <link rel="stylesheet" href="../public/css/fonts.css">
+  <link rel="stylesheet" href="../public/css/toast.css">
+  <link rel="stylesheet" href="../public/css/flex.css">
+  <link rel="stylesheet" href="../public/css/flexNew.css">
+  <link rel="stylesheet" href="../public/css/alink.css">
+  <link rel="stylesheet" href="../public/css/nav.css">
+  <link rel="stylesheet" href="../public/css/footer.css">
+  <link rel="stylesheet" href="../public/css/modal.css">
+  <link rel="stylesheet" href="../public/css/inputSales.css">
+  <link rel="stylesheet" href="../public/css/same.css">
+  <link rel="stylesheet" href="../public/css/sales.css">
+  <!-- <% }else{ %> -->
+
+  <!-- <% } %> -->
+
+</head>
+
+<body>
+
+  <!-- nav -->
+  <div class="nav-ctn">
+    <nav>
+
+      <div class="nav-1 d-flex">
+        <div><a class="nav-link active" href="/"><i class="fas fa-house mg-r-m"></i></a></div>
+        <div><a class="nav-link " href="/sales" title="ขาย"><i class="fas fas fa-cash-register mg-r-m"></i></a></div>
+        <div>
+          <a class="nav-link " href="/warehouse-in" title="รับสินค้าเข้า"><i class="fas fas fa-arrow-circle-right mg-r-m"></i></a>
+          <a class="nav-link " href="/warehouse-out" title="เบิกสินค้าออก"><i class="fas fas fa-arrow-circle-left mg-r-m"></i></a>
+          <a class="nav-link " href="/items" title="ไอเท็ม"><i class="fas fas fa-box mg-r-m"></i></a>
+          <a class="nav-link " href="/items-category" title="หมวดหมู่ไอเท็ม"><i class="fas fas fa-layer-group mg-r-m"></i></a>
+        </div>
+        <form id="nav_reportForm" method="get">
+          <select id="nav_reportType" class="al-c" title="รายงาน">
+            <option value="">-</option>
+            <option value="/manage/users">จัดการผู้ใช้งาน</option>
+            <option value="/manage/user-branches">จัดการสาขาผู้ใช้งาน</option>
+            <option value="/manage/sessions">จัดการเซสชั่น</option>
+          </select>
+        </form>
+      </div>  
+
+      <div class="nav-2" >
+        <a class="nowrap " href="/user"><i class="fas fa-user fc-liblue"></i><span class="nowrap">wasankds</span></a>
+        <form id="navForm" class="dp-n">
+          <input type="hidden" id="userId_login" value="1000">
+          <input type="hidden" id="username_login" value="wasankds">
+        </form>
+      </div>
+
+      <div class="nav-3">
+        <button class="nav-link nav-dropdown-toggle" id="navDropdownBtn" type="button"><i class="fas fa-bars"></i></button>
+        <div class="nav-dropdown-menu" id="navDropdownMenu">
+          <a href="/manage/settings" class="nav-link " title="ตั้งค่า"><i class="fas fa-sliders-h mg-r-m"></i> ตั้งค่า</a>
+          <a href="/manage/users" class="nav-link " title="จัดการผู้ใช้"><i class="fas fa-users-cog mg-r-m"></i> จัดการผู้ใช้งาน</a>
+          <a href="/manage/sessions" class="nav-link " title="จัดการเซสชั่น"><i class="fas fa-user-clock mg-r-m"></i> จัดการเซสชั่น</a>
+          <a href="/manage/settings/system" class="nav-link " title="System Settings"><i class="fas fa-cog mg-r-m"></i> ตั้งค่าระบบครั้งแรก</a>
+          <a class="nav-link" href="/term-and-conditions" title="Term and Conditions"><i class="fas fa-file-contract mg-r-m"></i> ข้อกำหนดและเงื่อนไข</a>
+          <a class="nav-link" href="/logout" title="Logout"><i class="fas fa-sign-out-alt mg-r-m"></i> ออกจากระบบ</a>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Toolbar -->
+  <header class="header-ctn">
+    <section class="header-toolbar">
+
+      <!--  -->
+      <form class="header-toolbar-1 flex-row">
+        <button class="btn btn-sm bg-search" id="btnSearchDocs" title="ค้นหาเอกสาร">
+          <i class="fa fa-search"></i>
+        </button>
+
+        <input class="col-sm-f al-c bdr3 no-x" type="search" autocomplete="off" 
+               title="เลขที่/ปี-เดือน-วัน"
+               required pattern=".{2,}"
+               placeholder="เลขที่/ปี-เดือน-วัน" id="sip" name="sip">       
+
+        <button class="btn btn-sm bg-load nowrap" id="btnLoadLast" title="ดาวน์โหลดล่าสุด">
+          <i class="fa fa-download mg-r-s"></i>ล่าสุด
+        </button>
+      </form>
+      
+      <!--  -->
+      <form class="header-toolbar-2">
+        <div class="d-flex justify-content-between">
+
+          <!--  -->
+          <div class="d-flex align-items-center">
+            <button class="btn btn-sm bg-clear" title="ล้างผลการค้นหา" 
+                    id="btnClearSearch" ><i class="fa fa-broom"></i></button>
+            <select class="al-l h-100 bdr3" id="selectDocToLoad" name="selectDocToLoad"></select>
+  
+            <input class="al-c h-100 bdr3" type="text" id="searchResNum" readonly>
+          </div>
+  
+          <!--  -->
+          <button class="btn btn-sm bg-load" type="submit" id="btnLoadDoc" title="โหลดเอกสารล่าสุด">
+            <i class="fa fa-download"></i>
+          </button> 
+
+        </div>
+      </form>
+
+      <!--  -->
+      <div class="header-toolbar-3">
+        <button class="btn btn-sm bg-switch" id="btnModeButton">
+          <i class="fa fa-hand-pointer pd-r-m"></i>โหมดปุ่ม
+        </button>
+
+        <button class="btn btn-sm bg-load mg-l-s" id="btnShowSearch" title="แสดงแถบเครื่องค้นหา">
+            <i class="fa fa-toolbox mg-r-s"></i>แถบเครื่องมือโหลด
+        </button>
+      </div>
+      
+      <!--  -->
+      <div class="header-toolbar-4">
+        <button class="btn btn-sm bg-new mg-l-l" id="btnNewDoc" title="สร้างเอกสารใหม่">
+          <i class="fa fa-file-circle-plus mg-r-s"></i>ใหม่
+        </button>
+      </div>
+
+      <!--  -->
+      <div class="header-toolbar-5">
+        <div class="d-flex align-items-center">
+          <button class="btn btn-sm bg-cancel mg-l-l" 
+                  id="btnCancelDoc"  title="ยกเลิกเอกสาร">
+            <i class="fa fa fa-times-circle  mg-r-s"></i>ยกเลิก
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </header> 
+
+
+  <!-- MAIN CONTAINER -->
+  <main>
+
+    <!-- FORM -->
+    <form id="mainForm" action="<%= PATH_MAIN %>" method="post" autocomplete="off">
+
+      <!--  ฝั่ง userId/branchId - ไปตรวจสอบบน Server  -->
+      <!-- <input type="hidden" name="userId" id="userId" value="<%= USER_ID %>"> -->
+      <!-- <input type="hidden" name="userAuthority" id="userAuthority" value="<%= USER_AUTHORITY_SESSION %>"> -->
+
+      <!-- เอาไปตรวจสอบกับ User บน Server  -->
+      <!-- <input type="hidden" name="branchId" id="branchId" value="<%= BRANCH_ID %>"> -->
+
+      <!-- #1 : Title   -->
+      <section>
+        <div class="flex-row">
+          <input class="col-sm-3 -c al-c bdr3" type="text" readonly id="docId" name="docId">
+          <input class="col-sm-5 -c al-c bdr3" type="text" readonly placeholder="ชื่อสาขา" id="branchName" >
+          <input class="col-sm-2 -c al-c bdr3" type="text" title="สถานะเอกสาร"
+                 readonly    placeholder="สถานะ"
+                 name="docStatusNumber" id="docStatusNumber">
+        </div>
+      </section><!-- #1 -->
+        
+
+      <!--#2 : ค้นหา/เพิ่มไอเท็ม -->
+      <div class="row mg-t-m">
+        <div class="col-100 modalCtn">
+          <input class="al-c bg-ligreen bdr3" type="text" 
+                 id="searchItems"  placeholder="ค้นหาไอเท็ม"
+                 onfocus="popModalItems(event)" 
+                 oninput="popModalItems(event)" >
+          <div class="modal"><div class="modal-list"></div></div>
+        </div>
+      </div>
+
+      <!-- #3 : กรณีโหมดปุ่ม  -->
+      <section>
+        <!-- เก็บปุ่ม Category/Pagination/Items -->
+        <div class="dp-n categoryButtonsCtn"></div>
+        <div class="dp-n paginationCtn"></div>
+        <div class="dp-n itemsButtonsCtn"></div>
+      </section> 
+
+      <!-- #4 --><!-- รายการ - Container -->
+      <div id="tableRowCtn"> <!-- <div id="tableListCtn"> -->
+
+        <!-- สำหรับสร้างรายการ -->
+        <div class="al-c fs-n mg-t-l fw-b">รายการขาย</div>
+
+        <!-- รายการขาย -->
+        <div id="listCtn"></div>
+
+        <!-- ผลรวม -->
+        <section class="row" id="mainTotalCtn">
+
+          <!-- การชำระเงิน -->
+          <div class="col-25" id="paymentMethodCtn">
+            <label>การชำระเงิน</label>
+            <div>
+              <input type="radio" name="paymentMethod" id="paymentCash" value="paymentCash" required >
+              <label for="paymentCash">เงินสด</label>
+            </div>
+            <div>
+              <input type="radio" name="paymentMethod" id="paymentBankTransfer" value="paymentBankTransfer" required >
+              <label for="paymentBankTransfer">โอนเงิน</label>
+            </div>
+            <div>
+              <input type="radio" name="paymentMethod" id="paymentCheque" value="paymentCheque" required >
+              <label for="paymentCheque">เช็ค</label>
+            </div>
+            <div>
+              <input type="radio" name="paymentMethod" id="paymentOther" value="paymentOther" required >
+              <label for="paymentOther">อื่นๆ</label>
+            </div>
+          </div>
+
+          <!-- ภาษีมูลค่าเพิ่ม -->
+          <div class="col-30" id="selectVatCalculatingCtn">
+            <label>ภาษีมูลค่าเพิ่ม</label>
+            <div>
+              <input type="radio" name="vatCalculating" id="noVat" value="noVat" required >
+              <label for="noVat">ไม่มี VAT</label>
+            </div>
+            <div>
+              <input type="radio" name="vatCalculating" id="vatIn" value="vatIn" required >
+              <label for="vatIn">คำนวณ VAT ใน</label>
+            </div>
+            <div>
+              <input type="radio" name="vatCalculating" id="vatOut" value="vatOut" required >
+              <label for="vatOut">คำนวณ VAT นอก</label>
+            </div>
+          </div>
+
+          <!-- คอลัมน์ผลรวม -->
+          <div class="col-45" id="columnTotalCtn">
+            <div class="row" id="totalCtn">
+              <label class="col-55 al-r">รวม</label>
+              <input class="col-45 al-r pd-r-s" type="text" 
+                     id="totalAmount" name="totalAmount" readonly>
+            </div>
+
+            <div class="row" id="totalVatCtn">
+              <label class="col-55 al-r">ภาษีมูลค่าเพิ่ม 7%</label>
+              <input class="col-45 al-r pd-r-s" type="text" 
+                     id="vatAmount" name="vatAmount" readonly>
+
+            </div>
+
+            <div class="row" id="netCtn">
+              <label class="col-55 al-r">รวมทั้งสิ้น</label>
+              <input class="col-45 al-r pd-r-s" type="text" 
+                     id="netAmount" name="netAmount" min="0" readonly>
+            </div>
+
+          </div> 
+
+        </section>
+      </div>
+
+      <!-- #5 ปุ่มท้ายหน้า -->
+      <div class="al-c bt mg-t-l pd-t-m">
+        <div class="d-flex justify-content-between">
+
+          <!--  -->
+          <button class="btn btn-sm bg-save" id="btnSave" title="บันทึก">
+            <i class="fa fa fa-save mg-r-s"></i>บันทึก
+          </button>
+
+          <!--  -->
+          <div>
+            <button class="btn btn-sm bg-print" id="btnPrint" title="พิมพ์">
+              <i class="fa  fa-solid fa-print mg-r-s"></i>พิมพ์
+            </button>
+            <button class="btn btn-sm btn-sm bg-download" id="btnDownloadImage" title="ดาวน์โหลดภาพ">
+              <i class="fa fa fa-download mg-r-s"></i>ภาพ
+            </button>
+  
+            <button class="btn btn-sm btn-sm bg-download" id="btnDownloadPDF" title="ดาวน์โหลด PDF">
+              <i class="fa fa fa-download mg-r-s"></i>PDF
+            </button>
+          </div>
+          
+          <!--  -->
+          <button class="btn btn-sm bg-change " id="btnPrintChanges" title="พิมพ์ข้อมูลการเปลี่ยนแปลง">
+            <i class="fa fa-solid fa-print mg-r-s"></i>Changes
+          </button>
+        </div>
+      </div>
+        
+    </form>
+    
+  </main>
+
+  <footer>  
+    <p>
+      <span class="fs-s">MPOS</span>
+      <span class="fs-s"></span>
+      <span class="fs-s">v2.0</span> 
+    </p>
+    <p>
+      <small class=" fs-s">
+        <a href="https://wasankds.com" target="_blank">
+          <span>wasankds.com</span>
+        </a>
+      </small>
+    </p>
+    <p>
+      <small class=" fs-s">
+        <i class="fa fa-copyright mg-r-m"></i>วสันต์ คุณดิลกเศวต
+      </small>
+    </p>
+</footer>
+
+  
+  <!-- ข้อมูลสำหรับการทดสอบ -->
+  <script src="../public/js/test_sales_data.js"></script>
+
+  <script>    
+    const IS_PRODUCTION = false;
+    const BUTTONS_PER_PAGE = 10;
+
+    const PATH_MAIN =  `<%= PATH_MAIN %>` ; 
+    const PATH_FETCH =  `<%= PATH_FETCH %>` ; 
+    const PATH_SEARCH =  `<%= PATH_SEARCH %>` ; 
+    const PATH_SAVE =  `<%= PATH_SAVE %>` ; 
+    const PATH_LOAD =  `<%= PATH_LOAD %>` ; 
+    const PATH_PRINT =  `<%= PATH_PRINT %>` ; 
+    const PATH_CHANGES =  `<%= PATH_CHANGES %>` ; 
+    const PATH_STATUS =  `<%= PATH_STATUS %>` ; 
+    // สำหรับโหลดหรือค้นหาเลย
+    const DOC_ID = IS_PRODUCTION ?  `<%= DOC_ID %>` : '';
+    const SIP = IS_PRODUCTION ?  `<%= SIP %>` : '';
+  </script>
+
+  <!-- <% if(IS_PRODUCTION) { %> -->
+
+  <!-- <% }else{ %> -->
+  <script type="text/javascript" src="../public/js/script_all.js"></script>
+  <script type="text/javascript" src="../public/js/nav.js"></script>
+  <script type="text/javascript" src="../public/js/notify.js"></script>
+  <script type="text/javascript" src="../public/js/doc_print.js"></script>
+  <script type="text/javascript" src="../public/js/doc_modal.js"></script>
+  <script type="text/javascript" src="../public/js/doc_table.js"></script>
+  <script type="text/javascript" src="../public/js/doc_tools.js"></script>  
+  <script type="text/javascript" src="../public/js/doc_formAction.js"></script>  
+  <script type="text/javascript" src="../public/js/doc_crud.js"></script>  
+  <script type="text/javascript" src="../public/js/sales.js"></script>
+  <!-- <% } %> -->
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/cb.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/manageSettings.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/manageSettings.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+  <%- include('partials/nav.ejs') %>
+  
+  <header class="header-title bg-steelblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-sliders-h mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <main>
+
+      
+    <!-- Tab links -->
+    <div class="tab">
+      <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">ทั่วไป</div>
+      <div class="tabMenu" id="tab2Menu" onclick="event.preventDefault();openMenu(this,'tabcontent2')">จัดการระบบ</div>
+      <!-- <div class="tabMenu" id="tab3Menu" onclick="event.preventDefault();openMenu(this,'tabcontent3')"><= PAGE_INVOICE ></div> -->
+      <!-- <div class="tabMenu" id="tab4Menu" onclick="event.preventDefault();openMenu(this,'tabcontent4')"><= PAGE_RECEIPT ></div> -->
+    </div>
+
+    <!-- #1 -->
+    <div id="tabcontent1" class="tabcontent">
+      <%- include('partials/manageSettings_general.ejs' ) %>
+    </div>
+
+    <!-- #2 -->
+    <div id="tabcontent2" class="tabcontent">
+      <%- include('partials/manageSettings_manageSystem.ejs' ) %>
+    </div>
+
+    <!-- #3 -->
+    <!-- <div id="tabcontent3" class="tabcontent">
+      <- include('partials/manageSettings_invoice.ejs' ) >
+    </div> -->
+
+    <!-- #4 -->
+    <!-- <div id="tabcontent4" class="tabcontent">
+      <- include('partials/manageSettings_receipt.ejs' ) >
+    </div> -->
+
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!-- เริ่มต้นคลิกแท็บตอนโหลดหน้าเว็บ -->
+  <script type="text/javascript">
+    const tabNumberClicked = `<%= tabNumberClicked %>`;
+  </script>
+
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/tabMenu.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/manageSettings.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script type="text/javascript" src="/js-min/manageSettings.obf.js?v=<%= time %>"></script>
+  <% }  %>
+</body>
+</html>
+
+
+
+

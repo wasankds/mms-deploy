@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reportDoc</title>
+
+  <link rel="stylesheet" href="http://localhost/css/wk_all.css">
+  <link rel="stylesheet" href="http://localhost/css/flex.css">
+  <link rel="stylesheet" href="http://localhost/css/input.css">
+  <link rel="stylesheet" href="http://localhost/css/btngroup.css">
+  <link rel="stylesheet" href="http://localhost/400/css/ebrReport.css">
+</head>
+<body>
+  
+  <main class="main-left">
+
+    <section class="window-ctn pd-xs col-100" >
+
+      <div class="window-title bg-window-2" name="windowTitle">
+        <p class="bg-cornblue">
+          <span class="titleText1 fc-white pd-l-">สรุปเอกสาร เดือน : </span>
+          <span class="titleText2 fc-lime">2025-01</span>
+          <span class="titleText3 fc-yellow"></span>
+          <span class="close-window" onclick="closeWindow(this)">✖</span>
+          <span class="expand-window" onclick="expandFrame(this,100)">2</span>
+          <span class="expand-window" onclick="expandFrame(this,50)">1</span>
+          <span class="expand-window" onclick="switchflexWrap(this)">wrap</span>
+          <span class="expand-window" onclick="copyTable(this)">copy</span>
+        </p>
+      </div>
+    
+      <!-- <div class="window-title2" name="windowTitle2"></div> -->
+      <div class="table-ctn" name="tableCtn">
+        <table>
+          <tr class="bg-111 lh-xxl">
+            <th>เลขที่เอกสาร</th>
+            <th>สถานะ</th>
+            <th>วันที่ยืม</th>
+            <th>Jobs</th>
+            <th>สถานที่</th>
+            <th>ผู้เบิก</th>
+            <th>ผู้จ่าย</th>
+            <th>วันที่คืน</th>
+            <th>ผู้คืน</th>
+            <th>ผู้รับคืน</th>
+            <th>ผู้ตรวจสอบ</th>
+          </tr>
+          <tr class="al-r">
+            <td class="al-c fc-lime"><span>1736834161825</span></td>
+            <td class="al-c fc-liblue"><span>รอคืน</span></td>
+            <td class="al-c fc-orange"><span>2025-01-14</span></td>
+            <td class="al-c fc-yellow"><span>2652</span></td>
+            <td class="al-c fc-orange"><span>onSite</span></td>
+            <td class="al-l fc-lime"><span>แสงเดือน สังวาลย์เพ็ชร์</span></td>
+            <td class="al-l fc-lime"><span>Wasan Khunnadiloksawet</span></td>
+            <td class="al-r fc-orange"><span></span></td>
+            <td class="al-r fc-yg"><span></span></td>
+            <td class="al-r fc-yg"><span></span></td>
+            <td class="al-r fc-yg"><span></span></td>
+          </tr>
+        </table>
+      </div>
+    
+    </section>
+    
+  </main>
+</body>
+</html>

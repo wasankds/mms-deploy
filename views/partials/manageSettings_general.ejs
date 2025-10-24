@@ -1,0 +1,69 @@
+
+<form id="formTab1" autocomplete="off" 
+      action="<%= PATH_SAVE %>" 
+      method="post"
+      onsubmit="createSpinner()">
+
+  <!--  -->      
+  <section>    
+
+    <!-- COMPANY_NAME -->
+    <div class="input-group">
+      <label title="COMPANY_NAME">* ไทเทิ้ลหน้าแรก</label> 
+      <input class="pd-l-m" type="text" 
+             required
+             name="COMPANY_NAME" id="COMPANY_NAME" 
+             value="<%= settings?.COMPANY_NAME ?? '' %>"
+             placeholder="COMPANY_NAME">
+    </div>
+
+    <!-- 
+    *******************************************************
+    *******************************************************
+    *******************************************************
+    ******************** เปิดใช้งานเมนุ  *********************
+    *******************************************************
+    *******************************************************
+    *******************************************************
+    -->    
+
+    <!-- <div class="mg-t-l">
+      <label>
+        <i class="fas fa-toggle-on mg-r-m fc-blue"></i>
+        <span class="fc-blue">เปิดใช้งานเมนู</span>
+      </label>
+    </div> -->
+
+    <!-- SETTINGS_SYSTEM -->
+    <!-- <div class="mg-t-xl">
+      <label class="cb-ctn al-l" title="SETTINGS_SYSTEM">
+        <span>เปิดใช้งานเมนู "ตั้งค่าระบบครั้งแรก"</span>
+        <input type="checkbox" 
+                id="SETTINGS_SYSTEM" name="SETTINGS_SYSTEM" 
+                <= settings?.SETTINGS_SYSTEM == 'on' ? 'checked' : '' > >
+        <span style="left:1px" class="cb-checkmark"></span>
+      </label>
+    </div> -->
+
+    <!-- DOWNLOAD_DOC_AS_IMAGE --> 
+    <!-- <div class=" ">
+      <label class="cb-ctn al-l" title="DOWNLOAD_DOC_AS_IMAGE">
+        <span>เปิดใช้ปุ่ม "ดาวน์โหลดเอกสารเป็นภาพ"</span>
+        <input type="checkbox" 
+               name="DOWNLOAD_DOC_AS_IMAGE" 
+               <= settings?.DOWNLOAD_DOC_AS_IMAGE === 'on' ? 'checked' : '' > >
+        <span style="left:1px" class="cb-checkmark"></span>
+      </label>
+    </div> -->
+
+  <!-- Buttons/Save -->
+  <section class="flex-row justify-content-center mg-t-xxl">
+    <button class="btn btn-sm bg-save" type="submit">
+      <i class="fas fa-save"></i> บันทึก
+    </button>
+  </section>
+
+</form>
+
+
+

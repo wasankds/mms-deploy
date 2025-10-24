@@ -1,0 +1,62 @@
+<section class="manageSystemCtn">
+
+  <!--  -->
+  <div>
+    <label class="mg-b-m">สำรองฐานข้อมูล</label>
+    <form id="backupForm" class="al-c"
+          onsubmit="createSpinner()"
+          action="<%= PATH_BACKUP_DB %>" method="post">
+      <section class="d-flex">
+        <button type="button" class="btn btn-sm bg-mediumseagreen" id="btnBackupDb">
+          <i class="fas fa-database"></i> Backup Database
+        </button>
+        <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmBackupDb">
+          <i class="fas fa-check-circle"></i> ยืนยัน
+        </button>
+      </section>
+    </form>
+  </div>  
+
+  <!--  -->
+  <div class="mg-t-xl">
+    <label class="mg-b-m">
+      <span>อัปเดทระบบ</span>
+      <span class="fc-cornblue fw-b">[ เวอร์ชั่นปัจจุบัน <%= SYS_VERSION %> ]</span>
+    </label>
+    <form id="updateForm" class="al-c"
+          onsubmit="createSpinner()"
+          action="<%= PATH_UPDATE_SYSTEM %>" method="post">
+      <section class="d-flex">
+
+        <button type="button" class="btn btn-sm bg-cornblue" id="btnUpdateSystem">
+          <i class="fas fa-sync"></i> Update System
+        </button>
+
+        <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmUpdateSystem">
+          <i class="fas fa-check-circle"></i> ยืนยัน
+        </button>
+        
+      </section>
+    </form>
+  </div>
+
+  <!--  -->
+  <div class="mg-t-xl">
+    <label class="mg-b-m">เริ่มระบบใหม่</label>
+    <form id="restartForm" class="al-c" 
+          onsubmit="createSpinner()"
+          action="<%= PATH_RESTART_PM2 %>" method="post">
+      <section class="d-flex">
+        <button type="button" class="btn btn-sm bg-dkorange" id="btnRestartPm2">
+          <i class="fas fa-redo"></i> Restart
+        </button>
+        <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmRestartPm2">
+          <i class="fas fa-check-circle"></i> ยืนยัน
+        </button>
+      </section>
+    </form>
+  </div>
+
+
+
+</section>

@@ -1,0 +1,61 @@
+
+<!-- right#1 -->
+<div class="flex-row space-between">
+  
+  <!-- 
+  <button class="btn bg-clear " type="button" 
+          onclick="clearSelect()">
+    <i class="fa fa-broom"></i> ล้าง
+  </button> 
+  -->
+
+  <button class="nowrap btn btn-sm bg-print " type="button" onclick="window.print();">
+    <i class="fa fa-print"></i> พิมพ์
+  </button>        
+  
+
+  <button class="btn btn-sm bg-move " type="button"
+          data-toggle="842px"
+          onclick="adjustWidthToggle(this);">
+    <i class="fa fa-arrows-alt-h"></i>
+  </button>
+
+</div>
+
+<!-- right#2 -->
+<div class="flex-row mg-t-m">
+  <label class="col-sm-1-5 al-r pd-r-s">เดือน</label>
+  <select class="col-sm-7 al-c" id="selectMonth" name="selectMonth">          
+    <% monthDocs.forEach( m => { %>
+    <option value="<%= m.month %>"><%= m.monthName %></option>
+    <% }) %>
+  </select>      
+
+  <!-- ปฏิทินเอกสาร -->
+  <button class="col-sm-1-5 btn btn-sm bg-mediumseagreen" 
+          type="button" id="btnCalendar" 
+          onclick="concludeDocsCalendar(this,'calendarReport');">
+    <i class="fa fa-calendar"></i>
+      <!-- ปฏิทินเอกสาร  -->
+  </button>
+
+</div>
+
+<!-- right#3 -->
+<div class="flex-row space-between mg-t-m">
+
+  <!-- สรุปเอกสาร -->
+  <button class="btn btn-sm bg-cornblue " type="button" 
+          id="btnConcludeDocReport" 
+          onclick="concludeReport(this,'docsReport');">
+    <i class="fa fa-file-alt"></i> สรุปเอกสาร
+  </button>
+
+  <!-- ประวัติการยืมไอเท็ม -->
+  <button class="btn btn-sm bg-goldenrod " type="button" 
+          id="btnConcludeItemsReport"
+          onclick="concludeReport(this,'itemsReport');">
+    <i class="fa fa-history"></i> ประวัติไอเท็ม
+  </button>
+
+</div>

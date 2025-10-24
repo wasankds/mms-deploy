@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reportDoc</title>
+
+  <link rel="stylesheet" href="http://localhost/css/wk_all.css">
+  <link rel="stylesheet" href="http://localhost/css/flex.css">
+  <link rel="stylesheet" href="http://localhost/css/input.css">
+  <link rel="stylesheet" href="http://localhost/css/btngroup.css">
+  <link rel="stylesheet" href="http://localhost/400/css/ebrReport.css">
+</head>
+<body>
+  
+  <main class="main-left">
+
+    <section class="window-ctn pd-xs col-100" >
+      <div class="window-title bg-dodgerblue" name="windowTitle">
+        <p>
+          <span class="titleText1 fc-white pd-l-m">ประวัติการเบิกคืนอุปกรณ์ เดือน : </span>
+          <span class="titleText2 fc-lime">2024-12</span>
+          <span class="close-window" onclick="closeWindow(this)">✖</span>
+          <span class="expand-window" onclick="expandFrame(this,100)">2</span>
+          <span class="expand-window" onclick="expandFrame(this,50)">1</span>
+          <span class="expand-window" onclick="switchflexWrap(this)">wrap</span>
+          <span class="expand-window" onclick="copyTable(this)">copy</span>
+        </p>
+      </div>
+    
+      <div class="table-ctn" name="tableCtn">
+        <table>
+          <tr class="bg-111 lh-xxl">
+            <th>ลำดับ</th>
+            <th>Item Id</th>
+            <th>สถานะ</th>
+            <th>Item Desc</th>
+            <th>วันที่ยืม</th>
+            <th>ผู้ยืม</th>
+            <th>วันที่คืน</th>
+            <th>ผู้คืน</th>
+            <th>เลขที่เอกสาร</th>
+            <th>JobNo</th>
+          </tr>
+          <tr class="al-r">
+            <td class="al-c fc-liblue">1</td>
+            <td class="al-c fc-lime">001-10</td>
+            <td class="al-c fc-lime">ปกติ</td>
+            <td class="al-l fc-ligreen">MILLER DIMENSION 1250 สีฟ้า</td>
+            <td class="al-c fc-yellow">2024-12-11</td>
+            <td class="al-l fc-yellow">ฟ้ามุ่ย ดวงคำ</td>
+            <td class="al-c fc-ligreen">2024-12-11</td>
+            <td class="al-l fc-ligreen">ฟ้ามุ่ย ดวงคำ</td>
+            <td class="al-c">1733890762252</td>
+            <td class="al-c">ประจำ</td>
+          </tr>
+          <tr class="al-r">
+            <td class="bg-dsg-dk1 al-c fc-liblue">2</td>
+            <td class="bg-dsg-dk1 al-c fc-lime">001-10</td>
+            <td class="bg-dsg-dk1 al-c fc-white">-</td>
+            <td class="bg-dsg-dk1 al-l fc-ligreen">MILLER DIMENSION 1250 สีฟ้า</td>
+            <td class="bg-dsg-dk1 al-c fc-yellow">2024-12-11</td>
+            <td class="bg-dsg-dk1 al-l fc-yellow">กฤตชัย สุขอารมณ์</td>
+            <td class="bg-dsg-dk1 al-c fc-ligreen"></td>
+            <td class="bg-dsg-dk1 al-l fc-ligreen"></td>
+            <td class="bg-dsg-dk1 al-c">1733890988937</td>
+            <td class="bg-dsg-dk1 al-c">2469</td>
+          </tr>
+          <tr class="al-r">
+            <td class="bg-dsg-dk1 al-c fc-liblue">51</td>
+            <td class="bg-dsg-dk1 al-c fc-lime">001-90</td>
+            <td class="bg-dsg-dk1 al-c fc-white">-</td>
+            <td class="bg-dsg-dk1 al-l fc-ligreen">Miller Dimension 852</td>
+            <td class="bg-dsg-dk1 al-c fc-yellow">2024-12-11</td>
+            <td class="bg-dsg-dk1 al-l fc-yellow">กฤตชัย สุขอารมณ์</td>
+            <td class="bg-dsg-dk1 al-c fc-ligreen"></td>
+            <td class="bg-dsg-dk1 al-l fc-ligreen"></td>
+            <td class="bg-dsg-dk1 al-c">1733890988937</td>
+            <td class="bg-dsg-dk1 al-c">2469</td>
+          </tr>
+        </table>
+        </div>
+    
+    </section>
+    
+  </main>
+</body>
+</html>

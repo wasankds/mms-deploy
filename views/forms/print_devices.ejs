@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title><%= title %></title>
+
+  <% if(!global.IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/utils.css">
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css/flex.css">
+  <% } else { %>
+  <link rel="stylesheet" href="<%= global.DOMAIN_ALLOW %>/css-min/print_devices.min.css">
+  <% }  %>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+    * {
+      font-family: "Anuphan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+    }
+    body{
+      max-width: 21cm;
+      margin: auto; 
+    }
+    main{
+      padding-top:0.5cm;
+      width: 19cm;
+      overflow: hidden;
+      margin: auto;
+    }
+    footer{ 
+      width: 19cm;
+      margin: auto;
+    }
+
+    p{ 
+      font-size: 0.85rem;
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 1px;
+      overflow: hidden;
+      font-size: 0.6rem; /* white-space: nowrap; */
+      background: white;
+    }
+
+    .page-break-after { 
+      page-break-after: always; 
+      border-bottom: 1px dashed gray ;
+      padding-bottom: 10px;
+    } 
+
+    @media print {  .no-print { display: none; } }
+  </style>
+</head>
+<body>
+
+  <main class="">
+    
+    <!--  -->
+    <p class="al-c fs-s"><%= title %> [<%= dateTime %>]</p>  
+
+    <table>
+      
+      <thead>
+        <tr >
+          <th class="ba-k bg-eee">ไอดี</th>
+          <th class="ba-k bg-eee">ชื่อ</th>
+          <th class="ba-k bg-eee">สี</th>
+          <th class="ba-k bg-eee">ทริกเกอร์</th>
+        </tr>
+      </thead>
+
+      <% devicesFind.forEach( (device,index) => { %>
+        <%
+          const colorActive = device.deviceStatus == 'active' ? '' : 'strike fc-777' ;
+        %>
+        <tr>
+          <td class="<%= colorActive %> ba-k al-c"><%= device.deviceId %></td>
+          <td class="<%= colorActive %> ba-k pd-l-s"><%= device.deviceName %></td>
+          <td class="<%= colorActive %> ba-k al-c"><%= device.deviceBgClassColor %></td>
+          <td class="<%= colorActive %> ba-k pd-l-s">
+            <% if(device.triggerRows && device.triggerRows.length > 0){ %>
+              <table>
+                <% device.triggerRows.forEach( (trig, idxTrig) => { %>
+                  <tr class="<%= idxTrig > 0 ? 'bt-k-d' : '' %>">
+                    <td class="pd-r-m"><%= idxTrig + 1 %>.)</td>
+                    <td class="pd-r-m"><%= trig.triggerStatus ? trig.triggerStatus : '-' %></td>
+                    <td class="pd-r-m"><%= trig.triggerKey ? trig.triggerKey : '-' %></td>
+                    <td class="pd-r-m"><%= trig.triggerMin ? trig.triggerMin : '-' %></td>
+                    <td class=""><%= trig.triggerMax ? trig.triggerMax : '-' %></td>
+                  </tr>
+                  <% }) %>
+              </table>
+            <% } else { %>
+              <span>-</span>
+            <% } %>
+          </td>
+        </tr>
+ 
+      <% }) %>
+    </table>
+  </main>
+
+  <!--  -->
+  <footer class="d-flex justify-content-between al-c no-print mg-t-l">
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.print()">พิมพ์
+    </button>
+    <button class="btn bg-black fc--white pd-l-xxl pd-r-xxl pd-t-l pd-b-l clickable" 
+            type="button" onclick="window.close()">ปิดหน้าต่าง
+    </button>
+  </footer>
+
+</body>
+</html>
