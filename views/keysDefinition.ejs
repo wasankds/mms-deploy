@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+ 
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/keysDefinition.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/keysDefinition.min.css?v=<%= time %>">
+  <% }  %>
+
+</head>
+<body>
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <%
+    const isDisabled = ['O'].includes(user.userAuthority) ? '' : 'disabled'
+  %>
+
+
+  <header class="header-title bg-slateblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-microchip mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <main>       
+    
+    <!-- Search -->
+    <div class="toolbar-ctn pd-b-m" >
+      
+      <div class="flex-row">  
+        
+        <div class="col-sm-f">
+          <!-- <label class="text-white pd-r-l">ทริกเกอร์แจ้งเตือน</label> -->
+
+          <button type="button" class="btn btn-sm bg-add pd-l-l pd-r-l" 
+                  <%= isDisabled %>
+                  id="btnAddRow" title="เพิ่ม">
+            <i class="fas fa-plus-circle"></i>
+          </button>
+
+          <button type="button" class="btn btn-sm bg-undo pd-l-l pd-r-l" 
+                  <%= isDisabled %>
+                  id="btnUndoRow">
+            <i class="fas fa-undo"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <button class="btn btn-sm bg-save pd-l-l pd-r-l" type="button" 
+              <%= isDisabled %>
+              id="btnSave" title="บันทึก">
+        <i class="fas fa-save"></i>
+      </button>
+
+      <div class="flex-row">
+        <label class="al-r pd-r-s">แถว/หน้า</label>
+        <select class="al-c" name="rpp" id="rpp" <%= isDisabled %> >
+          <option value="20" <%= rpp == '20' ? 'selected' : '' %> >20</option>
+          <option value="30" <%= rpp == '30' ? 'selected' : '' %> >30</option>
+          <option value="50" <%= rpp == '50' ? 'selected' : '' %> >50</option>
+          <option value="100" <%= rpp == '100' ? 'selected' : '' %> >100</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Pagination5btns -->
+    <div class="pgMainCtn">
+      <%- include('partials/pagination5btns3.ejs') %>
+    </div>
+
+
+    <section class="pd-l ba" id="rowsCtn">
+      <% data.forEach( (obj,index) => { %>
+      <%
+        const lineSwap = index%2 == 0 ? 'bg-line-swap' : ''
+      %>
+      <div class="flex-row tableRows">
+        <input class="btn al-c col-sm-0-5 bg-up" type="button" value="&#9650;" tabindex = "-1" 
+              <%= isDisabled %>
+              onclick="moveListUp(this)">
+        <input class="btn al-c col-sm-0-5 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+              <%= isDisabled %>
+              onclick="moveListDn(this)">
+
+        <input class="col-sm-1 key al-c pd-r-s" type="text" 
+                required <%= isDisabled %>
+                name="key" placeholder="คีย์"
+                value="<%= obj.key %>">
+              
+        <input class="col-sm-2-5 keyName al-l pd-l-s" type="text" 
+                required <%= isDisabled %>
+                name="keyName" placeholder="ชื่อคีย์"
+                value="<%= obj.keyName %>">
+
+        <input class="col-sm-1 keyUnit al-c" type="text" 
+                required <%= isDisabled %>
+                name="keyUnit" placeholder="หน่วยนับ"
+                value="<%= obj.keyUnit %>">
+
+        <input class="col-sm-2 bgColor al-l pd-l-s" type="text" 
+                required <%= isDisabled %>
+                name="bgColor" placeholder="สีพื้นหลัง"
+                value="<%= obj.bgColor %>">
+
+        <input class="col-sm-2 fontColor al-l pd-l-s" type="text" 
+                required <%= isDisabled %>
+                name="fontColor" placeholder="สีตัวอักษร"
+                value="<%= obj.fontColor %>">
+
+        <input class="col-sm-0-5 btn al-c  bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+               <%= isDisabled %>
+               onclick="removeRow(this)">
+      </div>
+      <% }) %>
+    </section>
+
+
+  </main>  
+
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script type="text/javascript">
+    var PATH_MAIN = `<%= PATH_MAIN %>` ;
+    var PATH_SAVE = `<%= PATH_SAVE %>` ;
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/keysDefinition.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/keysDefinition.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+<!-- templateRow -->
+<template id="templateRow">
+  <div class="flex-row tableRows">
+    <input class="btn al-c col-sm-0-5 bg-up" type="button" value="&#9650;" tabindex = "-1" 
+           onclick="moveListUp(this)">
+    <input class="btn al-c col-sm-0-5 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+           onclick="moveListDn(this)">
+
+    <input class="col-sm-1 key al-c pd-r-s" type="text" 
+           required name="key" placeholder="คีย์">
+
+    <input class="col-sm-2-5 keyName al-l pd-l-s" type="text" 
+           required name="keyName" placeholder="ชื่อคีย์">
+
+    <input class="col-sm-1 keyUnit al-c" type="text" 
+           required name="keyUnit" placeholder="หน่วยนับ">
+
+    <input class="col-sm-2 bgColor al-l pd-l-s" type="text" 
+           required 
+           pattern="^bg-.*" title="ขึ้นต้นด้วย bg-"
+           name="bgColor" placeholder="สีพื้นหลัง">
+
+    <input class="col-sm-2 fontColor al-l pd-l-s" type="text" 
+           required 
+           pattern="^fc-.*"  title="ขึ้นต้นด้วย fc-"
+           name="fontColor" placeholder="สีตัวอักษร">
+
+    <input class="col-sm-0-5 btn al-c  bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+          onclick="removeRow(this)">
+  </div>
+</template> 

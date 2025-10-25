@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/modalAlerts.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/dataById.css?v=<%= time %>"> 
   <% } else { %>
@@ -44,14 +45,23 @@
 <body>
   <%- include('partials/nav.ejs') %>
   <%- include('partials/notify.ejs', {msg:msg}) %> 
-  
+
+  <!--  -->
+  <header class="header-alert-title <%= device.deviceBgClassColor %>">
+    <p></p>
+    <p class="al-c">
+      <span class="fw-b"><%= device.deviceName %></span>
+      <span class="fw-b fc-gray">[<%= device.deviceId %>]</span>
+    </p>
+
+    <p class="al-c fc-white">
+      <i id="alertBell" class="fas fa-bell mg-r-l clickable"></i>
+      <span id="alertCount"><%= count_alert == 0 ? '' : count_alert %></span>
+    </p>
+
+  </header>
+
   <main>
-  
-    <!--  -->
-    <section class="title <%= device.bgColor %>">
-      <span class="fw-b"><%= device.name %></span>
-      <span class="fw-b fc-gray">[<%= device.id %>]</span>
-    </section>
 
     <!--  -->
     <section class="card-ctn">
@@ -60,42 +70,73 @@
       <% keyObj.forEach( obj => { %>
       <section class="card card-<%= obj.key %>">
 
-        <!--  -->
+        <!-- col#1 -->
         <div class="card-column-1">
-
-          <div class="pd-s al-c mg-b-s bg-eee">
+          
+          <!-- key/unit -->
+          <div class="pd-s al-c bg-eee">
             <span class="fw-b <%=  obj.fontColor %> "><%= obj.keyName %></span>
             <span class="fc-gray">(<%= obj.keyUnit %>)</span>
           </div>   
-          <div class="flex-row justify-content-between bb-d lh-m mg-b-m ">
+          <div class="flex-row justify-content-between bb-d lh-m ">
             <span class="mg-l-m <%=  obj.fontColor %>  <%= obj.key %>-timestamp" title="เวลาล่าสุด">-</span>
-            <span class="mg-r-m fw-b fs-xl <%=  obj.fontColor %>  <%= obj.key %>-lastValue" title="ค่าล่าสุด">-</span>
+            <span class="mg-r-m fw-b fs-xl <%=  obj.fontColor %> <%= obj.key %>-lastValue" title="ค่าล่าสุด">-</span>
           </div>
-
-          <!--  -->
-          <div class="card-content-row">          
+          
+          <!-- row - lastValue -->
+          <div class="card-content-row pd-t-l">
             <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
             <div class="fc-blue <%= obj.key %>-timeInterval" title="ช่วงเวลา10นาที">-</div>
           </div>
+
+          <%
+            let trigerMin = ''
+            let trigerMax = ''
+            const triggerRow = device.triggerRows
+            if(triggerRow){
+              trigerMin = triggerRow.find( row => row.triggerKey == obj.key )?.triggerMin;
+              trigerMax = triggerRow.find( row => row.triggerKey == obj.key )?.triggerMax;
+            }
+          %>  
+
+          <!--  -->
           <div class="card-content-row">
             <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
+            <% if(trigerMin) { %>
+            <span class="fc-gray <%= obj.key %>-trigger-min" title="แจ้งเตือนต่ำ"
+                  data-trigger-min="<%= trigerMin %>">[<%= trigerMin %>]</span>
+            <% }else{ %>
+            <span></span>
+            <% } %>
             <div class="fc-plum <%= obj.key %>-min" title="ต่ำสุด">-</div>
           </div>
+
+          <!--  -->
           <div class="card-content-row">
             <i class="fas fa-arrow-up" title="สูงสุด"></i>
+            <% if(trigerMax) { %>
+            <span class="fc-gray <%= obj.key %>-trigger-max" title="แจ้งเตือนสูง"
+                  data-trigger-max="<%= trigerMax %>">[<%= trigerMax %>]</span>
+            <% }else{ %>
+            <span></span>
+            <% } %>
             <div class="fc-orange <%= obj.key %>-max" title="สูงสุด">-</div>
           </div>
+
+          <!--  -->
           <div class="card-content-row">
             <i class="fas fa-chart-line" title="เฉลี่ย"></i>
             <div class="fc-dodgerblue <%= obj.key %>-avg" title="เฉลี่ย">-</div>
           </div>
+
+          <!--  -->
           <div class="card-content-row">
             <i class="fas fa-hashtag" title="นับ"></i>
             <div class="fc-green <%= obj.key %>-count" title="นับ">-</div>
           </div>
-        </div>
+        </div> <!-- col#1 -->
 
-        <!-- #2 สำหรับสร้าง Chart -->
+        <!-- col#2 : Chart -->
         <div class="card-column-2 chart-ctn-<%= obj.key %>"></div>
 
       </section>
@@ -110,16 +151,18 @@
   <!--  -->
   <script>
     const socket = io();
-    const DEVICE_ID = `<%= device.id %>`;
+    const DEVICE = JSON.parse(`<%- JSON.stringify(device) %>`);
     const DATA = JSON.parse(`<%- JSON.stringify(data) %>`);
     const KEYS_OBJ = JSON.parse(`<%- JSON.stringify(keyObj) %>`);
-    const MAX_POINTS = Number("<%= MAX_POINTS %>");
-    
+    const MAX_POINTS = Number("<%= global.MAX_POINTS %>");
+    const PATH_GET_ALERTS = `<%= global.PATH_GET_ALERTS_USER_DEVICE %>`;    
   </script>
   <% if(!IS_PRODUCTION) { %>
   <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
   <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
   <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/alertSound.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/alertSocket_Count.js?v=<%= time %>"></script>
   <script type="text/javascript" src="/js/dataById.js?v=<%= time %>"></script>
   <% } else { %>
   <script src="/js-min/dataById.obf.js"></script>

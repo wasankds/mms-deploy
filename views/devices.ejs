@@ -100,29 +100,27 @@
           <!-- Row1 -->
           <div class="flex-row">
 
-            <div class="col-f flex-row">
-              <!--  -->
-              <div class="col-sm-4 input-group">
-                <label class="pd-r-s al-l lh-label" title="User ID">
-                  <i class="fas fa-id-badge mg-r-m"></i>ไอดี
-                </label>
-                <select class="al-c"  title="<%= global.DEVICE_DESCRIPTION %>"
-                        id="deviceId" name="deviceId" required >
-                  <% if(isItem){ %>
-                    <option value="<%= item.deviceId %>" selected><%= item.deviceId %></option>
-                  <% } %>
-                </select>
-              </div>
-  
-              <!--  -->
-              <div class="col-sm-6 input-group">
-                <label class="pd-r-s al-l lh-label" title="_id">
-                  <i class="fas fa-id-card mg-r-m"></i><span>_id</span>
-                </label>
-                <input class="al-c" type="text" id="_id" name="_id" 
-                       placeholder="_id" readonly
-                       value="<%= isItem ? item._id : '' %>">
-              </div>
+            <!--  -->
+            <div class="col-sm-3 input-group">
+              <label class="pd-r-s al-l lh-label" title="User ID">
+                <i class="fas fa-id-badge mg-r-m"></i>ไอดี
+              </label>
+              <select class="al-c"  title="<%= global.DEVICE_DESCRIPTION %>"
+                      id="deviceId" name="deviceId" required >
+                <% if(isItem){ %>
+                  <option value="<%= item.deviceId %>" selected><%= item.deviceId %></option>
+                <% } %>
+              </select>
+            </div>
+
+            <!--  -->
+            <div class="col-sm-7 input-group">
+              <label class="pd-r-s al-l lh-label" title="_id">
+                <i class="fas fa-id-card mg-r-m"></i><span>_id</span>
+              </label>
+              <input class="al-c" type="text" id="_id" name="_id" 
+                      placeholder="_id" readonly
+                      value="<%= isItem ? item._id : '' %>">
             </div>
 
           </div> <!-- Row1 -->
@@ -178,11 +176,53 @@
             </div>
           </div> <!-- Row3 -->
 
+          <!-- Row4 -->
+          <div class="flex-row mg-t-s">
+
+            <!--  -->
+            <div class="col-sm-2-5 input-group">
+              <label class="pd-r-s al-l" title="แจ้งเตือน">
+                <i class="fas fa-toggle-on"></i> แจ้งเตือน
+              </label>
+              <%
+                const deviceTelegramNotify = isItem && item.deviceTelegramNotify == 'on' ? 'bg-green' : 'bg-red'
+              %>
+              <select class="al-c fc-white <%= deviceTelegramNotify %>" 
+                      onchange="toOnOff(this)"
+                      id="deviceTelegramNotify" name="deviceTelegramNotify">
+                <option value="off" <%= isItem && item.deviceTelegramNotify === 'off' ? 'selected' : '' %>>off</option>
+                <option value="on" <%= isItem && item.deviceTelegramNotify === 'on' ? 'selected' : '' %>>on</option>
+              </select>
+            </div>
+
+            <!--  -->
+            <div class="col-sm-3-5 input-group">
+              <label class="pd-r-s al-l" title="ไอดีกลุ่มเทเลแกรม">
+                <i class="fab fa-telegram-plane"></i> ไอดีกลุ่มเทเลแกรม
+              </label>
+              <input class="pd-l-m al-l" type="number" placeholder="Telegram Group Chat ID" 
+                     title="<%= global.GROUP_CHAT_ID_DESCRIPTION %>"
+                     id="deviceTelegramGroupChatId" name="deviceTelegramGroupChatId" 
+                     pattern="<%= global.GROUP_CHAT_ID_PATTERN %>"
+                     value="<%= isItem ? item.deviceTelegramGroupChatId : '' %>">
+            </div>
+            
+            <!--  -->
+            <div class="col-sm-4 input-group">
+              <label class="pd-r-s al-l" title="Note">
+                <i class="fas fa-sticky-note"></i> โน๊ต
+              </label>
+              <input class="pd-l-m al-l" type="text" placeholder="Note" 
+                     id="deviceTelegramNote" name="deviceTelegramNote" 
+                     value="<%= isItem ? item.deviceTelegramNote : '' %>">
+            </div>
+          </div> <!-- Row4 -->
+
           <!-- Row#Add -->
           <section class="mg-t-l">
                             
             <div class="flex-row">
-              <div class="col-md-12">
+              <div class="">
                 <label class="text-white pd-r-l">ทริกเกอร์แจ้งเตือน</label>
 
                 <button type="button" class="btn btn-sm bg-add pd-l-l pd-r-l" 
@@ -255,9 +295,7 @@
       **********************************************************
       **********************************************************
       **********************************************************
-      -->
-
-     
+      -->     
 
     </section>
       
@@ -370,7 +408,7 @@
                 </td>
 
                 <!-- 2.) deviceId -->
-                <td class="al-c" title="<%= obj.deviceId %>"><%= obj.deviceId??'-' %></td>
+                <td class="al-c fc-blue" title="<%= obj.deviceId %>"><%= obj.deviceId??'-' %></td>
                 
                 <!-- 3.) deviceName -->
                 <td class="al-l pd-l-s" title="<%= obj.deviceName %>"><%= obj.deviceName??'-' %></td>

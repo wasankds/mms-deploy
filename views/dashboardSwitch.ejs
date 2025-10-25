@@ -39,78 +39,71 @@
   <%- include('partials/notify.ejs', {msg:msg}) %>   
 
 
+  <header class="header-title bg-slateblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-microchip mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
   <main>
-
-    <header class="header">
-      <span class="gc-ligray">[Header]</span>
-    </header>
-
 
     <section class="card-container">
 
-    <!-- สร้าง block จาก ids  -->
-    <% dataAll.forEach( obj => { %>
+      <!-- สร้าง block จาก ids  -->
+      <% dataAll.forEach( obj => { %>
 
-    <section class="card <%= obj.id %>-card">
+      <section class="card <%= obj.id %>-card">
 
-      <!-- หัวข้อการ์ด -->
-      <div class="card-header <%= obj.bgColor %>">
+        <!-- หัวข้อการ์ด -->
+        <div class="card-header <%= obj.deviceBgClassColor %>">
 
-        <span class="card-header-left">            
-          <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
-        </span>
+          <span class="card-header-left"></span>
 
-        <span class="card-header-center">            
-          <!-- <a class="clickable" href="<= PATH_DATA >/<= obj.id >" target="_blank" title="ดูข้อมูล"> -->
-            <span class="fw-b fc-black"><%= obj.name %></span>
-            <span class="fw-b fc-gray">[<%= obj.id %>]</span>
-          <!-- </a> -->
-        </span>
-
-        <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
-        <span class="card-header-right clickable">
-          <!-- <a href="<= PATH_REPORT >/<= obj.id >" target="_blank" title="ดูรายงาน">
-            <i class="fas fa-file-alt fc-black" title="ดูรายงาน"></i>
-          </a> -->
-        </span>
-
-      </div>
-
-      <!-- คอลัมน์ใหญ่ -->
-      <% obj.switchData.forEach( item => { %>
-      <div class="card-column">
-
-        <!-- Column Title -->
-        <!-- <div class="pd-s al-c bg-eee lh-xs" title="เวลาและค่าล่าสุด">
-          <span class="fw-b <%= item.fontColor %>"><%= item.keyName ? item.keyName : item.key %></span>
-          <span class="fc-gray"><%= item.keyUnit ? `(${item.keyUnit})` : '' %></span>
-        </div> -->
-
-        <div class="flex-row justify-content-between lh-m">
-          <span class="mg-l-m <%= item.fontColor %> <%= obj.id %>-<%= item.key %>-timestamp">-</span>
-          
-          <!-- Toggle Switch -->
-          <span class="switch-ctn mg-r-m">
-            <input class="switch-toggle <%= obj.id %>-<%= item.key %>-switch" 
-                   type="checkbox" 
-                   data-device-id="<%= obj.id %>"
-                   data-switch-key="<%= item.key %>"
-                   id="switch-<%= obj.id %>-<%= item.key %>"
-                   <%= item.value ? 'checked' : '' %> >
-            <label class="switch-label" for="switch-<%= obj.id %>-<%= item.key %>"></label>
+          <span class="card-header-center">            
+            <span class="fw-b fc-black"><%= obj.deviceName %></span>
+            <span class="fw-b fc-gray">[<%= obj.deviceId %>]</span>
           </span>
+
+          <span class="card-header-right"></span>
+
         </div>
 
-      </div>        
+        <!-- คอลัมน์ใหญ่ -->
+        <% obj.switchData.forEach( item => { %>
+        <div class="card-column">
+
+          <!-- Column Title -->
+          <!-- <div class="pd-s al-c bg-eee lh-xs" title="เวลาและค่าล่าสุด">
+            <span class="fw-b <%= item.fontColor %>"><%= item.keyName ? item.keyName : item.key %></span>
+            <span class="fc-gray"><%= item.keyUnit ? `(${item.keyUnit})` : '' %></span>
+          </div> -->
+
+          <div class="flex-row justify-content-between lh-m">
+            <span class="mg-l-m <%= item.fontColor %> <%= obj.id %>-<%= item.key %>-timestamp">-</span>
+            
+            <!-- Toggle Switch -->
+            <span class="switch-ctn mg-r-m">
+              <input class="switch-toggle <%= obj.id %>-<%= item.key %>-switch" 
+                    type="checkbox" 
+                    data-device-id="<%= obj.id %>"
+                    data-switch-key="<%= item.key %>"
+                    id="switch-<%= obj.id %>-<%= item.key %>"
+                    <%= item.value ? 'checked' : '' %> >
+              <label class="switch-label" for="switch-<%= obj.id %>-<%= item.key %>"></label>
+            </span>
+          </div>
+
+        </div>        
+        <% }) %>
+
+        <% if(obj.switchData.length%2==1){ %>
+        <div class="card-column bg-eee"></div>
+        <% } %>
+
+      </section>
+
       <% }) %>
-
-      <% if(obj.switchData.length%2==1){ %>
-      <div class="card-column bg-eee"></div>
-      <% } %>
-
-    </section>
-
-    <% }) %>
     </section>
 
   </main>

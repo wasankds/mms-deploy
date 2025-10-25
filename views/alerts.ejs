@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('partials/meta',{ time:time}) %>
+<title><%= title %></title>  
+
+<!-- Font Awesome -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+<!-- Socket.IO -->
+<!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+<script src="/cdn/socket.io.min.js"></script>
+<% if(!IS_PRODUCTION) { %>
+<link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/paginationAlerts.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+<link rel="stylesheet" href="/css/alerts.css?v=<%= time %>">
+<% } else { %>
+<link rel="stylesheet" href="/css-min/alerts.min.css?v=<%= time %>">
+<% }  %>
+</head>
+
+
+<body>
+  
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <header class="header-title bg-mgt">
+    <p class="al-c fc-white">
+      <i class="fas fa-bell mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header> 
+
+
+  <main>
+
+    <!-- #1 : Toolbar-->
+    <section class="toolbar-ctn">
+
+      <!-- Clear -->
+      <!-- <form class="toolbar-1" action="<= PATH_CLEAR >" method="get" onsubmit="createSpinner();">
+        <input type="hidden" name="rpp" value="<%= rpp %>">
+        <input type="hidden" name="page" value="<%= page %>">
+        <button type="submit" class="btn btn-sm bg-clear pd-l-l pd-r-l al-c nowrap">
+          <i class="fas fa-eraser"></i> ล้างเซสชั่นว่าง
+        </button>
+      </form> -->
+      
+      <!-- ปุ่ม copy ตาราง -->
+      <div class="toolbar-1">
+        <button class="btn btn-sm bg-copy pd-l-l pd-r-l al-c nowrap" 
+                onclick="copyTable(this)">
+          <i class="fas fa-copy"></i> คัดลอกตาราง
+        </button>
+      </div>
+
+      <!-- Pagination -->
+      <div class="toolbar-2">
+        <%- include('partials/pagination5btns2.ejs') %>
+      </div>
+
+      <!-- RPP -->
+      <form class="toolbar-3" method="get" action="<%= PATH_MAIN %>" >
+
+        <!-- hidden -->
+        <input type="hidden" name="page" value="<%= page %>">
+
+        <label class="al-r pd-r-s">แถว/หน้า</label>
+        <select class="al-c" name="rpp" id="rpp" onchange="this.form.submit()">
+          <option value="10" <%= rpp == '10' ? 'selected' : '' %> >10</option>
+          <option value="20" <%= rpp == '20' ? 'selected' : '' %> >20</option>
+          <option value="30" <%= rpp == '30' ? 'selected' : '' %> >30</option>
+          <option value="50" <%= rpp == '50' ? 'selected' : '' %> >50</option>
+          <option value="100" <%= rpp == '100' ? 'selected' : '' %> >100</option>
+          <option value="500" <%= rpp == '500' ? 'selected' : '' %> >500</option>
+          <option value="1000" <%= rpp == '1000' ? 'selected' : '' %> >1000</option>                    
+          <option value="2000" <%= rpp == '2000' ? 'selected' : '' %> >2000</option>                    
+        </select>
+      </form>
+      
+    </section> 
+
+    <!-- 
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    *********************** table ****************************
+    **********************************************************
+    **********************************************************
+    **********************************************************
+    -->
+
+    <!--  -->
+    <section class="mg-t-l table-ctn">
+
+      <table>
+
+        <!-- <colgroup>
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+          <col style="width: auto;">
+        </colgroup> -->
+
+        <!--  -->
+        <thead id="tableHeader">
+          <tr>
+            <th class="al-c clickable bg-white" onclick="sortTableJs(this, 0)" title="ลำดับ">
+              <i class="fas fa-hashtag"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 1)" title="เวลา">
+              <i class="fas fa-clock"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 2)" title="เวลา">
+              <i class="fas fa-clock"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 3)" title="คอนโทรลเลอร์">
+              <i class="fas fa-microchip"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 4)" title="คีย์">
+              <i class="fas fa-tags"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 5)" title="ประเภท">
+              <i class="fas fa-sort"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 6)" title="ค่าเกณฑ์">
+              <i class="fas fa-exclamation-triangle"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 7)" title="ค่า">
+              <i class="fas fa-bell"></i>
+            </th>
+            <th class="al-c clickable" onclick="sortTableJs(this, 8)" title="ความแตกต่าง">
+              <i class="fas fa-exchange-alt"></i>
+            </th>
+          </tr>
+        </thead>
+
+        <!--  -->
+        <tbody id="tableContent">
+
+          <% data.forEach( (obj,index) => { %>
+          <tr class="bg-main-color">
+
+            <%
+              const color = obj.triggerType == 'min' ? 'fc-dkorange' : 'fc-red';
+              const triggerText = obj.triggerType == 'min' ? 'ต่ำ' : 'สูง';
+              const diffValue = obj.value-obj.triggerValue
+            %>
+
+            <td class="al-c <%= color %>"><%= (page-1)*rpp+(index+1) %></td>
+            <td class="al-c <%= color %>"><%= obj.timestamp %></td>
+            <td class="al-c <%= color %>"><%= obj.timestampAgo %></td>
+            <td class="pd-l-s <%= color %>">[<%= obj.deviceId %>] <%= obj.deviceName %></td>
+            <td class="pd-l-s <%= color %>">[<%= obj.key %>] <%= obj.keyName %></td>
+            <td class="al-c <%= color %>"><%= triggerText %></td>
+            <td class="al-r pd-r-s <%= color %>"><%= obj.triggerValue %> <%= obj.keyUnit %></td>
+            <td class="al-r pd-r-s <%= color %>"><%= obj.value %> <%= obj.keyUnit %></td>
+            <td class="al-r pd-r-s <%= color %>"><%= diffValue %></td>
+
+            <!-- 
+            <td class="al-c">
+              <form class="" action="<= PATH_DELETE >" method="post">                
+                <input type="hidden" name="_id" value="<%= obj._id %>">
+                <input type="hidden" name="rpp" value="<%= rpp %>">
+                <input type="hidden" name="page" value="<%= page %>">
+                <button type="submit" class="bg-delete pd-l-l pd-r-l pd-t-s pd-b-s">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </form>
+            </td> 
+            -->
+          </tr>
+          <% }) %>
+
+        </tbody>
+
+      </table>
+    </section>
+
+
+  </main> 
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const socket = io();
+    PREFIX = '<%= PREFIX %>';
+  </script>
+
+  <!--  -->
+  <% if(!IS_PRODUCTION) { %>
+  <script src="/js/script_all.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/notify.js"></script>
+  <script src="/js/alertSound.js"></script>
+  <script src="/js/alertSocket_Table.js"></script>
+  <script src="/js/alerts.js"></script>
+  <% } else { %>
+  <script src="/js-min/alerts.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+

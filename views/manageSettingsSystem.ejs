@@ -46,8 +46,8 @@
 
     <!-- Tab links -->
     <div class="tab">
-      <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">อิเมล์</div>
-      <!-- <div class="tabMenu" id="tab2Menu" onclick="event.preventDefault();openMenu(this,'tabcontent2')">ไอเท็ม</div> -->
+      <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">ตั้งค่า</div>
+      <!-- <div class="tabMenu" id="tab2Menu" onclick="event.preventDefault();openMenu(this,'tabcontent2')">เทเลแกรม</div> -->
       <!-- <div class="tabMenu" id="tab1Menu" onclick="event.preventDefault();openMenu(this,'tabcontent1')">เซิร์ฟเวอร์</div> -->
     </div>
 
@@ -55,21 +55,21 @@
     <div id="tabcontent1" class="tabcontent">
       <!--  -->
       <form id="emailForm" autocomplete="off" 
-            action="<%= PATH_SAVE_EMAIL %>" 
+            action="<%= PATH_SAVE %>" 
             method="post"
             onsubmit="createSpinner()">
 
         <!--  -->
         <div class="flex-row mg-t-l">          
           <label class="col-sm-f lh-xs" style="word-break: break-word; white-space: normal;">             
-            <span class="pd-r-s">✍</span> สำหรับการส่งอีเมล์ระบบ เช่น การแจ้งเตือนรหัสผ่านเมื่อสร้างยูสเซอร์ หรือ การแจ้งลิงค์รีเซ็ตพาสเวิร์ด</label>
+          <span class="pd-r-s">✍</span> สำหรับการส่งอีเมล์ระบบ เช่น การแจ้งเตือนรหัสผ่านเมื่อสร้างยูสเซอร์ หรือ การแจ้งลิงค์รีเซ็ตพาสเวิร์ด</label>
         </div>
 
         <!-- EMAIL_WHOSEND -->
         <div class="input-group mg-t-l">
           <label title="EMAIL_WHOSEND">ชื่อสำหรับส่งอีเมล</label> 
           <input class="pd-l-m mg-t-m" type="email"
-                value="<%= settingsEmail?.EMAIL_WHOSEND ?? '' %>"
+                value="<%= settingsSystem?.EMAIL_WHOSEND ?? '' %>"
                 id="EMAIL_WHOSEND" name="EMAIL_WHOSEND" 
                 required placeholder="เช่น your-email@gmail.com">
         </div>
@@ -82,12 +82,32 @@
           </label> 
           <input class="pd-l-m mg-t-m" type="text" minlength="19" 
                 title="รหัสผ่านสำหรับแอปพลิเคชัน (Application Password) ของบัญชี GMail/Google Workspace"
-                value="<%= settingsEmail?.EMAIL_PASS ?? '' %>"
+                value="<%= settingsSystem?.EMAIL_PASS ?? '' %>"
                 id="EMAIL_PASS" name="EMAIL_PASS" 
                 required 
                 pattern="[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}\s[0-9a-zA-Z]{4}"
                 placeholder="เช่น xxxx xxxx xxxx xxxx">
         </div>
+
+
+        <!--  -->
+        <div class="flex-row mg-t-xxl">          
+          <label class="col-sm-f lh-xs" style="word-break: break-word; white-space: normal;">             
+          <span class="pd-r-s">✍</span>ขอ Bot Token ได้จากแอพเทเลแกรม</label>
+        </div>
+
+        <!-- TELEGRAM_BOT_TOKEN -->
+        <div class="input-group mg-t-l">
+          <label title="TELEGRAM_BOT_TOKEN">* โทเคนบ็อตส่งข้อความของเทเลแกรม</label> 
+          <input class="pd-l-m" type="text" 
+                required
+                name="TELEGRAM_BOT_TOKEN" id="TELEGRAM_BOT_TOKEN" 
+                pattern="<%= global.TELEGRAM_BOT_TOKEN_PATTERN %>"
+                title="<%= global.TELEGRAM_BOT_TOKEN_DESCRIPTION %>"
+                value="<%= settingsSystem?.TELEGRAM_BOT_TOKEN ?? '' %>"
+                placeholder="รูปแบบ: 1234567890:AAH...">
+        </div>       
+
 
         <!-- Buttons/Save -->
         <section class="flex-row justify-content-center mg-t-xxl">
@@ -97,7 +117,8 @@
         </section>
 
       </form>
-    </div>
+    </div>    
+
 
     <!-- #2 : ห้ามลบ  -->
     <!-- <div id="tabcontent2" class="tabcontent">

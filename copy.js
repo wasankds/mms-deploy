@@ -19,7 +19,7 @@ const folderNames = [
   // โฟลเดอร์ระบบ
   'middleware', 'routes-min', 'mymodule-min',  'views',  'commandSystem-min',
   // โฟลเดอร์ public แยกย่อยด้วย 
-  'public/cdn', 'public/css-min', 'public/fonts', 'public/images', 'public/js-min', 'public/static', 
+  'public/cdn', 'public/css-min', 'public/fonts', 'public/images', 'public/js-min', 'public/static', 'public/sounds', 
   // โฟลเดอร์สำหรับเก็บข้อมูลเอนทิตี้ - ไม่เอา backup เพราะจะสำรองข้อมูลแยกกัน 
   // 'items', 'warehouse-in', 'warehouse-out' ,'sales', 'return'
 ];

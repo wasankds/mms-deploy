@@ -6,31 +6,22 @@ import flash from 'connect-flash'
 import MongoDBSession from 'connect-mongodb-session' 
 import { createServer } from 'node:http';
 import { Server } from 'socket.io'
-global.IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false ;
-global.PROJECT_DIR = process.cwd()
-const PORT = process.env.PORT_DEPLOY == 0 ? process.env.PORT_DEV : process.env.PORT_SERVER
-global.DOMAIN_ALLOW = process.env.PORT_DEPLOY == 0 ? `${process.env.LOCALHOST_ALLOW}:${PORT}` : `${process.env.DOMAIN_ALLOW}`
-global.dbName = process.env.DB_NAME
-global.dbUrl = process.env.DB_URL
-global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
-await import(`./${mymoduleFolder}/myGlobal.js`)
-if(process.env.RANDOM_DATA == '1') 
-await import(`./${mymoduleFolder}/myRandomData.js`)
+global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
+await import(`./${global.mymoduleFolder}/myGlobal.js`)
+// ไม่ต้องก็ได้ เปลี่ยนไปใช้วิธีเมื่อบันทึกข้อมูลอุปกรณ์ใดๆ ก็ตามให้อัปเดทข้อมูลใน global ทันที
+await import(`./${global.mymoduleFolder}/myScheduleDevices.js`) 
+process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
 const app = express()
 const server = createServer(app)
 const io = new Server(server)
-global.io = io; // ให้ทุกที่เรียกใช้ io ได้
-global.dbName = process.env.DB_NAME
-global.dbUrl = process.env.DB_URL
-global.IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false
-global.PROJECT_DIR = process.cwd()
+global.io = io;
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
 app.use(session({
   secret: 'mms.node.apps.key.sign.cookie',
   cookie: {
-    maxAge: 1000*60*60*24*30, // 30 days
+    maxAge: 1000*60*60*24*30,
     // secure: process.env.DEPLOY == 'dev' ? false : true,
     httpOnly: IS_PRODUCTION ? true : false,
   },
@@ -42,7 +33,6 @@ app.use(session({
     collection: dbColl_sessions,
   }),
 }))
-//=== สำหรับการตั้งค่า Express
 app.set('view engine', 'ejs')
 app.use(flash())
 app.use(cookieParser())
@@ -52,7 +42,7 @@ app.use(express.static(global.folderPublic))
 app.use((req, res, next) => {
   const allowedOrigins = [ global.DOMAIN_ALLOW ]
   if(!IS_PRODUCTION){
-    allowedOrigins.push(`${process.env.LOCALHOST_ALLOW}:${PORT}`)
+    allowedOrigins.push(`${process.env.LOCALHOST_ALLOW}:${global.PORT}`)
     allowedOrigins.push(`http://127.0.0.1:5500`)
   }
   const origin = req.headers.origin
@@ -75,13 +65,14 @@ app.use((await import(`./${routesFolder}/manageSessionsRouter.js`)).default);
 app.use((await import(`./${routesFolder}/manageUsersRouter.js`)).default);
 app.use((await import(`./${routesFolder}/userInfoRouter.js`)).default);
 app.use((await import(`./${routesFolder}/passwordRouter.js`)).default);
-
 app.use((await import(`./${routesFolder}/devicesRouter.js`)).default);
+app.use((await import(`./${routesFolder}/keysDefinitionRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dashboardRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataInRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataByIdRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dashboardSwitchRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataInSwitchRouter.js`)).default);
+app.use((await import(`./${routesFolder}/alertsRouter.js`)).default);
 app.use((await import(`./${routesFolder}/reportByIdRouter.js`)).default);
 app.use( (err, req, res, next) => {
   res.status(err.status || 500);
@@ -96,7 +87,7 @@ app.get('*', (req,res) => {
 })
 
 //=== Start the server
-server.listen(PORT, () => {
+server.listen(global.PORT, () => {
   console.log(`========== Server@${DOMAIN_ALLOW} ===========`)
   console.log("IS_PRODUCTION ", global.IS_PRODUCTION)
   console.log("global.DOMAIN_ALLOW ", global.DOMAIN_ALLOW)
