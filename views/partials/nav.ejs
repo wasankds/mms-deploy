@@ -28,21 +28,6 @@
         <% }) %>
       </div>
 
-      <!-- select report -->
-      <!-- 
-      <form id="nav_reportForm" method="get">
-        <select id="nav_reportType" class="" title="รายงาน">
-          <option value="">-</option>
-          <% NAV_REPORT.forEach( (obj) => { %>
-            <% if (!user.isAuth || !obj.userAuthorities.includes(user.userAuthority)) return; %>
-            <option value="<%= obj.path %>" <%= title == obj.title ? 'selected' : '' %>>
-              <%= obj.title %>
-            </option>
-          <% }) %>          
-        </select>
-      </form> 
-      -->
-
  
     </div>  
 
