@@ -42,7 +42,7 @@
 
     <p class="al-c fc-white">
       <i class="fas fa-tachometer-alt mg-r-l"></i> 
-      <span><%= title %></span>
+      <%= settings && settings.COMPANY_NAME ? settings.COMPANY_NAME : title %>
     </p>
 
     <p class="al-c fc-white">
