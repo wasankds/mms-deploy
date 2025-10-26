@@ -9,8 +9,8 @@ import { Server } from 'socket.io'
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
 global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
 await import(`./${global.mymoduleFolder}/myGlobal.js`)
-// ไม่ต้องก็ได้ เปลี่ยนไปใช้วิธีเมื่อบันทึกข้อมูลอุปกรณ์ใดๆ ก็ตามให้อัปเดทข้อมูลใน global ทันที
-await import(`./${global.mymoduleFolder}/myScheduleDevices.js`) 
+await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)  // ไม่ต้องก็ได้ เปลี่ยนไปใช้วิธีเมื่อบันทึกข้อมูลอุปกรณ์ใดๆ ก็ตามให้อัปเดทข้อมูลใน global ทันที
+await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)  // ไม่ต้องก็ได้ เปลี่ยนไปใช้วิธีเมื่อบันทึกข้อมูลอุปกรณ์ใดๆ ก็ตามให้อัปเดทข้อมูลใน global ทันที
 process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
 const app = express()
 const server = createServer(app)

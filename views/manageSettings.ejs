@@ -6,6 +6,9 @@
   <title><%= title %></title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <script src="/cdn/sweetalert2.all.min.js"></script>
+
   <% if(!IS_PRODUCTION) { %>
   <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
@@ -22,7 +25,7 @@
   <link rel="stylesheet" href="/css-min/manageSettings.min.css?v=<%= time %>">
   <% }  %>
 </head>
-<body>
+<body> 
 
   <%- include('partials/notify.ejs', {msg:msg}) %> 
   <%- include('partials/nav.ejs') %>

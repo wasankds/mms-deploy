@@ -17,18 +17,33 @@
              placeholder="COMPANY_NAME">
     </div>
 
-    <!-- 
+    <%
+      const color_autoBackupDatabase = settings?.AUTO_BACKUP_DATABASE === '1' ? 'bg-green' : 'bg-red';
+    %>
     <div class="input-group mg-t-l">
-      <label title="TELEGRAM_BOT_TOKEN">* โทเคนบ็อตส่งข้อความของเทเลแกรม</label> 
-      <input class="pd-l-m" type="text" 
-             required
-             name="TELEGRAM_BOT_TOKEN" id="TELEGRAM_BOT_TOKEN" 
-             pattern="<= global.TELEGRAM_BOT_TOKEN_PATTERN >"
-             title="<= global.TELEGRAM_BOT_TOKEN_DESCRIPTION >"
-             value="<= settings?.TELEGRAM_BOT_TOKEN ?? '' >"
-             placeholder="รูปแบบ: 1234567890:AAH...">
-    </div> 
-    -->
+      <label title="AUTO_BACKUP_DATABASE">* สำรองฐานข้อมูลอัตโนมัติ <span class="fc-gray">[ตี2]</span></label> 
+      <div class="flex-row">
+        <select class="col-sm-1 al-c fc-white <%= color_autoBackupDatabase %>" 
+                required 
+                onchange="toActive(this)"
+                name="AUTO_BACKUP_DATABASE" id="AUTO_BACKUP_DATABASE">
+          <option value="0" <%= settings?.AUTO_BACKUP_DATABASE === '0' ? 'selected' : '' %>>ปิด</option>
+          <option value="1" <%= settings?.AUTO_BACKUP_DATABASE === '1' ? 'selected' : '' %>>เปิด</option>
+        </select> 
+        <!-- 
+        <div class="col-sm-4 pd-l-l pd-r-s">
+          <label title="AUTO_BACKUP_TIME">เวลา</label> 
+          <select class="al-c pd-l-xl pd-r-xl" 
+                  required 
+                  name="AUTO_BACKUP_TIME" id="AUTO_BACKUP_TIME">
+            <option value="22:00" <= settings?.AUTO_BACKUP_TIME === '22:00' ? 'selected' : '' >>22:00</option>
+            <option value="23:00" <= settings?.AUTO_BACKUP_TIME === '23:00' ? 'selected' : '' >>23:00</option>
+          </select> 
+        </div> 
+        -->
+      </div>
+    </div>
+   
 
     <!-- 
     *******************************************************

@@ -8,14 +8,44 @@
           action="<%= PATH_BACKUP_DB %>" method="post">
       <section class="d-flex">
         <button type="button" class="btn btn-sm bg-mediumseagreen" id="btnBackupDb">
-          <i class="fas fa-database"></i> Backup Database
+          <i class="fas fa-database mg-r-m"></i> Backup Database
         </button>
         <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmBackupDb">
-          <i class="fas fa-check-circle"></i> ยืนยัน
+          <i class="fas fa-check-circle mg-r-m"></i> ยืนยัน
         </button>
       </section>
     </form>
   </div>  
+
+  <!--  -->
+  <% if(backupFolders && backupFolders.length>0){ %>
+  <div class="mg-t-l">
+    <% backupFolders.forEach( (folderName, index) => { %>
+    <div class="flex-row mg-t-s pd-b-s bb-d <%= index%2==0 ? 'pd-t-s bt-d' : '' %>">
+
+      <form class="mg-r-l" action="<%= PATH_DOWNLOAD_BACKUP %>/<%= folderName %>" 
+           method="get">
+        <button class="btn btn-sm bg-download" type="submit">
+          <i class="fas fa-download"></i>
+        </button>
+      </form>
+
+      <label class="fc-gray mg-r-l">
+        <span class=""><%= index+1 %>.) <%= folderName %></span>
+      </label>
+
+      <form action="<%= PATH_REMOVE_BACKUP %>/<%= folderName %>" 
+            class="remove-backup-form"
+            method="get">
+        <button class="btn btn-sm bg-delete" type="submit">
+          <i class="fas fa-trash-alt"></i>
+        </button>
+      </form>
+      
+    </div>
+    <% }) %>
+  </div>
+  <% } %>
 
   <!--  -->
   <div class="mg-t-xl">
@@ -29,11 +59,11 @@
       <section class="d-flex">
 
         <button type="button" class="btn btn-sm bg-cornblue" id="btnUpdateSystem">
-          <i class="fas fa-sync"></i> Update System
+          <i class="fas fa-sync mg-r-m"></i> Update System
         </button>
 
         <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmUpdateSystem">
-          <i class="fas fa-check-circle"></i> ยืนยัน
+          <i class="fas fa-check-circle mg-r-m"></i> ยืนยัน
         </button>
         
       </section>
@@ -48,10 +78,10 @@
           action="<%= PATH_RESTART_PM2 %>" method="post">
       <section class="d-flex">
         <button type="button" class="btn btn-sm bg-dkorange" id="btnRestartPm2">
-          <i class="fas fa-redo"></i> Restart
+          <i class="fas fa-redo  mg-r-m"></i> Restart
         </button>
         <button type="submit" class="btn btn-sm bg-green dp-n" id="btnConfirmRestartPm2">
-          <i class="fas fa-check-circle"></i> ยืนยัน
+          <i class="fas fa-check-circle mg-r-m"></i> ยืนยัน
         </button>
       </section>
     </form>
