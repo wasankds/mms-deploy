@@ -8,6 +8,7 @@ import { createServer } from 'node:http';
 import { Server } from 'socket.io'
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
 global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
+console.log("global.mymoduleFolder ===> " , global.mymoduleFolder);
 await import(`./${global.mymoduleFolder}/myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)
 await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)

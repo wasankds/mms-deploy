@@ -30,7 +30,7 @@ const fileNames = [
   'mms.js',
   'package.json', 
   'README.md',   
-  '.env-deploy',
+  '.env-deploy',  
   '1_start.bat',
   '2_restart.bat',
   '3_delete.bat',
