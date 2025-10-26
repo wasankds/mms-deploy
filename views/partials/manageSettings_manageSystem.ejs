@@ -23,7 +23,8 @@
     <% backupFolders.forEach( (folderName, index) => { %>
     <div class="flex-row mg-t-s pd-b-s bb-d <%= index%2==0 ? 'pd-t-s bt-d' : '' %>">
 
-      <form class="mg-r-l" action="<%= PATH_DOWNLOAD_BACKUP %>/<%= folderName %>" 
+      <form action="<%= PATH_DOWNLOAD_BACKUP %>/<%= folderName %>" 
+            class="mg-r-l download-backup-form"
            method="get">
         <button class="btn btn-sm bg-download" type="submit">
           <i class="fas fa-download"></i>
