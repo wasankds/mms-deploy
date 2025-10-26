@@ -6,9 +6,12 @@ import flash from 'connect-flash'
 import MongoDBSession from 'connect-mongodb-session' 
 import { createServer } from 'node:http';
 import { Server } from 'socket.io'
+global.IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false ;
+global.PORT = process.env.PORT_DEPLOY == 0 ? process.env.PORT_DEV : process.env.PORT_SERVER
+global.PROJECT_DIR = process.cwd()
+global.DOMAIN_ALLOW = process.env.PORT_DEPLOY == 0 ? `${process.env.LOCALHOST_ALLOW}:${global.PORT}` : `${process.env.DOMAIN_ALLOW}`
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
 global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
-console.log("global.mymoduleFolder ===> " , global.mymoduleFolder);
 await import(`./${global.mymoduleFolder}/myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)
 await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)
