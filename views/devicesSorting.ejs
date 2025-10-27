@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>  
+
+  <!-- Font Awesome -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <!-- <script src="/cdn/sweetalert2.all.min.js"></script> -->
+ 
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/alink.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <!-- <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>"> -->
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <!-- <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>"> -->
+  <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/devicesSorting.css?v=<%= time %>">
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/devicesSorting.min.css?v=<%= time %>">
+  <% }  %>
+
+</head>
+<body>
+  <!-- header -->
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %> 
+
+  <header class="header-title bg-slateblue">
+    <p class="al-c fc-white">
+      <i class="fas fa-tag mg-r-l"></i> 
+      <span><%= title %></span>
+    </p>
+  </header>
+
+  <main>       
+    
+    <!-- toolbar -->
+    <div class="toolbar-ctn pd-b-m " >
+      <button class="btn btn-sm bg-save pd-l-l pd-r-l" type="button" 
+              id="btnSave" title="บันทึก">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+
+    <!--  -->
+    <section class="" id="tableRowsCtn">
+      <% data.forEach( (obj,index) => { %>
+        <div class="tableRows">
+          <input class="btn btn-sm al-c bg-up" type="button" value="&#9650;" tabindex = "-1"               
+                onclick="moveListUp(this)">
+          <input class="btn btn-sm al-c bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+                onclick="moveListDn(this)">
+
+          <input class="deviceId al-c pd-r-s <%= obj.deviceBgClassColor %>" type="text" 
+                  required readonly
+                  name="deviceId" placeholder="ไอดีอุปกรณ์"
+                  value="<%= obj.deviceId %>">
+                
+          <input class="deviceName al-l pd-l-s <%= obj.deviceBgClassColor %>" type="text" 
+                 readonly
+                 name="deviceName" placeholder="ชื่ออุปกรณ์"
+                 value="<%= obj.deviceName %>">
+        </div>
+      <% }) %>
+    </section>
+
+
+  </main>  
+
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script type="text/javascript">
+    var PATH_MAIN = `<%= PATH_MAIN %>` ;
+    var PATH_SAVE = `<%= PATH_SAVE %>` ;
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js"></script>
+  <script type="text/javascript" src="/js/devicesSorting.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/devicesSorting.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>

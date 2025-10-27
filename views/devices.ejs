@@ -180,7 +180,7 @@
           <div class="flex-row mg-t-s">
 
             <!--  -->
-            <div class="col-sm-2-5 input-group">
+            <div class="col-sm-3 input-group">
               <label class="pd-r-s al-l" title="แจ้งเตือน">
                 <i class="fas fa-toggle-on"></i> แจ้งเตือน
               </label>
@@ -196,7 +196,7 @@
             </div>
 
             <!--  -->
-            <div class="col-sm-3-5 input-group">
+            <div class="col-sm-7 input-group">
               <label class="pd-r-s al-l" title="ไอดีกลุ่มเทเลแกรม">
                 <i class="fab fa-telegram-plane"></i> ไอดีกลุ่มเทเลแกรม
               </label>
@@ -206,9 +206,14 @@
                      pattern="<%= global.GROUP_CHAT_ID_PATTERN %>"
                      value="<%= isItem ? item.deviceTelegramGroupChatId : '' %>">
             </div>
+
+          </div> <!-- Row4 -->
+
+          <!-- Row5 -->
+          <div class="flex-row mg-t-s">
             
             <!--  -->
-            <div class="col-sm-4 input-group">
+            <div class="col-sm-f input-group">
               <label class="pd-r-s al-l" title="Note">
                 <i class="fas fa-sticky-note"></i> โน๊ต
               </label>
@@ -216,7 +221,7 @@
                      id="deviceTelegramNote" name="deviceTelegramNote" 
                      value="<%= isItem ? item.deviceTelegramNote : '' %>">
             </div>
-          </div> <!-- Row4 -->
+          </div> <!-- Row5 -->
 
           <!-- Row#Add -->
           <section class="mg-t-l">
@@ -242,9 +247,9 @@
             <% if( isItem && item.triggerRows && item.triggerRows.length > 0 ){ %>
             <% item.triggerRows.forEach( (obj,index) => { %>
               <div class="flex-row">
-                <input class="btn al-c col-sm-0-5 bg-up" type="button" value="&#9650;" tabindex = "-1" 
+                <input class="btn al-c col-sm-1 bg-up" type="button" value="&#9650;" tabindex = "-1" 
                       onclick="moveListUp(this)">
-                <input class="btn al-c col-sm-0-5 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+                <input class="btn al-c col-sm-1 bg-dn" type="button" value="&#9660;" tabindex = "-1" 
                       onclick="moveListDn(this)">
 
                 <%
@@ -262,20 +267,20 @@
                   <% } %>
                 </select>
 
-                <select class="col-sm-2-5 triggerKey al-c" name="triggerKey">
+                <select class="col-sm-2 triggerKey al-c" name="triggerKey">
                   <option value="<%= obj.triggerKey %>"><%= obj.triggerKey %></option>
                 </select>
                       
-                <input class="col-sm-2 triggerMin al-r pd-r-s no-arrow" type="number" 
+                <input class="col-sm-1-5 triggerMin al-r pd-r-s no-arrow" type="number" 
                        placeholder="Trigger Min"
                        value="<%= obj.triggerMin %>"
                        name="triggerMin">
 
-                <input class="col-sm-2 triggerMax al-r pd-r-s no-arrow" type="number" 
+                <input class="col-sm-1-5 triggerMax al-r pd-r-s no-arrow" type="number" 
                        placeholder="Trigger Max"
                        value="<%= obj.triggerMax %>"
                        name="triggerMax">
-                <input class="btn al-c col-sm-0-5 bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+                <input class="btn al-c col-sm-1 bg-minus" type="button" value="&#45;"  tabindex = "-1" 
                        onclick="removeTriggerRow(this)">
               </div>
             <% }) %>

@@ -70,6 +70,7 @@ app.use((await import(`./${routesFolder}/manageUsersRouter.js`)).default);
 app.use((await import(`./${routesFolder}/userInfoRouter.js`)).default);
 app.use((await import(`./${routesFolder}/passwordRouter.js`)).default);
 app.use((await import(`./${routesFolder}/devicesRouter.js`)).default);
+app.use((await import(`./${routesFolder}/devicesSortingRouter.js`)).default);
 app.use((await import(`./${routesFolder}/keysDefinitionRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dashboardRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataInRouter.js`)).default);
@@ -89,8 +90,6 @@ app.use( (err, req, res, next) => {
 app.get('*', (req,res) => {
   res.status(404).sendFile(file404)
 })
-
-//=== Start the server
 server.listen(global.PORT, () => {
   console.log(`========== Server@${DOMAIN_ALLOW} ===========`)
   console.log("IS_PRODUCTION ", global.IS_PRODUCTION)

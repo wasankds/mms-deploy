@@ -38,7 +38,11 @@
 
   <header class="header-alert-title bg-dodgerblue">
 
-    <p></p>
+    <p class="al-c" title="เรียงลำดับ">
+      <a class="fc-white" href="<%= PATH_DEVICES_SORTING %>" target="_blank">
+        <i class="fas fa-sort-amount-down mg-l-l clickable"></i>
+      </a>
+    </p>
 
     <p class="al-c fc-white">
       <i class="fas fa-tachometer-alt mg-r-l"></i> 
@@ -69,15 +73,15 @@
         <!-- หัวข้อการ์ด -->
         <div class="card-header <%= obj.deviceBgClassColor  %>">
 
-          <span class="card-header-left">            
-            <!-- <i class="fas fa-ellipsis-h" title="เพิ่มเติม"></i> -->
+          <span class="card-header-left clickable">
+            <a class="clickable" href="<%= PATH_DATA_BY_ID %>/<%= obj.deviceId %>" target="_blank" title="ดูกราฟข้อมูล">
+              <i class="fas fa-chart-line fc-black"></i>
+            </a>
           </span>
 
           <span class="card-header-center">            
-            <a class="clickable" href="<%= PATH_DATA_BY_ID %>/<%= obj.deviceId %>" target="_blank" title="ดูข้อมูล">
-              <span class="fw-b fc-black"><%= obj.deviceName %></span>
-              <span class="fw-b fc-gray">[<%= obj.deviceId %>]</span>
-            </a>
+            <span class="fw-b fc-black"><%= obj.deviceName %></span>
+            <span class="fw-b fc-gray">[<%= obj.deviceId %>]</span>
           </span>
 
           <span class="card-header-right clickable">
@@ -104,7 +108,7 @@
             <span class="mg-r-m fw-b fs-xl <%= item.fontColor %> <%= obj.deviceId %>-<%= item.key %>-lastValue">-</span>
           </div>
 
-          <!--  -->
+          <!-- Time Interval -->
           <div class="card-content-row-2">          
             <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
             <div class="fc-blue <%= obj.deviceId %>-<%= item.key %>-timeInterval"><%= item.timeInterval %></div>
@@ -124,23 +128,27 @@
             }
           %>    
 
+          <!-- Min -->
           <div class="card-content-row-3">
             <i class="fas fa-arrow-down" title="ต่ำสุด"></i>
             <span class="fc-gray" title="แจ้งเตือนต่ำ" ><%= trigerMin_byKey ? `[${trigerMin_byKey}]` : '' %></span>
             <div class="fc-plum <%= obj.deviceId %>-<%= item.key %>-min"><%= item.min %></div>
           </div>
 
+          <!--Max -->
           <div class="card-content-row-3">
             <i class="fas fa-arrow-up" title="สูงสุด"></i>
             <span class="fc-gray" title="แจ้งเตือนสูง"><%= trigerMax_byKey ? `[${trigerMax_byKey}]` : '' %></span>
             <div class="fc-orange <%= obj.deviceId %>-<%= item.key %>-max"><%= item.max %></div>
           </div>
 
+          <!-- Average -->
           <div class="card-content-row-2">
             <i class="fas fa-chart-line" title="เฉลี่ย"></i>
             <div class="fc-dodgerblue <%= obj.deviceId %>-<%= item.key %>-avg"><%= item.avg %></div>
           </div>
 
+          <!-- Count -->
           <div class="card-content-row-2">
             <i class="fas fa-hashtag" title="นับ"></i>
             <div class="fc-green <%= obj.deviceId %>-<%= item.key %>-count"><%= item.count %></div>
@@ -149,6 +157,7 @@
         </div>        
         <% }) %>
 
+        <!-- Empty Column for Odd Rows -->
         <% if(obj.data.length%2==1){ %>
         <div class="card-column bg-eee"></div>
         <% } %>

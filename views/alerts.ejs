@@ -154,7 +154,7 @@
             <%
               const color = obj.triggerType == 'min' ? 'fc-dkorange' : 'fc-red';
               const triggerText = obj.triggerType == 'min' ? 'ต่ำ' : 'สูง';
-              const diffValue = obj.value-obj.triggerValue
+              const diffValue = (obj.value - obj.triggerValue).toFixed(2);
             %>
 
             <td class="al-c <%= color %>"><%= (page-1)*rpp+(index+1) %></td>

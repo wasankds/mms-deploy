@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/pagination5btns3.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/tableFix1col.css?v=<%= time %>">  
   <link rel="stylesheet" href="/css/input.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
   <link rel="stylesheet" href="/css/keysDefinition.css?v=<%= time %>">
@@ -40,15 +41,16 @@
 
   <header class="header-title bg-slateblue">
     <p class="al-c fc-white">
-      <i class="fas fa-tag mg-r-l"></i> 
+      <i class="fas fa-microchip mg-r-l"></i> 
       <span><%= title %></span>
     </p>
   </header>
 
   <main>       
     
-    <!-- toolbar -->
-    <div class="toolbar-ctn pd-b-m " >
+    <!-- Search -->
+    <div class="toolbar-ctn pd-b-m" >
+      
       <!--  -->
       <div class="flex-row">  
         <div class="col-sm-f">
@@ -64,13 +66,16 @@
             <i class="fas fa-undo"></i>
           </button>
         </div>
+
       </div>
+
       <!--  -->
       <button class="btn btn-sm bg-save pd-l-l pd-r-l" type="button" 
               <%= isDisabled %>
               id="btnSave" title="บันทึก">
         <i class="fas fa-save"></i>
       </button>
+
       <!--  -->
       <div class="flex-row">
         <label class="al-r pd-r-s">แถว/หน้า</label>
@@ -89,49 +94,70 @@
       <%- include('partials/pagination5btns3.ejs') %>
     </div>
 
-    <!--  -->
-    <section class="" id="tableRowsCtn">
-      <% data.forEach( (obj,index) => { %>
+    <section class="pd-l ba table-ctn">
+      <table>
+        <thead>
+          <tr class="">
+            <th class="al-c"></th>
+            <th class="al-c">คีย์</th>
+            <th class="al-c">ชื่อคีย์</th>
+            <th class="al-c">หน่วยนับ</th>
+            <th class="al-c">สีพื้นหลัง</th>
+            <th class="al-c">สีตัวอักษร</th>
+            <th class="al-c"></th>
+          </tr>
+        </thead>
 
-      <!--  -->
-      <div class="tableRows">
-        <input class="btn btn-sm al-c bg-up" type="button" value="&#9650;" tabindex = "-1" 
-              <%= isDisabled %>
-              onclick="moveListUp(this)">
-        <input class="btn btn-sm al-c bg-dn" type="button" value="&#9660;" tabindex = "-1" 
-              <%= isDisabled %>
-              onclick="moveListDn(this)">
+        <tbody id="rowsCtn">
+          <% data.forEach( (obj,index) => { %>
+          <%
+            const lineSwap = index%2 == 0 ? 'bg-line-swap' : ''
+          %>
+          <tr class="tableRows">
+            <td>
+              <input class="btn al-c bg-up" type="button" value="&#9650;" tabindex = "-1" 
+                    <%= isDisabled %>
+                    onclick="moveListUp(this)">
+            </td>
 
-        <input class="key al-c pd-r-s" type="text" 
-                required <%= isDisabled %>
-                name="key" placeholder="คีย์"
-                value="<%= obj.key %>">
-              
-        <input class="keyName al-l pd-l-s" type="text" 
-                required <%= isDisabled %>
-                name="keyName" placeholder="ชื่อคีย์"
-                value="<%= obj.keyName %>">
-
-        <input class="keyUnit al-c" type="text" 
-                required <%= isDisabled %>
-                name="keyUnit" placeholder="หน่วยนับ"
-                value="<%= obj.keyUnit %>">
-
-        <input class="bgColor al-l pd-l-s" type="text" 
-                required <%= isDisabled %>
-                name="bgColor" placeholder="สีพื้นหลัง"
-                value="<%= obj.bgColor %>">
-
-        <input class="fontColor al-l pd-l-s" type="text" 
-                required <%= isDisabled %>
-                name="fontColor" placeholder="สีตัวอักษร"
-                value="<%= obj.fontColor %>">
-
-        <input class="btn btn-sm al-c bg-minus" type="button" value="&#45;"  tabindex = "-1" 
-               <%= isDisabled %>
-               onclick="removeRow(this)">
-      </div>
-      <% }) %>
+            <td>
+              <input class="btn al-c bg-dn" type="button" value="&#9660;" tabindex = "-1" 
+                    <%= isDisabled %>
+                    onclick="moveListDn(this)">
+            </td>
+          <!-- 
+              <input class="col-sm-1 key al-c pd-r-s" type="text" 
+                      required <%= isDisabled %>
+                      name="key" placeholder="คีย์"
+                      value="<%= obj.key %>">
+                    
+              <input class="col-sm-2-5 keyName al-l pd-l-s" type="text" 
+                      required <%= isDisabled %>
+                      name="keyName" placeholder="ชื่อคีย์"
+                      value="<%= obj.keyName %>">
+      
+              <input class="col-sm-1 keyUnit al-c" type="text" 
+                      required <%= isDisabled %>
+                      name="keyUnit" placeholder="หน่วยนับ"
+                      value="<%= obj.keyUnit %>">
+      
+              <input class="col-sm-2 bgColor al-l pd-l-s" type="text" 
+                      required <%= isDisabled %>
+                      name="bgColor" placeholder="สีพื้นหลัง"
+                      value="<%= obj.bgColor %>">
+      
+              <input class="col-sm-2 fontColor al-l pd-l-s" type="text" 
+                      required <%= isDisabled %>
+                      name="fontColor" placeholder="สีตัวอักษร"
+                      value="<%= obj.fontColor %>">
+      
+              <input class="col-sm-0-5 btn al-c  bg-minus" type="button" value="&#45;"  tabindex = "-1" 
+                     <%= isDisabled %>
+                     onclick="removeRow(this)"> -->
+          </tr>
+          <% }) %>
+        </tbody>      
+      </table>
     </section>
 
 
