@@ -1,4 +1,3 @@
-console.log('=== MMS APP START ===');
 import 'dotenv/config'
 import express from 'express'
 import session from 'express-session'
@@ -7,38 +6,20 @@ import flash from 'connect-flash'
 import MongoDBSession from 'connect-mongodb-session' 
 import { createServer } from 'node:http';
 import { Server } from 'socket.io'
+await import(`./myGlobal.js`)
 global.IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false ;
-console.log('IS_PRODUCTION :', global.IS_PRODUCTION);
 global.PORT = process.env.PORT_DEPLOY == 0 ? process.env.PORT_DEV : process.env.PORT_SERVER
-console.log('PORT :', global.PORT);
 global.PROJECT_DIR = process.cwd()
-console.log('PROJECT_DIR :', global.PROJECT_DIR);
 global.DOMAIN_ALLOW = process.env.PORT_DEPLOY == 0 ? `${process.env.LOCALHOST_ALLOW}:${global.PORT}` : `${process.env.DOMAIN_ALLOW}`
-console.log('DOMAIN_ALLOW :', global.DOMAIN_ALLOW);
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
 global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
-console.log('=== MMS APP START 2 ===');
-console.log('routesFolder :', routesFolder);
-console.log('mymoduleFolder :', global.mymoduleFolder);
-try {
-  console.log('`./${global.mymoduleFolder}/myGlobal.js` :', `./${global.mymoduleFolder}/myGlobal.js`);
-  await import(`./${global.mymoduleFolder}/myGlobal.js`)
-  console.log('import myGlobal.js OK');
-  await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)
-  console.log('import myScheduleBackupDatabase.js OK');
-  await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)
-  console.log('import myScheduleDevices.js OK');
-  process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
-} catch (err) {
-  console.error('IMPORT ERROR:', err);
-  process.exit(1);
-}
-console.log('=== MMS APP START 3 ===');
+await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)
+await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)
+process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
 const app = express()
 const server = createServer(app)
 const io = new Server(server)
 global.io = io;
-console.log('=== MMS APP START 4 ===');
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
 app.use(session({
@@ -121,3 +102,27 @@ server.listen(global.PORT, () => {
 
 
 
+/*
+
+{
+  "key": "7127000",
+  "id": "e100",
+  "t1": 0,
+  "s1": 0,
+  "v1": 0,
+  "a1": 0,
+  "w1": 0,
+  "t2": 0,
+  "s2": 0,
+  "v2": 0,
+  "t4": 0,
+  "s4": 0,
+  "c1": 0,
+  "c2": 0,
+  "c3": 0,
+  "c4": 0,
+  "c6": 0,
+  "c7": 0
+} 
+  
+*/

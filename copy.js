@@ -28,6 +28,7 @@ const folderNames = [
 // - .gitignore ไฟล์นี้ไม่ต้องก๊อปปี้
 const fileNames = [
   'mms.js',
+  'myGlobal.js',
   'package.json', 
   'README.md',   
   '.env-deploy',  
