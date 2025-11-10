@@ -1,1 +1,1101 @@
-const _0x1d31c8=_0x2d27;(function(_0xd87688,_0x245408){const _0x3dc43a=_0x2d27,_0x395a4e=_0xd87688();while(!![]){try{const _0x244d01=parseInt(_0x3dc43a(0xbc))/0x1+parseInt(_0x3dc43a(0x155))/0x2+-parseInt(_0x3dc43a(0x1b0))/0x3+parseInt(_0x3dc43a(0x147))/0x4+-parseInt(_0x3dc43a(0xb9))/0x5+-parseInt(_0x3dc43a(0x1a9))/0x6*(-parseInt(_0x3dc43a(0x101))/0x7)+-parseInt(_0x3dc43a(0x194))/0x8*(parseInt(_0x3dc43a(0x1be))/0x9);if(_0x244d01===_0x245408)break;else _0x395a4e['push'](_0x395a4e['shift']());}catch(_0xdb5998){_0x395a4e['push'](_0x395a4e['shift']());}}}(_0x3a45,0x9b834));const _0x23a1b4=(function(){const _0x249d20=_0x2d27,_0x167e06={'DmNZu':function(_0x2695ea,_0x5a2dd4){return _0x2695ea!==_0x5a2dd4;},'EPWJl':_0x249d20(0xdd),'BaEIR':_0x249d20(0x150),'ApVAD':_0x249d20(0x15a),'Zvexa':function(_0x135677,_0x9fa21b){return _0x135677(_0x9fa21b);},'zKQPf':_0x249d20(0x191),'ObrFD':_0x249d20(0x1bc),'xRzOE':function(_0x373960,_0x4cfb4a){return _0x373960===_0x4cfb4a;},'XIWaG':'jwcCd','lNyDw':_0x249d20(0x11d)};let _0x57397f=!![];return function(_0x5c20f6,_0x55c1b3){const _0x3548e6=_0x249d20,_0x586968={'zsvWM':function(_0x4e0716,_0x47c81d){const _0x3931ef=_0x2d27;return _0x167e06[_0x3931ef(0xd3)](_0x4e0716,_0x47c81d);},'FQjWb':_0x167e06['zKQPf'],'jGJqw':_0x167e06[_0x3548e6(0x18b)]};if(_0x167e06[_0x3548e6(0x11b)](_0x167e06[_0x3548e6(0x12e)],_0x167e06[_0x3548e6(0xcc)]))_0x586968[_0x3548e6(0x159)](_0x57fe93,'0');else{const _0x467b4a=_0x57397f?function(){const _0x30209e=_0x3548e6;if(_0x167e06['DmNZu'](_0x167e06[_0x30209e(0x124)],_0x167e06['BaEIR'])){if(_0x55c1b3){if(_0x167e06['DmNZu'](_0x167e06[_0x30209e(0xb1)],_0x167e06['ApVAD']))return function(_0x4c5430){}[_0x30209e(0x173)](_0x586968[_0x30209e(0x107)])['apply'](_0x586968[_0x30209e(0x132)]);else{const _0x4261f2=_0x55c1b3[_0x30209e(0x134)](_0x5c20f6,arguments);return _0x55c1b3=null,_0x4261f2;}}}else{_0x592e55=_0xe0c5a1[_0x30209e(0x115)][_0x30209e(0xcd)](_0x5b0704);return;}}:function(){};return _0x57397f=![],_0x467b4a;}};}());function _0x3a45(){const _0x573ba5=['debu','VxAdg','zsvWM','MPxfM','ObMxT','length','ZAIYi','mnuKb','RTxbg','zubeB','YkYgi','qIoWX','FwOMG','forEach','RCdGp','mOsNA','updateOne','meEot','WmaLY','QUdgT','mbRRS','{}.constructor(\x22return\x20this\x22)(\x20)','wANPa','ZHsah','KZYcd','push','JEUaw','pNodi','constructor','switches','FSWnS','qrYHY','WqTGY','bind','qKzbo','nOYBq','SEnhV','cUPQr','Lfyhk','dbUrl','pSfXQ','URLPO','DfWGC','toArray','trace','YbGiJ','oFmwC','kFzOd','duATz','eaHTR','uyYhj','NRQyu','ObrFD','timestamp','PRGQw','table','Sdibb','iSvUj','while\x20(true)\x20{}','MJpqm','FMPSa','8WrRtmQ','BkXNz','yVjHY','CefSM','nrwEV','KhfUq','afnde','log','ZojzU','nyXBP','dPNdo','QQnfq','test','stateObject','mfQah','TSGeg','gger','dbColl_alerts','ujrhY','eKxQS','xbLxU','24UoJAFf','kjKTh','ZFkJv','uYhoB','yLcGk','prototype','Uzfhs','1286625wfzdou','OQWPc','exception','VrvDJ','mzBlM','OSnCj','SzCkT','BBaoq','IesSr','sOlnH','htGEe','lohcD','counter','map','26797005jJaGMc','mQxag','nVLmY','ApVAD','yoSlh','Orvrg','jkSsW','EzXdE','XaTzr','alertId','JcxhK','3427625UIdOSb','qwvWU','ycixt','994126vWlfFQ','startsWith','cKRNZ','DLOyp','rfFZO','KanLw','uFbIy','yHnjf','Wrsef','sOoHk','JhTCR','vmeGr','rwXOh','vcCQm','yDXru','find','lNyDw','indexOf','nzsgQ','ufZEa','KLJZw','ZmrHz','ilwSu','Zvexa','wOwDn','IiYZn','dJPQw','__proto__','kQpOp','dEXQe','ElcUP','insertOne','ArebE','lQQFB','ugwYl','dyRYc','findOne','wvNnX','rCqRN','SNvIy','gXcbi','zoJMP','Otaxe','fhJrZ','YOYiG','dNIvg','action','JxgPx','tableRows','OjBoF','PqOVS','FqmuM','WHdYk','jlTmA','sCTij','zuzhJ','qVDFF','PyqPv','chain','vWZlF','error','dbName','gfdZx','info','/myDateTime.js','tnHqA','tCtPf','RMgIO','XJFMV','2225258awVVCC','EXFsf','LvJxT','updateMany','return\x20(function()\x20','UhUrz','FQjWb','eATSp','kqnYS','console','gtKOQ','toString','NPLnt','Uuzrl','agJRf','string','GxXMA','PEfoj','MgvLV','input','SWITCHES','sJjNN','ZhWWk','rxHzs','init','OOVJQ','xRzOE','connect','GTDUi','ujklN','MCNNj','function\x20*\x5c(\x20*\x5c)','hGoQj','Qovun','EipIt','EPWJl','now','YtyUS','call','nYiEA','NwVuL','noazR','ZXPGv','bdOAd','zLefS','XIWaG','hjAzG','zSWJK','qLXFr','jGJqw','close','apply','YyYyA','HBBAv','NWUAE','../','lKySw','vhkDq','sscJq','vBwoH','VHBvl','keys','AAXPM','QOMac','zdYKG','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','HPCsX','VhRuJ','tCCEq','OVQUt','5015980AjJHTP','xboap','NVlCA','TKjbU','wRBXV','aggregate','collection','cVdin','tableRows[','nTFrV','sfnEo','MqQLF','rlBOZ','cbjAK','2418256IADfOj','IiQxn'];_0x3a45=function(){return _0x573ba5;};return _0x3a45();}(function(){const _0x3bc823=_0x2d27,_0x2e870a={'xboap':function(_0x33c05c,_0x2cd417){return _0x33c05c(_0x2cd417);},'UwqlO':function(_0x12f2f1,_0x47327b){return _0x12f2f1+_0x47327b;},'Orvrg':function(_0x33f5e9,_0x5730f3){return _0x33f5e9+_0x5730f3;},'HBBAv':_0x3bc823(0x105),'cVdin':_0x3bc823(0x16c),'wXrNG':function(_0x526102,_0x2bd791){return _0x526102(_0x2bd791);},'qVDFF':function(_0x3a803b,_0x509432){return _0x3a803b+_0x509432;},'YXGOd':function(_0xd8c054,_0xf21b0f){return _0xd8c054!==_0xf21b0f;},'pSfXQ':'pdfvK','BkXNz':_0x3bc823(0x120),'ZXPGv':'\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','SpGhu':function(_0x198e36,_0x38afdd){return _0x198e36(_0x38afdd);},'mfQah':_0x3bc823(0x119),'cUPQr':function(_0x2376ae,_0x82b7b7){return _0x2376ae+_0x82b7b7;},'GxXMA':_0x3bc823(0xf6),'vhzMh':function(_0x27e97f,_0x86debb){return _0x27e97f+_0x86debb;},'YOYiG':_0x3bc823(0x114),'vWZlF':function(_0x4690a5,_0x12f66b){return _0x4690a5===_0x12f66b;},'eATSp':'Vzxss','ugwYl':function(_0x13e61b,_0x2a5f53){return _0x13e61b===_0x2a5f53;},'OQWPc':_0x3bc823(0xc6),'eKxQS':function(_0x12429b){return _0x12429b();},'meEot':function(_0x5af8d2,_0xb6d636,_0x516850){return _0x5af8d2(_0xb6d636,_0x516850);}};_0x2e870a[_0x3bc823(0x168)](_0x23a1b4,this,function(){const _0x31cc93=_0x3bc823,_0x44bb0a={'WmaLY':function(_0xc3becf,_0x35b1bf){return _0x2e870a['wXrNG'](_0xc3becf,_0x35b1bf);},'ZhWWk':function(_0x37e981,_0x2ecc7a){const _0x35ac83=_0x2d27;return _0x2e870a[_0x35ac83(0xf4)](_0x37e981,_0x2ecc7a);},'rwXOh':function(_0x4e9ef8,_0x400157){const _0x448210=_0x2d27;return _0x2e870a[_0x448210(0xb3)](_0x4e9ef8,_0x400157);},'yLcGk':_0x2e870a[_0x31cc93(0x136)],'MqQLF':_0x2e870a[_0x31cc93(0x14e)]};if(_0x2e870a['YXGOd'](_0x2e870a[_0x31cc93(0x17f)],_0x2e870a['pSfXQ'])){let _0xdff1c2;try{_0xdff1c2=_0x2e870a['xboap'](_0xe2df70,_0x2e870a['UwqlO'](_0x2e870a[_0x31cc93(0xb3)](_0x2e870a[_0x31cc93(0x136)],_0x2e870a[_0x31cc93(0x14e)]),');'))();}catch(_0x585de7){_0xdff1c2=_0x28ba9b;}return _0xdff1c2;}else{const _0x4ace10=new RegExp(_0x2e870a[_0x31cc93(0x195)]),_0x1542d1=new RegExp(_0x2e870a[_0x31cc93(0x12b)],'i'),_0x360a58=_0x2e870a['SpGhu'](_0x40e387,_0x2e870a[_0x31cc93(0x1a2)]);if(!_0x4ace10[_0x31cc93(0x1a0)](_0x2e870a[_0x31cc93(0x17c)](_0x360a58,_0x2e870a[_0x31cc93(0x111)]))||!_0x1542d1['test'](_0x2e870a['vhzMh'](_0x360a58,_0x2e870a[_0x31cc93(0xe8)])))_0x2e870a[_0x31cc93(0xf7)](_0x2e870a[_0x31cc93(0x108)],_0x2e870a[_0x31cc93(0x108)])?_0x2e870a[_0x31cc93(0x148)](_0x360a58,'0'):_0x3b50f2=_0x44bb0a[_0x31cc93(0x169)](_0x32409c,_0x44bb0a[_0x31cc93(0x117)](_0x44bb0a[_0x31cc93(0xc8)](_0x44bb0a[_0x31cc93(0x1ad)],_0x44bb0a[_0x31cc93(0x152)]),');'))();else{if(_0x2e870a[_0x31cc93(0xde)](_0x2e870a['OQWPc'],_0x2e870a[_0x31cc93(0x1b1)]))_0x2e870a[_0x31cc93(0x1a7)](_0x40e387);else{const _0xb16c35=_0x376e3b[_0x31cc93(0x115)]['find'](_0x558350=>_0x558350['id']===_0x27f34f);return _0xb16c35?{..._0xb16c35}:null;}}}})();}());const _0x3eb607=(function(){const _0x4a0834=_0x2d27,_0x47f1bd={'FwOMG':function(_0xcacd25,_0x13cbf5){return _0xcacd25+_0x13cbf5;},'thlyu':_0x4a0834(0x157),'cKRNZ':_0x4a0834(0x1a4),'sscJq':_0x4a0834(0xea),'sOoHk':function(_0x3f9139,_0x12ff9e){return _0x3f9139===_0x12ff9e;},'vcCQm':_0x4a0834(0xb2),'ufZEa':'YFUJr','AAXPM':function(_0x583641,_0x13b9ae){return _0x583641!==_0x13b9ae;},'SEnhV':'sOamZ','rfFZO':_0x4a0834(0xf1)};let _0x12fb77=!![];return function(_0x37aa62,_0x156830){const _0x34b4fb=_0x4a0834,_0x50dd25={'mzBlM':function(_0x3adfa0,_0x3198bb){const _0x18f3e0=_0x2d27;return _0x47f1bd[_0x18f3e0(0xc5)](_0x3adfa0,_0x3198bb);},'AgWFC':_0x47f1bd[_0x34b4fb(0xc9)],'YkYgi':function(_0x13f18a,_0x188ed){const _0x594629=_0x34b4fb;return _0x47f1bd[_0x594629(0xc5)](_0x13f18a,_0x188ed);},'GRqsx':_0x47f1bd[_0x34b4fb(0xcf)]};if(_0x47f1bd[_0x34b4fb(0x13f)](_0x47f1bd[_0x34b4fb(0x17b)],_0x47f1bd[_0x34b4fb(0xc0)])){const _0x28cda2=_0x12fb77?function(){const _0x5acd60=_0x34b4fb;if(_0x50dd25[_0x5acd60(0x1b4)](_0x50dd25['AgWFC'],_0x50dd25['AgWFC'])){if(_0x156830){if(_0x50dd25[_0x5acd60(0x161)](_0x50dd25['GRqsx'],_0x50dd25['GRqsx'])){const _0x4d8193=_0x156830[_0x5acd60(0x134)](_0x37aa62,arguments);return _0x156830=null,_0x4d8193;}else return _0x3999f2['log'](_0x2c256d),[];}}else _0x451045[_0x5acd60(0x133)]();}:function(){};return _0x12fb77=![],_0x28cda2;}else(function(){return!![];}[_0x34b4fb(0x173)](_0x47f1bd[_0x34b4fb(0x163)](_0x47f1bd['thlyu'],_0x47f1bd[_0x34b4fb(0xbe)]))[_0x34b4fb(0x127)](_0x47f1bd[_0x34b4fb(0x13b)]));};}()),_0x2dded2=_0x3eb607(this,function(){const _0x3c79b1=_0x2d27,_0x10e878={'cSWgD':_0x3c79b1(0x120),'ZeTbM':_0x3c79b1(0x142),'JEUaw':function(_0x5e316a,_0x2d3cf0){return _0x5e316a(_0x2d3cf0);},'fhJrZ':'init','jkSsW':function(_0x1969a3,_0x216dcb){return _0x1969a3+_0x216dcb;},'NVlCA':'chain','agJRf':_0x3c79b1(0x114),'MJpqm':function(_0x2fd30d){return _0x2fd30d();},'OVQUt':function(_0x3f0b50,_0x5f48ee,_0x447df1){return _0x3f0b50(_0x5f48ee,_0x447df1);},'ycixt':'debu','pNodi':'gger','ZojzU':_0x3c79b1(0x1a1),'mbRRS':function(_0xa8ba66,_0x4b8095){return _0xa8ba66!==_0x4b8095;},'vQRAC':_0x3c79b1(0xf3),'IiYZn':function(_0x207484,_0x40a213){return _0x207484===_0x40a213;},'XyYzu':_0x3c79b1(0x16e),'EipIt':'XDJoJ','CzorZ':function(_0x204e7e,_0x230a22){return _0x204e7e+_0x230a22;},'wOwDn':_0x3c79b1(0x105),'Qovun':_0x3c79b1(0x16c),'OOVJQ':function(_0x26edf8,_0x406f54){return _0x26edf8!==_0x406f54;},'mQxag':_0x3c79b1(0xf2),'htGEe':function(_0x4c6a47){return _0x4c6a47();},'iIDXk':_0x3c79b1(0x19b),'QOMac':'warn','PqOVS':_0x3c79b1(0xfb),'wANPa':_0x3c79b1(0xf8),'noazR':_0x3c79b1(0x1b2),'DfWGC':_0x3c79b1(0x18e),'oFmwC':_0x3c79b1(0x183),'OSnCj':function(_0x29f142,_0x158eaf){return _0x29f142<_0x158eaf;},'hJfXj':function(_0x513afb,_0x230826){return _0x513afb===_0x230826;},'QUdgT':'xsOMc'},_0x3006c3=function(){const _0x53eb86=_0x3c79b1,_0x3ded78={'kFzOd':function(_0x29ab9e,_0x462c91){const _0x147a53=_0x2d27;return _0x10e878[_0x147a53(0xb4)](_0x29ab9e,_0x462c91);},'kDVrR':_0x10e878[_0x53eb86(0xbb)],'bdOAd':_0x10e878[_0x53eb86(0x172)],'YbGiJ':_0x10e878[_0x53eb86(0x19c)]};if(_0x10e878[_0x53eb86(0x16b)](_0x10e878['vQRAC'],_0x10e878['vQRAC']))(function(){return![];}['constructor'](_0x3ded78[_0x53eb86(0x186)](_0x3ded78['kDVrR'],_0x3ded78[_0x53eb86(0x12c)]))[_0x53eb86(0x134)](_0x3ded78[_0x53eb86(0x184)]));else{let _0x39e4d3;try{if(_0x10e878[_0x53eb86(0xd5)](_0x10e878['XyYzu'],_0x10e878[_0x53eb86(0x123)])){const _0x579e6b={'tCCEq':_0x10e878['cSWgD'],'NRQyu':_0x10e878['ZeTbM'],'cmMTY':function(_0x46d8a2,_0x4da482){return _0x10e878['JEUaw'](_0x46d8a2,_0x4da482);},'OkmSI':_0x10e878[_0x53eb86(0xe7)],'uFbIy':function(_0x2c3770,_0x3733ce){return _0x10e878['jkSsW'](_0x2c3770,_0x3733ce);},'Otaxe':_0x10e878[_0x53eb86(0x149)],'gtKOQ':_0x10e878[_0x53eb86(0x10f)],'WXEeB':function(_0x31afea,_0x5251f3){const _0xc9d9a8=_0x53eb86;return _0x10e878[_0xc9d9a8(0x171)](_0x31afea,_0x5251f3);},'nyXBP':function(_0x29d6bc){const _0x2f4f36=_0x53eb86;return _0x10e878[_0x2f4f36(0x192)](_0x29d6bc);}};_0x10e878[_0x53eb86(0x146)](_0x107f6a,this,function(){const _0x26da81=_0x53eb86,_0x1fb6be=new _0x149568(_0x579e6b[_0x26da81(0x145)]),_0x3a4be5=new _0x4616d8(_0x579e6b[_0x26da81(0x18a)],'i'),_0x303834=_0x579e6b['cmMTY'](_0x2d2738,_0x579e6b['OkmSI']);!_0x1fb6be[_0x26da81(0x1a0)](_0x579e6b['uFbIy'](_0x303834,_0x579e6b[_0x26da81(0xe6)]))||!_0x3a4be5['test'](_0x579e6b[_0x26da81(0xc2)](_0x303834,_0x579e6b[_0x26da81(0x10b)]))?_0x579e6b['WXEeB'](_0x303834,'0'):_0x579e6b[_0x26da81(0x19d)](_0x283d22);})();}else _0x39e4d3=_0x10e878[_0x53eb86(0x171)](Function,_0x10e878[_0x53eb86(0xb4)](_0x10e878['CzorZ'](_0x10e878[_0x53eb86(0xd4)],_0x10e878[_0x53eb86(0x122)]),');'))();}catch(_0x4e6970){if(_0x10e878[_0x53eb86(0x11a)](_0x10e878[_0x53eb86(0x1bf)],_0x10e878[_0x53eb86(0x1bf)])){if(_0x250487){const _0x4bcf64=_0x4c3144[_0x53eb86(0x134)](_0x5a732d,arguments);return _0x742788=null,_0x4bcf64;}}else _0x39e4d3=window;}return _0x39e4d3;}},_0x2ba85a=_0x10e878[_0x3c79b1(0x1ba)](_0x3006c3),_0x363bc1=_0x2ba85a[_0x3c79b1(0x10a)]=_0x2ba85a['console']||{},_0x5ed65c=[_0x10e878['iIDXk'],_0x10e878[_0x3c79b1(0x140)],_0x10e878[_0x3c79b1(0xee)],_0x10e878[_0x3c79b1(0x16d)],_0x10e878[_0x3c79b1(0x12a)],_0x10e878[_0x3c79b1(0x181)],_0x10e878[_0x3c79b1(0x185)]];for(let _0x30bf64=0x0;_0x10e878[_0x3c79b1(0x1b5)](_0x30bf64,_0x5ed65c[_0x3c79b1(0x15c)]);_0x30bf64++){if(_0x10e878['hJfXj'](_0x10e878[_0x3c79b1(0x16a)],_0x10e878[_0x3c79b1(0x16a)])){const _0x3c6b26=_0x3eb607[_0x3c79b1(0x173)][_0x3c79b1(0x1ae)][_0x3c79b1(0x178)](_0x3eb607),_0x2d126d=_0x5ed65c[_0x30bf64],_0x1636da=_0x363bc1[_0x2d126d]||_0x3c6b26;_0x3c6b26[_0x3c79b1(0xd7)]=_0x3eb607[_0x3c79b1(0x178)](_0x3eb607),_0x3c6b26['toString']=_0x1636da['toString'][_0x3c79b1(0x178)](_0x1636da),_0x363bc1[_0x2d126d]=_0x3c6b26;}else{if(_0x10e878[_0x3c79b1(0xd5)](_0x7071a1['id'],_0x454a78['id'])){_0x3381ab=_0x4086cf['SWITCHES']['indexOf'](_0x114318);return;}}}});_0x2dded2();import{MongoClient as _0x283abe}from'mongodb';const b=await import(_0x1d31c8(0x138)+mymoduleFolder+_0x1d31c8(0xfc));export function getDeviceById(_0x1530d8){const _0x5cb412=_0x1d31c8,_0x30e36f=global[_0x5cb412(0x115)][_0x5cb412(0xcb)](_0x411294=>_0x411294['id']===_0x1530d8);return _0x30e36f?{..._0x30e36f}:null;}export async function updateSwitchesData(_0x5019bc){const _0xf4814d=_0x1d31c8,_0x3fa277={'yVjHY':_0xf4814d(0x120),'duATz':_0xf4814d(0x142),'EzXdE':function(_0x5c0db5,_0x46e452){return _0x5c0db5(_0x46e452);},'dyRYc':_0xf4814d(0x119),'sOlnH':function(_0x325086,_0x44da97){return _0x325086+_0x44da97;},'KEEsb':_0xf4814d(0xf6),'IiQxn':function(_0xbbb764,_0x381aca){return _0xbbb764+_0x381aca;},'BBaoq':'input','nYiEA':function(_0x119af7){return _0x119af7();},'KLJZw':function(_0x33005a,_0x4ee9d9){return _0x33005a!==_0x4ee9d9;},'Wrsef':function(_0x187efd,_0x1fffa4){return _0x187efd!==_0x1fffa4;},'qrYHY':_0xf4814d(0x179),'XJFMV':function(_0x3b5b32,_0x5e341d){return _0x3b5b32===_0x5e341d;},'nVLmY':function(_0x3c1680,_0x1e904f){return _0x3c1680!==_0x1e904f;},'KanLw':_0xf4814d(0x15d),'wRBXV':_0xf4814d(0x199),'dNIvg':function(_0x1afb3b,_0x339aed){return _0x1afb3b===_0x339aed;},'Mivty':'tableRows','gfdZx':function(_0x103090,_0x59565a){return _0x103090<_0x59565a;},'SNvIy':function(_0x368fb8,_0x11e39a){return _0x368fb8!=_0x11e39a;},'ilwSu':function(_0x37c900,_0x8e3e8c){return _0x37c900!==_0x8e3e8c;},'NwVuL':'IJCmq','vBwoH':function(_0x44961,_0x54242e){return _0x44961(_0x54242e);},'VxAdg':function(_0x1471a6,_0x555350){return _0x1471a6===_0x555350;},'ElcUP':_0xf4814d(0x18c),'PyqPv':function(_0x383c24,_0x302be1){return _0x383c24===_0x302be1;},'iSvUj':_0xf4814d(0xd9),'zoJMP':'XvtQr','PEfoj':_0xf4814d(0x174)};let _0x1824cd=-0x1;if(global[_0xf4814d(0x115)][_0xf4814d(0x164)](_0x157f5e=>{const _0x5d20b2=_0xf4814d,_0x5d7741={'fWtzV':_0x3fa277[_0x5d20b2(0x196)],'YtyUS':_0x3fa277[_0x5d20b2(0x187)],'lohcD':function(_0x29c2e4,_0x2c9fcb){const _0x543d3d=_0x5d20b2;return _0x3fa277[_0x543d3d(0xb5)](_0x29c2e4,_0x2c9fcb);},'WqTGY':_0x3fa277[_0x5d20b2(0xdf)],'ZmrHz':function(_0x908d98,_0x44ef1d){const _0xb0ae41=_0x5d20b2;return _0x3fa277[_0xb0ae41(0x1b9)](_0x908d98,_0x44ef1d);},'YyYyA':_0x3fa277['KEEsb'],'AnZxm':function(_0x199dd1,_0x92bd){const _0x3e4e49=_0x5d20b2;return _0x3fa277[_0x3e4e49(0x156)](_0x199dd1,_0x92bd);},'XaTzr':_0x3fa277[_0x5d20b2(0x1b7)],'CefSM':function(_0xb32150){const _0x236b56=_0x5d20b2;return _0x3fa277[_0x236b56(0x128)](_0xb32150);},'PRGQw':function(_0x1aa69a,_0x4a4863){const _0x50fecf=_0x5d20b2;return _0x3fa277[_0x50fecf(0xd0)](_0x1aa69a,_0x4a4863);},'rxtgG':function(_0x29e6af,_0x4f0e52){const _0x3f623a=_0x5d20b2;return _0x3fa277[_0x3f623a(0xb5)](_0x29e6af,_0x4f0e52);}};if(_0x3fa277[_0x5d20b2(0xc4)](_0x3fa277[_0x5d20b2(0x176)],_0x3fa277[_0x5d20b2(0x176)])){const _0x551074=new _0x32f510(sdPaRU['fWtzV']),_0xcd4768=new _0xe0084b(sdPaRU[_0x5d20b2(0x126)],'i'),_0x4f246a=sdPaRU['lohcD'](_0x43cda0,sdPaRU[_0x5d20b2(0x177)]);!_0x551074[_0x5d20b2(0x1a0)](sdPaRU[_0x5d20b2(0xd1)](_0x4f246a,sdPaRU[_0x5d20b2(0x135)]))||!_0xcd4768[_0x5d20b2(0x1a0)](sdPaRU['AnZxm'](_0x4f246a,sdPaRU[_0x5d20b2(0xb6)]))?sdPaRU[_0x5d20b2(0x1bb)](_0x4f246a,'0'):sdPaRU[_0x5d20b2(0x197)](_0x3cfdad);}else{if(_0x3fa277[_0x5d20b2(0x100)](_0x157f5e['id'],_0x5019bc['id'])){if(_0x3fa277[_0x5d20b2(0xb0)](_0x3fa277[_0x5d20b2(0xc1)],_0x3fa277[_0x5d20b2(0x14b)])){_0x1824cd=global['SWITCHES'][_0x5d20b2(0xcd)](_0x157f5e);return;}else _0x407918[_0x5d20b2(0xbd)]('s')&&(_0x3483a8[_0xab3f5d]=!_0x5d7741[_0x5d20b2(0x1bb)](_0x3a97a6,_0x5a1eec[_0x4e16f5])&&_0x5d7741[_0x5d20b2(0x18d)](_0x4d7593[_0xd4c7b],'')?_0x5d7741['rxtgG'](_0x15307c,_0xb93194[_0x1d5d14]):_0x249163[_0x2e5eb4]);}}}),_0x3fa277[_0xf4814d(0xd0)](_0x1824cd,-0x1)){for(let _0x5eaf82 in _0x5019bc)_0x5eaf82['startsWith']('s')?global['SWITCHES'][_0x1824cd][_0x5eaf82]=_0x3fa277[_0xf4814d(0xb5)](Number,_0x5019bc[_0x5eaf82]):_0x3fa277[_0xf4814d(0x158)](_0x5eaf82,_0x3fa277[_0xf4814d(0xda)])&&(global[_0xf4814d(0x115)][_0x1824cd][_0x5eaf82]=_0x5019bc[_0x5eaf82]);}else{if(_0x3fa277[_0xf4814d(0xf5)](_0x3fa277[_0xf4814d(0x190)],_0x3fa277[_0xf4814d(0xe5)])){const _0x492134=[];for(const _0x468c7d in _0x42e4f0)if(_0x3fa277[_0xf4814d(0xe9)](_0x468c7d,_0x3fa277['Mivty'])){const _0x1f1dd2=_0x2a1427['tableRows']||[],_0x273488=_0x1ab6a2[_0xf4814d(0xec)]||[];if(_0x3fa277[_0xf4814d(0xb0)](_0x1f1dd2['length'],_0x273488[_0xf4814d(0x15c)]))_0x492134['push']({'field':_0x3fa277['Mivty'],'oldValue':_0x1f1dd2,'newValue':_0x273488});else for(let _0x46122c=0x0;_0x3fa277[_0xf4814d(0xfa)](_0x46122c,_0x273488[_0xf4814d(0x15c)]);_0x46122c++){const _0x22a618=_0x1f1dd2[_0x46122c]||{},_0x2fbce0=_0x273488[_0x46122c]||{};for(const _0x415acd in _0x2fbce0)_0x3fa277[_0xf4814d(0xe3)](_0x2fbce0[_0x415acd],_0x22a618[_0x415acd])&&_0x492134[_0xf4814d(0x170)]({'field':_0xf4814d(0x14f)+_0x46122c+'].'+_0x415acd,'oldValue':_0x22a618[_0x415acd],'newValue':_0x2fbce0[_0x415acd]});}}else _0x3fa277[_0xf4814d(0xd2)](_0x89952e[_0x468c7d],_0x30229a[_0x468c7d])&&_0x492134['push']({'field':_0x468c7d,'oldValue':_0xbc476f[_0x468c7d],'newValue':_0x40de43[_0x468c7d]});return _0x492134;}else{const _0x5cb8e5=b[_0xf4814d(0x125)](),_0x369a6d=Object[_0xf4814d(0x13e)](_0x5019bc),_0x3b68a2={};_0x369a6d[_0xf4814d(0x164)](_0x48fa7a=>{const _0x320712=_0xf4814d;if(_0x3fa277['XJFMV'](_0x3fa277['NwVuL'],_0x3fa277[_0x320712(0x129)]))_0x48fa7a[_0x320712(0xbd)]('s')&&(_0x3b68a2[_0x48fa7a]=!_0x3fa277[_0x320712(0x13c)](isNaN,_0x5019bc[_0x48fa7a])&&_0x3fa277[_0x320712(0xb0)](_0x5019bc[_0x48fa7a],'')?_0x3fa277[_0x320712(0xb5)](Number,_0x5019bc[_0x48fa7a]):_0x5019bc[_0x48fa7a]);else{const _0x37d6cd=_0x206d88[_0x320712(0x134)](_0x265382,arguments);return _0x978a97=null,_0x37d6cd;}}),global['SWITCHES'][_0xf4814d(0x170)]({'id':_0x5019bc['id'],'timestamp':_0x5cb8e5,..._0x3b68a2});const _0x1c12c3=new _0x283abe(global[_0xf4814d(0x17e)]);await _0x1c12c3[_0xf4814d(0x11c)]();const _0x1d14e5=_0x1c12c3['db'](global[_0xf4814d(0xf9)])[_0xf4814d(0x14d)](_0x3fa277[_0xf4814d(0x112)]),_0x364944={..._0x5019bc};for(let _0x34066b in _0x364944)_0x34066b[_0xf4814d(0xbd)]('s')&&(_0x364944[_0x34066b]=0x0);delete _0x364944[_0xf4814d(0x18c)],await _0x1d14e5[_0xf4814d(0xe0)]({'id':_0x364944['id']})?await _0x1d14e5[_0xf4814d(0x167)]({'id':_0x364944['id']},{'$set':_0x364944}):await _0x1d14e5[_0xf4814d(0xdb)](_0x364944),await _0x1c12c3[_0xf4814d(0x133)]();}}}function _0x2d27(_0x5cbf7b,_0x1e49f4){const _0x5332de=_0x3a45();return _0x2d27=function(_0x2dded2,_0x3eb607){_0x2dded2=_0x2dded2-0xb0;let _0x4ebc3e=_0x5332de[_0x2dded2];return _0x4ebc3e;},_0x2d27(_0x5cbf7b,_0x1e49f4);}export function getChangeHistory(_0x1e29aa,_0x4f2c46){const _0x38777b=_0x1d31c8,_0x220093={'hGoQj':function(_0x12438c,_0x5f0484){return _0x12438c(_0x5f0484);},'VHBvl':function(_0x4977a4,_0x388fae){return _0x4977a4===_0x388fae;},'zLefS':_0x38777b(0xec),'OjBoF':function(_0x259372,_0x45434a){return _0x259372!==_0x45434a;},'tnHqA':_0x38777b(0x1af),'hjAzG':function(_0x2a3fb6,_0x25beee){return _0x2a3fb6<_0x25beee;},'YOtBd':_0x38777b(0x1a8),'ujrhY':function(_0x117401,_0x47ca31){return _0x117401!=_0x47ca31;},'nOYBq':function(_0x5a14c9,_0x2a442d){return _0x5a14c9!==_0x2a442d;}},_0x29dd76=[];for(const _0x1c95a5 in _0x4f2c46)if(_0x220093[_0x38777b(0x13d)](_0x1c95a5,_0x220093['zLefS'])){if(_0x220093[_0x38777b(0xed)](_0x220093[_0x38777b(0xfd)],_0x220093['tnHqA'])){if(_0x1cedfa){const _0x39b4c9=_0x224767['apply'](_0x32a8f5,arguments);return _0x2e9bb3=null,_0x39b4c9;}}else{const _0x504776=_0x1e29aa[_0x38777b(0xec)]||[],_0x835589=_0x4f2c46[_0x38777b(0xec)]||[];if(_0x220093[_0x38777b(0xed)](_0x504776[_0x38777b(0x15c)],_0x835589[_0x38777b(0x15c)]))_0x29dd76[_0x38777b(0x170)]({'field':_0x220093[_0x38777b(0x12d)],'oldValue':_0x504776,'newValue':_0x835589});else for(let _0x2cd911=0x0;_0x220093[_0x38777b(0x12f)](_0x2cd911,_0x835589[_0x38777b(0x15c)]);_0x2cd911++){if(_0x220093[_0x38777b(0x13d)](_0x220093['YOtBd'],_0x220093['YOtBd'])){const _0x10c321=_0x504776[_0x2cd911]||{},_0x2ca711=_0x835589[_0x2cd911]||{};for(const _0x26b22f in _0x2ca711)_0x220093[_0x38777b(0x1a6)](_0x2ca711[_0x26b22f],_0x10c321[_0x26b22f])&&_0x29dd76[_0x38777b(0x170)]({'field':_0x38777b(0x14f)+_0x2cd911+'].'+_0x26b22f,'oldValue':_0x10c321[_0x26b22f],'newValue':_0x2ca711[_0x26b22f]});}else{if(_0x29e3a7)return _0x2bc0aa;else BYKXSf[_0x38777b(0x121)](_0x19c948,0x0);}}}}else _0x220093[_0x38777b(0x17a)](_0x4f2c46[_0x1c95a5],_0x1e29aa[_0x1c95a5])&&_0x29dd76[_0x38777b(0x170)]({'field':_0x1c95a5,'oldValue':_0x1e29aa[_0x1c95a5],'newValue':_0x4f2c46[_0x1c95a5]});return _0x29dd76;}export async function getAlertsByUserId(_0x6412ac){const _0x231616=_0x1d31c8,_0x311377={'kqnYS':function(_0xa640,_0x11177d){return _0xa640===_0x11177d;},'wvNnX':'cCSIm','sJjNN':function(_0x39734b,_0x5ea6e6){return _0x39734b>_0x5ea6e6;},'LAymk':function(_0x14809f,_0x14096d){return _0x14809f===_0x14096d;},'rlBOZ':_0x231616(0x131),'ObMxT':_0x231616(0x15e),'uYhoB':function(_0x2ade1a,_0x251390){return _0x2ade1a!==_0x251390;},'nzsgQ':'IoawN','ZFkJv':_0x231616(0xeb),'qilds':function(_0x8159b,_0xac1a76){return _0x8159b===_0xac1a76;},'HPCsX':'PjRUM'},_0x392839=new _0x283abe(global[_0x231616(0x17e)]);try{if(_0x311377[_0x231616(0x109)](_0x311377[_0x231616(0xe1)],_0x311377[_0x231616(0xe1)])){await _0x392839['connect']();const _0x48a496=_0x392839['db'](global[_0x231616(0xf9)])[_0x231616(0x14d)](global[_0x231616(0x1a5)]),_0x55832c=await _0x48a496['aggregate']([{'$match':{'$or':[{'readRows':{'$exists':!0x1}},{'readRows':{'$not':{'$elemMatch':{'userId':_0x6412ac}}}}]}},{'$project':{'_id':0x0}},{'$sort':{'timestamp':-0x1}},{'$limit':0x1e}])[_0x231616(0x182)]();if(_0x311377[_0x231616(0x116)](_0x55832c['length'],0x0)){if(_0x311377['LAymk'](_0x311377[_0x231616(0x153)],_0x311377[_0x231616(0x15b)]))_0x59184e[_0x231616(0x133)]();else{const _0x328908=_0x55832c['map'](_0x101b01=>_0x101b01[_0x231616(0xb7)]);await _0x48a496[_0x231616(0x104)]({'alertId':{'$in':_0x328908}},{'$addToSet':{'readRows':{'userId':_0x6412ac,'readAt':b[_0x231616(0x125)]()}}});}}return _0x55832c;}else{const _0x38fd92=_0x25234f?function(){const _0x3d8d02=_0x231616;if(_0xb684c0){const _0x5db08e=_0x5ea783[_0x3d8d02(0x134)](_0x1b9a20,arguments);return _0x3f91c2=null,_0x5db08e;}}:function(){};return _0x58b90f=![],_0x38fd92;}}catch(_0x1993bf){if(_0x311377[_0x231616(0x1ac)](_0x311377[_0x231616(0xce)],_0x311377[_0x231616(0x1ab)]))return console[_0x231616(0x19b)](_0x1993bf),[];else{const _0x10b1cb=_0x214a97?function(){const _0x34948b=_0x231616;if(_0x4bcfb7){const _0x57e574=_0x5a2170[_0x34948b(0x134)](_0x28d5fe,arguments);return _0x2b6c89=null,_0x57e574;}}:function(){};return _0x15d713=![],_0x10b1cb;}}finally{_0x311377['qilds'](_0x311377['HPCsX'],_0x311377[_0x231616(0x143)])?_0x392839['close']():_0xae1b24=_0x3680fa;}}export async function getAlertsByUserIdDeviceId(_0x3bf91e,_0x27e75c){const _0x252b54=_0x1d31c8,_0x5f4a4b={'tCtPf':function(_0x2d3650,_0x544e87){return _0x2d3650!=_0x544e87;},'jLGMh':function(_0x9f3206,_0x64d12c){return _0x9f3206(_0x64d12c);},'NWUAE':function(_0x1037e0,_0x1ca19b){return _0x1037e0===_0x1ca19b;},'ArebE':_0x252b54(0x10d),'afnde':function(_0x1155b1,_0x16246f){return _0x1155b1>_0x16246f;},'bJIlo':_0x252b54(0x165),'KZYcd':_0x252b54(0x15f),'Uuzrl':function(_0xe1126c,_0x4d21ae){return _0xe1126c!==_0x4d21ae;},'MCNNj':_0x252b54(0x18f),'VrvDJ':_0x252b54(0x154),'KYqdq':_0x252b54(0xf0),'FSWnS':_0x252b54(0xc3)},_0x37b174=new _0x283abe(global[_0x252b54(0x17e)]);try{if(_0x5f4a4b[_0x252b54(0x137)](_0x5f4a4b['ArebE'],_0x5f4a4b[_0x252b54(0xdc)])){await _0x37b174[_0x252b54(0x11c)]();const _0x25fcd1=_0x37b174['db'](global[_0x252b54(0xf9)])[_0x252b54(0x14d)](global['dbColl_alerts']),_0xc10c7c=await _0x25fcd1[_0x252b54(0x14c)]([{'$match':{'$and':[{'deviceId':_0x27e75c},{'$or':[{'readRows':{'$exists':!0x1}},{'readRows':{'$not':{'$elemMatch':{'userId':_0x3bf91e}}}}]}]}},{'$project':{'_id':0x0}},{'$sort':{'timestamp':-0x1}},{'$limit':0x1e}])['toArray']();if(_0x5f4a4b[_0x252b54(0x19a)](_0xc10c7c['length'],0x0)){if(_0x5f4a4b[_0x252b54(0x137)](_0x5f4a4b['bJIlo'],_0x5f4a4b[_0x252b54(0x16f)])){const _0x2815cc=_0x513539[_0x252b54(0x134)](_0x30664c,arguments);return _0x49fe43=null,_0x2815cc;}else{const _0xe765c0=_0xc10c7c[_0x252b54(0x1bd)](_0x224e25=>_0x224e25['alertId']);await _0x25fcd1[_0x252b54(0x104)]({'alertId':{'$in':_0xe765c0}},{'$addToSet':{'readRows':{'userId':_0x3bf91e,'readAt':b['now']()}}});}}return _0xc10c7c;}else{const _0x51bef8=_0x56c50a[_0x267cfe]||{},_0x195e4d=_0x48b917[_0x155da5]||{};for(const _0x175774 in _0x195e4d)_0x5f4a4b[_0x252b54(0xfe)](_0x195e4d[_0x175774],_0x51bef8[_0x175774])&&_0x4c0198[_0x252b54(0x170)]({'field':_0x252b54(0x14f)+_0x1960bd+'].'+_0x175774,'oldValue':_0x51bef8[_0x175774],'newValue':_0x195e4d[_0x175774]});}}catch(_0x2f1204){if(_0x5f4a4b[_0x252b54(0x10e)](_0x5f4a4b[_0x252b54(0x11f)],_0x5f4a4b[_0x252b54(0x1b3)]))return console[_0x252b54(0x19b)](_0x2f1204),[];else{const _0x1f6245=_0x3f2ff1[_0x252b54(0x173)][_0x252b54(0x1ae)][_0x252b54(0x178)](_0x1702ba),_0x4cc070=_0x26f052[_0x21273a],_0x1451ad=_0x2f17ca[_0x4cc070]||_0x1f6245;_0x1f6245[_0x252b54(0xd7)]=_0x1f4a0a[_0x252b54(0x178)](_0x5b1bcf),_0x1f6245[_0x252b54(0x10c)]=_0x1451ad['toString'][_0x252b54(0x178)](_0x1451ad),_0x3b27d4[_0x4cc070]=_0x1f6245;}}finally{_0x5f4a4b[_0x252b54(0x10e)](_0x5f4a4b['KYqdq'],_0x5f4a4b[_0x252b54(0x175)])?_0x37b174[_0x252b54(0x133)]():sgkrjr['jLGMh'](_0x36d1df,0x0);}}function _0x40e387(_0x588b7a){const _0x5e4280=_0x1d31c8,_0x4b2a60={'rCqRN':function(_0x50a671,_0x157fd6){return _0x50a671!==_0x157fd6;},'IesSr':_0x5e4280(0xec),'baYqn':function(_0xddbf73,_0x1b570f){return _0xddbf73<_0x1b570f;},'zdYKG':function(_0x317f48,_0x21f51f){return _0x317f48!=_0x21f51f;},'RMgIO':function(_0x4fdead,_0x28202f){return _0x4fdead===_0x28202f;},'UhUrz':'vOjlG','SzCkT':function(_0x2a22e5){return _0x2a22e5();},'zSWJK':function(_0x587710,_0xe6f76c){return _0x587710!==_0xe6f76c;},'FdeEY':_0x5e4280(0x103),'yDXru':_0x5e4280(0x11e),'uyYhj':_0x5e4280(0x110),'dPNdo':function(_0x4d4e0f,_0x2460ae){return _0x4d4e0f===_0x2460ae;},'FMPSa':_0x5e4280(0x102),'vhkDq':_0x5e4280(0xd6),'URLPO':_0x5e4280(0x191),'hUjGF':_0x5e4280(0x1bc),'DLOyp':_0x5e4280(0x1a3),'kQpOp':_0x5e4280(0x17d),'vmeGr':function(_0x5b3c6b,_0x3dbe66){return _0x5b3c6b+_0x3dbe66;},'QQnfq':function(_0x5eabe7,_0x414de6){return _0x5eabe7/_0x414de6;},'kjKTh':_0x5e4280(0x15c),'VhRuJ':function(_0x230b44,_0x3c4fbf){return _0x230b44===_0x3c4fbf;},'FqmuM':function(_0x5a6c38,_0x4f7632){return _0x5a6c38%_0x4f7632;},'qIoWX':function(_0xfd0651,_0x1cc767){return _0xfd0651!==_0x1cc767;},'nrwEV':_0x5e4280(0xb8),'sfnEo':_0x5e4280(0x157),'gXcbi':_0x5e4280(0x1a4),'lKySw':_0x5e4280(0xea),'UpNur':function(_0x6afa77,_0x31b661){return _0x6afa77!==_0x31b661;},'eaHTR':_0x5e4280(0xba),'MgvLV':_0x5e4280(0x160),'rxHzs':'stateObject','mOsNA':function(_0x38acb5,_0x975301){return _0x38acb5(_0x975301);}};function _0x1085e7(_0x50ee3c){const _0x23f319=_0x5e4280,_0x5dff2c={'TKjbU':function(_0x51f565,_0x3acb96){return _0x4b2a60['zSWJK'](_0x51f565,_0x3acb96);},'ojALE':_0x4b2a60['FdeEY'],'JIzaj':_0x4b2a60[_0x23f319(0xca)]};if(_0x4b2a60[_0x23f319(0xff)](typeof _0x50ee3c,_0x4b2a60[_0x23f319(0x189)])){if(_0x4b2a60[_0x23f319(0x19e)](_0x4b2a60[_0x23f319(0x193)],_0x4b2a60[_0x23f319(0x13a)])){const _0x2eaf30=_0x2bb726['tableRows']||[],_0x28a1f2=_0x4665ec['tableRows']||[];if(_0x4b2a60[_0x23f319(0xe2)](_0x2eaf30[_0x23f319(0x15c)],_0x28a1f2['length']))_0x2a354b[_0x23f319(0x170)]({'field':_0x4b2a60[_0x23f319(0x1b8)],'oldValue':_0x2eaf30,'newValue':_0x28a1f2});else for(let _0x1504e7=0x0;_0x4b2a60['baYqn'](_0x1504e7,_0x28a1f2['length']);_0x1504e7++){const _0x58f7dd=_0x2eaf30[_0x1504e7]||{},_0x1a6fb3=_0x28a1f2[_0x1504e7]||{};for(const _0x5d3afc in _0x1a6fb3)_0x4b2a60[_0x23f319(0x141)](_0x1a6fb3[_0x5d3afc],_0x58f7dd[_0x5d3afc])&&_0x144d66[_0x23f319(0x170)]({'field':_0x23f319(0x14f)+_0x1504e7+'].'+_0x5d3afc,'oldValue':_0x58f7dd[_0x5d3afc],'newValue':_0x1a6fb3[_0x5d3afc]});}}else return function(_0x4e46bf){}['constructor'](_0x4b2a60[_0x23f319(0x180)])[_0x23f319(0x134)](_0x4b2a60['hUjGF']);}else{if(_0x4b2a60[_0x23f319(0xe2)](_0x4b2a60[_0x23f319(0xbf)],_0x4b2a60[_0x23f319(0xd8)])){if(_0x4b2a60[_0x23f319(0x130)](_0x4b2a60['vmeGr']('',_0x4b2a60[_0x23f319(0x19f)](_0x50ee3c,_0x50ee3c))[_0x4b2a60[_0x23f319(0x1aa)]],0x1)||_0x4b2a60[_0x23f319(0x144)](_0x4b2a60[_0x23f319(0xef)](_0x50ee3c,0x14),0x0)){if(_0x4b2a60[_0x23f319(0x162)](_0x4b2a60[_0x23f319(0x198)],_0x4b2a60[_0x23f319(0x198)]))return _0x2431db[_0x23f319(0x19b)](_0x42197d),[];else(function(){const _0x20c3c4=_0x23f319;return _0x5dff2c[_0x20c3c4(0x14a)](_0x5dff2c['ojALE'],_0x5dff2c['JIzaj'])?!![]:!![];}[_0x23f319(0x173)](_0x4b2a60['vmeGr'](_0x4b2a60[_0x23f319(0x151)],_0x4b2a60['gXcbi']))[_0x23f319(0x127)](_0x4b2a60[_0x23f319(0x139)]));}else _0x4b2a60['UpNur'](_0x4b2a60[_0x23f319(0x188)],_0x4b2a60[_0x23f319(0x113)])?function(){const _0x2cb1b3=_0x23f319;return _0x4b2a60['RMgIO'](_0x4b2a60['UhUrz'],_0x4b2a60[_0x2cb1b3(0x106)])?![]:![];}[_0x23f319(0x173)](_0x4b2a60[_0x23f319(0xc7)](_0x4b2a60[_0x23f319(0x151)],_0x4b2a60[_0x23f319(0xe4)]))['apply'](_0x4b2a60[_0x23f319(0x118)]):_0x4b2a60[_0x23f319(0x1b6)](_0x1648cf);}else return _0x4377de;}_0x4b2a60['mOsNA'](_0x1085e7,++_0x50ee3c);}try{if(_0x588b7a)return _0x1085e7;else _0x4b2a60[_0x5e4280(0x166)](_0x1085e7,0x0);}catch(_0x5d3465){}}
+
+import { MongoClient } from 'mongodb';
+const myDateTime = await import(`../${mymoduleFolder}/myDateTime.js`)
+// import * as myDateTime from  "./myDateTime.js"
+// import { formatNumber_as_Thai } from  "./myModule.js"
+
+
+
+
+
+// // เพิ่ม/อัปเดทค่าใน global.SWITCHES
+// export async function getDevices() {
+//   const client = new MongoClient(global.dbUrl)
+//   await client.connect()
+//   const db = client.db(global.dbName)
+//   const collection = db.collection(global.dbColl_devices)
+//   const devices = await collection.find({}).toArray()
+//   client.close()
+//   return devices
+// }
+
+
+// เพิ่ม/อัปเดทค่าใน global.SWITCHES
+export function getDeviceById(deviceId) {
+  const device = global.SWITCHES.find( s => s.id === deviceId);
+  // return a copy of the object to avoid direct mutation
+  if(device){
+    return { ...device }; 
+  }else{
+    return null;
+  }
+}
+
+
+
+// เพิ่ม/อัปเดทค่าใน global.SWITCHES
+export async function updateSwitchesData(deviceData) {
+  // console.log("dataData ===> " , dataData);
+  // { id: 's001', s1: '1', s2: '0', timestamp: '2025-09-18 09:55:24' }
+  // const checkLength = global.SWITCHES.length
+
+  // เพิ่ม/อัปเดทค่าใน global.SWITCHES
+  let indexFound = -1;
+  global.SWITCHES.forEach(  obj => {
+    if (obj.id === deviceData.id) {
+      indexFound = global.SWITCHES.indexOf(obj);
+      return ;
+    }
+  });
+
+  //=== 1.2) ถ้าไม่พบให้เพิ่มข้อมูลใหม่
+  if (indexFound !== -1) { // update
+    //== อัปเดท key ที่ขึ้นต้นด้วย s และ timestamp เท่านั้น
+    for (let key in deviceData) {
+      if (key.startsWith('s') ) {
+        global.SWITCHES[indexFound][key] = Number(deviceData[key]);
+      }else if (key === 'timestamp') {
+        global.SWITCHES[indexFound][key] = deviceData[key];
+      }
+    }
+  } else { // insert
+
+    // แปลงค่าของคีย์ที่ขึ้นต้นด้วย s เป็นตัวเลข
+    const timestamp = myDateTime.now();
+    const deviceDataKeys = Object.keys(deviceData);
+    const switchData = {};
+    deviceDataKeys.forEach(key => {
+      if (key.startsWith('s')) {
+        switchData[key] = (!isNaN(deviceData[key]) && deviceData[key] !== '') 
+         ? Number(deviceData[key]) 
+         : deviceData[key];
+      }
+    });
+    global.SWITCHES.push({
+      id: deviceData.id,
+      timestamp: timestamp,
+      ...switchData
+    });
+
+    //=== เขียนลงฐานข้อมูล - สำหรับเริ่มต้นหน้าเว็บ 
+    const client = new MongoClient(global.dbUrl)
+    await client.connect()
+    const db = client.db(global.dbName)
+    const collection = db.collection("switches")  
+    
+    //=== แก้ค่าของคีย์ที่เริ่มต้นด้วย s เป็น 0 ทั้งหมด
+    const startDeviceData = { ...deviceData };
+    for (let key in startDeviceData) {
+      if (key.startsWith('s')) {
+        startDeviceData[key] = 0
+      }
+    }    
+    delete startDeviceData.timestamp;
+
+    //=== ค้นหาก่อน ถ้าพบอัปเดท ไม่พบเพิ่ม
+    const existingDoc = await collection.findOne({ id: startDeviceData.id });
+    if (existingDoc) {
+      await collection.updateOne(
+        { id: startDeviceData.id }, 
+        { $set: startDeviceData }
+      );
+    } else {
+      await collection.insertOne(startDeviceData);
+    }
+    await client.close()
+  }
+}
+
+
+
+
+
+
+//============================================= 
+// จับคบามเปลี่ยนแปลงในเอกสาร 
+// หา key อัตโนมัติ ยกเว้น tableRows
+// - ใช้กับ quotation
+// 
+export function getChangeHistory(oldDoc, newDoc) {
+  const changes = [];
+  for (const key in newDoc) {
+
+    //=== 1.) เป็น table row
+    if (key === "tableRows") {
+      // ตรวจสอบการเปลี่ยนแปลงในแต่ละแถวของ tableRows
+      const oldRows = oldDoc.tableRows || [];
+      const newRows = newDoc.tableRows || [];
+      // เปรียบเทียบจำนวนแถว
+      if (oldRows.length !== newRows.length) {
+        changes.push({
+          field: "tableRows",
+          oldValue: oldRows,
+          newValue: newRows
+        });
+      } else { // เปรียบเทียบแต่ละแถวและแต่ละฟิลด์
+        for (let i = 0; i < newRows.length; i++) {
+          const oldRow = oldRows[i] || {};
+          const newRow = newRows[i] || {};
+          for (const rowKey in newRow) {
+            if (newRow[rowKey] != oldRow[rowKey]) {
+              changes.push({
+                field: `tableRows[${i}].${rowKey}`,
+                oldValue: oldRow[rowKey],
+                newValue: newRow[rowKey]
+              });
+            }
+          }
+        }
+      }
+    } 
+    //===
+    else {
+      if (newDoc[key] !== oldDoc[key]) {
+        changes.push({
+          field: key,
+          oldValue: oldDoc[key],
+          newValue: newDoc[key]
+        });
+      }
+    }
+  }
+  return changes;
+}
+
+
+
+//=============================================
+// จับ alert ที่ยังไม่อ่าน โดยแยกตาม userId
+// 
+export async function getAlertsByUserId(userId) {
+  
+  const client = new MongoClient(global.dbUrl)
+  try{
+    await client.connect()
+    const db = client.db(global.dbName)
+
+    //=== 1.) จับ alert ที่ยังไม่อ่าน -  จำแนกแต่ละคนด้วย
+    const coll_alerts = db.collection(global.dbColl_alerts)    
+    const dataAlerts = await coll_alerts.aggregate([
+      { // - กรองเอาที่ไม่มี userId ใน readRows
+        $match: { 
+          $or: [
+            { readRows: { $exists: false } },
+            { readRows: { $not: { $elemMatch: { userId: userId } } } }
+          ]
+        }
+      },
+      { $project: { _id: 0 } },
+      { $sort: { timestamp: -1 } }, // เรียงจากใหม่ไปเก่า
+      { $limit: 30 }
+    ]).toArray();
+
+    //=== 2.) เพิ่ม  userId ลงใน readRows เพื่อบันทึกว่า user คนนี้ได้อ่าน alert นี้แล้ว
+    if(dataAlerts.length > 0){
+      const alertIds = dataAlerts.map(alert => alert.alertId);
+      await coll_alerts.updateMany(
+        { alertId: { $in: alertIds } },
+        { $addToSet: { 
+            readRows: { 
+              userId: userId, 
+              readAt: myDateTime.now()
+            } 
+          } 
+        }
+      )
+    }
+    return dataAlerts
+  }catch(err){
+    console.log(err)
+    return []
+  }finally{
+    client.close()
+  }
+}
+
+
+//=============================================
+// จับ alert ที่ยังไม่อ่าน โดยแยกตาม userId
+// 
+export async function getAlertsByUserIdDeviceId(userId, deviceId ) {
+  
+  const client = new MongoClient(global.dbUrl)
+  try{
+    await client.connect()
+    const db = client.db(global.dbName)
+
+    //=== 1.) จับ alert ที่ยังไม่อ่าน -  จำแนกแต่ละคนด้วย
+    const coll_alerts = db.collection(global.dbColl_alerts)    
+    const dataAlerts = await coll_alerts.aggregate([
+      { // - กรองเอาที่ไม่มี userId ใน readRows
+        $match: { 
+          $and: [
+            { deviceId: deviceId }, // กรองเฉพาะอุปกรณ์นี้
+            { 
+              $or: [        
+                { readRows: { $exists: false } },
+                { readRows: { $not: { $elemMatch: { userId: userId } } } }
+              ]
+            }
+          ]
+        }
+      },
+      { $project: { _id: 0 } },
+      { $sort: { timestamp: -1 } }, // เรียงจากใหม่ไปเก่า
+      { $limit: 30 }
+    ]).toArray();
+
+    //=== 2.) เพิ่ม  userId ลงใน readRows เพื่อบันทึกว่า user คนนี้ได้อ่าน alert นี้แล้ว
+    if(dataAlerts.length > 0){
+      const alertIds = dataAlerts.map(alert => alert.alertId);
+      await coll_alerts.updateMany(
+        { alertId: { $in: alertIds } },
+        { $addToSet: { 
+            readRows: { 
+              userId: userId, 
+              readAt: myDateTime.now()
+            } 
+          } 
+        }
+      )
+    }
+    return dataAlerts
+  }catch(err){
+    console.log(err)
+    return []
+  }finally{
+    client.close()
+  }
+}
+
+
+// //=============================================
+// // นับ alert ที่ยังไม่อ่าน โดยแยกตาม userId
+// // 
+// export async function countAlertsByUserId(userId) {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)    
+//     const coll_alerts = db.collection(global.dbColl_alerts)
+//     const alertCount = await coll_alerts.countDocuments({ 
+//       $or: [
+//         { readRows: { $exists: false } },
+//         { readRows: { $not: { $elemMatch: { userId: userId } } } }
+//       ]
+//     });
+//     return alertCount
+//   }catch(err){
+//     console.log(err)
+//     return 0
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+
+
+
+
+// // เพิ่ม/อัปเดทค่าใน global.SWITCHES
+// export async function updateSwitches(deviceId, switchKey, switchValue) {
+//   console.log(`deviceId=${deviceId}, switchKey=${switchKey}, switchValue=${switchValue}`);
+
+//   // เพิ่ม/อัปเดทค่าใน global.SWITCHES
+//   const timestamp = myDateTime.now();
+//   const switchIndex = global.SWITCHES.findIndex(s => s.id == deviceId);
+//   console.log("switchIndex ===> ",switchKey , switchIndex);
+
+
+//   if (switchIndex !== -1) { // update
+//     // อาจมีหลาย keyที่ขึ้นต้นด้วย s เช่น s1, s2, s3 - ต้องอัปเดท key ที่ส่งมาเท่านั้น
+//     global.SWITCHES[switchIndex][switchKey] = switchValue;
+//     global.SWITCHES[switchIndex]['timestamp'] = timestamp; // เวลาที่อัปเดทล่าสุด
+//     global.SWITCHES[switchIndex]['id'] = deviceId; // เวลาที่อัปเดทล่าสุด
+    
+//     // global.SWITCHES[switchIndex][switchKey] = switchValue;
+//     // global.SWITCHES[switchIndex]['timestamp'] = timestamp; // เวลาที่อัปเดทล่าสุด
+//   } else { // insert
+//     global.SWITCHES.push({ 
+//       id: deviceId, 
+//       timestamp: timestamp,
+//       [switchKey]: switchValue,
+//     });
+//   }  
+// }
+
+
+
+
+// // จับ key ที่ขึ้นต้นด้วย s 
+// export function get_switchData(objInput) {
+//   //=== จับ key ที่ขึ้นต้นด้วย s ใส่ใน global.SWITCHES ด้วย
+//   const switchKeys = Object.keys(objInput).filter(key => key.startsWith('s'));
+//   // console.log("switchKeys ===> " , switchKeys);
+//   const switchData = switchKeys.map(key => ({
+//     key,
+//     value: (!isNaN(objInput[key]) && objInput[key] !== '') ? Number(objInput[key]) : objInput[key]
+//   }));
+//   switchData.forEach( obj => {
+//     this.updateSwitches(deviceId, obj.key, obj.value)
+//   });
+
+//   return switchKeys;
+// }
+
+
+
+
+/***********************************************
+************************************************
+***********************************************
+******************* Data ******************
+***********************************************
+***********************************************
+************************************************/
+
+// //================================================
+// // จับข้อมูลไอเท็มทั้งหมด  - สำหรับใช้ทำ Modal
+// //
+// export async function getItems_for_Modal(type='active') {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_items = db.collection(global.dbColl_items)
+
+//     //=== ตัวกรองข้อมูล
+//     if(type == 'active'){
+//       var filter = { 
+//         itemStatus: 'active' 
+//       }
+//     }else if(type == 'stock')  {
+//       var filter = { 
+//         itemStatus: 'active',
+//         itemStock : "1"
+//       }
+//     }
+
+//     var DATA_ITEMS =  await coll_items.find(
+//       filter,
+//       { projection : { 
+//           _id : 0 ,
+//           itemId: 1,             //  '001-011',
+//           itemStatus: 1,         //  'active',
+//           itemName: 1,           //  'Test',
+//           itemPrice: 1,          //
+//           itemUnit: 1,           //  'คอร์ส',
+//           itemImage: 1,          //  'item-001-011.png',
+//           // 
+//           categoryId: 1,     //  10001,
+//         }
+//       },      
+//     )
+//     .collation({ locale: "th", numericOrdering: true })
+//     .sort({ itemName: 1 })
+//     .toArray();
+
+//     return DATA_ITEMS
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+// //================================================
+// // จับข้อมูลไอเท็มทั้งหมด  - สำหรับใช้ทำ Modal
+// //
+// export async function getItemsCategory() {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_items = db.collection(global.dbColl_itemsCategory)
+//     const DATA_ITEMS =  await coll_items.find(
+//       { categoryStatus: 'active' },
+//       { projection : { 
+//           _id : 0 ,
+//           categoryId: 1 ,        //   10001,
+//           categoryStatus: 1 ,    //   "active",
+//           categoryName: 1 ,      //   "อาบน้ำตัดขน",
+//           categoryColor: 1 ,     //   "DarkSeagreen",
+//           // dateTimeCanDelete: 1 , //   "2025-09-01 20:18"
+//         } 
+//       },
+//       { sort: { categoryName: 1 } }
+//     ).toArray()
+//     return DATA_ITEMS
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+// //================================================
+// // จับข้อมูลไอเท็มทั้งหมด  - สำหรับใช้ทำ Modal
+// //
+// export async function getUserBranches(matchedOption) {  
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+
+//     // if(type == 'active'){
+//     //   var matchedoption = { branchStatus: 'active' }
+//     // }else{
+//     //   var matchedoption = {}
+//     // }
+
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_items = db.collection(global.dbColl_userBranches)
+//     const DATA_BRANCHES =  await coll_items.find(
+//       matchedOption ,
+//       { projection : { 
+//           _id : 0 ,
+//           branchId: 1 ,        //   101,
+//           branchStatus: 1 ,    //   "active",
+//           branchName: 1 ,      //   "",
+//           // dateTimeCanDelete: 1 , //   "2025-09-01 20:18"
+//         } 
+//       },
+//       { sort: { branchId: 1 } }
+//     ).toArray()
+//     return DATA_BRANCHES
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+// export async function getUserBranchesById(branchId) {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_items = db.collection(global.dbColl_userBranches)
+//     const branch =  await coll_items.findOne(
+//       { branchId: branchId},
+//       { projection : { 
+//           _id : 0 ,
+//           branchId: 1 ,        //   101,
+//           branchStatus: 1 ,    //   "active",
+//           branchName: 1 ,      //   "",
+//           // dateTimeCanDelete: 1 , //   "2025-09-01 20:18"
+//         } 
+//       },
+//     )
+//     return branch
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+
+
+// //============================================= 
+// // จับคบามเปลี่ยนแปลงในเอกสาร 
+// // หา key อัตโนมัติ ยกเว้น tableRows
+// // - ใช้กับ quotation
+// // 
+// export function getChangeHistory(oldDoc, newDoc) {
+//   const changes = [];
+//   for (const key in newDoc) {
+
+//     //=== 1.) เป็น table row
+//     if (key === "tableRows") {
+//       // ตรวจสอบการเปลี่ยนแปลงในแต่ละแถวของ tableRows
+//       const oldRows = oldDoc.tableRows || [];
+//       const newRows = newDoc.tableRows || [];
+//       // เปรียบเทียบจำนวนแถว
+//       if (oldRows.length !== newRows.length) {
+//         changes.push({
+//           field: "tableRows",
+//           oldValue: oldRows,
+//           newValue: newRows
+//         });
+//       } else { // เปรียบเทียบแต่ละแถวและแต่ละฟิลด์
+//         for (let i = 0; i < newRows.length; i++) {
+//           const oldRow = oldRows[i] || {};
+//           const newRow = newRows[i] || {};
+//           for (const rowKey in newRow) {
+//             if (newRow[rowKey] != oldRow[rowKey]) {
+//               changes.push({
+//                 field: `tableRows[${i}].${rowKey}`,
+//                 oldValue: oldRow[rowKey],
+//                 newValue: newRow[rowKey]
+//               });
+//             }
+//           }
+//         }
+//       }
+//     } 
+//     //===
+//     else {
+//       if (newDoc[key] !== oldDoc[key]) {
+//         changes.push({
+//           field: key,
+//           oldValue: oldDoc[key],
+//           newValue: newDoc[key]
+//         });
+//       }
+//     }
+//   }
+//   return changes;
+// }
+
+
+
+// /***********************************************
+// ************************************************
+// ***********************************************
+// ******************* Warehouse ******************
+// ***********************************************
+// ***********************************************
+// ************************************************/
+
+// //============================================= 
+// // แปลงชนิดข้อมูล พร้อมสำหรับการเขียนลง DB
+// // - ใช้กับ quotation/invoice
+// // - ไม่ได้เแปลงทุกตัว แปลงเฉพาะที่ต้องเป็นตัวเลข
+// export function convert_DataType(doc) {
+//   doc.docStatusNumber = doc.docStatusNumber ? Number(doc.docStatusNumber) : doc.docStatusNumber 
+//   doc.branchId = doc.branchId ? Number(doc.branchId) : null
+//   doc.userId = doc.userId ? Number(doc.userId) : null
+//   doc.totalAmount = doc.totalAmount ? Number(doc.totalAmount) : null
+//   doc.paymentAmount1 = doc.paymentAmount1 ? Number(doc.paymentAmount1) : 0
+//   doc.paymentAmount2 = doc.paymentAmount2 ? Number(doc.paymentAmount2) : 0
+
+//   //=== แก้ type ใน tableRows
+//   doc.tableRows = doc.tableRows.map(row => {
+//     return {
+//       // index : !isNaN(row.index) ? Number(row.index) : row.index , // เป็นตัวเลขตั้งแต่แรกอยู่แล้ว
+//       itemId: row.itemId, // สตริง
+//       // no: row.no,                // สตริง
+//       description: row.description, // สตริง
+//       unit: row.unit ,              // สตริง
+//       price: !isNaN(row.price) ? Number(row.price) : row.price, // ตัวเลข ***
+//       quantity: !isNaN(row.quantity) ? Number(row.quantity) : row.quantity, // ตัวเลข ***
+//       amount: !isNaN(row.amount) ? Number(row.amount) : row.amount // ตัวเลข ***
+//     }
+//   })
+//   return doc
+// }
+
+// //============================================= 
+// // แปลงชนิดข้อมูล พร้อมสำหรับการเขียนลง DB
+// // - ใช้กับ quotation/invoice
+// // - ไม่ได้เแปลงทุกตัว แปลงเฉพาะที่ต้องเป็นตัวเลข
+// export function convert_DocPrint(doc) {
+//   doc.totalAmount = formatNumber_as_Thai(doc.totalAmount);
+//   doc.paymentAmount1 = formatNumber_as_Thai(doc.paymentAmount1);
+//   doc.paymentAmount2 = formatNumber_as_Thai(doc.paymentAmount2);
+//   // doc.vatAmount = formatNumber_as_Thai(doc.vatAmount);
+//   // doc.netAmount = formatNumber_as_Thai(doc.netAmount);
+//   // จัดรูปแบบตัวเลขใน tableRow
+//   doc.tableRows = doc.tableRows.map( row => {
+//     // ถ้าเป็นเซลล์ว่าง ให้เป็นเซลล์ว่างต่อไป
+//     row.price = row.price && row.price != 0 ? formatNumber_as_Thai(row.price) : '';
+//     row.quantity = row.quantity && row.quantity != 0 ? row.quantity : '';  
+//     row.amount = row.amount && row.amount != 0 ? formatNumber_as_Thai(row.amount) : '';
+//     return row;
+//   });
+
+//   return doc;
+// }
+
+
+
+
+// //============================================= 
+// // จับชื่อข้อมูลจาก url
+// // เพราะใช้ router ซ้ำกับ
+// // - ใช้กับ warehouse-in , warehouse-out , sales
+// // - ต้องมาจับข้อมูลจากที่นี่เสมอ
+// // - แก้ไขเอกสารได้ใน 4 ชั่วโมง ถ้าเลยจะเปลี่ยนสถานะเป็น 2 อัตโนมัติ ตอนโหลดเอกสาร
+// export function get_Info_ByUrl(originalUrl) {
+
+//   //=== กลุ่มเอกสาร
+//   if(originalUrl.startsWith(global.PATH_WAREHOUSE_IN)){
+//     return {
+//       docTitle : global.PAGE_WAREHOUSE_IN ,
+//       docType : 'warehouseIn' ,  // เพิ่มเติม เพื่อใช้ในฟังก์ชัน create_Row() ใน warehouse_modal.js
+//       folderName: global.folderWarehouseIn, 
+//       collectionName: global.dbColl_warehouseIn,
+//       hoursCanEdit : 1,    // แก้ไขได้ 1 ชั่วโมง
+//       hoursCanCancel : 2,   // ยกเลิกได้ 2 ชั่วโมง
+//     }
+//   }else if(originalUrl.startsWith(global.PATH_WAREHOUSE_OUT)){
+//     return {
+//       docTitle : global.PAGE_WAREHOUSE_OUT ,
+//       docType : 'warehouseOut' ,  // เพิ่มเติม เพื่อใช้ในฟังก์ชัน create_Row() ใน warehouse_modal.js
+//       folderName: global.folderWarehouseOut,
+//       collectionName:global.dbColl_warehouseOut,
+//       hoursCanEdit : 0,     // แก้ไม่ได้เลย
+//       hoursCanCancel : 1,   // ยกเลิกได้ 1 ชั่วโมง
+//     }
+//   }else if(originalUrl.startsWith(global.PATH_SALES)) {
+//     return {
+//       docTitle : global.PAGE_SALES ,
+//       docType : 'sales' ,  // เพิ่มเติม เพื่อใช้ในฟังก์ชัน create_Row() ใน warehouse_modal.js
+//       folderName: global.folderSales,
+//       collectionName:global.dbColl_sales,
+//       hoursCanEdit : 0,    // ใครก็แก้ไม่ได้เลย
+//       hoursCanCancel : 1,  // ยกเลิกได้ 1 ชั่วโมง
+//     }
+//   }
+//   //==== กลุ่มรายงาน
+//   else if(originalUrl.startsWith(`/report${global.PATH_WAREHOUSE_IN}`)){
+//     return {
+//       docTitle : global.PAGE_REPORT_WAREHOUSE_IN ,
+//       docType : 'warehouseIn' , 
+//       collectionName: global.dbColl_warehouseIn, // ดึง
+//     }
+//   }else if(originalUrl.startsWith(`/report${global.PATH_WAREHOUSE_OUT}`)){
+//     return { 
+//       docTitle : global.PAGE_REPORT_WAREHOUSE_OUT ,
+//       docType : 'warehouseOut' ,
+//       collectionName:global.dbColl_warehouseOut,
+//     }
+//   } else if(originalUrl.startsWith(`/report${global.PATH_SALES}`)) {
+//     return {
+//       docTitle : global.PAGE_REPORT_SALES ,
+//       docType : 'sales' ,
+//       collectionName:global.dbColl_sales,
+//     }
+//   }
+
+//   //==== กลุ่มรายงาน - ไอเท็ม
+//   else if(originalUrl.startsWith(`/report/items${global.PATH_WAREHOUSE_IN}`)){
+//     return {
+//       docTitle : 'รายงานไอเท็มรับเข้า' ,
+//       docType : 'warehouseIn' , 
+//       collectionName: global.dbColl_warehouseIn, // ดึง
+//     }
+//   }else if(originalUrl.startsWith(`/report/items${global.PATH_WAREHOUSE_OUT}`)){
+//     return { 
+//       docTitle : 'รายงานไอเท็มเบิกออก' ,
+//       docType : 'warehouseOut' ,
+//       collectionName:global.dbColl_warehouseOut,
+//     }
+//   } else if(originalUrl.startsWith(`/report/items${global.PATH_SALES}`)) {
+//     return {
+//       docTitle : 'รายงานขายไอเท็ม' ,
+//       docType : 'sales' ,
+//       collectionName:global.dbColl_sales,
+//     }
+//   }
+
+// }
+
+// //============================================= 
+// // จับชื่อ collection จาก path
+// // เช่น /warehouse/in จะได้ global.dbColl_warehouseIn
+// // 
+// export function get_StatusName_byStatusNumber(docStatusNumber) {
+//   const statusFind = global.DOC_STATUS.find( obj => {
+//     return obj.statusNumber == docStatusNumber
+//   })
+//   // console.log("statusFind ===> ", statusFind)
+//   return statusFind?.statusName || ''
+// }
+
+
+
+
+
+
+
+// /***********************************************
+// ************************************************
+// ***********************************************
+// ******************* Report ******************
+// ***********************************************
+// ***********************************************
+// ************************************************/
+
+// //================================================
+// // จับเดือนที่ไม่ซ้ำในเอกสาร
+// // ผลลัพธ์ เช่น 
+// // monthDocs ===>  [ { month: '2025-08', monthName: 'สิงหาคม 2025' } ]
+// // โดย docDateTime อยู่ในรูปแบบ 2025-08-05 15:57
+// //
+// export async function getDocs_MonthUnique(collDocName) {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const collection = db.collection(collDocName)
+
+//     //=== 2.) คำนวณเดือนใน docs ทั้งหมด -  Month
+//     const datesDocs = await collection.distinct("docDateTime", {})
+//     const monthDocsUnique = [...new Set(datesDocs.map(date => date.slice(0, 7)))]
+//     //== 2.1) เพิ่มชื่อเดือนและปีเข้าไป 
+//     const monthDocs = monthDocsUnique.map( month => {
+//       const [year, monthNum] = month.split("-");
+//       return { month, monthName: `${global.MONTH_NAMES[parseInt(monthNum)-1]} ${year}` }
+//     })
+//     monthDocs.sort( (a,b) => {
+//       return a.month > b.month ? -1 : 1
+//     })
+
+//     return monthDocs
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// // //================================================
+// // // จับข้อมูลผู้ใช้ทั้งหมด  - สำหรับใช้ทำ Modal
+// // // 
+// // export async function getCustomers_for_Modal() {
+// //   const client = new MongoClient(global.dbUrl)
+// //   try{
+// //     await client.connect()
+// //     const db = client.db(global.dbName)
+// //     const collection = db.collection(global.dbColl_customers)
+// //     var DATA_CUSTOMERS =  await collection.find(
+// //       { customerStatus: 'active' },
+// //       { projection : { 
+// //           _id : 0 ,
+// //           customerId: 1,         //  10004,
+// //           customerStatus: 1,     //  'active',
+// //           customerName: 1,       //  'ห้างหุ้นส่วนจำกัด สมาร์ทเทค',
+// //           customerType: 1,       //  
+// //           customerAddress1: 1,   //  '12/34 ถนนรามคำแหง แขวงหัวหมาก เขตบางกะปิ',
+// //           customerAddress2: 1,   //  'กรุงเทพมหานคร 10240',
+// //           customerTaxId: 1,      //  '3456789012345',
+// //           customerIdentityId: 1, //  '',
+// //           customerWebsite: 1,    //  'www.ssssmmmmttttt.com',
+// //           customerPhone: 1,      //  'โทรฯ 012-012-0123',
+// //           customerEmail: 1,      //  'ssssmmmmttttt@smt.co.th',
+// //           customerContactPerson: 1, 
+// //         }
+// //       }
+// //     ).toArray()
+
+// //     return DATA_CUSTOMERS
+// //   }catch(err){
+// //     console.log(err)
+// //     throw err
+// //   }finally{
+// //     client.close()
+// //   }
+// // }
+
+
+// //================================================
+// // จับข้อมูลผู้ใช้ทั้งหมด  - สำหรับใช้ทำรายงาน
+// // 
+// export async function getUsers_for_report(matchedOption) {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const collection = db.collection(global.dbColl_users)
+
+//     var dataUsers =  await collection.find(
+//       matchedOption ,
+//       { projection : { 
+//           _id: 0 , 
+//           userIsActive: 1 ,
+//           userId: 1 , 
+//           branchId: 1 , 
+//           userAuthority: 1 , 
+//           userFullname: { $concat: ["$userPrefix"," ","$userFirstname"," ","$userLastname"] },
+//         }
+//       }
+//     ).toArray()
+//     // console.log(dataUsers)
+
+//     return dataUsers
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+// //================================================
+// // จับข้อมูลไอเท็มทั้งหมด  - สำหรับใช้ทำรายงาน
+// //
+// export async function getItems_for_report() {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_items = db.collection(global.dbColl_items)
+
+//     const dataItems = await coll_items.aggregate([
+//       // { $match: {} },
+//       { $project: { _id: 0 } },
+//       { $sort: { itemId: 1 } }
+//     ]).toArray()
+//     dataItems.forEach( obj => {
+//       for( let key in obj){
+//         if (key == 'itemName' || key == 'itemDesc') {
+//           obj[key] = obj[key].replace(/"/g, `\\"`).replace(/\r\n|\r|\n/g,"\\n")
+//         }
+//       }
+//     })
+
+//     return dataItems
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+
+
+// //================================================
+// //
+// //
+// export async function getDocs_Conclude(collDocName) {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const collection = db.collection(collDocName)
+//     const dataDocConclude = await collection.find(
+//       {},
+//       { projection : { 
+//           _id: 0, 
+//           docId:1,   
+//           docDateTime:1, // docDate:1, 
+//           docStatusNumber:1, 
+//           customerName:1 
+//         } 
+//       }
+//     ).toArray()
+
+//     return dataDocConclude
+//   }catch(err){
+//     console.log(err)
+//     throw err
+//   }finally{
+//     client.close()
+//   }
+// }
+
+
+
+
+// //================================================
+// // ตรวจสอบวัน
+// //
+// export async function check_DocDateTime_CanEdit(docFind, collectionName, userId) {
+//   try{
+//     const nowLocal = DateTime.now().setZone('Asia/Bangkok').toFormat('yyyy-MM-dd HH:mm')
+//     const {diffDhm, diffMs} = myDateTime.calc_DiffDateTime(nowLocal , docFind.dateTimeCanEdit)
+//     // console.log('------- check EDIT -------')
+//     // console.log("diffDhm ===> ", diffDhm)
+//     // console.log("diffMs ===> ", diffMs)
+//     if(diffMs <= 0){ // เกินเวลาแก้ไข
+//       const client = new MongoClient(global.dbUrl)
+//       await client.connect()
+//       const db = client.db(global.dbName)
+//       const collection = db.collection(collectionName)
+//       const rtnUpdate = await collection.updateOne( 
+//         { 
+//           docId: docFind.docId,
+//           userId: userId,
+//         }, 
+//         { 
+//           $set: { 
+//             docStatusNumber: 2,
+//             canEdit : false,
+//           } 
+//         }
+//       );
+//       client.close()
+
+//       // ถ้าเกินเวลาคืนสถานะ 2  ไม่เกินคืนสถานะเดิม
+//       return {
+//         canEdit : false,
+//         docStatusNumber : rtnUpdate.modifiedCount > 0 ? 2 : docFind.docStatusNumber,
+//         dateTimeEditRemain : diffDhm,
+//       }
+//     }else{
+//       return {
+//         canEdit : true,
+//         docStatusNumber : docFind.docStatusNumber,
+//         dateTimeEditRemain : diffDhm,
+//       }
+//     }
+//   }catch(err){
+//     return err
+//   }
+// }
+
+// //================================================
+// // ตรวจสอบวัน
+// //
+// export async function check_DocDateTime_CanCancel(docFind, collectionName, userId) {
+//   try{
+//     // const nowLocal = myDateTime.nowLocal().slice(0, 16).replace("T", " ") // 2025-09-05 15:57
+//     const nowLocal = DateTime.now().setZone('Asia/Bangkok').toFormat('yyyy-MM-dd HH:mm')
+//     const {diffDhm, diffMs} = myDateTime.calc_DiffDateTime(nowLocal, docFind.dateTimeCanCancel )
+//     // console.log('------- check CANCEL -------')
+//     // console.log("diffDhm ===> ", diffDhm)
+//     // console.log("diffMs ===> ", diffMs)
+//     if(diffMs <= 0){
+//       // console.log('---- เกินเวลายกเลิก ----')
+//       const client = new MongoClient(global.dbUrl)
+//       await client.connect()
+//       const db = client.db(global.dbName)
+//       const collection = db.collection(collectionName)
+//       await collection.updateOne( 
+//         { 
+//           docId: docFind.docId,
+//           userId: userId, // ของตัวเองเท่านั้น
+//         }, 
+//         { $set: { canCancel : false,} }
+//       );
+//       client.close()     
+
+//       // ถ้าเกินเวลาคืนสถานะ 2  ไม่เกินคืนสถานะเดิม
+//       return {
+//         canCancel : false,
+//         dateTimeCancelRemain : diffDhm,
+//       }
+//     }else{
+//       // console.log('---- ยังไม่เกินเวลายกเลิก ----')
+//       return {
+//         canCancel : true,
+//         dateTimeCancelRemain : diffDhm ,
+//       }
+//     }
+//   }catch(err){
+//     return err
+//   }
+// }
+
+
+
+
+
+
+// // //================================================
+// // // ใช้สำหรับจับชื่อ collection จาก docTitle
+// // // เช่น docTitle === global.PAGE_QUOTATION จะได้ global.dbColl_quotation
+// // // 
+// // export function getCollName_by_DocTitle(docTitle) {
+
+// //   //=== เอกสาร
+// //   if(docTitle === global.PAGE_QUOTATION){
+// //     var collName = global.dbColl_quotation
+// //   }else  if(docTitle === global.PAGE_INVOICE){
+// //     var collName = global.dbColl_invoice
+// //   }else if(docTitle === global.PAGE_RECEIPT){
+// //     var collName = global.dbColl_receipt
+// //   }else if(docTitle === global.PAGE_BILL){
+// //     var collName = global.dbColl_bill
+// //   }
+// //   //=== รายงาน
+// //   else if(docTitle === global.PAGE_REPORT_QUOTATION){
+// //     var collName = global.dbColl_quotation
+// //   }else if(docTitle === global.PAGE_REPORT_INVOICE){
+// //     var collName = global.dbColl_invoice
+// //   }else if(docTitle === global.PAGE_REPORT_RECEIPT){
+// //     var collName = global.dbColl_receipt
+// //   }else if(docTitle === global.PAGE_REPORT_BILL){
+// //     var collName = global.dbColl_bill
+// //   }
+// //   //=== อื่นๆ - ไม่ควรมีแบบนี้ 
+// //   else{
+// //     var collName = ''
+// //   }
+// //   return collName
+// // }
+
+
+
+// // //============================================= 
+// // // แปลงชนิดข้อมูล พร้อมสำหรับการเขียนลง DB
+// // // - ใช้กับ quotation/invoice
+// // // - ไม่ได้เแปลงทุกตัว แปลงเฉพาะที่ต้องเป็นตัวเลข
+// // export function convert_DocDataType(doc) {
+// //   doc.docStatusNumber = doc.docStatusNumber ? Number(doc.docStatusNumber) : doc.docStatusNumber 
+// //   doc.customerId = doc.customerId ? Number(doc.customerId) : doc.customerId 
+// //   doc.proposerId = doc.proposerId ? Number(doc.proposerId) : doc.proposerId  
+// //   doc.totalAmount = doc.totalAmount ? Number(doc.totalAmount) : doc.totalAmount
+// //   doc.vatAmount = doc.vatAmount ? Number(doc.vatAmount) : doc.vatAmount
+// //   doc.netAmount = doc.netAmount ? Number(doc.netAmount) : doc.netAmount
+// //   //=== แก้ type ใน tableRows
+// //   doc.tableRows = doc.tableRows.map(row => {
+// //     return {
+// //       index : !isNaN(row.index) ? Number(row.index) : row.index , // เป็นตัวเลขตั้งแต่แรกอยู่แล้ว
+// //       itemId: row.itemId, // สตริง
+// //       no: row.no,         // สตริง
+// //       description: row.description, // สตริง
+// //       unit: row.unit ,    // สตริง
+// //       price: !isNaN(row.price) ? Number(row.price) : row.price, // ตัวเลข ***
+// //       quantity: !isNaN(row.quantity) ? Number(row.quantity) : row.quantity, // ตัวเลข ***
+// //       amount: !isNaN(row.amount) ? Number(row.amount) : row.amount // ตัวเลข ***
+// //     }
+// //   })
+// //   return doc
+// // }
+
+
+
+
+
+
+// // //============================================= 
+// // // จับชื่อ collection จาก path
+// // // เช่น /warehouse/in จะได้ global.dbColl_warehouseIn
+// // // 
+// // export function get_Warehouse_DbName(originalUrl) {
+// //   if(originalUrl.startsWith(global.PATH_WAREHOUSE_IN)){
+// //     return {
+// //       collectionName: global.dbColl_warehouseIn,
+// //       docType : 'in'  // เพิ่มเติม เพื่อใช้ในฟังก์ชัน create_Row() ใน warehouse_modal.js
+// //     }
+// //   }else if(originalUrl.startsWith(global.PATH_WAREHOUSE_OUT)){
+// //     return {
+// //       collectionName:global.dbColl_warehouseOut,
+// //       docType : 'out'  // เพิ่มเติม เพื่อใช้ในฟังก์ชัน create_Row() ใน warehouse_modal.js
+// //     }
+// //   }
+// // }
+// // //============================================= 
+// // // จับชื่อโฟลเดอร์ จาก path
+// // // เช่น /warehouse/in จะได้ global.folderWarehouseIn
+// // // 
+// // export function get_Warehouse_FolderName(originalUrl) {
+// //   if(originalUrl.startsWith(global.PATH_WAREHOUSE_IN)){
+// //     return {folderName: global.folderWarehouseIn}
+// //   }else if(originalUrl.startsWith(global.PATH_WAREHOUSE_OUT)){
+// //     return {folderName: global.folderWarehouseOut}
+// //   }
+// // }

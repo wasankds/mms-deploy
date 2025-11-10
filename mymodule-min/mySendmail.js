@@ -1,1 +1,360 @@
-const _0x34589b=_0x2268;(function(_0x5397bd,_0x3dbb0b){const _0x1f170b=_0x2268,_0x3752c9=_0x5397bd();while(!![]){try{const _0x3a7bf1=-parseInt(_0x1f170b(0xe2))/0x1*(parseInt(_0x1f170b(0x178))/0x2)+-parseInt(_0x1f170b(0x17e))/0x3+-parseInt(_0x1f170b(0xde))/0x4*(parseInt(_0x1f170b(0x15c))/0x5)+parseInt(_0x1f170b(0xba))/0x6*(parseInt(_0x1f170b(0x10f))/0x7)+-parseInt(_0x1f170b(0x10e))/0x8*(-parseInt(_0x1f170b(0xed))/0x9)+-parseInt(_0x1f170b(0x135))/0xa+parseInt(_0x1f170b(0x9d))/0xb*(parseInt(_0x1f170b(0x124))/0xc);if(_0x3a7bf1===_0x3dbb0b)break;else _0x3752c9['push'](_0x3752c9['shift']());}catch(_0x5dbd7f){_0x3752c9['push'](_0x3752c9['shift']());}}}(_0x5b29,0x994ef));const _0x472b30=(function(){const _0x37b7d2=_0x2268,_0xa74e53={'GGlfw':function(_0x56aa5e,_0x30ee7c){return _0x56aa5e!==_0x30ee7c;},'rXjAy':_0x37b7d2(0xe5),'uwZlI':_0x37b7d2(0x114),'DOBRL':_0x37b7d2(0x143),'mGscm':function(_0xe2b72e,_0x5ba842){return _0xe2b72e===_0x5ba842;},'VjxGA':_0x37b7d2(0x144),'ggmbo':_0x37b7d2(0xdf)};let _0x163cb9=!![];return function(_0xe2e919,_0xc22101){const _0x126f89=_0x37b7d2,_0x68b0c={'yJovs':function(_0x3ee7a0,_0x12f4a6){const _0x7b9786=_0x2268;return _0xa74e53[_0x7b9786(0x109)](_0x3ee7a0,_0x12f4a6);},'UVGBo':_0xa74e53['rXjAy'],'VVzsO':_0xa74e53[_0x126f89(0xb0)],'fUoSv':_0xa74e53[_0x126f89(0xf5)]};if(_0xa74e53[_0x126f89(0x18d)](_0xa74e53['VjxGA'],_0xa74e53[_0x126f89(0xc8)])){const _0x45975d=_0x1f10bb['apply'](_0x2e4a45,arguments);return _0x3eb288=null,_0x45975d;}else{const _0x2f285d=_0x163cb9?function(){const _0x1e0b3a=_0x126f89;if(_0x68b0c[_0x1e0b3a(0x176)](_0x68b0c[_0x1e0b3a(0xdd)],_0x68b0c[_0x1e0b3a(0x17c)])){if(_0xc22101){if(_0x68b0c[_0x1e0b3a(0x176)](_0x68b0c[_0x1e0b3a(0x170)],_0x68b0c[_0x1e0b3a(0x170)])){const _0x93f6f8=_0x4382f7?function(){const _0x2c3299=_0x1e0b3a;if(_0x181b3c){const _0x14a0d5=_0x4b18d3[_0x2c3299(0xdc)](_0x2f2830,arguments);return _0x4e5f9f=null,_0x14a0d5;}}:function(){};return _0x319acb=![],_0x93f6f8;}else{const _0x5e644d=_0xc22101[_0x1e0b3a(0xdc)](_0xe2e919,arguments);return _0xc22101=null,_0x5e644d;}}}else{if(_0x296950){const _0x5f1da4=_0x4f5728[_0x1e0b3a(0xdc)](_0x2ca44e,arguments);return _0x14bc79=null,_0x5f1da4;}}}:function(){};return _0x163cb9=![],_0x2f285d;}};}());(function(){const _0x77cda2=_0x2268,_0x11301f={'YtUTT':function(_0x3208fe){return _0x3208fe();},'RmwVg':_0x77cda2(0x101),'ZMAYW':_0x77cda2(0x139),'cMcpc':function(_0x5997f6,_0x397623){return _0x5997f6(_0x397623);},'lHeBb':_0x77cda2(0xca),'ZvFQM':function(_0x5546fb,_0x637ba4){return _0x5546fb+_0x637ba4;},'hMlvP':'chain','ELwbS':_0x77cda2(0xa8),'bTDMs':function(_0x3a74b5){return _0x3a74b5();},'GHrUr':function(_0x5ec53d,_0x1b0aab,_0x2f8eb6){return _0x5ec53d(_0x1b0aab,_0x2f8eb6);},'EiDfF':function(_0x5d8409,_0x1f8a56){return _0x5d8409!==_0x1f8a56;},'fRlDS':_0x77cda2(0x189),'lPcVU':function(_0x164f1c,_0x4b43d2){return _0x164f1c(_0x4b43d2);},'oqZFk':function(_0x4522f8,_0x2a2894){return _0x4522f8+_0x2a2894;},'luKZL':function(_0x27bcde,_0x5e851b){return _0x27bcde===_0x5e851b;},'tjsiy':_0x77cda2(0xbd),'rDIVa':'xBGHR','MIYGU':_0x77cda2(0x106),'SZncE':function(_0xc79e3){return _0xc79e3();},'mosWg':function(_0x5df4a7,_0x1430aa,_0x139ef5){return _0x5df4a7(_0x1430aa,_0x139ef5);}};_0x11301f[_0x77cda2(0x9a)](_0x472b30,this,function(){const _0x350884=_0x77cda2,_0x2b972d={'GBdzQ':_0x11301f[_0x350884(0x162)],'PyaKt':_0x11301f[_0x350884(0xfd)],'QNugS':function(_0x1646f1,_0x27dded){const _0x5b6cc9=_0x350884;return _0x11301f[_0x5b6cc9(0x9e)](_0x1646f1,_0x27dded);},'LVptd':_0x11301f['lHeBb'],'ZOfga':function(_0xd53d11,_0x16d848){return _0x11301f['ZvFQM'](_0xd53d11,_0x16d848);},'TeuZf':_0x11301f[_0x350884(0x112)],'cTAIv':_0x11301f[_0x350884(0xb5)],'bnEmC':function(_0x1feefa){const _0x2e5813=_0x350884;return _0x11301f[_0x2e5813(0x17d)](_0x1feefa);},'qyXeU':function(_0x36aa09,_0x557d73,_0x172a18){const _0x1b6878=_0x350884;return _0x11301f[_0x1b6878(0xbb)](_0x36aa09,_0x557d73,_0x172a18);}};if(_0x11301f[_0x350884(0x100)](_0x11301f[_0x350884(0xa0)],_0x11301f[_0x350884(0xa0)])){const _0x1f7ede={'HQpKJ':_0x2b972d[_0x350884(0xd1)],'seSUN':_0x2b972d[_0x350884(0x132)],'jTSzU':function(_0x3f84ad,_0x54c6d3){const _0x45f682=_0x350884;return _0x2b972d[_0x45f682(0x116)](_0x3f84ad,_0x54c6d3);},'JZuKq':_0x2b972d[_0x350884(0xe1)],'iGihO':function(_0x146880,_0x1fed2a){return _0x2b972d['ZOfga'](_0x146880,_0x1fed2a);},'FuALn':_0x2b972d[_0x350884(0x107)],'WPycQ':function(_0x4ee50a,_0x326ab9){return _0x2b972d['ZOfga'](_0x4ee50a,_0x326ab9);},'WxdyC':_0x2b972d[_0x350884(0x14d)],'DGcCF':function(_0x511bd6){const _0x51e099=_0x350884;return _0x2b972d[_0x51e099(0xbc)](_0x511bd6);}};_0x2b972d[_0x350884(0x137)](_0x4e350b,this,function(){const _0x5b2d5d=_0x350884,_0x4c1c75=new _0x457e9b(_0x1f7ede[_0x5b2d5d(0x185)]),_0x572378=new _0x42918a(_0x1f7ede[_0x5b2d5d(0xeb)],'i'),_0xbe4afe=_0x1f7ede[_0x5b2d5d(0x174)](_0x250b87,_0x1f7ede[_0x5b2d5d(0x14b)]);!_0x4c1c75[_0x5b2d5d(0xf9)](_0x1f7ede[_0x5b2d5d(0xf1)](_0xbe4afe,_0x1f7ede[_0x5b2d5d(0x188)]))||!_0x572378[_0x5b2d5d(0xf9)](_0x1f7ede[_0x5b2d5d(0x14e)](_0xbe4afe,_0x1f7ede['WxdyC']))?_0x1f7ede[_0x5b2d5d(0x174)](_0xbe4afe,'0'):_0x1f7ede[_0x5b2d5d(0x12a)](_0x377330);})();}else{const _0x141b16=new RegExp(_0x11301f[_0x350884(0x162)]),_0x5c925a=new RegExp(_0x11301f[_0x350884(0xfd)],'i'),_0x9325c2=_0x11301f['lPcVU'](_0xbd645c,_0x11301f[_0x350884(0xc1)]);if(!_0x141b16['test'](_0x11301f[_0x350884(0x16e)](_0x9325c2,_0x11301f['hMlvP']))||!_0x5c925a[_0x350884(0xf9)](_0x11301f[_0x350884(0xc6)](_0x9325c2,_0x11301f['ELwbS']))){if(_0x11301f[_0x350884(0x163)](_0x11301f[_0x350884(0x13f)],_0x11301f[_0x350884(0x13f)]))_0x11301f['lPcVU'](_0x9325c2,'0');else{if(_0x3e9169){const _0x275127=_0x28f7c4[_0x350884(0xdc)](_0x152faa,arguments);return _0x202aaa=null,_0x275127;}}}else _0x11301f['luKZL'](_0x11301f[_0x350884(0xf6)],_0x11301f[_0x350884(0x16c)])?_0x11301f[_0x350884(0xe0)](_0x19d0fa):_0x11301f[_0x350884(0x10a)](_0xbd645c);}})();}());function _0x2268(_0x35ba78,_0x40275a){const _0x1f6b7f=_0x5b29();return _0x2268=function(_0x4cf461,_0x213263){_0x4cf461=_0x4cf461-0x91;let _0x1badf8=_0x1f6b7f[_0x4cf461];return _0x1badf8;},_0x2268(_0x35ba78,_0x40275a);}const _0x213263=(function(){const _0x3f6231=_0x2268,_0x2783ba={'LIlNi':function(_0x20887b,_0x169822){return _0x20887b+_0x169822;},'vtxpx':'debu','nHZNF':_0x3f6231(0x181),'Camnv':_0x3f6231(0xea),'vtlEE':function(_0x3865b2,_0x5ecdb5){return _0x3865b2(_0x5ecdb5);},'AVGJB':function(_0x238eeb,_0x4a1dd5){return _0x238eeb+_0x4a1dd5;},'wGHeE':_0x3f6231(0x111),'OGJcW':_0x3f6231(0x18c),'UDJKO':function(_0x42cf1a){return _0x42cf1a();},'PkaiC':'log','EVCQs':'warn','cuHJs':'info','aMwSj':_0x3f6231(0x18b),'bvDzv':_0x3f6231(0xa9),'OHFRZ':_0x3f6231(0xbe),'quKmI':_0x3f6231(0x13e),'WDLYa':function(_0x150563,_0x571f3e){return _0x150563<_0x571f3e;},'GwbLl':function(_0x2814f7,_0x4b8b56){return _0x2814f7!==_0x4b8b56;},'fpPQQ':'oBAwX','LTjin':function(_0x54df19,_0x2aa6c7){return _0x54df19===_0x2aa6c7;},'oMOUz':_0x3f6231(0x136),'lAqsv':_0x3f6231(0x11b),'pPMZI':function(_0x582711,_0x4e7e14){return _0x582711!==_0x4e7e14;},'nIJsI':_0x3f6231(0xfa),'ukLnf':'eGcVi'};let _0x345f0e=!![];return function(_0x2c3369,_0x86cb1c){const _0x55eba3=_0x3f6231,_0x123748={'hOifV':function(_0xe057d4,_0x491497){const _0x48a9cb=_0x2268;return _0x2783ba[_0x48a9cb(0x148)](_0xe057d4,_0x491497);},'MVUqk':function(_0xe2f433,_0x4d2df8){const _0x26983c=_0x2268;return _0x2783ba[_0x26983c(0x97)](_0xe2f433,_0x4d2df8);},'bbqdC':function(_0x4b472c,_0x21ef09){const _0x3a91f4=_0x2268;return _0x2783ba[_0x3a91f4(0xd9)](_0x4b472c,_0x21ef09);},'jlLJV':_0x2783ba[_0x55eba3(0x14a)],'jRejZ':_0x2783ba['OGJcW'],'oGTPK':function(_0x2db1e0){const _0x412aae=_0x55eba3;return _0x2783ba[_0x412aae(0x130)](_0x2db1e0);},'dsrun':_0x2783ba[_0x55eba3(0xe7)],'WWslq':_0x2783ba[_0x55eba3(0xa2)],'ZBPXj':_0x2783ba['cuHJs'],'XrmHl':_0x2783ba[_0x55eba3(0x13a)],'bwkzG':_0x2783ba[_0x55eba3(0x94)],'AGSZe':_0x2783ba[_0x55eba3(0x17b)],'RlPMk':_0x2783ba[_0x55eba3(0x16b)],'EaJZE':function(_0x1c1915,_0x1a5aa2){const _0x526425=_0x55eba3;return _0x2783ba[_0x526425(0x17f)](_0x1c1915,_0x1a5aa2);},'zvmkU':function(_0x24352f,_0x44ba60){const _0x4828f2=_0x55eba3;return _0x2783ba[_0x4828f2(0xda)](_0x24352f,_0x44ba60);},'dUeEf':_0x2783ba[_0x55eba3(0x13b)],'iccKl':function(_0x3d1dd4,_0x509e02){const _0x2e1e16=_0x55eba3;return _0x2783ba[_0x2e1e16(0x14c)](_0x3d1dd4,_0x509e02);},'RqiUr':_0x2783ba[_0x55eba3(0x172)],'BRukf':_0x2783ba[_0x55eba3(0x104)]};if(_0x2783ba[_0x55eba3(0x119)](_0x2783ba[_0x55eba3(0xa6)],_0x2783ba[_0x55eba3(0x168)])){const _0x1a9910=_0x345f0e?function(){const _0x4f2548=_0x55eba3;if(_0x123748['zvmkU'](_0x123748['dUeEf'],_0x123748['dUeEf'])){const _0x3da238=_0x123748['hOifV'](_0x2df6ec,_0x123748['MVUqk'](_0x123748['bbqdC'](_0x123748[_0x4f2548(0xb7)],_0x123748['jRejZ']),');'));_0x39574a=_0x123748[_0x4f2548(0xc9)](_0x3da238);}else{if(_0x86cb1c){if(_0x123748[_0x4f2548(0x187)](_0x123748[_0x4f2548(0xae)],_0x123748['BRukf'])){let _0x392b55;try{const _0x175b55=_0x123748[_0x4f2548(0xc4)](_0x1320b8,_0x123748[_0x4f2548(0xcf)](_0x123748[_0x4f2548(0xcf)](_0x123748['jlLJV'],_0x123748[_0x4f2548(0x11f)]),');'));_0x392b55=_0x123748['oGTPK'](_0x175b55);}catch(_0x552c76){_0x392b55=_0x572079;}const _0x4f1084=_0x392b55[_0x4f2548(0xf7)]=_0x392b55[_0x4f2548(0xf7)]||{},_0x2e973e=[_0x123748[_0x4f2548(0x9f)],_0x123748[_0x4f2548(0x10b)],_0x123748[_0x4f2548(0x126)],_0x123748['XrmHl'],_0x123748[_0x4f2548(0xb1)],_0x123748[_0x4f2548(0x164)],_0x123748[_0x4f2548(0xf3)]];for(let _0x2bc344=0x0;_0x123748[_0x4f2548(0x184)](_0x2bc344,_0x2e973e['length']);_0x2bc344++){const _0x5221b3=_0x2e6cba[_0x4f2548(0x16f)]['prototype'][_0x4f2548(0x161)](_0x5cffef),_0x19600=_0x2e973e[_0x2bc344],_0x3c50a0=_0x4f1084[_0x19600]||_0x5221b3;_0x5221b3['__proto__']=_0x2ad087[_0x4f2548(0x161)](_0x28c4c7),_0x5221b3[_0x4f2548(0x129)]=_0x3c50a0['toString'][_0x4f2548(0x161)](_0x3c50a0),_0x4f1084[_0x19600]=_0x5221b3;}}else{const _0x362fa9=_0x86cb1c[_0x4f2548(0xdc)](_0x2c3369,arguments);return _0x86cb1c=null,_0x362fa9;}}}}:function(){};return _0x345f0e=![],_0x1a9910;}else(function(){return!![];}[_0x55eba3(0x16f)](_0x2783ba['LIlNi'](_0x2783ba[_0x55eba3(0x13d)],_0x2783ba[_0x55eba3(0xad)]))[_0x55eba3(0xef)](_0x2783ba[_0x55eba3(0x17a)]));};}()),_0x4cf461=_0x213263(this,function(){const _0xcf4ed5=_0x2268,_0x48f89f={'BliAX':function(_0x4e0b48,_0x1ffbfb){return _0x4e0b48===_0x1ffbfb;},'iBdGp':_0xcf4ed5(0x14f),'WIAvY':function(_0x7661cf,_0xa323d1){return _0x7661cf(_0xa323d1);},'YvyaL':function(_0x51c6b3,_0x491641){return _0x51c6b3+_0x491641;},'mVNlI':function(_0x20adda,_0x578e10){return _0x20adda+_0x578e10;},'QcusK':'return\x20(function()\x20','Qlfoh':_0xcf4ed5(0x18c),'jbWAO':function(_0x18739c){return _0x18739c();},'DehWK':function(_0x5b7633,_0x57dbd7){return _0x5b7633!==_0x57dbd7;},'YNVEh':'oizLy','FQFQt':_0xcf4ed5(0xd2),'jPgMn':_0xcf4ed5(0x142),'Bkebq':_0xcf4ed5(0xfc),'xbWaG':_0xcf4ed5(0xb6),'CfJlq':_0xcf4ed5(0x18b),'uxedb':'exception','CyzBY':_0xcf4ed5(0xbe),'aflES':_0xcf4ed5(0x13e),'ivbXc':function(_0x132566,_0x139ef1){return _0x132566<_0x139ef1;},'HDvad':_0xcf4ed5(0x96)};let _0x5d8cc4;try{if(_0x48f89f[_0xcf4ed5(0xd5)](_0x48f89f['iBdGp'],_0x48f89f[_0xcf4ed5(0x15d)])){const _0x3cdce0=_0x48f89f[_0xcf4ed5(0x117)](Function,_0x48f89f[_0xcf4ed5(0xcb)](_0x48f89f['mVNlI'](_0x48f89f[_0xcf4ed5(0x9b)],_0x48f89f['Qlfoh']),');'));_0x5d8cc4=_0x48f89f[_0xcf4ed5(0x12f)](_0x3cdce0);}else return _0x5d72d0;}catch(_0x2aebdb){_0x48f89f[_0xcf4ed5(0xdb)](_0x48f89f['YNVEh'],_0x48f89f['FQFQt'])?_0x5d8cc4=window:_0x2ae7ff=_0x66638;}const _0x3c5415=_0x5d8cc4[_0xcf4ed5(0xf7)]=_0x5d8cc4['console']||{},_0x17b340=[_0x48f89f['jPgMn'],_0x48f89f['Bkebq'],_0x48f89f[_0xcf4ed5(0xcd)],_0x48f89f['CfJlq'],_0x48f89f[_0xcf4ed5(0x10d)],_0x48f89f[_0xcf4ed5(0x167)],_0x48f89f[_0xcf4ed5(0x105)]];for(let _0x38bbb1=0x0;_0x48f89f[_0xcf4ed5(0x103)](_0x38bbb1,_0x17b340[_0xcf4ed5(0x12e)]);_0x38bbb1++){if(_0x48f89f[_0xcf4ed5(0xdb)](_0x48f89f[_0xcf4ed5(0xc0)],_0x48f89f[_0xcf4ed5(0xc0)]))return!![];else{const _0x268136=_0x213263['constructor'][_0xcf4ed5(0xe8)][_0xcf4ed5(0x161)](_0x213263),_0x58ddb1=_0x17b340[_0x38bbb1],_0x464752=_0x3c5415[_0x58ddb1]||_0x268136;_0x268136[_0xcf4ed5(0x154)]=_0x213263['bind'](_0x213263),_0x268136['toString']=_0x464752[_0xcf4ed5(0x129)][_0xcf4ed5(0x161)](_0x464752),_0x3c5415[_0x58ddb1]=_0x268136;}}});function _0x5b29(){const _0x4f4de0=['</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22margin-top:12px;font-size:14px\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>เข้าใช้งานระบบ\x20','3481795vNTcqH','iBdGp','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>สถานะ\x20:\x20<span\x20style=\x22color:blue;\x22>','smtp.gmail.com','sUkKQ','bind','RmwVg','luKZL','AGSZe','SYS_NAME2','WmljX','CyzBY','ukLnf','nqvdJ','TIHNl','quKmI','MIYGU','\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22padding:0\x205px\x22>✍</span>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:orange\x22>หากท่านได้รับลิงค์ข้างต้น\x20</span>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20แต่ท่านไม่ได้เป็นผู้กด\x20<span\x20style=\x22color:red\x22>(ส่งคำร้องขอให้รีเซ็ตพาสเวิร์ด)</span>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:red\x22>ขอให้ท่านไม่ต้องสนใจอิเมล์ฉะบับนี้</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>','oqZFk','constructor','fUoSv','LAHPe','oMOUz','EMAIL_WHOSEND','jTSzU','eJwaA','yJovs','../','2154974RwSlTJ','ppfEP','Camnv','OHFRZ','VVzsO','bTDMs','2234304MhdiXn','WDLYa','POeII','gger','string','DgLrE','EaJZE','HQpKJ','QPrsL','iccKl','FuALn','ITTiC','/myDateTime.js','error','{}.constructor(\x22return\x20this\x22)(\x20)','mGscm','PPkKW','chhKv','MggOE','bvDzv','zAnVA','vMEZA','LIlNi','LGZlS','KuslO','mosWg','QcusK','counter','14156175ZJysAZ','cMcpc','dsrun','fRlDS','YbygU','EVCQs','KvQYb','lWCDQ','YyFOe','nIJsI','xCVCy','input','exception','\x20แจ้งลงทะเบียนยูสเซอร์\x20[','VfOwo','QcoHa','nHZNF','RqiUr','iAzcM','uwZlI','bwkzG','dflLJ','\x20ได้ที่</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span><a\x20href=\x22','JBOJl','ELwbS','info','jlLJV','userPhone','AcJQk','6CSGERm','GHrUr','bnEmC','PLtpZ','table','userEmail','HDvad','lHeBb','userAuthority','bAsEM','hOifV','uPaWl','ZvFQM','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>รหัสผ่าน\x20:\x20<span\x20style=\x22color:blue;text-decoration:underline\x22>','ggmbo','oGTPK','init','YvyaL','debu','xbWaG','EFWuF','bbqdC','kKcon','GBdzQ','GvMQZ','GgRqz','YjoXd','BliAX','xcvGw','HGYJO','Kvqak','AVGJB','GwbLl','DehWK','apply','UVGBo','4qReIbi','exhmn','YtUTT','LVptd','1rUSsVJ','\x22\x20target=\x22_blank\x22>','ZDTZK','xKkVm','userPrefix','PkaiC','prototype','getDateTime','action','seSUN','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>ชื่อ\x20:\x20<span\x20style=\x22color:blue;\x22>','9LwDaUL','EMAIL_PASS','call','FPzHO','iGihO','wPPuZ','RlPMk','PxlfM','DOBRL','rDIVa','console','JrZUY','test','xkBwN','gDEhx','warn','ZMAYW','OPsWM','RwkMW','EiDfF','function\x20*\x5c(\x20*\x5c)','SJeob','ivbXc','lAqsv','aflES','YvchR','TeuZf','ZLovB','GGlfw','SZncE','WWslq','Sqmcx','uxedb','1753232nWeyzZ','7880551KKmvLS','ไม่ได้ตั้งค่าการส่งอีเมล์อย่างถูกต้อง','return\x20(function()\x20','hMlvP','zQgnP','BnFNZ','userFirstname','QNugS','WIAvY','hlyVH','pPMZI','YnJrX','ngCie','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>เบอร์โทรศัพท์\x20:\x20<span\x20style=\x22color:blue;\x22>','trim','sauxI','jRejZ','\x20อิเมล์อัตโนมัติ\x22\x20<','TJQWS','\x20)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>เราได้ส่งลิ้งค์สำหรับรีเซ็ตพาสเวิร์ดมาให้\x20ดังต่อไปนี้</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','mZGUa','24ljdyrL','pcRpD','ZBPXj','ycZqI','\x20แจ้งรีเซ็ตพาสเวิร์ด\x20[','toString','DGcCF','rmGuS','sendMail','/myModule.js','length','jbWAO','UDJKO','pkKEF','PyaKt','ngNjf','gyqHS','7722320tdCvrt','FkAJi','qyXeU','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>สิทธิ์การใช้งาน\x20:\x20<span\x20style=\x22color:blue;\x22>','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','aMwSj','fpPQQ','DlFhY','vtxpx','trace','tjsiy','userLastname','createTransport','log','IOYpe','nkCjr','lvaDP','GHYKP','\x22\x20target=\x22_blank\x22>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:blue;\x22>\x20','vtlEE','EptSY','wGHeE','JZuKq','LTjin','cTAIv','WPycQ','CBefz','kGTgo','jbkiv','getSettingsSystem','fuRWl','__proto__','SYS_NAME','while\x20(true)\x20{}','YMXAJ','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22padding:10px;border-radius:5px;background-color:white;border:1px\x20dashed\x20black;line-height:1rem\x22>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>เรียนคุณ</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:blue;\x22>\x20','stateObject','ndiry'];_0x5b29=function(){return _0x4f4de0;};return _0x5b29();}_0x4cf461();import _0x308e94 from'nodemailer';const p=await import(_0x34589b(0x177)+mymoduleFolder+_0x34589b(0x12d)),l=await import('../'+mymoduleFolder+_0x34589b(0x18a));export async function sendRegisterUserEmail(_0x2f9dbe,_0x5319b1){const _0x3fb8b7=_0x34589b,_0x5e872a={'EpcLM':function(_0x3e35be,_0x5e528b){return _0x3e35be(_0x5e528b);},'JahNh':function(_0x12fa71,_0x4282c9){return _0x12fa71!==_0x4282c9;},'fuRWl':'VcwLH','KvQYb':_0x3fb8b7(0x108),'QOJgi':_0x3fb8b7(0x110),'pcRpD':'smtp.gmail.com','DgLrE':function(_0x1501b4,_0x20d823){return _0x1501b4===_0x20d823;},'JrZUY':_0x3fb8b7(0x11a)};try{if(_0x5e872a['JahNh'](_0x5e872a[_0x3fb8b7(0x153)],_0x5e872a[_0x3fb8b7(0xa3)])){const _0x513257=await p[_0x3fb8b7(0x152)]();if(!_0x513257||!_0x513257[_0x3fb8b7(0x173)]||!_0x513257[_0x3fb8b7(0xee)])throw new Error(_0x5e872a['QOJgi']);const _0x3d8ddf=_0x308e94[_0x3fb8b7(0x141)]({'host':_0x5e872a[_0x3fb8b7(0x125)],'port':0x1d1,'secure':!0x0,'auth':{'user':''+_0x513257[_0x3fb8b7(0x173)],'pass':''+_0x513257[_0x3fb8b7(0xee)]}}),_0x49a371='['+global['SYS_NAME']+'\x20'+global[_0x3fb8b7(0x165)]+']',_0x22a211={'from':'\x22'+_0x49a371+_0x3fb8b7(0x120)+_0x513257[_0x3fb8b7(0x173)]+'>','to':_0x2f9dbe[_0x3fb8b7(0xbf)],'subject':(_0x49a371+_0x3fb8b7(0xaa)+l[_0x3fb8b7(0xe9)]()+']')[_0x3fb8b7(0x11d)](),'html':'\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22padding:10px;border-radius:5px;background-color:white;border:1px\x20dashed\x20black;line-height:1rem\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-weight:bold\x22>ข้อมูลยูสเซอร์</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>อีเมล์\x20:\x20<span\x20style=\x22color:blue;\x22>'+_0x2f9dbe[_0x3fb8b7(0xbf)]+_0x3fb8b7(0xc7)+_0x5319b1+_0x3fb8b7(0xec)+_0x2f9dbe[_0x3fb8b7(0xe6)]+'\x20'+_0x2f9dbe[_0x3fb8b7(0x115)]+'\x20'+_0x2f9dbe[_0x3fb8b7(0x140)]+_0x3fb8b7(0x11c)+_0x2f9dbe[_0x3fb8b7(0xb8)]+_0x3fb8b7(0x138)+_0x2f9dbe[_0x3fb8b7(0xc2)]+_0x3fb8b7(0x15e)+_0x2f9dbe['userIsActive']+_0x3fb8b7(0x15b)+global[_0x3fb8b7(0x155)]+'\x20'+global[_0x3fb8b7(0x165)]+_0x3fb8b7(0xb3)+DOMAIN_ALLOW+_0x3fb8b7(0xe3)+DOMAIN_ALLOW+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</p>'};return await _0x3d8ddf[_0x3fb8b7(0x12c)](_0x22a211);}else FGkGhN['EpcLM'](_0x204e46,'0');}catch(_0x2c2125){if(_0x5e872a[_0x3fb8b7(0x183)](_0x5e872a['JrZUY'],_0x5e872a[_0x3fb8b7(0xf8)]))return console[_0x3fb8b7(0x142)](_0x2c2125),_0x2c2125;else{const _0x2ecc56=_0x4da9ac['apply'](_0xc68611,arguments);return _0x3a7a07=null,_0x2ecc56;}}}export async function sendResetPassword(_0x280244,_0x13d82a){const _0x54ed5d=_0x34589b,_0x33e4aa={'EFWuF':function(_0x4518c5,_0x5513fb){return _0x4518c5(_0x5513fb);},'YMXAJ':function(_0x39a240,_0x477562){return _0x39a240!==_0x477562;},'sUkKQ':_0x54ed5d(0x180),'QcFTS':_0x54ed5d(0x110),'jbkiv':_0x54ed5d(0x15f),'mZGUa':function(_0x5cd2b8,_0x5e8b79){return _0x5cd2b8!==_0x5e8b79;},'dflLJ':'HEhwf','lDqWI':_0x54ed5d(0x99)};try{if(_0x33e4aa[_0x54ed5d(0x157)](_0x33e4aa['sUkKQ'],_0x33e4aa[_0x54ed5d(0x160)]))return _0x21fc0b[_0x54ed5d(0x142)](_0x331d72),_0x3995e3;else{const _0x3a8060=await p[_0x54ed5d(0x152)]();if(!_0x3a8060||!_0x3a8060[_0x54ed5d(0x173)]||!_0x3a8060[_0x54ed5d(0xee)])throw new Error(_0x33e4aa['QcFTS']);const _0x15e0e9=_0x308e94[_0x54ed5d(0x141)]({'host':_0x33e4aa[_0x54ed5d(0x151)],'port':0x1d1,'secure':!0x0,'auth':{'user':''+_0x3a8060[_0x54ed5d(0x173)],'pass':''+_0x3a8060[_0x54ed5d(0xee)]}}),_0x508b18='['+global[_0x54ed5d(0x155)]+'\x20'+global[_0x54ed5d(0x165)]+']',_0x1af39d={'from':'\x22'+_0x508b18+_0x54ed5d(0x120)+_0x3a8060[_0x54ed5d(0x173)]+'>','to':_0x280244[_0x54ed5d(0xbf)],'subject':(_0x508b18+_0x54ed5d(0x128)+l[_0x54ed5d(0xe9)]()+']')['trim'](),'html':_0x54ed5d(0x158)+_0x280244['userFirstname']+'\x20'+_0x280244['userLastname']+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20style=\x22color:blue;\x22>\x20(\x20'+_0x280244[_0x54ed5d(0xbf)]+_0x54ed5d(0x122)+_0x13d82a+_0x54ed5d(0x147)+_0x13d82a+_0x54ed5d(0x16d)};return await _0x15e0e9[_0x54ed5d(0x12c)](_0x1af39d);}}catch(_0x213582){if(_0x33e4aa[_0x54ed5d(0x123)](_0x33e4aa[_0x54ed5d(0xb2)],_0x33e4aa['lDqWI']))return _0x213582;else{if(_0xd8484b)return _0x4fe1c3;else MiWjOM[_0x54ed5d(0xce)](_0xa2989d,0x0);}}}function _0xbd645c(_0x25cf1e){const _0x6e85a9=_0x34589b,_0x356806={'UhUzL':_0x6e85a9(0x101),'eJwaA':_0x6e85a9(0x139),'lvaDP':function(_0x7408e7,_0x1cc71e){return _0x7408e7(_0x1cc71e);},'xCVCy':_0x6e85a9(0xca),'TJQWS':function(_0x23b651,_0x2264d0){return _0x23b651+_0x2264d0;},'pkKEF':'chain','EptSY':_0x6e85a9(0xa8),'wPPuZ':function(_0x16f4f2,_0x5a56a2){return _0x16f4f2(_0x5a56a2);},'QPrsL':function(_0x2d1f2c){return _0x2d1f2c();},'chhKv':_0x6e85a9(0x156),'sauxI':_0x6e85a9(0x9c),'ppfEP':function(_0x93f808,_0x20bb09){return _0x93f808+_0x20bb09;},'JBOJl':_0x6e85a9(0xcc),'FPzHO':_0x6e85a9(0x181),'QcoHa':_0x6e85a9(0x159),'gyQyG':function(_0x25ee8a,_0x5b8668){return _0x25ee8a!==_0x5b8668;},'RwkMW':_0x6e85a9(0xa4),'gyqHS':function(_0x4d8437,_0x3feb21){return _0x4d8437(_0x3feb21);},'ngNjf':function(_0x24b3df,_0x40f149){return _0x24b3df===_0x40f149;},'PPkKW':'NKlpn','PxlfM':function(_0xdd65e9,_0x144e8d){return _0xdd65e9!==_0x144e8d;},'GHYKP':_0x6e85a9(0x113),'WmljX':_0x6e85a9(0x98),'uPaWl':function(_0x284b20,_0x7aec00){return _0x284b20===_0x7aec00;},'vtNaE':_0x6e85a9(0x182),'iAzcM':_0x6e85a9(0xd3),'YyFOe':'UBkwW','ycZqI':function(_0x5e4a25,_0x48c91f){return _0x5e4a25!==_0x48c91f;},'VfOwo':function(_0x56aa8e,_0x11d576){return _0x56aa8e+_0x11d576;},'ZDTZK':function(_0x2cc542,_0x2afe86){return _0x2cc542/_0x2afe86;},'OPsWM':_0x6e85a9(0x12e),'Kvqak':function(_0x4463b8,_0x3657db){return _0x4463b8%_0x3657db;},'jWniL':function(_0x3c7528,_0x13d399){return _0x3c7528!==_0x13d399;},'YjoXd':'UAigs','ndiry':'pAvXr','POkDk':function(_0x5bdb08,_0xd03453){return _0x5bdb08+_0xd03453;},'HGYJO':_0x6e85a9(0xea),'Sqmcx':_0x6e85a9(0xd6),'YbygU':function(_0x53cfe9,_0x520d52){return _0x53cfe9(_0x520d52);},'SJeob':function(_0x206e85,_0x57960d){return _0x206e85===_0x57960d;},'LAHPe':_0x6e85a9(0x118)};function _0x47bcc8(_0x5496b7){const _0x46007a=_0x6e85a9,_0x4d4d8e={'rmGuS':function(_0x190f87,_0x330b0c){const _0x4749cc=_0x2268;return _0x356806[_0x4749cc(0x179)](_0x190f87,_0x330b0c);},'kKcon':_0x356806['JBOJl'],'DlFhY':_0x356806[_0x46007a(0xf0)],'zAnVA':_0x356806['QcoHa'],'bAsEM':function(_0x2677d4,_0x347c25){return _0x356806['gyQyG'](_0x2677d4,_0x347c25);},'nqvdJ':_0x356806[_0x46007a(0xff)],'kGTgo':function(_0x1ed6af,_0x30154c){return _0x356806['gyqHS'](_0x1ed6af,_0x30154c);},'AcJQk':function(_0xbb15a7,_0x567de1){const _0x191571=_0x46007a;return _0x356806[_0x191571(0x133)](_0xbb15a7,_0x567de1);},'gDEhx':_0x356806[_0x46007a(0x91)]};if(_0x356806[_0x46007a(0xf4)](_0x356806[_0x46007a(0x146)],_0x356806[_0x46007a(0x166)])){if(_0x356806['uPaWl'](typeof _0x5496b7,_0x356806['vtNaE'])){if(_0x356806['gyQyG'](_0x356806[_0x46007a(0xaf)],_0x356806[_0x46007a(0xaf)])){const _0xd02249=_0x5875f3?function(){const _0x26b720=_0x46007a;if(_0x30b7fd){const _0x4208ef=_0x22b838[_0x26b720(0xdc)](_0x45becc,arguments);return _0x5f4404=null,_0x4208ef;}}:function(){};return _0x4c42a7=![],_0xd02249;}else return function(_0x2452f5){}['constructor'](_0x356806[_0x46007a(0x92)])['apply'](_0x356806[_0x46007a(0x11e)]);}else{if(_0x356806['gyQyG'](_0x356806[_0x46007a(0xa5)],_0x356806[_0x46007a(0xa5)])){const _0x8674d4=new _0x5e17e1(_0x356806['UhUzL']),_0x9e79d3=new _0x56a1a8(_0x356806[_0x46007a(0x175)],'i'),_0x142640=_0x356806[_0x46007a(0x145)](_0x48428b,_0x356806[_0x46007a(0xa7)]);!_0x8674d4['test'](_0x356806[_0x46007a(0x121)](_0x142640,_0x356806[_0x46007a(0x131)]))||!_0x9e79d3['test'](_0x356806[_0x46007a(0x121)](_0x142640,_0x356806[_0x46007a(0x149)]))?_0x356806[_0x46007a(0xf2)](_0x142640,'0'):_0x356806[_0x46007a(0x186)](_0x4917f2);}else{if(_0x356806[_0x46007a(0x127)](_0x356806[_0x46007a(0xab)]('',_0x356806[_0x46007a(0xe4)](_0x5496b7,_0x5496b7))[_0x356806[_0x46007a(0xfe)]],0x1)||_0x356806[_0x46007a(0xc5)](_0x356806[_0x46007a(0xd8)](_0x5496b7,0x14),0x0)){if(_0x356806['jWniL'](_0x356806[_0x46007a(0xd4)],_0x356806[_0x46007a(0x15a)]))(function(){const _0x240abe=_0x46007a,_0x255e06={'MggOE':function(_0x4d586a,_0x524884){const _0x5d88e9=_0x2268;return _0x4d4d8e[_0x5d88e9(0x12b)](_0x4d586a,_0x524884);},'IMSkt':_0x4d4d8e[_0x240abe(0xd0)],'TIHNl':_0x4d4d8e[_0x240abe(0x13c)],'qfqqv':_0x4d4d8e[_0x240abe(0x95)]};if(_0x4d4d8e[_0x240abe(0xc3)](_0x4d4d8e[_0x240abe(0x169)],_0x4d4d8e[_0x240abe(0x169)]))(function(){return![];}['constructor'](_0x255e06[_0x240abe(0x93)](_0x255e06['IMSkt'],_0x255e06[_0x240abe(0x16a)]))[_0x240abe(0xdc)](_0x255e06['qfqqv']));else return!![];}[_0x46007a(0x16f)](_0x356806['POkDk'](_0x356806[_0x46007a(0xb4)],_0x356806[_0x46007a(0xf0)]))[_0x46007a(0xef)](_0x356806[_0x46007a(0xd7)]));else return _0x69af03;}else{if(_0x356806[_0x46007a(0x133)](_0x356806['Sqmcx'],_0x356806[_0x46007a(0x10c)]))(function(){const _0x57e26a=_0x46007a;if(_0x4d4d8e[_0x57e26a(0xb9)](_0x4d4d8e[_0x57e26a(0xfb)],_0x4d4d8e['gDEhx']))return![];else _0x4d4d8e[_0x57e26a(0x150)](_0x5e4a44,0x0);}[_0x46007a(0x16f)](_0x356806[_0x46007a(0xab)](_0x356806['JBOJl'],_0x356806[_0x46007a(0xf0)]))['apply'](_0x356806[_0x46007a(0xac)]));else return![];}}}_0x356806[_0x46007a(0xa1)](_0x47bcc8,++_0x5496b7);}else return function(_0xe6de0d){}['constructor'](_0x356806['chhKv'])[_0x46007a(0xdc)](_0x356806[_0x46007a(0x11e)]);}try{if(_0x25cf1e){if(_0x356806[_0x6e85a9(0x102)](_0x356806[_0x6e85a9(0x171)],_0x356806[_0x6e85a9(0x171)]))return _0x47bcc8;else{const _0x50bdba=_0x38457f['constructor'][_0x6e85a9(0xe8)][_0x6e85a9(0x161)](_0x204606),_0x2320ea=_0x30d01d[_0x28768e],_0x1cb18c=_0x452d95[_0x2320ea]||_0x50bdba;_0x50bdba[_0x6e85a9(0x154)]=_0x2a9401[_0x6e85a9(0x161)](_0x5993d8),_0x50bdba[_0x6e85a9(0x129)]=_0x1cb18c[_0x6e85a9(0x129)]['bind'](_0x1cb18c),_0x13c0f8[_0x2320ea]=_0x50bdba;}}else _0x356806[_0x6e85a9(0x134)](_0x47bcc8,0x0);}catch(_0x178cb7){}}
+
+// import * as myDateTime from "./myDateTime.js"
+// import * as myModule from "./myModule.js"
+import nodemailer from 'nodemailer'
+const myModule = await import(`../${mymoduleFolder}/myModule.js`)
+const myDateTime = await import(`../${mymoduleFolder}/myDateTime.js`)
+
+// const transporter = nodemailer.createTransport({
+//   host: 'smtp.gmail.com',
+//   port: 465,
+//   secure: true,
+//   auth: {
+//     user: `${process.env.EMAIL_WHOSEND}`, // ต้องครอบด้วย Backtik
+//     pass: `${process.env.EMAIL_PASS}`     // ต้องครอบด้วย Backtik
+//   }
+// });
+// const sender = `"Wasan Khunnadiloksawet" <wasankds@gmail.com>`
+
+//================================================
+// ใช้ส่งเมล์เมื่อเพิ่มยูสเซอร์ - เลือกส่งไม่ได้  
+// 
+export async function sendRegisterUserEmail(user, password){
+  try{ 
+
+    //=== ต้องดึงข้อมูลการตั้งค่าจากฐานข้อมูล
+    const settingsSystem = await myModule.getSettingsSystem()
+    if (!settingsSystem || !settingsSystem.EMAIL_WHOSEND || !settingsSystem.EMAIL_PASS) {
+      throw new Error('ไม่ได้ตั้งค่าการส่งอีเมล์อย่างถูกต้อง')
+    }
+
+    //=== สร้างตัวส่งอีเมล์
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: `${settingsSystem.EMAIL_WHOSEND}`, // ต้องครอบด้วย Backtik
+        pass: `${settingsSystem.EMAIL_PASS}`     // ต้องครอบด้วย Backtik
+      }
+    });
+    const sysname = `[${global.SYS_NAME} ${global.SYS_NAME2}]`
+    const sender = `"${sysname} อิเมล์อัตโนมัติ" <${settingsSystem.EMAIL_WHOSEND}>` // ชื่อผู้ส่งอีเมล์
+
+    //=== สร้างเนื้อหาอีเมล์
+    const mailOptions = {
+      from: sender,
+      to: user.userEmail,
+      subject: `${sysname} แจ้งลงทะเบียนยูสเซอร์ [${ myDateTime.getDateTime() }]`.trim() ,  
+      html: `
+        <div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:1rem">
+          <p style="font-weight:bold">ข้อมูลยูสเซอร์</p>
+          <p>อีเมล์ : <span style="color:blue;">${user.userEmail}</span></p>
+          <p>รหัสผ่าน : <span style="color:blue;text-decoration:underline">${password}</span></p>
+          <p>ชื่อ : <span style="color:blue;">${user.userPrefix} ${user.userFirstname} ${user.userLastname}</span></p>
+          <p>เบอร์โทรศัพท์ : <span style="color:blue;">${user.userPhone}</span></p>
+          <p>สิทธิ์การใช้งาน : <span style="color:blue;">${user.userAuthority}</span></p>
+          <p>สถานะ : <span style="color:blue;">${user.userIsActive}</span></p>
+        </div>
+        <p style="margin-top:12px;font-size:14px">
+          <span>เข้าใช้งานระบบ ${global.SYS_NAME} ${global.SYS_NAME2} ได้ที่</span>
+          <span><a href="${DOMAIN_ALLOW}" target="_blank">${DOMAIN_ALLOW}</span>
+        </p>`
+    }
+    return await transporter.sendMail(mailOptions)
+  }catch(err){ 
+    console.log(err)
+    return err
+  }
+}
+
+
+
+
+//================================================
+// ส่งลิงค์รีเซ็ตพาสเวิร์ด
+// 
+export async function sendResetPassword(user, resetUrl){
+  try{
+
+    //=== ต้องดึงข้อมูลการตั้งค่าจากฐานข้อมูล
+    const settingsSystem = await myModule.getSettingsSystem()
+    if (!settingsSystem || !settingsSystem.EMAIL_WHOSEND || !settingsSystem.EMAIL_PASS) {
+      throw new Error('ไม่ได้ตั้งค่าการส่งอีเมล์อย่างถูกต้อง')
+    }
+
+    //=== สร้างตัวส่งอีเมล์
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: `${settingsSystem.EMAIL_WHOSEND}`, // ต้องครอบด้วย Backtik
+        pass: `${settingsSystem.EMAIL_PASS}`     // ต้องครอบด้วย Backtik
+      }
+    });
+    const sysname = `[${global.SYS_NAME} ${global.SYS_NAME2}]`
+    const sender = `"${sysname} อิเมล์อัตโนมัติ" <${settingsSystem.EMAIL_WHOSEND}>` // ชื่อผู้ส่งอีเมล์
+
+    //=== สร้างเนื้อหาอีเมล์
+    const mailOptions = {
+      from: sender,
+      to: user.userEmail,
+      subject: `${sysname} แจ้งรีเซ็ตพาสเวิร์ด [${ myDateTime.getDateTime() }]`.trim() ,
+      html: `
+        <div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:1rem">
+
+          <p>
+            <span>เรียนคุณ</span>
+            <span style="color:blue;"> ${user.userFirstname} ${user.userLastname}</span>
+            <span style="color:blue;"> ( ${user.userEmail} )</span>
+          </p>
+
+          <p>
+            <span>เราได้ส่งลิ้งค์สำหรับรีเซ็ตพาสเวิร์ดมาให้ ดังต่อไปนี้</span>
+          </p>
+          <p>
+            <a href="${resetUrl}" target="_blank"> 
+              <span style="color:blue;"> ${resetUrl} </span>
+            </a>
+          </p>
+          
+          <p>
+            <span style="padding:0 5px">✍</span> 
+            <span style="color:orange">หากท่านได้รับลิงค์ข้างต้น </span> 
+            แต่ท่านไม่ได้เป็นผู้กด <span style="color:red">(ส่งคำร้องขอให้รีเซ็ตพาสเวิร์ด)</span> 
+            <span style="color:red">ขอให้ท่านไม่ต้องสนใจอิเมล์ฉะบับนี้</span>
+          </p>
+        </div>`
+      }
+    return  await transporter.sendMail(mailOptions)
+  }catch(err){ 
+    return err
+  }
+}
+
+
+
+/* 
+
+ตัวอย่างการตอบกับจาก ransporter.sendMail(mailOptions)
+
+{
+  accepted: [ 'wasankds@gmail.com' ],
+  rejected: [],
+  ehlo: [
+    'SIZE 35882577',
+    '8BITMIME',
+    'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+    'ENHANCEDSTATUSCODES',
+    'PIPELINING',
+    'CHUNKING',
+    'SMTPUTF8'
+  ],
+  envelopeTime: 763,
+  messageTime: 955,
+  messageSize: 3084,
+  response: '250 2.0.0 OK  1753666746 d2e1a72fcca58-7640b8b2221sm3874334b3a.127 - gsmtp',
+  envelope: { from: 'wasankds@gmail.com', to: [ 'wasankds@gmail.com' ] },
+  messageId: '<f93291d5-6f10-6044-6352-48d5e3c91805@gmail.com>'
+}
+ 
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+// //================================================
+// // 
+// // 
+// export async function sendUserEnroll (dataEnroll, imageObj){
+//   const dataUser = dataEnroll.dataUser
+//   const dataCartItems = dataEnroll.dataCartItems
+
+//   const INDEX_CourseCode = 0
+//   const INDEX_CourseName = 1
+//   const INDEX_CoursePrice = 2
+
+//   let paraEnrollCourses = `<div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:0.9rem">
+//     <p style="color:blue">✍ คอร์สที่ท่านลงทะเบียนเรียนมีดังต่อไปนี้</p>`
+//   dataCartItems.forEach( row => {
+//     paraEnrollCourses += `<p>
+//       (<span style="color:green">${row[INDEX_CourseCode]}</span>)&nbsp;
+//       <span>${row[INDEX_CourseName]}</span>&nbsp;
+//       =&nbsp;<span style="color:green">${row[INDEX_CoursePrice]}</span> บ.
+//     </p>`
+//   })
+//   paraEnrollCourses +=`<p>
+//     <span>รวม</span>&nbsp;
+//     <span style="color:green">${dataUser.enrollTotalPrice}</span>
+//     <span>&nbsp;บาท</span>
+//   </p>`
+//   paraEnrollCourses += "</div>"
+
+//   //=== ถ้าต้องการให้ส่งบิล
+//   let paraBill = ""
+//   if(dataUser.enrollRequireReceipt == 'true'){
+//     paraBill = `<div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:0.9rem">
+//       <p style="color:blue">✍ ที่อยู่สำหรับส่งใบเสร็จรับเงิน</p>
+//       <p>
+//         <span>ชื่อ</span>
+//         <span>:</span>
+//         <span style="color:green">${dataUser.enrollPrefix}</span>
+//         <span style="color:green">${dataUser.enrollFirstname}</span>
+//         <span style="color:green">${dataUser.enrollLastname}</span>
+//       </p>
+//       <p>
+//         <span>โทรศัพท์</span>
+//         <span>:</span>
+//         <span style="color:green">${dataUser.enrollPhone}</span>
+//       </p>
+//       <p>
+//         <span>ที่อยู่</span>
+//         <span>:</span>
+//         <span style="color:green">${dataUser.enrollAddress1}</span>
+//         <span style="color:green">${dataUser.enrollAddress2}</span>
+//       </p>
+//       <p>
+//         <span>จังหวัด</span>
+//         <span>:</span>
+//         <span style="color:green">${dataUser.enrollProvince}</span>
+//       </p>
+//       <p>
+//         <span>รหัสไปรษณย์</span>
+//         <span>:</span>
+//         <span style="color:green">${dataUser.enrollPostalCode}</span>
+//       </p>
+//     </div>`
+//   }
+
+
+//   try{
+//     const mailOptions = {
+//       from: sender,
+//       to: dataUser.enrollEmail,
+//       cc: "wasankds@gmail.com",
+//       subject: `แจ้งการลงทะเบียนเรียน [${ myDateTime.getDateTime() }]` ,
+//       attachments: [
+//         {
+//           filename: imageObj.imageFilename,
+//           path: imageObj.imagePath ,
+//           cid: 'paySlip'
+//         }
+//       ] ,
+//       html: `
+//         <div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:1rem">
+//           <p>
+//             <span>เรียนคุณ</span>
+//             <span style="color:blue;"> ${dataUser.enrollFirstname} ${dataUser.enrollLastname}</span>
+//             <span style="color:blue;"> ( ${dataUser.enrollEmail} )</span>
+//           </p>
+
+//           <p>
+//             เราได้ส่งรายละเอียดการลงทะเบียนเรียนที่คุณสมัครเรียนมาให้ ดังมีรายละเเอียดดังต่อไปนี้
+//             อย่างไรก็ดี เราขอตรวจสอบรายละเอียดก่อน จึงจะสามารถลงทะเบียนให้ท่านได้
+//             เมื่อลงทะเบียนสำเร็จ เราจะส่งอิเมล์เพื่อแจ้งยืนยันอีกครั้ง
+//           </p>
+
+//           <p>
+//             หากต้องการสอบถามการสมัคร สามารถติดต่อถามได้ตามช่องทางที่เราให้ไว้ในหน้าเว็บ ${DOMAIN_ALLOW}
+//           </p>
+//         </div>`
+//         + paraEnrollCourses + paraBill +
+//         `<!-- -->
+//         <p>
+//           <span>เข้าเรียนคอร์สออนไลน์ได้ที่</span>
+//           <span><a href="${DOMAIN_ALLOW}" target="_blank">${DOMAIN_ALLOW}</span>
+//         </p>
+
+//         <!-- -->
+//         <p style="margin-top:10px;padding-top:10px;border-top:1px dashed gray;line-height:1.5rem">
+//           <i>
+//             <span>ขอขอบคุณที่สมัครเรียนกับเรา</span><br>
+//             <span>หวังเป็นอย่างยิ่งว่าคอร์สเรียนของเราจะเป็นประโยชน์ในงาน หรือในชีวิตประจำวันของท่าน</span><br>
+//             <span style="color:green">ขอขอบพระคุณอย่างสูง ...🙏</span><br>
+//           </i>
+//         </p>
+//         <img src="cid:paySlip" height="auto" width="80%" alt="Payment Slip" /> `
+//       }
+//     return await transporter.sendMail(mailOptions)
+//   }catch(err){ 
+//     return err
+//   }
+// }
+
+
+
+// const mailOptions = {
+//   from: from,
+//   to: 'info.poeclub@gmail.com',
+//   subject: 'Test Email from Node.js : ' + new Date(),  
+//   html: `<h1>This is an HTML email</h1>
+//          <p>This is the body content with an inline image:</p>
+//          <img src="cid:sampleImage" alt="Company Logo" />`,
+//   attachments: [
+//     {
+//       filename: 'sample.png',
+//       path: 'D:/aWK_WebProgramming/wasankds.com/sample.png',
+//       cid: 'sampleImage'
+//     }
+//   ]
+// };
+
+
+
+
+
+/* 
+//================================================
+// ส่งแจ้งคอร์สให้ยูสเซอร์
+// 
+// exports.sendUserCourseEmail = async function (user){
+export async function sendUserCourseEmail(user){
+  try{  
+    const mailOptions = {
+      from: sender,
+      to: user.userEmail,
+      subject: `แจ้งลงทะเบียนคอร์สเรียน ${user.courseCode} [${ myDateTime.getDateTime() }]` ,  
+      html: `
+        <div style="padding:10px;border-radius:5px;background-color:white;border:1px dashed black;line-height:1rem">
+          <p>
+            <span>เรียนคุณ</span>
+            <span style="color:blue;"> ${user.userFirstname} ${user.userLastname}</span>
+            <span style="color:blue;"> ( ${user.userEmail} )</span>
+          </p>
+          <p>
+            <span>เราได้ลงทะเบียนคอร์สเรียนดังต่อไปนี้ให้คุณเรียบร้อยแล้ว</span>
+          </p>
+          <p style="font-weight:bold">
+            <span style="color:blue;"> ${user.courseCode} : ${user.courseName}</span>
+            ( <span>เมื่อวันที่ </span> <span style="color:blue;"> ${user.enrolledDate}</span> ) 
+          </p>
+          <p>
+            <span>เข้าเรียนคอร์สออนไลน์ได้ที่</span>
+            <span><a href="${DOMAIN_ALLOW}" target="_blank">${DOMAIN_ALLOW}</span>
+          </p>
+
+          <p style="margin-top:10px;padding-top:10px;border-top:1px dashed gray;line-height:1.5rem"><i>
+            <span>ขอขอบคุณที่สมัครเรียนกับเรา</span><br>
+            <span>หวังเป็นอย่างยิ่งว่าคอร์สเรียนของเราจะเป็นประโยชน์ในงาน หรือในชีวิตประจำวันของท่าน</span><br>
+            <span style="color:green">ขอขอบพระคุณอย่างสูง ...🙏</span><br>
+          </i></p>
+        </div>`
+      }
+    return await transporter.sendMail(mailOptions)
+  }catch(err){ 
+    return err
+  }
+} 
+  
+*/
