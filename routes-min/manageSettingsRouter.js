@@ -12,7 +12,7 @@ import archiver from 'archiver' // สำหรับสร้างไฟล์
 import path from 'path'
 import fs from 'fs'  ;
 import mainAuth from "../middleware/mainAuth.js"   ;
-const myModule = await import(`../${mymaoduleFolder}/myModule.js`)  ;
+const myModule = await import(`../${mymoduleFolder}/myModule.js`)  ;
 const myDateTime = await import(`../${mymoduleFolder}/myDateTime.js`)  ;
 const myUsers = await import(`../${mymoduleFolder}/myUsers.js`)  ;
 const PATH_MAIN = '/manage/settings'  ;
