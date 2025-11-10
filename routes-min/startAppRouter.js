@@ -1,1 +1,372 @@
-function _0x5910(_0x1ed89c,_0x4ba613){const _0x2d2463=_0x25d9();return _0x5910=function(_0x57be3e,_0x59a773){_0x57be3e=_0x57be3e-0xfa;let _0x19872b=_0x2d2463[_0x57be3e];return _0x19872b;},_0x5910(_0x1ed89c,_0x4ba613);}const _0x29f91c=_0x5910;(function(_0x46c9e3,_0x3310d4){const _0x2cb827=_0x5910,_0x3ba93e=_0x46c9e3();while(!![]){try{const _0x2245b4=parseInt(_0x2cb827(0x1bb))/0x1+parseInt(_0x2cb827(0x1b7))/0x2+-parseInt(_0x2cb827(0x16b))/0x3*(-parseInt(_0x2cb827(0x1b9))/0x4)+parseInt(_0x2cb827(0x1a5))/0x5+-parseInt(_0x2cb827(0x208))/0x6*(-parseInt(_0x2cb827(0x179))/0x7)+parseInt(_0x2cb827(0x13f))/0x8+-parseInt(_0x2cb827(0x22e))/0x9;if(_0x2245b4===_0x3310d4)break;else _0x3ba93e['push'](_0x3ba93e['shift']());}catch(_0x4c582){_0x3ba93e['push'](_0x3ba93e['shift']());}}}(_0x25d9,0x5da24));const _0x18f42b=(function(){const _0x1f532f=_0x5910,_0x5d3958={'sgqWn':function(_0x2760e8,_0x44e192){return _0x2760e8+_0x44e192;},'qrbpY':_0x1f532f(0x15e),'MNfEv':_0x1f532f(0x1c4),'McBPF':_0x1f532f(0x19d),'TriwO':function(_0x65ae10,_0x34d89a){return _0x65ae10===_0x34d89a;},'bPHRU':_0x1f532f(0x199),'WqGHc':function(_0x25736f,_0x32a097){return _0x25736f===_0x32a097;},'ywOcD':_0x1f532f(0x1de),'HTFqi':'JcXwL','BJwaj':_0x1f532f(0x20b),'DKawZ':_0x1f532f(0xfe)};let _0x1a26f2=!![];return function(_0x1f8738,_0x1423a5){const _0x15d9d9=_0x1f532f,_0x5089f5={'XhkbT':function(_0x45ede2,_0x399b88){const _0x2c2ea7=_0x5910;return _0x5d3958[_0x2c2ea7(0x119)](_0x45ede2,_0x399b88);},'lgiKR':_0x5d3958['bPHRU'],'NLqXt':function(_0x8b3fea,_0x20eae6){const _0x3c4c0c=_0x5910;return _0x5d3958[_0x3c4c0c(0x19e)](_0x8b3fea,_0x20eae6);},'WYjOt':_0x5d3958[_0x15d9d9(0x146)],'DKSjo':_0x5d3958[_0x15d9d9(0x1a6)]};if(_0x5d3958[_0x15d9d9(0x19e)](_0x5d3958['BJwaj'],_0x5d3958[_0x15d9d9(0x206)]))(function(){return![];}['constructor'](_0x5d3958[_0x15d9d9(0x133)](_0x5d3958[_0x15d9d9(0x1c6)],_0x5d3958[_0x15d9d9(0x1dd)]))['apply'](_0x5d3958[_0x15d9d9(0x1ae)]));else{const _0x2fe73d=_0x1a26f2?function(){const _0x5a5789=_0x15d9d9;if(_0x5089f5[_0x5a5789(0x1b6)](_0x5089f5['lgiKR'],_0x5089f5['lgiKR'])){if(_0x1423a5){if(_0x5089f5[_0x5a5789(0x10f)](_0x5089f5['WYjOt'],_0x5089f5[_0x5a5789(0x1b4)]))return _0xbb8e3c;else{const _0x47b4af=_0x1423a5[_0x5a5789(0x103)](_0x1f8738,arguments);return _0x1423a5=null,_0x47b4af;}}}else{const _0x2f10b1=_0x1a4549[_0x5a5789(0x238)][_0x5a5789(0x187)][_0x5a5789(0x1ec)](_0x323ef5),_0x424113=_0x18a9e6[_0xdff13a],_0x1e4078=_0x2cb4e7[_0x424113]||_0x2f10b1;_0x2f10b1[_0x5a5789(0x1f4)]=_0x3c898d[_0x5a5789(0x1ec)](_0x9322e6),_0x2f10b1[_0x5a5789(0x17d)]=_0x1e4078[_0x5a5789(0x17d)][_0x5a5789(0x1ec)](_0x1e4078),_0x28eede[_0x424113]=_0x2f10b1;}}:function(){};return _0x1a26f2=![],_0x2fe73d;}};}());(function(){const _0x5cb665=_0x5910,_0x50ae29={'NUZMY':function(_0x3f21f3,_0x4af6b1){return _0x3f21f3===_0x4af6b1;},'ZpwGq':_0x5cb665(0x102),'THckS':_0x5cb665(0x11f),'fEudb':_0x5cb665(0x20f),'scgSW':function(_0x44015a,_0x38469a){return _0x44015a(_0x38469a);},'aGYWJ':_0x5cb665(0xfa),'StCbL':function(_0x21c0ff,_0x1410ac){return _0x21c0ff+_0x1410ac;},'qbLGi':_0x5cb665(0x143),'XFUZL':function(_0x321bb5,_0x315274){return _0x321bb5+_0x315274;},'HSNxb':_0x5cb665(0x218),'IyJfw':function(_0x1ac30c,_0x168857){return _0x1ac30c===_0x168857;},'CzyJA':_0x5cb665(0x14f),'WHDLf':_0x5cb665(0x17c),'KJhIk':function(_0xc3c26c,_0x596410){return _0xc3c26c(_0x596410);},'RQpJc':_0x5cb665(0x120),'wKmPj':function(_0x4a822c){return _0x4a822c();},'UoHAT':function(_0x2adf43,_0x582944,_0x253d0b){return _0x2adf43(_0x582944,_0x253d0b);}};_0x50ae29['UoHAT'](_0x18f42b,this,function(){const _0x2b7616=_0x5cb665;if(_0x50ae29[_0x2b7616(0x1cf)](_0x50ae29[_0x2b7616(0x14b)],_0x50ae29[_0x2b7616(0x14b)])){const _0x1af4b8=new RegExp(_0x50ae29[_0x2b7616(0x1d9)]),_0x4e4d69=new RegExp(_0x50ae29[_0x2b7616(0x212)],'i'),_0x3765cb=_0x50ae29[_0x2b7616(0x1e5)](_0x3e0291,_0x50ae29[_0x2b7616(0x1fb)]);if(!_0x1af4b8[_0x2b7616(0x1ed)](_0x50ae29[_0x2b7616(0x21c)](_0x3765cb,_0x50ae29[_0x2b7616(0x1d6)]))||!_0x4e4d69['test'](_0x50ae29[_0x2b7616(0x19f)](_0x3765cb,_0x50ae29['HSNxb']))){if(_0x50ae29[_0x2b7616(0x230)](_0x50ae29[_0x2b7616(0x22b)],_0x50ae29[_0x2b7616(0x1bc)]))return!![];else _0x50ae29[_0x2b7616(0x154)](_0x3765cb,'0');}else{if(_0x50ae29['IyJfw'](_0x50ae29[_0x2b7616(0x15a)],_0x50ae29[_0x2b7616(0x15a)]))_0x50ae29[_0x2b7616(0x11b)](_0x3e0291);else return![];}}else _0x20d057[_0x2b7616(0x214)]();})();}());const _0x59a773=(function(){const _0x153726=_0x5910,_0x3a580d={'avHEP':'function\x20*\x5c(\x20*\x5c)','ijlLn':_0x153726(0x20f),'JwPAJ':function(_0x1f3cea,_0x51e128){return _0x1f3cea(_0x51e128);},'AptEm':_0x153726(0xfa),'IRcdl':function(_0xef45de,_0x182baa){return _0xef45de+_0x182baa;},'KnenT':'chain','KifSC':'input','HErvB':function(_0xee951a,_0x2e4b9b){return _0xee951a(_0x2e4b9b);},'yuugr':function(_0xa7c2f8){return _0xa7c2f8();},'XzTnE':_0x153726(0x202),'ivcCy':_0x153726(0x175),'XiinF':function(_0x323322,_0xfe321f){return _0x323322===_0xfe321f;},'AuEiV':_0x153726(0x169),'FEjsc':_0x153726(0x23c),'xHxfa':function(_0x3637c5,_0x25ec59){return _0x3637c5!==_0x25ec59;},'zNtlL':'QYtGN','YKNyj':function(_0x487d55,_0xac29be){return _0x487d55===_0xac29be;},'byWBF':_0x153726(0x223),'neGUP':'PmApP'};let _0x35a421=!![];return function(_0x18d12b,_0x337a04){const _0xe7dad1=_0x153726,_0x18df74={'gfoFb':_0x3a580d[_0xe7dad1(0x118)],'dDNzK':_0x3a580d[_0xe7dad1(0x1f8)],'vfOmR':function(_0x57b893,_0x4748c5){const _0xf95fd3=_0xe7dad1;return _0x3a580d[_0xf95fd3(0x11a)](_0x57b893,_0x4748c5);},'BGZPm':_0x3a580d[_0xe7dad1(0x16c)],'ODibo':function(_0x3a5285,_0x5065f1){return _0x3a580d['IRcdl'](_0x3a5285,_0x5065f1);},'DFAih':_0x3a580d[_0xe7dad1(0x198)],'WUjHP':function(_0x2028ee,_0x11c474){const _0x2d1b01=_0xe7dad1;return _0x3a580d[_0x2d1b01(0x20c)](_0x2028ee,_0x11c474);},'yMWZm':_0x3a580d[_0xe7dad1(0x137)],'VlldW':function(_0x3f4f85,_0x3456e9){const _0x220569=_0xe7dad1;return _0x3a580d[_0x220569(0x190)](_0x3f4f85,_0x3456e9);},'EwJls':function(_0x38cc12){const _0x16316c=_0xe7dad1;return _0x3a580d[_0x16316c(0x115)](_0x38cc12);},'WfkOU':_0x3a580d[_0xe7dad1(0x1f7)],'BWZnW':_0x3a580d[_0xe7dad1(0x1fc)],'cgjvU':function(_0x1199b9,_0x12e195){const _0x137700=_0xe7dad1;return _0x3a580d[_0x137700(0x1d3)](_0x1199b9,_0x12e195);},'iqQEm':_0x3a580d[_0xe7dad1(0x145)],'xxxaq':_0x3a580d[_0xe7dad1(0x18e)],'yTRPC':function(_0x51ce4c,_0x18b563){const _0x58dc55=_0xe7dad1;return _0x3a580d[_0x58dc55(0x136)](_0x51ce4c,_0x18b563);},'lSOtN':_0x3a580d[_0xe7dad1(0x1f0)]};if(_0x3a580d[_0xe7dad1(0x1ab)](_0x3a580d[_0xe7dad1(0x130)],_0x3a580d[_0xe7dad1(0x1bf)])){const _0x435956=_0x3e638e[_0xe7dad1(0x103)](_0xf761,arguments);return _0x2f46fd=null,_0x435956;}else{const _0x2f9a93=_0x35a421?function(){const _0x560c54=_0xe7dad1,_0x12498d={'KpLMR':_0x18df74[_0x560c54(0x12b)],'xQopG':_0x18df74['BWZnW']};if(_0x18df74[_0x560c54(0x134)](_0x18df74['iqQEm'],_0x18df74[_0x560c54(0x11e)]))return function(_0x5364ed){}['constructor'](_0x12498d[_0x560c54(0x132)])[_0x560c54(0x103)](_0x12498d[_0x560c54(0x20a)]);else{if(_0x337a04){if(_0x18df74['yTRPC'](_0x18df74[_0x560c54(0xfc)],_0x18df74[_0x560c54(0xfc)])){const _0x3b0cf3=new _0x3c39c1(_0x18df74[_0x560c54(0x178)]),_0x30906f=new _0x585360(_0x18df74[_0x560c54(0x113)],'i'),_0x214427=_0x18df74[_0x560c54(0x181)](_0x3e0aa6,_0x18df74[_0x560c54(0x109)]);!_0x3b0cf3[_0x560c54(0x1ed)](_0x18df74[_0x560c54(0x18c)](_0x214427,_0x18df74[_0x560c54(0x164)]))||!_0x30906f['test'](_0x18df74[_0x560c54(0x19b)](_0x214427,_0x18df74[_0x560c54(0x10a)]))?_0x18df74[_0x560c54(0x10e)](_0x214427,'0'):_0x18df74[_0x560c54(0x16e)](_0x512d6a);}else{const _0x40cc3c=_0x337a04[_0x560c54(0x103)](_0x18d12b,arguments);return _0x337a04=null,_0x40cc3c;}}}}:function(){};return _0x35a421=![],_0x2f9a93;}};}()),_0x57be3e=_0x59a773(this,function(){const _0x455ad9=_0x5910,_0x37510c={'SQXMR':function(_0x2d348c,_0x375ea7){return _0x2d348c(_0x375ea7);},'ljvCz':_0x455ad9(0x11f),'EUUDN':'\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','wGBpw':function(_0x49120b,_0x373b36){return _0x49120b(_0x373b36);},'OLSmK':_0x455ad9(0xfa),'irLFC':function(_0x182daa,_0x4d9612){return _0x182daa+_0x4d9612;},'Jscfu':_0x455ad9(0x143),'ggqEv':_0x455ad9(0x218),'RGCoO':function(_0x226f24){return _0x226f24();},'xZnOy':function(_0x3c3762,_0x5f33ca,_0x317558){return _0x3c3762(_0x5f33ca,_0x317558);},'JLVlg':function(_0x799650,_0x8100dd){return _0x799650!==_0x8100dd;},'CwNgg':_0x455ad9(0x1d5),'hAmtR':_0x455ad9(0x170),'DUyAX':function(_0x520ee5,_0x5c63e9){return _0x520ee5+_0x5c63e9;},'lLLNZ':_0x455ad9(0x228),'nEHRw':_0x455ad9(0x1d7),'mTfVb':function(_0x49ddcc){return _0x49ddcc();},'KFmHb':function(_0x306a47,_0x553e8e){return _0x306a47===_0x553e8e;},'DoJnf':_0x455ad9(0x1b3),'Uylwr':_0x455ad9(0x215),'CDsZe':_0x455ad9(0x1a7),'rMYeG':'warn','isVil':_0x455ad9(0x1dc),'kJBXH':_0x455ad9(0x13b),'tEXQB':_0x455ad9(0x1cc),'kmVHN':_0x455ad9(0x152),'vBiIE':_0x455ad9(0x1aa),'CJdQM':function(_0x44a09c,_0x43ca8e){return _0x44a09c<_0x43ca8e;},'HkLdK':'CQXnS','pgKRW':'INYQI'};let _0x3c2e6e;try{if(_0x37510c['JLVlg'](_0x37510c[_0x455ad9(0x1ca)],_0x37510c[_0x455ad9(0x1fd)])){const _0x5a63e3=_0x37510c[_0x455ad9(0x1e8)](Function,_0x37510c[_0x455ad9(0x122)](_0x37510c[_0x455ad9(0x151)](_0x37510c[_0x455ad9(0x1b5)],_0x37510c[_0x455ad9(0x195)]),');'));_0x3c2e6e=_0x37510c['mTfVb'](_0x5a63e3);}else{if(_0x272e1d)return _0x4cf342;else _0x37510c[_0x455ad9(0x1e8)](_0x2c5a11,0x0);}}catch(_0x921238){if(_0x37510c['KFmHb'](_0x37510c['DoJnf'],_0x37510c[_0x455ad9(0x108)])){const _0xd5d985={'gMTUa':_0x37510c[_0x455ad9(0x10d)],'nhYFT':_0x37510c[_0x455ad9(0x1c9)],'kKxZn':function(_0x52418f,_0x12e612){return _0x37510c['wGBpw'](_0x52418f,_0x12e612);},'fzcHY':_0x37510c[_0x455ad9(0x150)],'ruEJv':function(_0x683dcd,_0x38895c){const _0x15ac2a=_0x455ad9;return _0x37510c[_0x15ac2a(0x151)](_0x683dcd,_0x38895c);},'JuysC':_0x37510c[_0x455ad9(0x168)],'SlAMh':_0x37510c['ggqEv'],'caFNi':function(_0x22eae7){return _0x37510c['RGCoO'](_0x22eae7);}};_0x37510c[_0x455ad9(0x153)](_0xbf5950,this,function(){const _0x338aef=_0x455ad9,_0x5cbe0a=new _0x508f59(_0xd5d985['gMTUa']),_0x5f1f6d=new _0x531cb5(_0xd5d985[_0x338aef(0x1ac)],'i'),_0x3014ce=_0xd5d985[_0x338aef(0x161)](_0xc9d73d,_0xd5d985['fzcHY']);!_0x5cbe0a['test'](_0xd5d985['ruEJv'](_0x3014ce,_0xd5d985[_0x338aef(0x220)]))||!_0x5f1f6d['test'](_0xd5d985['ruEJv'](_0x3014ce,_0xd5d985[_0x338aef(0x1e6)]))?_0xd5d985[_0x338aef(0x161)](_0x3014ce,'0'):_0xd5d985[_0x338aef(0x11d)](_0xcd370e);})();}else _0x3c2e6e=window;}const _0x525eeb=_0x3c2e6e['console']=_0x3c2e6e['console']||{},_0x49f8a6=[_0x37510c[_0x455ad9(0x1a4)],_0x37510c[_0x455ad9(0x12e)],_0x37510c[_0x455ad9(0x131)],_0x37510c[_0x455ad9(0x1be)],_0x37510c[_0x455ad9(0x21b)],_0x37510c[_0x455ad9(0x23a)],_0x37510c[_0x455ad9(0x1f6)]];for(let _0x2acba6=0x0;_0x37510c[_0x455ad9(0x204)](_0x2acba6,_0x49f8a6[_0x455ad9(0x221)]);_0x2acba6++){if(_0x37510c[_0x455ad9(0x14e)](_0x37510c[_0x455ad9(0x1e0)],_0x37510c['pgKRW']))_0x33fac4[_0x455ad9(0x1a7)](_0x1a9c5f[_0x455ad9(0x1c7)]),_0x4a61b1[_0x455ad9(0x12f)](0x194)['sendFile'](_0x331f26);else{const _0xcba09d=_0x59a773[_0x455ad9(0x238)][_0x455ad9(0x187)]['bind'](_0x59a773),_0x211b9e=_0x49f8a6[_0x2acba6],_0xe86b32=_0x525eeb[_0x211b9e]||_0xcba09d;_0xcba09d['__proto__']=_0x59a773[_0x455ad9(0x1ec)](_0x59a773),_0xcba09d[_0x455ad9(0x17d)]=_0xe86b32[_0x455ad9(0x17d)]['bind'](_0xe86b32),_0x525eeb[_0x211b9e]=_0xcba09d;}}});_0x57be3e();import _0x128b62 from'express';import{MongoClient as _0x331c03}from'mongodb';import _0x51bdb6 from'bcrypt';const f=_0x128b62[_0x29f91c(0x200)](),A=await import(_0x29f91c(0x17a)+mymoduleFolder+_0x29f91c(0x19c)),g='/',r=g+_0x29f91c(0x196),_=g+_0x29f91c(0x1e3),w=g+_0x29f91c(0x224),I=g+_0x29f91c(0x107),T=0x5a0*0x3c,D=process['env'][_0x29f91c(0x216)]||_0x29f91c(0x1e1);f['get'](_,async(_0x374242,_0xe16064)=>{const _0x5b2576=_0x29f91c,_0x418571={'PSowZ':function(_0x52fe9f,_0x3b64f4){return _0x52fe9f(_0x3b64f4);},'nnGps':function(_0x4e42c2,_0x176749){return _0x4e42c2+_0x176749;},'QAFXh':_0x5b2576(0x228),'QXzVT':_0x5b2576(0x1d7),'zlwEZ':function(_0x35e181){return _0x35e181();},'wIPQl':function(_0x294681,_0x3663d7){return _0x294681!=_0x3663d7;},'jREWx':_0x5b2576(0x166),'mFniZ':_0x5b2576(0x193),'mfhcw':'Key\x20ไม่ถูกต้อง','sZMZs':_0x5b2576(0x1c3),'EvTwh':_0x5b2576(0x163),'sXuwi':_0x5b2576(0x16d),'RIvru':_0x5b2576(0x14d),'nrrur':'Khunnadiloksawet','QpZhD':_0x5b2576(0x15c),'GqQxN':function(_0x2e3e8e,_0x391161){return _0x2e3e8e!==_0x391161;},'YrmWB':_0x5b2576(0x156),'kkmqN':function(_0x24ef80,_0xf01a0f){return _0x24ef80===_0xf01a0f;},'poEee':_0x5b2576(0x104),'ULPRK':function(_0x3e1ccd,_0x41fc69){return _0x3e1ccd==_0x41fc69;},'XyXaY':function(_0x1e91b2,_0x1a4251){return _0x1e91b2>_0x1a4251;},'WZRDF':'green','DbSBg':function(_0x5e41cc,_0x40d0f0){return _0x5e41cc!==_0x40d0f0;},'Yerlq':'yQoOh','dQjir':'aRfgS','GizJD':_0x5b2576(0x18a),'mGRkW':_0x5b2576(0x121)},{key:_0x5dacd4}=_0x374242['query'];if(_0x418571[_0x5b2576(0x165)](_0x5dacd4,process['env'][_0x5b2576(0x123)]))return _0x374242[_0x5b2576(0x11c)](_0x418571[_0x5b2576(0x237)],{'class':_0x418571[_0x5b2576(0x10b)],'text':_0x418571[_0x5b2576(0x1f3)]}),_0xe16064[_0x5b2576(0x192)](r);var _0x1f92e0=[{'userId':0x3e8,'userEmail':_0x418571['sZMZs'],'username':_0x418571[_0x5b2576(0x139)],'userPrefix':_0x418571[_0x5b2576(0x1e2)],'userFirstname':_0x418571[_0x5b2576(0x229)],'userLastname':_0x418571['nrrur'],'userAuthority':'O','userIsActive':_0x418571[_0x5b2576(0x183)],'userPassword':await _0x51bdb6[_0x5b2576(0x14a)](D,global[_0x5b2576(0x126)]),'branchId':0x64,'dateTimeCanDelete':A[_0x5b2576(0x147)](T)}];const _0xa96d83=new _0x331c03(global['dbUrl']);try{if(_0x418571[_0x5b2576(0x1c2)](_0x418571['YrmWB'],_0x418571['YrmWB']))_0x36813d[_0x5b2576(0x1a7)](_0x508dd4[_0x5b2576(0x1c7)]),_0x248398['status'](0x194)[_0x5b2576(0x203)](_0x3c7cd0);else{const _0x495b3d=_0xa96d83['db'](global[_0x5b2576(0x13c)])[_0x5b2576(0x226)](global['dbColl_users']);let _0xff0406=[];for(const _0x2cc417 of _0x1f92e0){if(_0x418571[_0x5b2576(0x173)](_0x418571[_0x5b2576(0x1a3)],_0x418571['poEee'])){var _0xd86d22=await _0x495b3d[_0x5b2576(0x13d)]({'$or':[{'userId':_0x2cc417[_0x5b2576(0x1bd)]},{'username':_0x2cc417[_0x5b2576(0x1f1)]},{'userEmail':_0x2cc417[_0x5b2576(0x1f5)]}]});_0xd86d22||_0xff0406[_0x5b2576(0x236)](_0x2cc417);}else HdDHmC[_0x5b2576(0x148)](_0x3151bd,0x0);}if(_0x418571[_0x5b2576(0xfd)](_0xff0406['length'],0x0))return _0x374242[_0x5b2576(0x11c)](_0x418571['jREWx'],{'class':_0x418571[_0x5b2576(0x10b)],'text':'ยูสเซอร์ทั้งหมด\x20'+_0x1f92e0['map'](_0x43737a=>_0x43737a[_0x5b2576(0x1bd)])[_0x5b2576(0x22f)](',\x20')+'\x20มีอยู่แล้ว'}),_0xe16064['redirect'](r);const _0x1c8eaf=await _0x495b3d[_0x5b2576(0x1ad)](_0xff0406);_0x1c8eaf[_0x5b2576(0x125)]&&_0x418571[_0x5b2576(0x22c)](_0x1c8eaf['insertedCount'],0x0)?(_0x374242['flash'](_0x418571[_0x5b2576(0x237)],{'class':_0x418571[_0x5b2576(0x235)],'text':_0x5b2576(0x21e)+_0xff0406[_0x5b2576(0x12d)](_0x1a8996=>_0x1a8996['userId'])[_0x5b2576(0x22f)](',\x20')+'\x20สำเร็จ'}),_0xe16064['redirect'](r)):(_0x374242[_0x5b2576(0x11c)](_0x418571['jREWx'],{'class':_0x418571[_0x5b2576(0x10b)],'text':_0x5b2576(0x21e)+_0xff0406[_0x5b2576(0x12d)](_0xfa8ea=>_0xfa8ea['userId'])[_0x5b2576(0x22f)](',\x20')+_0x5b2576(0x127)}),_0xe16064[_0x5b2576(0x192)](r));}}catch(_0x10cc5b){if(_0x418571['DbSBg'](_0x418571['Yerlq'],_0x418571['dQjir']))console[_0x5b2576(0x1a7)](_0x10cc5b[_0x5b2576(0x1c7)]),_0xe16064['status'](0x194)[_0x5b2576(0x203)](file404);else{const _0x57c07a=_0x482ccd?function(){const _0x48a3f0=_0x5b2576;if(_0x1ce245){const _0x532684=_0x3e4cc5[_0x48a3f0(0x103)](_0x4517d1,arguments);return _0x4b9493=null,_0x532684;}}:function(){};return _0x2c4447=![],_0x57c07a;}}finally{if(_0x418571[_0x5b2576(0x173)](_0x418571[_0x5b2576(0x1e9)],_0x418571[_0x5b2576(0x21f)])){const _0x47f648=HdDHmC[_0x5b2576(0x148)](_0x313fab,HdDHmC[_0x5b2576(0x100)](HdDHmC[_0x5b2576(0x100)](HdDHmC['QAFXh'],HdDHmC[_0x5b2576(0xfb)]),');'));_0x3f5674=HdDHmC['zlwEZ'](_0x47f648);}else _0xa96d83[_0x5b2576(0x214)]();}}),f[_0x29f91c(0x210)](I,async(_0x133422,_0xeee5e2)=>{const _0x2c3825=_0x29f91c,_0x13d2e6={'DEpfm':function(_0x3e7876,_0x9e6471){return _0x3e7876(_0x9e6471);},'TfYCV':function(_0x3eded6,_0x367a0f){return _0x3eded6+_0x367a0f;},'AHqcp':function(_0x3dbd77,_0x341bf5){return _0x3dbd77+_0x341bf5;},'PUKft':_0x2c3825(0x228),'mVUzw':'{}.constructor(\x22return\x20this\x22)(\x20)','MREXs':function(_0x367ab3){return _0x367ab3();},'YKjSU':_0x2c3825(0x1a7),'ymJsI':_0x2c3825(0x1ef),'nDFNL':_0x2c3825(0x1dc),'orHbW':_0x2c3825(0x13b),'rdDbR':_0x2c3825(0x1cc),'UxHxF':_0x2c3825(0x152),'obCDY':_0x2c3825(0x1aa),'RVjYg':function(_0x892b47,_0x255f3c){return _0x892b47<_0x255f3c;},'YlvxM':function(_0x45178b,_0x341364){return _0x45178b!=_0x341364;},'LsrXi':_0x2c3825(0x166),'GzlOp':_0x2c3825(0x193),'dewgg':'Key\x20ไม่ถูกต้อง','rICkp':_0x2c3825(0x1db),'jLZVJ':_0x2c3825(0xff),'bwnhv':_0x2c3825(0x1b0),'hSNrC':_0x2c3825(0x17e),'IVAdN':_0x2c3825(0x15c),'oeKnc':_0x2c3825(0x1e1),'hpdsM':_0x2c3825(0x197),'KbOkV':_0x2c3825(0x1d0),'gzNFA':_0x2c3825(0x1ee),'nVqzM':_0x2c3825(0x1d4),'kZPBF':_0x2c3825(0x12c),'pYPXF':'test-u','ZCFnN':_0x2c3825(0x117),'rkVNO':_0x2c3825(0x160),'TunDD':function(_0x721aa7,_0x4f0356){return _0x721aa7!==_0x4f0356;},'oGsPZ':_0x2c3825(0x1af),'dglem':function(_0x33bedb,_0x2f0b55){return _0x33bedb===_0x2f0b55;},'yFkou':'QhSJW','JkfUL':_0x2c3825(0x13a),'BlFxk':function(_0x36c97f,_0x1d400e){return _0x36c97f==_0x1d400e;},'QfcTw':function(_0x14fc44,_0x3dcbca){return _0x14fc44>_0x3dcbca;},'UIkNF':'green','GNacP':function(_0x23bdad,_0x584dd3){return _0x23bdad===_0x584dd3;},'FCEte':_0x2c3825(0x1d8),'ijEFV':_0x2c3825(0x189),'IQtTU':'XmTXP','mcCkZ':_0x2c3825(0x15d)};let {key:_0x2e8c7b}=_0x133422[_0x2c3825(0x159)];if(_0x13d2e6[_0x2c3825(0x1b8)](_0x2e8c7b,process[_0x2c3825(0x1c5)][_0x2c3825(0x123)]))return _0x133422[_0x2c3825(0x11c)](_0x13d2e6['LsrXi'],{'class':_0x13d2e6[_0x2c3825(0x106)],'text':_0x13d2e6[_0x2c3825(0x1d2)]}),_0xeee5e2[_0x2c3825(0x192)](r);var _0x1d0c76=[{'userId':0x384,'userEmail':_0x13d2e6[_0x2c3825(0x157)],'username':_0x13d2e6[_0x2c3825(0x129)],'userPrefix':'Mr','userFirstname':_0x13d2e6[_0x2c3825(0x222)],'userLastname':_0x13d2e6[_0x2c3825(0x18d)],'userAuthority':'S','userIsActive':_0x13d2e6[_0x2c3825(0x182)],'userPassword':await _0x51bdb6['hash'](_0x13d2e6['oeKnc'],global[_0x2c3825(0x126)])},{'userId':0x385,'userEmail':_0x13d2e6['hpdsM'],'username':_0x13d2e6['KbOkV'],'userPrefix':'Mr','userFirstname':_0x13d2e6[_0x2c3825(0x1ea)],'userLastname':_0x13d2e6[_0x2c3825(0x142)],'userAuthority':'A','userIsActive':_0x13d2e6[_0x2c3825(0x182)],'userPassword':await _0x51bdb6[_0x2c3825(0x14a)](_0x13d2e6[_0x2c3825(0x219)],global['BCRYPT_NUMBER'])},{'userId':0x386,'userEmail':_0x13d2e6['kZPBF'],'username':_0x13d2e6[_0x2c3825(0x1c1)],'userPrefix':'Mr','userFirstname':_0x13d2e6[_0x2c3825(0x21d)],'userLastname':_0x13d2e6[_0x2c3825(0x12a)],'userAuthority':'U','userIsActive':_0x13d2e6[_0x2c3825(0x182)],'userPassword':await _0x51bdb6[_0x2c3825(0x14a)](_0x13d2e6['oeKnc'],global['BCRYPT_NUMBER'])}];const _0x39da1e=new _0x331c03(dbUrl);try{if(_0x13d2e6['TunDD'](_0x13d2e6[_0x2c3825(0x174)],_0x13d2e6[_0x2c3825(0x174)]))_0x191b92=_0x47a164;else{const _0x4131a2=_0x39da1e['db'](global[_0x2c3825(0x13c)])[_0x2c3825(0x226)](global[_0x2c3825(0x188)]);let _0x5d6641=[];for(const _0x51e778 of _0x1d0c76){if(_0x13d2e6[_0x2c3825(0x1b1)](_0x13d2e6[_0x2c3825(0x1a0)],_0x13d2e6[_0x2c3825(0x13e)]))_0xfc8f51[_0x2c3825(0x214)]();else{var _0x278393=await _0x4131a2[_0x2c3825(0x13d)]({'$or':[{'userId':_0x51e778[_0x2c3825(0x1bd)]},{'username':_0x51e778['username']},{'userEmail':_0x51e778[_0x2c3825(0x1f5)]}]});_0x278393||_0x5d6641[_0x2c3825(0x236)](_0x51e778);}}if(_0x13d2e6['BlFxk'](_0x5d6641[_0x2c3825(0x221)],0x0))return _0x133422['flash'](_0x13d2e6[_0x2c3825(0x211)],{'class':_0x13d2e6[_0x2c3825(0x106)],'text':_0x2c3825(0x207)+_0x1d0c76[_0x2c3825(0x12d)](_0x37eab5=>_0x37eab5[_0x2c3825(0x1bd)])['join'](',\x20')+_0x2c3825(0x17b)}),_0xeee5e2[_0x2c3825(0x192)](r);const _0x1f64b8=await _0x4131a2[_0x2c3825(0x1ad)](_0x5d6641);_0x1f64b8[_0x2c3825(0x125)]&&_0x13d2e6[_0x2c3825(0x149)](_0x1f64b8[_0x2c3825(0x1c0)],0x0)?(_0x133422[_0x2c3825(0x11c)](_0x13d2e6[_0x2c3825(0x211)],{'class':_0x13d2e6[_0x2c3825(0x231)],'text':_0x2c3825(0x21e)+_0x5d6641[_0x2c3825(0x12d)](_0x15405b=>_0x15405b[_0x2c3825(0x1bd)])[_0x2c3825(0x22f)](',\x20')+'\x20สำเร็จ'}),_0xeee5e2['redirect'](r)):(_0x133422[_0x2c3825(0x11c)](_0x13d2e6[_0x2c3825(0x211)],{'class':_0x13d2e6[_0x2c3825(0x106)],'text':_0x2c3825(0x21e)+_0x5d6641[_0x2c3825(0x12d)](_0x4dbf18=>_0x4dbf18['userId'])['join'](',\x20')+_0x2c3825(0x127)}),_0xeee5e2['redirect'](r));}}catch(_0x8dfece){if(_0x13d2e6[_0x2c3825(0x239)](_0x13d2e6[_0x2c3825(0x15b)],_0x13d2e6[_0x2c3825(0x232)])){let _0x9090d;try{const _0x4ba3ab=vpmbIm['DEpfm'](_0x1c91c2,vpmbIm[_0x2c3825(0x128)](vpmbIm['AHqcp'](vpmbIm[_0x2c3825(0x185)],vpmbIm['mVUzw']),');'));_0x9090d=vpmbIm[_0x2c3825(0x184)](_0x4ba3ab);}catch(_0x4280b3){_0x9090d=_0x2ba6bf;}const _0x2ae120=_0x9090d[_0x2c3825(0x1e4)]=_0x9090d[_0x2c3825(0x1e4)]||{},_0x427460=[vpmbIm['YKjSU'],vpmbIm['ymJsI'],vpmbIm['nDFNL'],vpmbIm[_0x2c3825(0x1cd)],vpmbIm['rdDbR'],vpmbIm[_0x2c3825(0x111)],vpmbIm[_0x2c3825(0x1a9)]];for(let _0x581748=0x0;vpmbIm[_0x2c3825(0x135)](_0x581748,_0x427460[_0x2c3825(0x221)]);_0x581748++){const _0x1f09d2=_0x1b1c2b['constructor']['prototype'][_0x2c3825(0x1ec)](_0x5f4924),_0x3b2ab5=_0x427460[_0x581748],_0xcb9402=_0x2ae120[_0x3b2ab5]||_0x1f09d2;_0x1f09d2[_0x2c3825(0x1f4)]=_0x29d3c1[_0x2c3825(0x1ec)](_0x219a63),_0x1f09d2[_0x2c3825(0x17d)]=_0xcb9402['toString'][_0x2c3825(0x1ec)](_0xcb9402),_0x2ae120[_0x3b2ab5]=_0x1f09d2;}}else console[_0x2c3825(0x1a7)](_0x8dfece[_0x2c3825(0x1c7)]),_0xeee5e2[_0x2c3825(0x12f)](0x194)[_0x2c3825(0x203)](file404);}finally{_0x13d2e6['TunDD'](_0x13d2e6[_0x2c3825(0x18f)],_0x13d2e6[_0x2c3825(0x191)])?_0x39da1e[_0x2c3825(0x214)]():vpmbIm[_0x2c3825(0x184)](_0x1ecbc1);}}),f[_0x29f91c(0x210)](w,async(_0x55de93,_0x1184e4)=>{const _0x1ad14c=_0x29f91c,_0xa8096b={'qhxpW':function(_0x567f22,_0x2bd2af){return _0x567f22!=_0x2bd2af;},'pKVzy':_0x1ad14c(0x166),'gvOzV':_0x1ad14c(0x193),'nakAE':'Key\x20ไม่ถูกต้อง','WMVJi':function(_0x33fb6b,_0x17957f){return _0x33fb6b*_0x17957f;},'sReCy':function(_0x3f0328,_0x2fb8c0){return _0x3f0328*_0x2fb8c0;},'DAAky':_0x1ad14c(0x15c),'zbPpO':'มานากรูมมิ่ง','Cjkag':'มานากรูมมิ่ง\x20อ.หนองไผ่\x20จ.เพชรบูรณ์','VWUrP':_0x1ad14c(0x233),'XuZMS':_0x1ad14c(0x155),'eisYu':function(_0x14c391,_0x6ebaa0){return _0x14c391!==_0x6ebaa0;},'oaJQW':_0x1ad14c(0x213),'jFNND':function(_0x516eac,_0x307c7e){return _0x516eac===_0x307c7e;},'KDoXw':_0x1ad14c(0x1da),'jqntF':_0x1ad14c(0x1c8),'vvMGM':function(_0x4732b7,_0x33cd34){return _0x4732b7==_0x33cd34;},'vzMkd':function(_0x28eb70,_0x6ee60d){return _0x28eb70>_0x6ee60d;},'chXNP':_0x1ad14c(0x1d1),'agNjX':'tUqTA','LAoMm':'RDoVj','sjONE':_0x1ad14c(0x1e7),'vAiKx':_0x1ad14c(0x18b)};let {key:_0x52da38}=_0x55de93[_0x1ad14c(0x159)];if(_0xa8096b[_0x1ad14c(0x138)](_0x52da38,process[_0x1ad14c(0x1c5)]['ADD_USER_KEY']))return _0x55de93[_0x1ad14c(0x11c)](_0xa8096b[_0x1ad14c(0x20e)],{'class':_0xa8096b['gvOzV'],'text':_0xa8096b[_0x1ad14c(0x105)]}),_0x1184e4[_0x1ad14c(0x192)](r);const _0x574bd0=_0xa8096b['WMVJi'](_0xa8096b['sReCy'](0x5a0,0x3c),0x3e8);var _0x5e2a43=[{'branchId':0x64,'branchStatus':_0xa8096b['DAAky'],'branchName':_0xa8096b[_0x1ad14c(0x144)],'branchDetail':_0xa8096b[_0x1ad14c(0x116)],'dateTimeCanDelete':A['getDateTime'](_0x574bd0)},{'branchId':0x65,'branchStatus':_0xa8096b['DAAky'],'branchName':_0xa8096b['VWUrP'],'branchDetail':_0xa8096b[_0x1ad14c(0x124)],'dateTimeCanDelete':A[_0x1ad14c(0x147)](_0x574bd0)}];const _0xec41d3=new _0x331c03(dbUrl);try{if(_0xa8096b['eisYu'](_0xa8096b[_0x1ad14c(0x1ba)],_0xa8096b[_0x1ad14c(0x1ba)])){const _0x4d3500=_0x20e7e3[_0x1ad14c(0x103)](_0x4b76ad,arguments);return _0x3e1264=null,_0x4d3500;}else{const _0x3b0218=_0xec41d3['db'](dbName)[_0x1ad14c(0x226)](dbColl_userBranches);let _0x459c99=[];for(const _0x1d264f of _0x5e2a43){if(_0xa8096b[_0x1ad14c(0x19a)](_0xa8096b[_0x1ad14c(0x22d)],_0xa8096b[_0x1ad14c(0x140)])){const _0xf0d9a8=_0x415b68?function(){const _0x311437=_0x1ad14c;if(_0x31d4fa){const _0x24deae=_0x387866[_0x311437(0x103)](_0x16eca0,arguments);return _0x31d571=null,_0x24deae;}}:function(){};return _0x56cd21=![],_0xf0d9a8;}else{var _0x4e3b02=await _0x3b0218[_0x1ad14c(0x13d)]({'$or':[{'branchId':_0x1d264f[_0x1ad14c(0x194)]}]});_0x4e3b02||_0x459c99['push'](_0x1d264f);}}if(_0xa8096b['vvMGM'](_0x459c99[_0x1ad14c(0x221)],0x0))return _0x55de93[_0x1ad14c(0x11c)](_0xa8096b[_0x1ad14c(0x20e)],{'class':_0xa8096b['gvOzV'],'text':_0x1ad14c(0x167)+_0x5e2a43['map'](_0x1d0263=>_0x1d0263['branchId'])[_0x1ad14c(0x22f)](',\x20')+'\x20มีอยู่แล้ว'}),_0x1184e4[_0x1ad14c(0x192)](r);const _0x3e3c28=await _0x3b0218[_0x1ad14c(0x1ad)](_0x459c99);_0x3e3c28[_0x1ad14c(0x125)]&&_0xa8096b[_0x1ad14c(0x16a)](_0x3e3c28[_0x1ad14c(0x1c0)],0x0)?(_0x55de93[_0x1ad14c(0x11c)](_0xa8096b[_0x1ad14c(0x20e)],{'class':_0xa8096b[_0x1ad14c(0x205)],'text':_0x1ad14c(0x186)+_0x459c99[_0x1ad14c(0x12d)](_0x3f6baf=>_0x3f6baf[_0x1ad14c(0x194)])[_0x1ad14c(0x22f)](',\x20')+_0x1ad14c(0x112)}),_0x1184e4['redirect'](r)):(_0x55de93['flash'](_0xa8096b['pKVzy'],{'class':_0xa8096b[_0x1ad14c(0x141)],'text':_0x1ad14c(0x186)+_0x459c99[_0x1ad14c(0x12d)](_0x31fcc5=>_0x31fcc5['branchId'])['join'](',\x20')+_0x1ad14c(0x127)}),_0x1184e4['redirect'](r));}}catch(_0x2050e3){_0xa8096b['eisYu'](_0xa8096b[_0x1ad14c(0x101)],_0xa8096b[_0x1ad14c(0x14c)])?(console['log'](_0x2050e3['message']),_0x1184e4[_0x1ad14c(0x12f)](0x194)[_0x1ad14c(0x203)](file404)):(_0x515ef8['log'](_0x1b813a[_0x1ad14c(0x1c7)]),_0x485ace[_0x1ad14c(0x12f)](0x194)[_0x1ad14c(0x203)](_0x3d11e0));}finally{if(_0xa8096b[_0x1ad14c(0x22a)](_0xa8096b[_0x1ad14c(0x176)],_0xa8096b[_0x1ad14c(0x15f)]))_0xec41d3['close']();else{if(_0x1085b6){const _0x14ffd7=_0x3972af[_0x1ad14c(0x103)](_0x38daa3,arguments);return _0x12415e=null,_0x14ffd7;}}}});export default f;function _0x3e0291(_0x2b97d3){const _0x1b1c3b=_0x29f91c,_0x4aee81={'wslkx':function(_0xf6c7da,_0x104436){return _0xf6c7da+_0x104436;},'QHxkn':_0x1b1c3b(0x15e),'QuaFx':_0x1b1c3b(0x1c4),'yAEVq':_0x1b1c3b(0x10c),'NjXHo':function(_0x2989dd,_0x4f8ca0){return _0x2989dd!==_0x4f8ca0;},'LOhHK':_0x1b1c3b(0x1df),'LMbvX':_0x1b1c3b(0x172),'etQFW':function(_0x5fd4ae,_0x4c1716){return _0x5fd4ae(_0x4c1716);},'EDuBi':_0x1b1c3b(0x1ff),'wbDsp':'AhbCT','jMyQP':function(_0x4878e6,_0x4e9f12){return _0x4878e6===_0x4e9f12;},'UboQp':_0x1b1c3b(0x110),'JJZEh':'pHJrl','ycjsq':_0x1b1c3b(0x162),'UsPyh':'while\x20(true)\x20{}','OWNBG':_0x1b1c3b(0x175),'JvOBI':function(_0x6a62bb,_0x459174){return _0x6a62bb+_0x459174;},'RtXDp':function(_0x13441a,_0xa87fa8){return _0x13441a/_0xa87fa8;},'gwBXT':_0x1b1c3b(0x221),'YkUoT':function(_0x3d2017,_0xa8887){return _0x3d2017%_0xa8887;},'OmjwN':'ZXQNP','UlPss':function(_0x2b4917,_0x782a68){return _0x2b4917+_0x782a68;},'YhByl':'stateObject'};function _0x585a13(_0x7f7402){const _0x3a4df1=_0x1b1c3b,_0x4a52eb={'yAOVN':function(_0x1f656c,_0x990210){const _0xf4d5a6=_0x5910;return _0x4aee81[_0xf4d5a6(0x1ce)](_0x1f656c,_0x990210);},'RqEOW':_0x4aee81['QHxkn'],'uTVOk':_0x4aee81[_0x3a4df1(0x209)],'GEPfV':_0x4aee81[_0x3a4df1(0x1f9)],'qSOLr':function(_0x5347f1,_0x35823e){const _0x39917c=_0x3a4df1;return _0x4aee81[_0x39917c(0x17f)](_0x5347f1,_0x35823e);},'KXLbj':_0x4aee81[_0x3a4df1(0x1fe)],'hLMkq':_0x4aee81[_0x3a4df1(0x227)],'RwQZH':function(_0x45bb6e,_0x43d8f8){return _0x4aee81['etQFW'](_0x45bb6e,_0x43d8f8);},'zVHoJ':_0x4aee81[_0x3a4df1(0x20d)],'nMSlu':_0x4aee81[_0x3a4df1(0x114)]};if(_0x4aee81['jMyQP'](typeof _0x7f7402,_0x4aee81['UboQp'])){if(_0x4aee81[_0x3a4df1(0x21a)](_0x4aee81[_0x3a4df1(0x1cb)],_0x4aee81[_0x3a4df1(0x1a1)]))(function(){return!![];}[_0x3a4df1(0x238)](_0x4a52eb[_0x3a4df1(0x158)](_0x4a52eb['RqEOW'],_0x4a52eb[_0x3a4df1(0x1f2)]))['call'](_0x4a52eb['GEPfV']));else return function(_0x5e7af3){}[_0x3a4df1(0x238)](_0x4aee81[_0x3a4df1(0x217)])[_0x3a4df1(0x103)](_0x4aee81[_0x3a4df1(0x225)]);}else{if(_0x4aee81[_0x3a4df1(0x17f)](_0x4aee81[_0x3a4df1(0x23b)]('',_0x4aee81['RtXDp'](_0x7f7402,_0x7f7402))[_0x4aee81[_0x3a4df1(0x1fa)]],0x1)||_0x4aee81[_0x3a4df1(0x21a)](_0x4aee81[_0x3a4df1(0x180)](_0x7f7402,0x14),0x0)){if(_0x4aee81['jMyQP'](_0x4aee81[_0x3a4df1(0x177)],_0x4aee81['OmjwN']))(function(){const _0xdb5129=_0x3a4df1;if(_0x4a52eb['qSOLr'](_0x4a52eb['KXLbj'],_0x4a52eb[_0xdb5129(0x1a8)]))return!![];else _0x3fb081['close']();}['constructor'](_0x4aee81[_0x3a4df1(0x234)](_0x4aee81['QHxkn'],_0x4aee81[_0x3a4df1(0x209)]))['call'](_0x4aee81[_0x3a4df1(0x1f9)]));else{if(_0x4e7573){const _0x27c242=_0x31da5c['apply'](_0x176f3a,arguments);return _0x4911ca=null,_0x27c242;}}}else(function(){const _0xfe16f3=_0x3a4df1;if(_0x4a52eb[_0xfe16f3(0x1a2)](_0x4a52eb[_0xfe16f3(0x1eb)],_0x4a52eb[_0xfe16f3(0x1b2)]))return![];else _0x4a52eb[_0xfe16f3(0x171)](_0x4617d4,'0');}['constructor'](_0x4aee81['UlPss'](_0x4aee81[_0x3a4df1(0x201)],_0x4aee81[_0x3a4df1(0x209)]))['apply'](_0x4aee81['YhByl']));}_0x4aee81['etQFW'](_0x585a13,++_0x7f7402);}try{if(_0x2b97d3)return _0x585a13;else _0x4aee81[_0x1b1c3b(0x16f)](_0x585a13,0x0);}catch(_0x1c5ff9){}}function _0x25d9(){const _0xab416d=['DKawZ','ยูสเซอร์ทั้งหมด\x20','121098RSWPiZ','QuaFx','xQopG','DMios','IRcdl','EDuBi','pKVzy','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','get','LsrXi','fEudb','spYlD','close','dBHFL','START_PASSWORD','UsPyh','input','oeKnc','jMyQP','tEXQB','StCbL','ZCFnN','เพิ่มยูสเซอร์\x20','mGRkW','JuysC','length','bwnhv','Euyts','add-branches','OWNBG','collection','LMbvX','return\x20(function()\x20','RIvru','eisYu','CzyJA','XyXaY','KDoXw','15868116lxxJKy','join','IyJfw','UIkNF','ijEFV','สาขา\x202','UlPss','WZRDF','push','jREWx','constructor','GNacP','kmVHN','JvOBI','IIMks','init','QXzVT','lSOtN','ULPRK','Nxoza','test-s','nnGps','agNjX','wBklk','apply','LFywt','nakAE','GzlOp','add-users','Uylwr','BGZPm','yMWZm','mFniZ','action','ljvCz','VlldW','NLqXt','string','UxHxF','\x20สำเร็จ','dDNzK','wbDsp','yuugr','Cjkag','Test-U','avHEP','TriwO','JwPAJ','wKmPj','flash','caFNi','xxxaq','function\x20*\x5c(\x20*\x5c)','LiBXj','sAUzG','DUyAX','ADD_USER_KEY','XuZMS','acknowledged','BCRYPT_NUMBER','\x20ไม่สำเร็จ','TfYCV','jLZVJ','rkVNO','WfkOU','test-u@gmail.com','map','rMYeG','status','byWBF','isVil','KpLMR','sgqWn','cgjvU','RVjYg','xHxfa','KifSC','qhxpW','EvTwh','dEIDi','error','dbName','findOne','JkfUL','2425872qUzYvb','jqntF','gvOzV','nVqzM','chain','zbPpO','AuEiV','ywOcD','getDateTime','PSowZ','QfcTw','hash','ZpwGq','LAoMm','Wasan','KFmHb','DgNAp','OLSmK','irLFC','table','xZnOy','KJhIk','รายละเอียด\x20สาขา\x202','tVWcE','rICkp','yAOVN','query','RQpJc','FCEte','active','zDJmI','debu','vAiKx','UUU','kKxZn','Hrcwb','wasankds','DFAih','wIPQl','msg','สาขา\x20\x20','Jscfu','MPJMK','vzMkd','6BoPUqs','AptEm','นาย','EwJls','etQFW','GwDJE','RwQZH','eHiPs','kkmqN','oGsPZ','counter','sjONE','OmjwN','gfoFb','84eXnUuH','../','\x20มีอยู่แล้ว','UaUzB','toString','SSS','NjXHo','YkUoT','vfOmR','IVAdN','QpZhD','MREXs','PUKft','เพิ่มสาขา\x20','prototype','dbColl_users','ppDJO','PdRCs','kolBv','ODibo','hSNrC','FEjsc','IQtTU','HErvB','mcCkZ','redirect','red','branchId','nEHRw','login','test-a@gmail.com','KnenT','ASWRg','jFNND','WUjHP','/myDateTime.js','stateObject','WqGHc','XFUZL','yFkou','ycjsq','qSOLr','poEee','CDsZe','84260gUHxrT','HTFqi','log','hLMkq','obCDY','trace','YKNyj','nhYFT','insertMany','McBPF','PFoPm','Test-S','dglem','nMSlu','GtPRU','DKSjo','lLLNZ','XhkbT','923932TQpdRp','YlvxM','853200hYWTiX','oaJQW','695800XpLwVB','WHDLf','userId','kJBXH','neGUP','insertedCount','pYPXF','GqQxN','wasankds@gmail.com','gger','env','qrbpY','message','GGEpQ','EUUDN','CwNgg','JJZEh','exception','orHbW','wslkx','NUZMY','test-a','green','dewgg','XiinF','AAA','WzGiT','qbLGi','{}.constructor(\x22return\x20this\x22)(\x20)','FYNAH','THckS','FyBwh','test-s@gmail.com','info','MNfEv','ssCem','vbHNJ','HkLdK','qwerty','sXuwi','add-wasan','console','scgSW','SlAMh','YKBUG','SQXMR','GizJD','gzNFA','zVHoJ','bind','test','Test-A','warn','zNtlL','username','uTVOk','mfhcw','__proto__','userEmail','vBiIE','XzTnE','ijlLn','yAEVq','gwBXT','aGYWJ','ivcCy','hAmtR','LOhHK','BTIUr','Router','QHxkn','while\x20(true)\x20{}','sendFile','CJdQM','chXNP'];_0x25d9=function(){return _0xab416d;};return _0x25d9();}
+// import mainAuth from "../middleware/mainAuth.js"
+import express from 'express'
+import { MongoClient } from 'mongodb'
+import bcrypt from 'bcrypt'
+const router = express.Router()
+const myDateTime = await import(`../${mymoduleFolder}/myDateTime.js`)
+const PATH_ROOT = '/'
+const PATH_LOGIN = `${PATH_ROOT}login`
+const PATH_ADD_WASAN = `${PATH_ROOT}add-wasan`
+const PATH_ADD_BRANCH = `${PATH_ROOT}add-branches`
+const PATH_ADD_USERS = `${PATH_ROOT}add-users`
+const ADAY_MINUTES = 24*60*60 // 1 วัน ในหน่วยนาที
+const START_PASSWORD = process.env.START_PASSWORD || 'qwerty'
+
+//=======================================================
+// สำหรับเพิ่มยูสเซอร์ WASAN สำหรับการใช้งานครั้งแรก
+// http://localhost/add-wasan?key=wasan123
+router.get(PATH_ADD_WASAN, async (req, res) => {
+  // console.log(`-----------------${req.originalUrl}----------------------`)
+  // console.log("req.query ===> " , req.query)
+
+  const { key } = req.query
+  if (key !=  process.env.ADD_USER_KEY) {
+    req.flash('msg', { class:"red", text:'Key ไม่ถูกต้อง' })
+    return res.redirect(PATH_LOGIN)
+  }
+  
+  var users_toAdd = [
+    {
+      userId : 1000,
+      userEmail : 'wasankds@gmail.com'  ,
+      username : 'wasankds',
+      userPrefix: 'นาย' ,
+      userFirstname: 'Wasan' ,
+      userLastname: 'Khunnadiloksawet' ,
+      userAuthority: 'O' ,
+      userIsActive: 'active',
+      userPassword: await bcrypt.hash(START_PASSWORD, global.BCRYPT_NUMBER),
+      branchId: 100,
+      dateTimeCanDelete: myDateTime.getDateTime(ADAY_MINUTES),  
+    },
+    // เพิ่มได้อีกหลายยูสเซอร์
+  ]  
+  // console.log(userToAdd)
+
+  const client = new MongoClient(global.dbUrl)
+  try {
+    const db = client.db(global.dbName);
+    const coll_users = db.collection(global.dbColl_users)
+
+    //=== กรองเอาเฉพาะยูสเซอร์ที่ยังไม่มีในระบบ
+    let users_toAdd_filtered = []
+    for(const user of users_toAdd) {
+      // ตรวจสอบว่ามีผู้ใช้ WASAN อยู่แล้วหรือไม่
+      var userFind = await coll_users.findOne({
+        $or: [
+          { userId:user.userId } ,
+          { username:user.username } ,
+          { userEmail:user.userEmail }
+        ]
+      })
+      // ไม่มีผู้ใช้อยู่ - ให้เพิ่มยูสเซอร์ลงในอาเรย์ก่อน
+      if( !userFind ) {
+        users_toAdd_filtered.push(user)
+      }
+    }
+
+    //=== ถ้าไม่มีผู้ใช้ที่ต้องการเพิ่มเลย ให้แจ้งเตือนและออก
+    if(users_toAdd_filtered.length == 0) {
+      req.flash('msg', { class:"red", text:`ยูสเซอร์ทั้งหมด ${users_toAdd.map(u=>u.userId).join(', ')} มีอยู่แล้ว` })
+      return res.redirect(PATH_LOGIN)
+    }
+
+    //=== เพิ่มผู้ใช้ที่กรองแล้ว ลงในฐานข้อมูล
+    const rtn = await coll_users.insertMany(users_toAdd_filtered)
+    if (rtn.acknowledged && rtn.insertedCount > 0) {
+      req.flash('msg', { class:"green", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    } else {
+      req.flash('msg', { class:"red", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} ไม่สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    }
+  } catch (err) {
+    console.log(err.message)
+    res.status(404).sendFile(file404)
+  } finally {
+    client.close()
+  }
+})
+
+
+
+//=======================================================
+// สำหรับเพิ่มยูสเซอร์ WASAN สำหรับการใช้งานครั้งแรก
+// 
+router.get(PATH_ADD_USERS, async (req, res) => {
+  // console.log(`-----------------${req.originalUrl}----------------------`)
+  // console.log("req.query ===> " , req.query)
+
+  let  { key} = req.query
+  if (key !=  process.env.ADD_USER_KEY) {
+    req.flash('msg', { class:"red", text:'Key ไม่ถูกต้อง' })
+    return res.redirect(PATH_LOGIN)
+  }
+
+  var usersToAdd = [
+    {
+      userId : 900, // อาจซ้ำกับที่มีในระบบได้ *****
+      userEmail : 'test-s@gmail.com'  ,
+      username : 'test-s',
+      userPrefix: 'Mr' ,
+      userFirstname: 'Test-S' ,
+      userLastname: 'SSS' ,
+      userAuthority: 'S' ,
+      userIsActive: 'active',
+      userPassword: await bcrypt.hash('qwerty', global.BCRYPT_NUMBER),
+      // branchId: 100,
+    }, {
+      userId : 901,  // อาจซ้ำกับที่มีในระบบได้ *****
+      userEmail : 'test-a@gmail.com'  ,
+      username : 'test-a',
+      userPrefix: 'Mr' ,
+      userFirstname: 'Test-A' ,
+      userLastname: 'AAA' ,
+      userAuthority: 'A' ,
+      userIsActive: 'active',
+      userPassword: await bcrypt.hash('qwerty', global.BCRYPT_NUMBER),
+      // branchId: 100,
+    }, {
+      userId : 902,  // อาจซ้ำกับที่มีในระบบได้ *****
+      userEmail : 'test-u@gmail.com'  ,
+      username : 'test-u',
+      userPrefix: 'Mr' ,
+      userFirstname: 'Test-U' ,
+      userLastname: 'UUU' ,
+      userAuthority: 'U' ,
+      userIsActive: 'active',
+      userPassword: await bcrypt.hash('qwerty', global.BCRYPT_NUMBER),
+      // branchId: 100,
+    }
+  ]
+
+  const client = new MongoClient(dbUrl)
+  try {
+    const db = client.db(global.dbName);
+    const coll_users = db.collection(global.dbColl_users)
+
+    //=== กรองเอาเฉพาะยูสเซอร์ที่ยังไม่มีในระบบ
+    let users_toAdd_filtered = []
+    for(const user of usersToAdd) {
+      // ตรวจสอบว่ามีผู้ใช้ WASAN อยู่แล้วหรือไม่
+      var userFind = await coll_users.findOne({
+        $or: [
+          { userId:user.userId } ,
+          { username:user.username } ,
+          { userEmail:user.userEmail }
+        ]
+      })
+      // ไม่มีผู้ใช้อยู่ - ให้เพิ่มยูสเซอร์ลงในอาเรย์ก่อน
+      if( !userFind ) {
+        users_toAdd_filtered.push(user)
+      }
+    }
+
+    //=== ถ้าไม่มีผู้ใช้ที่ต้องการเพิ่มเลย ให้แจ้งเตือนและออก
+    if(users_toAdd_filtered.length == 0) {
+      req.flash('msg', { class:"red", text:`ยูสเซอร์ทั้งหมด ${usersToAdd.map(u=>u.userId).join(', ')} มีอยู่แล้ว` })
+      return res.redirect(PATH_LOGIN)
+    }
+
+    //=== เพิ่มผู้ใช้ที่กรองแล้ว ลงในฐานข้อมูล
+    const rtn = await coll_users.insertMany(users_toAdd_filtered)
+    if (rtn.acknowledged && rtn.insertedCount > 0) {
+      req.flash('msg', { class:"green", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    } else {
+      req.flash('msg', { class:"red", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} ไม่สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    }
+  } catch (err) {
+    console.log(err.message)
+    res.status(404).sendFile(file404)
+  } finally {
+    client.close()
+  }
+})
+
+
+
+// //=======================================================
+// // สำหรับเพิ่มยูสเซอร์อื่นๆ ตามจำนวนที่ระบุ
+// // โดย userId จะเพิ่มต่อจาก userId สูงสุดที่มีอยู่ในระบบ
+// // http://localhost/add-users?key=wasan123&number=3
+// // 
+// router.get(PATH_ADD_USERS , mainAuth.isOA, async (req, res) => {
+//   // console.log(`-----------------${req.originalUrl}----------------------`)
+//   // console.log("req.query ===> " , req.query)
+
+//   let { key, number } = req.query
+//   if (key !=  process.env.ADD_USER_KEY) {
+//     req.flash('msg', { class:"red", text:'Key ไม่ถูกต้อง' })
+//     return res.redirect(PATH_LOGIN)
+//   }
+//   if( !number || isNaN(parseInt(number)) ) {
+//     req.flash('msg', { class:"red", text:'strId ไม่ถูกต้อง' })
+//     return res.redirect(PATH_LOGIN)
+//   }
+
+//   number = parseInt(number)
+//   if( number < 1 || number > 5 ) {
+//     req.flash('msg', { class:"red", text:'number ต้องอยู่ระหว่าง 1-5' })
+//     return res.redirect(PATH_LOGIN)
+//   }
+  
+
+//   //===== 
+//   const client = new MongoClient(global.dbUrl)
+//   try {
+//     const db = client.db(global.dbName);
+//     const coll_users = db.collection(global.dbColl_users)
+
+//     //=== จับ userId สุดท้ายใน collection users
+//     var lastUser = await coll_users.find({}).sort({userId:-1}).limit(1).toArray()
+//     var startId = 0
+//     if( lastUser.length > 0 ) { 
+//       startId = lastUser[0].userId + 1
+//     }else{
+//       return req.flash('msg', { class:"red", text:'ยังไม่มีผู้ใช้ในระบบเลย ต้องเพิ่มผู้ใช้หลักก่อน' })
+//     }
+
+    
+//     // วนลูปสร้าง user ตั้งแต่ userId เริ่ม strId ถึง endId
+//     var users_toAdd = []  
+//     const endId = startId + number - 1
+//     for (let i = startId; i <= endId; i++) {
+//       users_toAdd.push({
+//         userId: i ,
+//         userEmail: `user-${i}@gmail.com`,
+//         username: `user-${i}`,
+//         userPrefix: '',
+//         userFirstname: `user-${i}`,
+//         userLastname: ``,
+//         userAuthority: 'U',
+//         userIsActive: 'active',
+//         userPassword: await bcrypt.hash(START_PASSWORD, global.BCRYPT_NUMBER),
+//         branchId: 100,
+//         dateTimeCanDelete: myDateTime.getDateTime(ADAY_MINUTES),
+//       })
+//     }
+
+//     //=== กรองเอาเฉพาะยูสเซอร์ที่ยังไม่มีในระบบ
+//     let users_toAdd_filtered = []
+//     for(const user of users_toAdd) {
+//       // ตรวจสอบว่ามีผู้ใช้ WASAN อยู่แล้วหรือไม่
+//       var userFind = await coll_users.findOne({
+//         $or: [
+//           { userId:user.userId } ,
+//           { username:user.username } ,
+//           { userEmail:user.userEmail }
+//         ]
+//       })
+//       // ไม่มีผู้ใช้อยู่ - ให้เพิ่มยูสเซอร์ลงในอาเรย์ก่อน
+//       if( !userFind ) {
+//         users_toAdd_filtered.push(user)
+//       }
+//     }
+
+//     //=== ถ้าไม่มีผู้ใช้ที่ต้องการเพิ่มเลย ให้แจ้งเตือนและออก
+//     if(users_toAdd_filtered.length == 0) {
+//       req.flash('msg', { class:"red", text:`ยูสเซอร์ทั้งหมด ${users_toAdd.map(u=>u.userId).join(', ')} มีอยู่แล้ว` })
+//       return res.redirect(PATH_LOGIN)
+//     }
+
+//     //=== เพิ่มผู้ใช้ที่กรองแล้ว ลงในฐานข้อมูล
+//     const rtn = await coll_users.insertMany(users_toAdd_filtered)
+//     if (rtn.acknowledged && rtn.insertedCount > 0) {
+//       req.flash('msg', { class:"green", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} สำเร็จ` })
+//       res.redirect(PATH_LOGIN)
+//     } else {
+//       req.flash('msg', { class:"red", text:`เพิ่มยูสเซอร์ ${users_toAdd_filtered.map(u=>u.userId).join(', ')} ไม่สำเร็จ` })
+//       res.redirect(PATH_LOGIN)
+//     }
+//   } catch (err) {
+//     console.log(err.message)
+//     res.status(404).sendFile(file404)
+//   } finally {
+//     client.close()
+//   }
+// })
+
+//=======================================================
+// สำหรับเพิ่มสาขา ลงในฐานข้อมูล 2 สาขา ตายตัว
+// http://localhost/add-branches?key=wasan123
+router.get(PATH_ADD_BRANCH, async (req, res) => {
+  // console.log(`-----------------${req.originalUrl}----------------------`)
+  // console.log("req.query ===> " , req.query)
+
+  let  { key } = req.query
+  if (key !=  process.env.ADD_USER_KEY) {
+    req.flash('msg', { class:"red", text:'Key ไม่ถูกต้อง' })
+    return res.redirect(PATH_LOGIN)
+  }
+
+  const aday = 24*60*60*1000 // 1 วัน
+  var branches_toAdd = [
+    {
+      branchId: 100,
+      branchStatus: "active",
+      branchName: "มานากรูมมิ่ง",
+      branchDetail: "มานากรูมมิ่ง อ.หนองไผ่ จ.เพชรบูรณ์",
+      dateTimeCanDelete: myDateTime.getDateTime(aday),  
+    }, 
+    {
+      branchId: 101,
+      branchStatus: "active",
+      branchName: "สาขา 2",
+      branchDetail: "รายละเอียด สาขา 2",
+      dateTimeCanDelete: myDateTime.getDateTime(aday),  
+    }
+  ]  
+  // console.log(userToAdd)
+
+  const client = new MongoClient(dbUrl)
+  try {
+    const db = client.db(dbName);
+    const collection = db.collection(dbColl_userBranches)
+
+    //=== กรองเอาเฉพาะยูสเซอร์ที่ยังไม่มีในระบบ
+    let branches_toAdd_filtered = []
+    for(const branch of branches_toAdd) {
+      // ตรวจสอบว่ามีผู้ใช้ WASAN อยู่แล้วหรือไม่
+      var branchFind = await collection.findOne({
+        $or: [
+          { branchId:branch.branchId } ,
+        ]
+      })
+      // ไม่มีผู้ใช้อยู่ - ให้เพิ่มยูสเซอร์ลงในอาเรย์ก่อน
+      if( !branchFind ) {
+        branches_toAdd_filtered.push(branch)
+      }
+    }
+
+    //=== ถ้าไม่มีผู้ใช้ที่ต้องการเพิ่มเลย ให้แจ้งเตือนและออก
+    if(branches_toAdd_filtered.length == 0) {
+      req.flash('msg', { class:"red", text:`สาขา  ${branches_toAdd.map(u=>u.branchId).join(', ')} มีอยู่แล้ว` })
+      return res.redirect(PATH_LOGIN)
+    }
+
+    //=== เพิ่มผู้ใช้ที่กรองแล้ว ลงในฐานข้อมูล
+    const rtn = await collection.insertMany(branches_toAdd_filtered)
+    if (rtn.acknowledged && rtn.insertedCount > 0) {
+      req.flash('msg', { class:"green", text:`เพิ่มสาขา ${branches_toAdd_filtered.map(u=>u.branchId).join(', ')} สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    } else {
+      req.flash('msg', { class:"red", text:`เพิ่มสาขา ${branches_toAdd_filtered.map(u=>u.branchId).join(', ')} ไม่สำเร็จ` })
+      res.redirect(PATH_LOGIN)
+    }
+  } catch (err) {
+    console.log(err.message)
+    res.status(404).sendFile(file404)
+  } finally {
+    client.close()
+  }
+})
+
+
+
+
+
+
+export default router
+

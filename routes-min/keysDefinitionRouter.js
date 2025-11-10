@@ -1,1 +1,528 @@
-const _0x30ae4e=_0x5ad5;(function(_0x5f22f9,_0x1d8b3a){const _0x1c7213=_0x5ad5,_0x5b3da2=_0x5f22f9();while(!![]){try{const _0x4fe902=parseInt(_0x1c7213(0x1c0))/0x1+parseInt(_0x1c7213(0x1f8))/0x2*(parseInt(_0x1c7213(0x1df))/0x3)+-parseInt(_0x1c7213(0x11f))/0x4*(-parseInt(_0x1c7213(0x196))/0x5)+parseInt(_0x1c7213(0x1cf))/0x6*(-parseInt(_0x1c7213(0x1b6))/0x7)+parseInt(_0x1c7213(0x142))/0x8*(-parseInt(_0x1c7213(0x165))/0x9)+parseInt(_0x1c7213(0x170))/0xa+-parseInt(_0x1c7213(0x120))/0xb*(parseInt(_0x1c7213(0x1cd))/0xc);if(_0x4fe902===_0x1d8b3a)break;else _0x5b3da2['push'](_0x5b3da2['shift']());}catch(_0x4d37df){_0x5b3da2['push'](_0x5b3da2['shift']());}}}(_0x2a16,0xd1537));const _0x4fc63d=(function(){const _0x25a5d6=_0x5ad5,_0x11552e={'Vlmrg':_0x25a5d6(0x1fa),'MGEpw':_0x25a5d6(0x13d),'Iekrt':function(_0x4674d0,_0x5aff4c){return _0x4674d0(_0x5aff4c);},'NTFZA':_0x25a5d6(0x161),'VyTXE':function(_0x5d9d99,_0x156283){return _0x5d9d99+_0x156283;},'uvOXw':'chain','uEHWN':_0x25a5d6(0x1d1),'OmHSU':function(_0x290808){return _0x290808();},'eNttx':function(_0x58f7f4,_0x4b0a0f,_0x40f537){return _0x58f7f4(_0x4b0a0f,_0x40f537);},'dLVye':'error\x20===>\x20','yQXZI':_0x25a5d6(0x1b0),'FusqG':function(_0x1b3196,_0x3b40eb){return _0x1b3196===_0x3b40eb;},'VgOja':_0x25a5d6(0x14e),'bdyny':'ITdXB','UPFCT':function(_0x22ef6d,_0x5141ee){return _0x22ef6d!==_0x5141ee;},'VfsZY':'baQxk','wzVMG':'IMMLg','UBERu':function(_0x3ddeda,_0x4876bd){return _0x3ddeda===_0x4876bd;},'jOuyF':_0x25a5d6(0x1c8),'HhAWA':_0x25a5d6(0x1eb)};let _0x47d16e=!![];return function(_0x40f25a,_0x55a680){const _0x42118a=_0x25a5d6;if(_0x11552e[_0x42118a(0x1db)](_0x11552e['jOuyF'],_0x11552e[_0x42118a(0x1fe)])){const _0x552734={'McguI':_0x11552e[_0x42118a(0x151)],'ydAOL':_0x11552e[_0x42118a(0x1cc)],'YyEab':function(_0x5b0a42,_0x2b0c0f){return _0x11552e['Iekrt'](_0x5b0a42,_0x2b0c0f);},'wxPss':_0x11552e[_0x42118a(0x1c7)],'ShoVa':function(_0x5559b8,_0x389a41){const _0x19552e=_0x42118a;return _0x11552e[_0x19552e(0x189)](_0x5559b8,_0x389a41);},'NbLsO':_0x11552e[_0x42118a(0x17d)],'DJogn':function(_0x4865ba,_0x48d40b){const _0x3df05c=_0x42118a;return _0x11552e[_0x3df05c(0x189)](_0x4865ba,_0x48d40b);},'jaood':_0x11552e[_0x42118a(0x123)],'zRSvx':function(_0x36c03b,_0x3a9bd5){const _0x3bf2cf=_0x42118a;return _0x11552e[_0x3bf2cf(0x1a8)](_0x36c03b,_0x3a9bd5);},'eeUep':function(_0x2a775b){const _0x1b047f=_0x42118a;return _0x11552e[_0x1b047f(0x184)](_0x2a775b);}};_0x11552e[_0x42118a(0x158)](_0xa84ebf,this,function(){const _0x1893b8=_0x42118a,_0x4089d4=new _0x24bd2a(_0x552734['McguI']),_0x134a59=new _0xcfe716(_0x552734[_0x1893b8(0x1bf)],'i'),_0x3676cb=_0x552734[_0x1893b8(0x1d3)](_0x129566,_0x552734[_0x1893b8(0x19a)]);!_0x4089d4['test'](_0x552734[_0x1893b8(0x173)](_0x3676cb,_0x552734[_0x1893b8(0x136)]))||!_0x134a59[_0x1893b8(0x16e)](_0x552734[_0x1893b8(0x193)](_0x3676cb,_0x552734['jaood']))?_0x552734['zRSvx'](_0x3676cb,'0'):_0x552734[_0x1893b8(0x1ce)](_0x3482d5);})();}else{const _0x3c6341=_0x47d16e?function(){const _0x52b06d=_0x42118a,_0x2f6546={'xQmUX':_0x11552e['dLVye'],'ABAoM':_0x11552e[_0x52b06d(0x149)]};if(_0x11552e[_0x52b06d(0x169)](_0x11552e[_0x52b06d(0x13b)],_0x11552e[_0x52b06d(0x1b3)]))_0x21248d[_0x52b06d(0x1f3)](_0x2f6546[_0x52b06d(0x180)],_0x26e6fa),_0x4b75b3[_0x52b06d(0x186)](_0x5bfe2c[_0x52b06d(0x134)]({'isSave':!0x1,'class':_0x2f6546[_0x52b06d(0x1d9)],'msg':_0x3c5a7b[_0x52b06d(0x13a)]}));else{if(_0x55a680){if(_0x11552e[_0x52b06d(0x13e)](_0x11552e[_0x52b06d(0x176)],_0x11552e['wzVMG'])){const _0x3c3997=_0x55a680[_0x52b06d(0x146)](_0x40f25a,arguments);return _0x55a680=null,_0x3c3997;}else{const _0x3b8ead=_0x53c996?function(){const _0xeede79=_0x52b06d;if(_0x3108b3){const _0xcb17f7=_0x2852ce[_0xeede79(0x146)](_0x21f9a0,arguments);return _0x4fa62c=null,_0xcb17f7;}}:function(){};return _0x3c9d26=![],_0x3b8ead;}}}}:function(){};return _0x47d16e=![],_0x3c6341;}};}());(function(){const _0x123553=_0x5ad5,_0x4ea1a3={'meKHj':function(_0x60da34,_0x53524a){return _0x60da34(_0x53524a);},'hObit':function(_0xeba5a9,_0x5a5d62){return _0xeba5a9+_0x5a5d62;},'ycuYV':'return\x20(function()\x20','GbPDB':_0x123553(0x191),'vBEAw':function(_0x38c0b1,_0x3d962b){return _0x38c0b1!==_0x3d962b;},'HiRzn':'ExtOm','XWMfn':_0x123553(0x129),'pgrWw':_0x123553(0x1fa),'nRAsW':_0x123553(0x13d),'mDnlV':_0x123553(0x161),'BPKbQ':'chain','PwcAs':function(_0x4a0b9c,_0x34cfd1){return _0x4a0b9c+_0x34cfd1;},'Uvwbm':_0x123553(0x1d1),'jBVjL':function(_0x388570,_0x5174a5){return _0x388570!==_0x5174a5;},'OWggL':_0x123553(0x1f1),'KrnRQ':'ayApC','VBhRw':function(_0xc2290b,_0x26d58e){return _0xc2290b===_0x26d58e;},'YGyOm':_0x123553(0x16a),'VakzD':function(_0x534900){return _0x534900();},'QsPBw':function(_0x58b1f7,_0xe1e1fc,_0x54f2dd){return _0x58b1f7(_0xe1e1fc,_0x54f2dd);}};_0x4ea1a3['QsPBw'](_0x4fc63d,this,function(){const _0x16f45d=_0x123553;if(_0x4ea1a3[_0x16f45d(0x14c)](_0x4ea1a3[_0x16f45d(0x1e5)],_0x4ea1a3[_0x16f45d(0x177)])){const _0x373579=new RegExp(_0x4ea1a3[_0x16f45d(0x1a4)]),_0x2469a7=new RegExp(_0x4ea1a3[_0x16f45d(0x117)],'i'),_0x2cf557=_0x4ea1a3[_0x16f45d(0x121)](_0x1fd8d5,_0x4ea1a3['mDnlV']);!_0x373579[_0x16f45d(0x16e)](_0x4ea1a3[_0x16f45d(0x1c1)](_0x2cf557,_0x4ea1a3['BPKbQ']))||!_0x2469a7[_0x16f45d(0x16e)](_0x4ea1a3['PwcAs'](_0x2cf557,_0x4ea1a3[_0x16f45d(0x1ef)]))?_0x4ea1a3[_0x16f45d(0x15a)](_0x4ea1a3[_0x16f45d(0x15d)],_0x4ea1a3[_0x16f45d(0x126)])?_0x4ea1a3[_0x16f45d(0x121)](_0x2cf557,'0'):_0x5efdd1['close']():_0x4ea1a3[_0x16f45d(0x17f)](_0x4ea1a3[_0x16f45d(0x1d2)],_0x4ea1a3[_0x16f45d(0x1d2)])?_0x4ea1a3[_0x16f45d(0x1c9)](_0x1fd8d5):(_0x2627ed[_0x16f45d(0x1f3)](_0x572268[_0x16f45d(0x13a)]),_0x1dd4bd[_0x16f45d(0x11d)](0x194)[_0x16f45d(0x1a6)](_0x1bd50a));}else _0xb5e511=_0x4ea1a3[_0x16f45d(0x121)](_0x141d52,_0x4ea1a3['hObit'](_0x4ea1a3[_0x16f45d(0x1c1)](_0x4ea1a3['ycuYV'],_0x4ea1a3['GbPDB']),');'))();})();}());const _0x1db73a=(function(){const _0x69433b=_0x5ad5,_0x2e6039={'LKDMr':function(_0x5a6c9c,_0x3b4260){return _0x5a6c9c(_0x3b4260);},'bBhkP':function(_0x1c1d7f,_0x443ab5){return _0x1c1d7f!==_0x443ab5;},'puhmk':'gIrWJ','Nouvm':_0x69433b(0x137),'Wzlno':function(_0x55fca8,_0x1fb09f){return _0x55fca8===_0x1fb09f;},'SvUIy':_0x69433b(0x160),'lPuQH':function(_0xcc10a2){return _0xcc10a2();},'FNclo':function(_0x535765,_0x5696ee){return _0x535765===_0x5696ee;},'MoNJk':_0x69433b(0x143),'hTEdZ':'mKylV'};let _0x408a50=!![];return function(_0x47c2d3,_0x133d8e){const _0x4ab4bc=_0x69433b,_0x9cb81d={'BKZqZ':function(_0x5350b4){const _0x5d9be0=_0x5ad5;return _0x2e6039[_0x5d9be0(0x135)](_0x5350b4);}};if(_0x2e6039[_0x4ab4bc(0x181)](_0x2e6039[_0x4ab4bc(0x19e)],_0x2e6039[_0x4ab4bc(0x1d0)]))_0x9cb81d[_0x4ab4bc(0x1a5)](_0xbcf32f);else{const _0x2d05a9=_0x408a50?function(){const _0x476d91=_0x4ab4bc,_0x4d1cbe={'bQvig':function(_0x2ba615,_0x507745){const _0x2860d0=_0x5ad5;return _0x2e6039[_0x2860d0(0x116)](_0x2ba615,_0x507745);}};if(_0x2e6039['bBhkP'](_0x2e6039['puhmk'],_0x2e6039[_0x476d91(0x1be)])){if(_0x133d8e){if(_0x2e6039[_0x476d91(0x1dc)](_0x2e6039[_0x476d91(0x1e8)],_0x2e6039[_0x476d91(0x1e8)])){const _0x5d78a6=_0x133d8e[_0x476d91(0x146)](_0x47c2d3,arguments);return _0x133d8e=null,_0x5d78a6;}else _0x4d1cbe[_0x476d91(0x1ed)](_0x4e94ea,'0');}}else _0x170870=_0x3c6489;}:function(){};return _0x408a50=![],_0x2d05a9;}};}()),_0x257085=_0x1db73a(this,function(){const _0x46cb5e=_0x5ad5,_0x424fd0={'IBzmQ':_0x46cb5e(0x1fa),'MNlLu':_0x46cb5e(0x13d),'tpjBv':function(_0x57f366,_0x42e857){return _0x57f366(_0x42e857);},'PYhye':'init','SyKbp':function(_0x3f5d40,_0x24add){return _0x3f5d40+_0x24add;},'xkmVP':_0x46cb5e(0x1da),'CGkHZ':_0x46cb5e(0x1d1),'mTUzR':function(_0xebb55f){return _0xebb55f();},'xCAsu':function(_0x1865b1,_0x55a62f){return _0x1865b1===_0x55a62f;},'NbQPj':'GQLrW','qDoNG':_0x46cb5e(0x18b),'rXKXL':_0x46cb5e(0x1c5),'KgWen':'EwJXl','hqpGj':function(_0x506d12,_0x45f32e){return _0x506d12+_0x45f32e;},'JELym':_0x46cb5e(0x14d),'LuIbP':_0x46cb5e(0x191),'OxzJm':function(_0x3fc2da,_0x3d59d8){return _0x3fc2da!==_0x3d59d8;},'yFbZz':_0x46cb5e(0x111),'hUGfx':function(_0x1ea613,_0x11d8c1){return _0x1ea613(_0x11d8c1);},'PRspq':function(_0x141f3b,_0x4df679){return _0x141f3b+_0x4df679;},'kWQqh':_0x46cb5e(0x1f3),'beZdq':_0x46cb5e(0x1fb),'cnPJZ':'info','wsBfE':_0x46cb5e(0x182),'Fouoh':_0x46cb5e(0x15e),'yzLOv':'table','vrhky':_0x46cb5e(0x139),'sNEGI':function(_0x16f245,_0x36c0f0){return _0x16f245<_0x36c0f0;},'vmero':function(_0x84f08b,_0x44fdbc){return _0x84f08b!==_0x44fdbc;},'vqGqJ':'mvNiu','XpRbc':'lBtFw'},_0xf9c251=function(){const _0x4351ee=_0x46cb5e;if(_0x424fd0['xCAsu'](_0x424fd0['NbQPj'],_0x424fd0[_0x4351ee(0x1ec)])){const _0x370141=new _0x4613b8(_0x424fd0[_0x4351ee(0x157)]),_0xc0d5bf=new _0x25df8e(_0x424fd0['MNlLu'],'i'),_0x4754fe=_0x424fd0[_0x4351ee(0x1c2)](_0x97e4f0,_0x424fd0[_0x4351ee(0x127)]);!_0x370141[_0x4351ee(0x16e)](_0x424fd0[_0x4351ee(0x163)](_0x4754fe,_0x424fd0['xkmVP']))||!_0xc0d5bf[_0x4351ee(0x16e)](_0x424fd0[_0x4351ee(0x163)](_0x4754fe,_0x424fd0[_0x4351ee(0x1e1)]))?_0x424fd0['tpjBv'](_0x4754fe,'0'):_0x424fd0[_0x4351ee(0x1cb)](_0x4f91a5);}else{let _0x5aa673;try{_0x424fd0[_0x4351ee(0x1e6)](_0x424fd0['rXKXL'],_0x424fd0[_0x4351ee(0x128)])?_0x424fd0[_0x4351ee(0x1c2)](_0x14d408,0x0):_0x5aa673=_0x424fd0[_0x4351ee(0x1c2)](Function,_0x424fd0[_0x4351ee(0x163)](_0x424fd0['hqpGj'](_0x424fd0[_0x4351ee(0x131)],_0x424fd0[_0x4351ee(0x1ad)]),');'))();}catch(_0x136661){if(_0x424fd0['OxzJm'](_0x424fd0[_0x4351ee(0x13f)],_0x424fd0[_0x4351ee(0x13f)])){const _0x45a5e8=_0x5a9c1b[_0x4351ee(0x146)](_0x46512b,arguments);return _0x800ae4=null,_0x45a5e8;}else _0x5aa673=window;}return _0x5aa673;}},_0x150c50=_0x424fd0['mTUzR'](_0xf9c251),_0x1326e6=_0x150c50[_0x46cb5e(0x188)]=_0x150c50['console']||{},_0x39811c=[_0x424fd0[_0x46cb5e(0x18c)],_0x424fd0['beZdq'],_0x424fd0['cnPJZ'],_0x424fd0['wsBfE'],_0x424fd0[_0x46cb5e(0x118)],_0x424fd0['yzLOv'],_0x424fd0[_0x46cb5e(0x18d)]];for(let _0x5eb700=0x0;_0x424fd0[_0x46cb5e(0x140)](_0x5eb700,_0x39811c[_0x46cb5e(0x1a7)]);_0x5eb700++){if(_0x424fd0[_0x46cb5e(0x13c)](_0x424fd0[_0x46cb5e(0x1b8)],_0x424fd0[_0x46cb5e(0x194)])){const _0x3d4512=_0x1db73a[_0x46cb5e(0x1de)][_0x46cb5e(0x18e)][_0x46cb5e(0x1bc)](_0x1db73a),_0x4eabf7=_0x39811c[_0x5eb700],_0x36e79a=_0x1326e6[_0x4eabf7]||_0x3d4512;_0x3d4512[_0x46cb5e(0x14f)]=_0x1db73a['bind'](_0x1db73a),_0x3d4512['toString']=_0x36e79a[_0x46cb5e(0x12a)][_0x46cb5e(0x1bc)](_0x36e79a),_0x1326e6[_0x4eabf7]=_0x3d4512;}else{let _0x35af59;try{_0x35af59=_0x424fd0[_0x46cb5e(0x148)](_0x3ddfeb,_0x424fd0[_0x46cb5e(0x1f2)](_0x424fd0[_0x46cb5e(0x11c)](_0x424fd0[_0x46cb5e(0x131)],_0x424fd0[_0x46cb5e(0x1ad)]),');'))();}catch(_0x3cbf8c){_0x35af59=_0x1ed264;}return _0x35af59;}}});_0x257085();import _0x2b380a from'express';const r=_0x2b380a[_0x30ae4e(0x17c)]();import{MongoClient as _0x321d44}from'mongodb';import _0x488fa1 from'../middleware/mainAuth.js';const S=await import(_0x30ae4e(0x156)+mymoduleFolder+_0x30ae4e(0x155)),_=await import(_0x30ae4e(0x156)+mymoduleFolder+'/myDateTime.js'),I=await import(_0x30ae4e(0x156)+mymoduleFolder+'/myUsers.js'),i=_0x30ae4e(0x12e),u=i+_0x30ae4e(0x19b);function _0x2a16(){const _0x17fa7a=['VfsZY','XWMfn','dbColl_keysDefinition','CuPOw','getDate','LCedJ','Router','uvOXw','GTjgF','VBhRw','xQmUX','FNclo','error','wvAGX','OmHSU','CRquI','send','DnsyR','console','VyTXE','OVQdS','cCMDz','kWQqh','vrhky','prototype','error\x20===>\x20','MyJQP','{}.constructor(\x22return\x20this\x22)(\x20)','DyAGo','DJogn','XpRbc','nJuBx','6530705cUdqBF','stateObject','query','while\x20(true)\x20{}','wxPss','/save','TCpvO','oyCna','MoNJk','post','dQVJx','string','qqSAx','acknowledged','pgrWw','BKZqZ','sendFile','length','Iekrt','get','QfhGh','HVlOM','keysDefinition','LuIbP','insertMany','rBPiT','red','jJCLL','kpwNw','bdyny','bfzvo','IEPaT','371hPQGKV','wsndX','vqGqJ','YYorD','debu','VqxMZ','bind','eXMVv','Nouvm','ydAOL','343176urfyUz','hObit','tpjBv','Ttplq','xiQJi','lQCSO','renderView','NTFZA','LZiof','VakzD','fUdvc','mTUzR','MGEpw','6343536QPGJLj','eeUep','34968nXncCN','hTEdZ','input','YGyOm','YyEab','UYaXZ','Uftwh','aggregate','EWtZZ','Bbzuz','ABAoM','chain','UBERu','Wzlno','counter','constructor','1092nYtQTp','Lngmz','CGkHZ','KEYS_DEFINITION','HxUMB','ucRKT','HiRzn','xCAsu','dxpWw','SvUIy','WBexk','gkCgM','oRJJA','qDoNG','bQvig','boTMM','Uvwbm','YLLyc','YdtXA','hqpGj','log','DPeWG','hBtxP','insertedCount','elJXv','3548mMyZvI','VtLgh','function\x20*\x5c(\x20*\x5c)','warn','connect','mdOdI','HhAWA','wMuko','cWURW','PPlri','kehrZ','zfoZI','vTqPx','jQtDS','LKDMr','nRAsW','Fouoh','oTpNt','tzYZu','URDAq','PRspq','status','IGvbk','4lQWuET','22vmQCel','meKHj','KWIIB','uEHWN','IBNMY','TCXbz','KrnRQ','PYhye','KgWen','qDVcq','toString','eodnq','msg','ePegc','/keys-definition','BOUHC','vrBvZ','JELym','action','ORGqa','stringify','lPuQH','NbLsO','KZsvb','isOA','trace','message','VgOja','vmero','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','UPFCT','yFbZz','sNEGI','dbUrl','5720WZdMge','iXaGL','UfnkG','eTJmK','apply','toArray','hUGfx','yQXZI','YaHzY','rAGUj','vBEAw','return\x20(function()\x20','NVkNJ','__proto__','tDTme','Vlmrg','rpp','ZjPfa','page','/myModule.js','../','IBzmQ','eNttx','JoATh','jBVjL','kQTsj','KfShe','OWggL','exception','yGRTz','DPBvq','init','aSiCB','SyKbp','wDcRy','20214XinhQv','ZRjvn','Kcdov','VFqaF','FusqG','DnDDM','BrqCK','ceil','yvLyw','test','close','15343760TEURpq','AzbPm','ไม่สามารถบันทึกข้อมูลได้','ShoVa','collection','CUMzh'];_0x2a16=function(){return _0x17fa7a;};return _0x2a16();}r[_0x30ae4e(0x1a9)](i,_0x488fa1[_0x30ae4e(0x138)],async(_0x2e067d,_0x356682)=>{const _0x58abb0=_0x30ae4e,_0x162733={'DPeWG':function(_0x1c4120,_0x37704f){return _0x1c4120(_0x37704f);},'Kcdov':function(_0xee2773,_0x20a11f){return _0xee2773(_0x20a11f);},'BOUHC':function(_0x119dda,_0x4da04d){return _0x119dda*_0x4da04d;},'JoATh':function(_0x12fb6f,_0x232839){return _0x12fb6f-_0x232839;},'kehrZ':function(_0x3c4f14,_0x2213a8){return _0x3c4f14===_0x2213a8;},'boTMM':_0x58abb0(0x192),'hBtxP':function(_0x626e1d,_0x46c78e){return _0x626e1d/_0x46c78e;},'Bbzuz':function(_0x43e18b,_0xa685c){return _0x43e18b<_0xa685c;},'mVZNX':function(_0x1c2541,_0x3acb4b){return _0x1c2541-_0x3acb4b;},'ePegc':function(_0x50e33f,_0x1b15a5){return _0x50e33f>_0x1b15a5;},'VtLgh':function(_0x3e4248,_0x1f98b9){return _0x3e4248+_0x1f98b9;},'CUMzh':function(_0x35db68,_0x30d340){return _0x35db68+_0x30d340;},'wMuko':function(_0x3ecc54,_0x40bbe2){return _0x3ecc54(_0x40bbe2);},'yvLyw':function(_0x1cc32b,_0x14a111){return _0x1cc32b==_0x14a111;},'ZRjvn':_0x58abb0(0x1ac),'jQtDS':_0x58abb0(0x12c),'kpwNw':_0x58abb0(0x1f7),'KfShe':_0x58abb0(0x1ea),'UHsar':function(_0x1d00f5,_0x359c14){return _0x1d00f5!==_0x359c14;},'GTjgF':_0x58abb0(0x1d4)},_0x1646b2=_0x162733[_0x58abb0(0x1f4)](Number,_0x2e067d[_0x58abb0(0x198)][_0x58abb0(0x152)])||0x1e,_0x3042e6=_0x162733['DPeWG'](Number,_0x2e067d[_0x58abb0(0x198)][_0x58abb0(0x154)])||0x1,_0x235dca=_0x162733[_0x58abb0(0x167)](Number,_0x162733[_0x58abb0(0x12f)](_0x162733['JoATh'](_0x3042e6,0x1),_0x1646b2)),_0x11e5d4=new _0x321d44(global[_0x58abb0(0x141)]);try{if(_0x162733[_0x58abb0(0x112)](_0x162733['boTMM'],_0x162733[_0x58abb0(0x1ee)])){await _0x11e5d4[_0x58abb0(0x1fc)]();const _0x26b068=_0x11e5d4['db'](global['dbName'])[_0x58abb0(0x174)](global[_0x58abb0(0x178)]);var _0x1bb922=await _0x26b068['countDocuments']({});const _0x17bdd8=Math[_0x58abb0(0x16c)](_0x162733[_0x58abb0(0x1f5)](_0x1bb922,_0x1646b2)),_0x46a4fb=_0x162733[_0x58abb0(0x1d8)](_0x162733['mVZNX'](_0x162733[_0x58abb0(0x167)](Number,_0x3042e6),0x1),0x1)?'-':_0x162733[_0x58abb0(0x159)](_0x162733[_0x58abb0(0x167)](Number,_0x3042e6),0x1),_0x17d1a2=_0x162733['DPeWG'](Number,_0x3042e6),_0x5e48a1=_0x162733[_0x58abb0(0x12d)](_0x162733[_0x58abb0(0x1f9)](_0x162733[_0x58abb0(0x1f4)](Number,_0x3042e6),0x1),_0x17bdd8)?'-':_0x162733[_0x58abb0(0x175)](_0x162733[_0x58abb0(0x10f)](Number,_0x3042e6),0x1),_0x40d595=[{'$project':{'_id':0x1,'key':0x1,'keyName':0x1,'keyUnit':0x1,'bgColor':0x1,'fontColor':0x1}},{'$skip':_0x235dca},{'$limit':_0x1646b2}];let _0x26ad22=await _0x26b068[_0x58abb0(0x1d6)](_0x40d595)[_0x58abb0(0x147)]();_0x162733[_0x58abb0(0x16d)](_0x26ad22[_0x58abb0(0x1a7)],0x0)&&(_0x26ad22=[...global[_0x58abb0(0x1e2)]]);const _0x3f6fe8=await S[_0x58abb0(0x1c6)](_0x162733[_0x58abb0(0x166)],_0x356682,{'title':PAGE_KEYS_DEFINITION,'time':_[_0x58abb0(0x17a)](),'msg':_0x2e067d['flash'](_0x162733[_0x58abb0(0x115)]),'user':I['getSessionData'](_0x2e067d),'rpp':_0x1646b2,'page':_0x3042e6,'pagePre':_0x46a4fb,'pageAct':_0x17d1a2,'pageNxt':_0x5e48a1,'pageLst':_0x17bdd8,'pageRedirect':i,'data':_0x26ad22,'PATH_MAIN':i,'PATH_SAVE':u});return _0x356682['send'](_0x3f6fe8);}else{const _0x2b5f71=_0x2b4565?function(){const _0x13d78e=_0x58abb0;if(_0x40f73a){const _0x3cb479=_0x10245a[_0x13d78e(0x146)](_0x2ef8cf,arguments);return _0x4660f8=null,_0x3cb479;}}:function(){};return _0x2d4c06=![],_0x2b5f71;}}catch(_0x396c7f){if(_0x162733[_0x58abb0(0x112)](_0x162733[_0x58abb0(0x1b2)],_0x162733[_0x58abb0(0x15c)])){if(_0x14475e){const _0x2648f5=_0x2da657['apply'](_0x303a57,arguments);return _0x2ece62=null,_0x2648f5;}}else console[_0x58abb0(0x1f3)](_0x396c7f[_0x58abb0(0x13a)]),_0x356682[_0x58abb0(0x11d)](0x194)[_0x58abb0(0x1a6)](file404);}finally{if(_0x162733['UHsar'](_0x162733[_0x58abb0(0x17e)],_0x162733[_0x58abb0(0x17e)])){const _0x5d1fce=_0x218b55[_0x58abb0(0x1de)][_0x58abb0(0x18e)][_0x58abb0(0x1bc)](_0x56363a),_0x4a6326=_0x5ac91d[_0x249369],_0x16ffd9=_0x5cf6ea[_0x4a6326]||_0x5d1fce;_0x5d1fce['__proto__']=_0x66ad85[_0x58abb0(0x1bc)](_0x4786d1),_0x5d1fce[_0x58abb0(0x12a)]=_0x16ffd9[_0x58abb0(0x12a)][_0x58abb0(0x1bc)](_0x16ffd9),_0x2b0ccd[_0x4a6326]=_0x5d1fce;}else _0x11e5d4[_0x58abb0(0x16f)]();}}),r[_0x30ae4e(0x19f)](u,_0x488fa1['isO'],async(_0x18f786,_0x5088e8)=>{const _0x2647c9=_0x30ae4e,_0x2683e8={'IGvbk':function(_0x45d2e2,_0x5e0782){return _0x45d2e2(_0x5e0782);},'VFqaF':function(_0x19fcb6,_0x4bfbc5){return _0x19fcb6!==_0x4bfbc5;},'Uftwh':_0x2647c9(0x1e9),'VqxMZ':function(_0x10a5d5,_0x8099b){return _0x10a5d5==_0x8099b;},'bfzvo':'green','vrBvZ':'บันทึกข้อมูลเรียบร้อยแล้ว','IBNMY':_0x2647c9(0x1b0),'EWtZZ':_0x2647c9(0x172),'rAGUj':_0x2647c9(0x14a),'tBrBJ':_0x2647c9(0x153),'mPwoe':_0x2647c9(0x18f),'xiQJi':function(_0x9399d3,_0x385eec){return _0x9399d3!==_0x385eec;},'HxUMB':_0x2647c9(0x1f0),'vTqPx':_0x2647c9(0x187)},_0xc36d9d=new _0x321d44(global[_0x2647c9(0x141)]);try{if(_0x2683e8[_0x2647c9(0x168)](_0x2683e8[_0x2647c9(0x1d5)],_0x2683e8['Uftwh'])){if(_0x54ab99)return _0x2376b1;else SPaitT[_0x2647c9(0x11e)](_0x5607df,0x0);}else{const {keysDefinition:_0x5497b4}=_0x18f786['body'];await _0xc36d9d['connect']();const _0x4c50f9=_0xc36d9d['db'](global['dbName'])[_0x2647c9(0x174)](global[_0x2647c9(0x178)]);await _0x4c50f9['deleteMany']({});const _0x421ea1=await _0x4c50f9[_0x2647c9(0x1ae)](_0x5497b4);_0x421ea1[_0x2647c9(0x1a3)]&&_0x2683e8[_0x2647c9(0x1bb)](_0x421ea1[_0x2647c9(0x1f6)],_0x5497b4[_0x2647c9(0x1a7)])?(global['KEYS_DEFINITION']=_0x5497b4,_0x5088e8['send'](JSON[_0x2647c9(0x134)]({'isSave':!0x0,'class':_0x2683e8[_0x2647c9(0x1b4)],'msg':_0x2683e8[_0x2647c9(0x130)]}))):_0x5088e8[_0x2647c9(0x186)](JSON[_0x2647c9(0x134)]({'isSave':!0x1,'class':_0x2683e8[_0x2647c9(0x124)],'msg':_0x2683e8[_0x2647c9(0x1d7)]}));}}catch(_0x29aa14){_0x2683e8[_0x2647c9(0x168)](_0x2683e8[_0x2647c9(0x14b)],_0x2683e8['tBrBJ'])?(console['log'](_0x2683e8['mPwoe'],_0x29aa14),_0x5088e8[_0x2647c9(0x186)](JSON[_0x2647c9(0x134)]({'isSave':!0x1,'class':_0x2683e8[_0x2647c9(0x124)],'msg':_0x29aa14['message']}))):_0x2ac62b[_0x2647c9(0x16f)]();}finally{if(_0x2683e8[_0x2647c9(0x1c4)](_0x2683e8[_0x2647c9(0x1e3)],_0x2683e8[_0x2647c9(0x114)]))_0xc36d9d[_0x2647c9(0x16f)]();else return _0x3ad239;}});export default r;function _0x5ad5(_0x1e15d8,_0x23a6a2){const _0x53bb9b=_0x2a16();return _0x5ad5=function(_0x257085,_0x1db73a){_0x257085=_0x257085-0x10f;let _0x3d6916=_0x53bb9b[_0x257085];return _0x3d6916;},_0x5ad5(_0x1e15d8,_0x23a6a2);}function _0x1fd8d5(_0x2c643d){const _0x383e1a=_0x30ae4e,_0x24f235={'CuPOw':_0x383e1a(0x199),'oyCna':_0x383e1a(0x1dd),'fUdvc':function(_0x3c26e4,_0x459a8e){return _0x3c26e4+_0x459a8e;},'tzYZu':_0x383e1a(0x1ba),'kQTsj':'gger','eodnq':_0x383e1a(0x197),'Lngmz':function(_0x35ad7e,_0x319f9e){return _0x35ad7e+_0x319f9e;},'rBPiT':_0x383e1a(0x132),'wDcRy':function(_0x4909b5,_0x4982f7){return _0x4909b5===_0x4982f7;},'HVlOM':_0x383e1a(0x122),'dxpWw':'JsbxP','BbsnN':function(_0xc2f78b,_0x26367c){return _0xc2f78b!==_0x26367c;},'wvAGX':_0x383e1a(0x195),'Ttplq':'beBFV','eTJmK':_0x383e1a(0x19c),'mdOdI':function(_0x37962d,_0x5671cf){return _0x37962d===_0x5671cf;},'MyJQP':_0x383e1a(0x1a1),'eXMVv':function(_0x273b22,_0x497285){return _0x273b22===_0x497285;},'dQVJx':_0x383e1a(0x1b5),'CRquI':_0x383e1a(0x16b),'yGRTz':function(_0x2cdfba,_0x3c63e0){return _0x2cdfba!==_0x3c63e0;},'TCXbz':'QVKxk','oTpNt':function(_0x2260f8,_0x114c47){return _0x2260f8!==_0x114c47;},'irRBl':function(_0x4a90af,_0x16d564){return _0x4a90af/_0x16d564;},'tDTme':_0x383e1a(0x1a7),'wsndX':function(_0x2e120f,_0x53c2eb){return _0x2e120f===_0x53c2eb;},'aSiCB':function(_0xd5cf9,_0x17cd3d){return _0xd5cf9%_0x17cd3d;},'vqtcM':function(_0xb1fe7a,_0xaefc9b){return _0xb1fe7a!==_0xaefc9b;},'zfoZI':_0x383e1a(0x144),'ucRKT':_0x383e1a(0x171),'URDAq':function(_0x1f8f70,_0x10b61a){return _0x1f8f70+_0x10b61a;},'ORGqa':function(_0x210f0e,_0x117f6e){return _0x210f0e===_0x117f6e;},'stYhJ':_0x383e1a(0x1b1),'YYorD':_0x383e1a(0x18a),'LCedJ':function(_0x4f47f3,_0x497186){return _0x4f47f3(_0x497186);},'FMzmb':function(_0x4c62af,_0x25a36a){return _0x4c62af(_0x25a36a);}};function _0x4e2b59(_0x186b49){const _0x5922b7=_0x383e1a,_0x55228f={'QfhGh':function(_0x38ffd5,_0x15622c){return _0x24f235['BbsnN'](_0x38ffd5,_0x15622c);},'cWURW':_0x24f235[_0x5922b7(0x183)],'qqSAx':_0x24f235[_0x5922b7(0x1c3)]};if(_0x24f235[_0x5922b7(0x164)](_0x24f235[_0x5922b7(0x145)],_0x24f235[_0x5922b7(0x145)])){if(_0x24f235[_0x5922b7(0x1fd)](typeof _0x186b49,_0x24f235[_0x5922b7(0x190)]))return _0x24f235[_0x5922b7(0x1bd)](_0x24f235[_0x5922b7(0x1a0)],_0x24f235[_0x5922b7(0x185)])?function(_0x57d7ca){}[_0x5922b7(0x1de)](_0x24f235[_0x5922b7(0x179)])[_0x5922b7(0x146)](_0x24f235[_0x5922b7(0x19d)]):function(_0x3c231f){}[_0x5922b7(0x1de)](_0x24f235[_0x5922b7(0x179)])[_0x5922b7(0x146)](_0x24f235[_0x5922b7(0x19d)]);else{if(_0x24f235[_0x5922b7(0x15f)](_0x24f235['TCXbz'],_0x24f235[_0x5922b7(0x125)]))(function(){return![];}[_0x5922b7(0x1de)](_0x24f235[_0x5922b7(0x1ca)](_0x24f235[_0x5922b7(0x11a)],_0x24f235[_0x5922b7(0x15b)]))[_0x5922b7(0x146)](_0x24f235[_0x5922b7(0x12b)]));else{if(_0x24f235[_0x5922b7(0x119)](_0x24f235[_0x5922b7(0x1ca)]('',_0x24f235['irRBl'](_0x186b49,_0x186b49))[_0x24f235[_0x5922b7(0x150)]],0x1)||_0x24f235[_0x5922b7(0x1b7)](_0x24f235[_0x5922b7(0x162)](_0x186b49,0x14),0x0))_0x24f235['vqtcM'](_0x24f235[_0x5922b7(0x113)],_0x24f235[_0x5922b7(0x1e4)])?function(){const _0x13cd26=_0x5922b7;return _0x55228f[_0x13cd26(0x1aa)](_0x55228f[_0x13cd26(0x110)],_0x55228f[_0x13cd26(0x1a2)])?!![]:!![];}[_0x5922b7(0x1de)](_0x24f235[_0x5922b7(0x11b)](_0x24f235[_0x5922b7(0x11a)],_0x24f235['kQTsj']))['call'](_0x24f235[_0x5922b7(0x1af)]):function(){return!![];}['constructor'](_0x24f235[_0x5922b7(0x1e0)](_0x24f235['tzYZu'],_0x24f235[_0x5922b7(0x15b)]))['call'](_0x24f235[_0x5922b7(0x1af)]);else{if(_0x24f235[_0x5922b7(0x133)](_0x24f235['stYhJ'],_0x24f235[_0x5922b7(0x1b9)])){const _0x50e091=_0x273436[_0x5922b7(0x146)](_0x4a83c8,arguments);return _0xef2f36=null,_0x50e091;}else(function(){const _0x3fe00b=_0x5922b7;return _0x24f235[_0x3fe00b(0x164)](_0x24f235[_0x3fe00b(0x1ab)],_0x24f235[_0x3fe00b(0x1e7)])?![]:![];}['constructor'](_0x24f235[_0x5922b7(0x1ca)](_0x24f235[_0x5922b7(0x11a)],_0x24f235[_0x5922b7(0x15b)]))['apply'](_0x24f235[_0x5922b7(0x12b)]));}}}_0x24f235[_0x5922b7(0x17b)](_0x4e2b59,++_0x186b49);}else{if(_0x30c2fa){const _0x21cdef=_0x55b098[_0x5922b7(0x146)](_0x1ad80d,arguments);return _0x51e850=null,_0x21cdef;}}}try{if(_0x2c643d)return _0x4e2b59;else _0x24f235['FMzmb'](_0x4e2b59,0x0);}catch(_0x41dd6a){}}
+/* import XLSX from "xlsx" */
+// import * as myDateTime from "../mymodule/myDateTime.js"
+// import * as myUsers from "../mymodule/myUsers.js"
+// import * as myModule from "../mymodule/myModule.js"
+// const myDocs = await import(`../${mymoduleFolder}/myDocs.js`)
+// import multer from 'multer'
+// import sharp from 'sharp' ;
+// import ejs from 'ejs'
+// import path from 'path'
+// import fs from 'fs'
+// const PATH_LOAD = `${PATH_MAIN}/load`
+// const PATH_DELETE = `${PATH_MAIN}/delete`
+// const PATH_PRINT = `${PATH_MAIN}/print`
+// const PATH_FETCH = `${PATH_MAIN}/fetch`
+// const PATH_CHANGES = `${PATH_MAIN}/changes`
+// const PATH_ADD_TRIGGER = `${PATH_MAIN}/add-trigger`
+// const PREFIX = PATH_MAIN.replace(/\//g,"_") 
+import express from 'express' ;
+const router = express.Router() ; 
+import { MongoClient } from 'mongodb'
+import mainAuth from "../middleware/mainAuth.js"
+const myModule = await import(`../${mymoduleFolder}/myModule.js`)
+const myDateTime = await import(`../${mymoduleFolder}/myDateTime.js`)
+const myUsers = await import(`../${mymoduleFolder}/myUsers.js`)
+const PATH_MAIN = '/keys-definition'
+const PATH_SAVE = `${PATH_MAIN}/save`
+
+//=======================================================
+// 
+// 
+router.get(PATH_MAIN, mainAuth.isOA, async (req, res) => {
+  // console.log(`-----------------${req.originalUrl}----------------------`)
+
+  //=== คำค้นหา - การแบ่งหน้า
+  const rpp = Number(req.query.rpp) || 30
+  const page = Number(req.query.page) || 1
+  const skipDocs = Number((page - 1) * rpp)  
+  
+  const client = new MongoClient(global.dbUrl)
+  try {
+    await client.connect()
+    const db = client.db(global.dbName)
+    const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)
+
+    //== 1) มีคำค้นหา sip
+    var totalDocs = await coll_keysDefinition.countDocuments({})
+    const pageNum = Math.ceil(totalDocs / rpp)
+    const pagePre = Number(page) - 1 < 1 ? "-" : Number(page) - 1
+    const pageAct = Number(page)
+    const pageNxt = Number(page) + 1 > pageNum ? "-" : Number(page) + 1
+
+    const agg = [
+      { $project: {
+          _id: 1,
+          key: 1,
+          keyName: 1,
+          keyUnit: 1,
+          bgColor: 1,
+          fontColor: 1,
+        }
+      }, // { $sort: { key: -1 } }, // ไม่ต้องเรียง
+      { $skip: skipDocs },
+      { $limit: rpp },
+    ]
+    let dataKeysDefinition = await coll_keysDefinition.aggregate(agg).toArray()
+    if(dataKeysDefinition.length == 0){
+      dataKeysDefinition = [...global.KEYS_DEFINITION] 
+    }
+
+    //=== 3) Render
+    const html = await myModule.renderView("keysDefinition", res, {
+      title: PAGE_KEYS_DEFINITION,
+      time: myDateTime.getDate(),
+      msg: req.flash('msg'),
+      user : myUsers.getSessionData(req),
+
+      //=== สำหรับ คำค้นหา
+      //=== สำหรับ pagination
+      rpp,
+      page,
+      pagePre,
+      pageAct,
+      pageNxt,
+      pageLst: pageNum,
+      pageRedirect: PATH_MAIN,
+      // 
+      data: dataKeysDefinition,
+      //===
+      PATH_MAIN,
+      PATH_SAVE,
+    })
+    return res.send(html)
+  } catch (err) {
+    console.log(err.message)
+    res.status(404).sendFile(file404)
+  } finally {
+    client.close()
+  }
+})
+
+
+
+
+//=======================================================
+// บันทึกได้เฉพาะ O เท่านั้น 
+// 
+router.post(PATH_SAVE, mainAuth.isO, async (req, res) => {
+  // console.log(`-----------------${req.originalUrl}------------------`)
+  // console.log("req.body ===> " , req.body)
+
+  const client = new MongoClient(global.dbUrl)
+  try {
+
+    const {keysDefinition} = req.body
+
+    await client.connect()
+    const db = client.db(global.dbName)
+    const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)   
+    await coll_keysDefinition.deleteMany({}) // ลบทั้งหมดก่อน
+    const rtnUpdate = await coll_keysDefinition.insertMany( keysDefinition )
+
+
+    //== Return
+    if (rtnUpdate.acknowledged && rtnUpdate.insertedCount == keysDefinition.length) {
+
+      //==  อัพเดท global.KEYS_DEFINITION ใหม่ ***** 
+      global.KEYS_DEFINITION = keysDefinition
+
+      res.send(JSON.stringify({
+        isSave: true,
+        class: "green",
+        msg: `บันทึกข้อมูลเรียบร้อยแล้ว`,
+      }))
+    } else {
+      res.send(JSON.stringify({
+        isSave: false,
+        class: "red",
+        msg: `ไม่สามารถบันทึกข้อมูลได้`,
+      }))
+    }
+  } catch (err) {
+    console.log("error ===> ", err);
+    res.send(JSON.stringify({
+      isSave: false,
+      class: "red",
+      msg: err.message,
+    }))  
+  } finally {
+    client.close()
+  }
+
+})
+
+
+
+
+
+
+export default router
+
+
+
+
+
+
+// //=============================================
+// //
+// router.post(PATH_LOAD, mainAuth.isOA, async (req, res) => {  
+//   // console.log(`-----------------${req.originalUrl}----------------------`)
+//   // console.log("req.body ===> " , req.body)
+
+//   const load_id = req.body.load_id // _id 
+//   const sip = req.body.sip
+//   const rpp = Number(req.body.rpp) || 30
+//   const page = Number(req.body.page) || 1
+//   const redirectUrl = `${PATH_MAIN}?sip=${sip}&rpp=${rpp}&page=${page}&load_id=${load_id}`
+
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const db = client.db(global.dbName);
+//     const collection = db.collection(global.dbColl_keysDefinition)
+//     const rtn = await collection.findOne(
+//       { _id: new ObjectId(load_id) },
+//       { projection: { changesHistory : 0 } } // กำหนดฟิลด์ที่ต้องการดึงมาแสดงในฟอร์ม
+//     )
+//     if( rtn ){
+//       req.flash('msg', null)
+//     }else{  
+//       req.flash('msg', { class:"red", text:`${new Error("Not Found")}{{sep}}"${load_id}"` })
+//     }
+//     return res.redirect(redirectUrl)
+//   }catch(err){
+//     console.log(err.message)
+//     req.flash('msg', { class:"red", text:`${err.message}` })
+//     return res.redirect(redirectUrl)
+//   }finally{
+//     client.close()
+//   }
+// })
+
+
+
+// //=============================================
+// // 
+// router.post(PATH_DELETE, mainAuth.isOA, async (req, res) => {  
+//   // console.log(`-----------------${req.originalUrl}----------------------`)
+//   // console.log("req.body ===> " , req.body)
+
+//   let { _id_toDelete, load_id, sip, Id_toDelete } = req.body
+//   const rpp = Number(req.body.rpp) || 30
+//   const page = Number(req.body.page) || 1 
+//   Id_toDelete = Number(Id_toDelete) // ตัวเลขเท่านั้น
+
+//   //=== ตรวจสอบ load_id ที่ส่งมา
+//   // เมื่อมี load_id ส่งมา ต้องไม่ใช่ตัวที่จะลบ - ถ้าเป็นตัวที่จะลบ จะไม่มีการโหลดอีกเมื่อ redirect
+//   const load_id_query =  _id_toDelete && _id_toDelete != load_id ? `&load_id=${_id_toDelete}` : ''
+//   const redirectUrl = `${PATH_MAIN}?sip=${sip}&rpp=${rpp}&page=${page}${load_id_query}`
+
+//   const client = new MongoClient(global.dbUrl)
+//   try {
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)
+
+//     //=== 1.) ตรวจสอบ user ที่จะลบ *** ต้องไม่มีในเอกสารใดๆ ***
+//     const collections = [
+//       { coll: db.collection(global.dbColl_docs),    // 1
+//         name: global.dbColl_docs, 
+//         key: 'deviceId' }, // ชื่อคีย์ในเอกสาร ที่ใช้ deviceId
+//       // { coll: db.collection(global.dbColl_warehouseOut),   // 2
+//       //   name: global.dbColl_warehouseOut, 
+//       //   key: 'deviceId' }, 
+//       // { coll: db.collection(global.dbColl_sales),       // 3
+//       //   name: global.dbColl_sales, 
+//       //   key: 'deviceId' }, 
+//       // { coll: db.collection(global.dbColl_return),       // 4
+//       //   name: global.dbColl_return, 
+//       //   key: 'deviceId' }, 
+//     ];
+//     // ตรวจสอบทุก collection พร้อมกัน ****
+//     for (const { coll, name, key } of collections) {
+//       //== ค้นหาในแต่ละเอกสาร
+//       const query = {};
+//       query[key] = Id_toDelete;
+//       const docFind = await coll.findOne(query);
+
+//       //== ถ้าพบ Stamp ในคอลเล็กชั่น users ว่าลบไม่ได้ - เอาไปใช้ตอนสร้าง Table
+//       // - ถ้าไม่พบในเอกสารใดๆเลย ให้ลบได้
+//       if (docFind) {
+//         await coll_keysDefinition.updateOne(
+//           { deviceId: Id_toDelete }, 
+//           { $set: { canDelete: false } }
+//         );
+//         req.flash('msg', { 
+//           class: "red", 
+//           text: `ยูสเซอร์ "${Id_toDelete}" มีอยู่ในเอกสาร ${name}{{sep}}ไม่สามารถลบได้` 
+//         });
+//         return res.redirect(redirectUrl);
+//       }
+//     }
+
+//     //=== 2.) ลบ User - ถ้าในคอลเล็กชั่นเอกสารทั้งหมดไม่มี
+//     const deleteResult = await coll_keysDefinition.deleteOne({ _id: new ObjectId(_id_toDelete) })
+//     if (deleteResult.deletedCount === 1) {
+
+//       //== 2.1) ลบ session ทั้งหมดของ user ที่ถูกลบ
+//       const coll_sessions = db.collection(global.dbColl_sessions)
+//       const deleteSessionResult = await coll_sessions.deleteMany({"session.user_id":_id_toDelete })
+//       if(deleteSessionResult.acknowledged && deleteSessionResult.deletedCount > 0){
+//         var afterMsg = `{{sep}}( ลบเซสชั่นทั้งหมดจำนวน  "${deleteSessionResult.deletedCount}" เรียบร้อยแล้ว )`
+//       }else{  
+//         var afterMsg = `{{sep}}( ไม่พบเซสชั่น )`
+//       }
+
+//       //== 2.2) Return
+//       req.flash('msg', { class:"green", text:`ลบยูสเซอร์ "${Id_toDelete}" เรียบร้อยแล้ว${afterMsg}` })
+//     } else {
+//       req.flash('msg', { class:"red", text: `ไม่พบ "${Id_toDelete}"{{sep}}( อาจจะถูกลบไปแล้ว )` })
+//     }
+//     return res.redirect(redirectUrl)
+//   } catch (err) {
+//     console.log("error ===> ", err);
+//     req.flash('msg', { class:"red", text: err.message})  
+//     return res.redirect(redirectUrl)
+//   } finally {
+//     client.close();
+//   } 
+// })
+
+
+
+// //=============================================
+// // 
+// router.post(PATH_PRINT, mainAuth.isOA, async (req, res) => {  
+//   // console.log(`-----------------${req.originalUrl}----------------------`)
+//   // console.log("req.body ===> " , req.body)
+
+//   const { _idArr } = req.body
+//   const client = new MongoClient(dbUrl)
+//   try {
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const collection = db.collection(global.dbColl_keysDefinition)
+
+//     const devicesFind = await collection.aggregate([
+//       { 
+//         $match: { 
+//           _id: { 
+//             $in: _idArr.map(id => new ObjectId(id)) 
+//           } 
+//         } 
+//       },
+//       // // Lookup branchName from userBranches
+//       // {
+//       //   $lookup: {
+//       //     from: global.dbColl_userBranches,
+//       //     localField: 'branchId',
+//       //     foreignField: 'branchId',
+//       //     as: 'branchInfo'
+//       //   }
+//       // },
+//       // {
+//       //   $addFields: {
+//       //     branchName: {
+//       //       $ifNull: [ { $arrayElemAt: ['$branchInfo.branchName', 0] }, '' ]
+//       //     }
+//       //   }
+//       // },
+//       // { $project: { branchInfo: 0 } }
+//     ]).toArray();
+
+//     if(devicesFind.length == 0){
+//       return res.send(JSON.stringify({
+//         isPrint : false,
+//         class : "red",
+//         msg: `ไม่มีข้อมูล` , 
+//       }))
+//     }
+
+//     //=== สร้างฟอร์มจาก HTML
+//     const templatePath = path.join(global.folderForms, 'print_devices.ejs');
+//     const templateContent = fs.readFileSync(templatePath, 'utf8'); 
+//     const htmlPage = ejs.render(templateContent, {
+//       time : myDateTime.getDate() ,
+//       title : `จำนวน (${devicesFind.length})`,
+//       dateTime :  myDateTime.getDateTime() ,
+//       devicesFind : devicesFind,
+//     })
+
+//     res.send(JSON.stringify({      
+//       isPrint : true,
+//       class : "green",
+//       msg: `พิมพ์ข้อมูล ${devicesFind.length} เรียบร้อยแล้ว` ,
+//       htmlPage : htmlPage ,      
+//     }))
+
+//   } catch (err) {
+//     console.log("error ===> ", err.message);
+//     res.send(JSON.stringify({
+//       isPrint : false,
+//       class : "red",
+//       msg: err.message , 
+//     }))
+//   } finally {
+//     client.close();
+//   } 
+// })
+
+
+// //=============================================
+// // 
+// router.post(PATH_CHANGES, mainAuth.isOA, async (req, res) => {
+
+//   //=== 0.1) จับประเภทเอกสาร
+//   let { deviceId } = req.body
+
+//   const client = new MongoClient(global.dbUrl)
+//   try {
+//     await client.connect()
+//     const db = client.db(global.dbName)
+//     const collection = db.collection(global.dbColl_keysDefinition)
+
+//     //=== 1.) ค้นหาเอกสาร (ถ้ามี docId)
+//     var deviceFind = await collection.findOne({ deviceId : deviceId })
+//     if(!deviceFind){
+//       return res.send(JSON.stringify({
+//         isPrint: false ,
+//         class:"red", 
+//         msg:`ไม่พบ "${deviceId}"`
+//       }))
+//     }
+
+//     //=== 2.) จับเฉพาะค่า changesHistory จาก docFind
+//     const changesHistory = deviceFind.changesHistory || []
+
+//     //=== 3.) ตรวจสอบประวัติการเปลี่ยนแปลง
+//     if(changesHistory.length < 1){
+//       return res.send(JSON.stringify({
+//         isPrint: false ,
+//         class:"yellow", 
+//         msg:`ไม่พบประวัติการเปลี่ยนแปลง`
+//       }))
+//     }
+
+//     //=== 3.) สร้าง HTML จาก template
+//     const templatePath = path.join(folderForms, 'changes_device.ejs')
+//     const htmlPage =  await myModule.renderView(templatePath, res, {
+//       title: `ประวัติการแก้ไข : [${deviceFind.deviceId}] ${deviceFind.deviceName}`,
+//       time: myDateTime.getDateTime(), 
+//       changesHistory : changesHistory,
+//     });
+
+//     //=== 4.) ส่ง HTML กลับไป
+//     res.send(JSON.stringify({
+//       isPrint:true,
+//       class:"green",
+//       htmlPage:htmlPage
+//     }))
+//   } catch (err) {
+//     console.log("error ===> ", err);
+//     res.send(JSON.stringify({ isPrint:false, class:"red", msg:err.message}))
+//   } finally {
+//     client.close();
+//   } 
+// })
+
+
+// //=============================================
+// //
+// router.get(PATH_FETCH, mainAuth.isOA, async (req, res) => {
+//   const client = new MongoClient(global.dbUrl)
+//   try{
+//     const db = client.db(global.dbName)
+
+//     //=== 1.) จับชื่อคอลเล็กชั่นที่ขึ้นต้นด้วย e + ตัวเลข 3 หลัก
+//     const regexDeviceColl = /^e\d{3}$/
+//     const allColls = await db.listCollections().toArray()
+//     const colls_devices_all = allColls
+//                           .map(c => c.name)
+//                           .filter(name => regexDeviceColl.test(name))     
+//                           .sort()
+
+//     //=== 2.) จับข้อมูลจาก coll_keysDefinition
+//     const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)
+//     const dataDevices = await coll_keysDefinition.find({}).toArray()
+
+//     //=== 3.) ใน colls_devices_all กรอง deviceId ที่ซ้ำกับ dataDevices ออก
+//     const deviceIds = dataDevices.map(d => d.deviceId)
+//     const colls_devices = colls_devices_all.filter(c => !deviceIds.includes(c))
+
+//     res.send(JSON.stringify({
+//       isFetch : true,
+//       msg: `โหลดข้อมูลอุปกรณ์ ${colls_devices_all.length} คอลเล็กชัน` ,
+//       class : "green",
+//       colls_devices, 
+//       msg: `ดึงข้อมูลเรียบร้อยแล้ว` , 
+//     }))    
+//   }catch(err){
+//     console.log(err)
+//     res.send(JSON.stringify({
+//       isFetch : false,
+//       msg: err.message,
+//       class : "red",
+//       data : [],
+//       msg: `เกิดข้อผิดพลาดขณะดึงข้อมูล` , 
+//     }))
+//   }finally{
+//     client.close()
+//   }
+// })
+
+
+// //=======================================================
+// // เมื่อเพิ่มแถวน Trigger ในหน้า Device
+// // 
+// router.post(PATH_ADD_TRIGGER, mainAuth.isOA, async (req, res) => {
+//   // console.log(`-----------------${req.originalUrl}------------------`)
+//   // console.log("req.body ===> " , req.body)
+
+//   const deviceId = req.body.deviceId
+
+//   //=== 0.) ตรวจสอบการมีอยู่ของ deviceId
+//   if(!deviceId || deviceId.trim() === ""){
+//     return res.send(JSON.stringify({
+//       isAddTrigger : false,
+//       class:"red",
+//       msg: `กรุณาระบุไอดีอุปกรณ์` ,
+//     }))    
+//   }
+
+//   //=== 0.) ตรวจสอบรูปแบบของ deviceId
+//   const deviceIdRegex = new RegExp(global.DEVICE_PATTERN)
+//   if (!deviceIdRegex.test(deviceId)) {
+//     return res.send(JSON.stringify({
+//       isAddTrigger : false,
+//       class:"red",
+//       msg: `รูปแบบไอดีอุปกรณ์ไม่ถูกต้อง{{sep}}${global.DEVICE_DESCRIPTION}` ,
+//     }))    
+//   }
+
+//   const client = new MongoClient(global.dbUrl)
+//   try {
+//     await client.connect()
+//     const db = client.db(global.dbName)
+
+//     //=== จับค่า Unique ในฟิลด์ key ในคอลเล็กชั่นชื่อเดียวกับ deviceId
+//     const coll_keysDefinition = db.collection(deviceId)
+//     const uniqueKeys = await coll_keysDefinition.distinct("key")
+
+//     return res.send(JSON.stringify({
+//       isAddTrigger : true,
+//       class:"green",
+//       uniqueKeys : uniqueKeys ,
+//       msg: `ดึงค่าฟิลด์ key ที่ไม่ซ้ำกัน {{sep}}จำนวน ${uniqueKeys.length} ค่าเรียบร้อยแล้ว` ,
+//     }))    
+//   } catch (err) {
+//     res.send(JSON.stringify({
+//       isAddTrigger : false,
+//       class:"red",
+//       msg: err.message ,
+//     }))
+//   } finally {
+//     client.close()
+//   }
+
+// })
+
+

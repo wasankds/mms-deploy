@@ -1,1 +1,595 @@
-const _0x36b834=_0x32b1;(function(_0x5730ba,_0x374e3a){const _0x43bbdc=_0x32b1,_0x2b9694=_0x5730ba();while(!![]){try{const _0xedbb7b=-parseInt(_0x43bbdc(0x2a7))/0x1*(parseInt(_0x43bbdc(0x278))/0x2)+-parseInt(_0x43bbdc(0x21b))/0x3*(parseInt(_0x43bbdc(0x297))/0x4)+-parseInt(_0x43bbdc(0x25b))/0x5+-parseInt(_0x43bbdc(0x2a1))/0x6*(-parseInt(_0x43bbdc(0x247))/0x7)+-parseInt(_0x43bbdc(0x1ef))/0x8*(-parseInt(_0x43bbdc(0x244))/0x9)+-parseInt(_0x43bbdc(0x1fe))/0xa+-parseInt(_0x43bbdc(0x23e))/0xb*(-parseInt(_0x43bbdc(0x293))/0xc);if(_0xedbb7b===_0x374e3a)break;else _0x2b9694['push'](_0x2b9694['shift']());}catch(_0x241a7c){_0x2b9694['push'](_0x2b9694['shift']());}}}(_0x5053,0xbcf1e));function _0x32b1(_0x1528cc,_0x99d160){const _0x32655d=_0x5053();return _0x32b1=function(_0x134f48,_0x5a2288){_0x134f48=_0x134f48-0x1d1;let _0x506545=_0x32655d[_0x134f48];return _0x506545;},_0x32b1(_0x1528cc,_0x99d160);}const _0x363648=(function(){const _0x47b703=_0x32b1,_0x59e19c={'TWuAO':function(_0x3d8ad1,_0x15e446){return _0x3d8ad1(_0x15e446);},'VQdKq':function(_0x4010b1,_0x17f86f){return _0x4010b1+_0x17f86f;},'tFtae':'return\x20(function()\x20','ykDVB':_0x47b703(0x1dd),'SWBAO':function(_0x2eee02,_0x19e736){return _0x2eee02!==_0x19e736;},'tKnyc':'VGHyl','XhBvm':'yaCPa','pbOCz':_0x47b703(0x1dc),'LgqbF':_0x47b703(0x212),'Opgrw':_0x47b703(0x259),'qwMQt':_0x47b703(0x291),'OdhyY':function(_0xaf3014,_0x117654){return _0xaf3014+_0x117654;},'xqwNx':_0x47b703(0x26b),'EqINb':_0x47b703(0x24f),'swiZk':function(_0x1faf6e){return _0x1faf6e();},'TVqaO':function(_0x20d038,_0x44aa55,_0xb4173d){return _0x20d038(_0x44aa55,_0xb4173d);},'Ldiru':_0x47b703(0x28c),'LkUuD':_0x47b703(0x2a2)};let _0x904f2d=!![];return function(_0x2836a1,_0x4e9142){const _0x260362=_0x47b703,_0x5d2ae0={'dQjNF':_0x59e19c[_0x260362(0x218)],'Khpio':_0x59e19c[_0x260362(0x1e7)],'tbnDt':function(_0xd76e94,_0x31afa4){const _0x3b84ff=_0x260362;return _0x59e19c[_0x3b84ff(0x23a)](_0xd76e94,_0x31afa4);},'TlBHB':_0x59e19c[_0x260362(0x1df)],'dpGns':function(_0x10066e,_0x2cd00c){const _0x5e625c=_0x260362;return _0x59e19c[_0x5e625c(0x1d3)](_0x10066e,_0x2cd00c);},'yiMvC':_0x59e19c['xqwNx'],'WLodQ':_0x59e19c['EqINb'],'wdFAD':function(_0x11878d){const _0x362afb=_0x260362;return _0x59e19c[_0x362afb(0x27f)](_0x11878d);},'ZrpiN':function(_0x10f347,_0x5c5d13,_0x525119){return _0x59e19c['TVqaO'](_0x10f347,_0x5c5d13,_0x525119);}};if(_0x59e19c[_0x260362(0x246)](_0x59e19c['Ldiru'],_0x59e19c['LkUuD'])){const _0x555c5c=_0x904f2d?function(){const _0x51e4f9=_0x260362,_0x30280a={'hMWSL':function(_0x3054bc,_0x259cdd){const _0x15f759=_0x32b1;return _0x59e19c[_0x15f759(0x23a)](_0x3054bc,_0x259cdd);},'VuTwu':function(_0x11fb1b,_0x352fd4){const _0x49ffd4=_0x32b1;return _0x59e19c[_0x49ffd4(0x23a)](_0x11fb1b,_0x352fd4);},'fuNHE':function(_0x48f07f,_0x48f703){const _0x1ce168=_0x32b1;return _0x59e19c[_0x1ce168(0x1d8)](_0x48f07f,_0x48f703);},'iQHdc':_0x59e19c[_0x51e4f9(0x235)],'uHXSP':_0x59e19c['ykDVB']};if(_0x59e19c[_0x51e4f9(0x246)](_0x59e19c['tKnyc'],_0x59e19c[_0x51e4f9(0x24c)]))_0x30280a[_0x51e4f9(0x23c)](_0x3b56b6,0x0);else{if(_0x4e9142){if(_0x59e19c[_0x51e4f9(0x246)](_0x59e19c[_0x51e4f9(0x29e)],_0x59e19c[_0x51e4f9(0x261)])){const _0x4c8339=_0x4e9142[_0x51e4f9(0x298)](_0x2836a1,arguments);return _0x4e9142=null,_0x4c8339;}else{let _0x1a9847;try{_0x1a9847=_0x30280a['VuTwu'](_0x4c091d,_0x30280a[_0x51e4f9(0x22a)](_0x30280a[_0x51e4f9(0x22a)](_0x30280a[_0x51e4f9(0x294)],_0x30280a[_0x51e4f9(0x27d)]),');'))();}catch(_0x2051f2){_0x1a9847=_0x11fdee;}return _0x1a9847;}}}}:function(){};return _0x904f2d=![],_0x555c5c;}else{const _0x509195={'EpGUE':_0x5d2ae0['dQjNF'],'STkZi':_0x5d2ae0[_0x260362(0x1da)],'VMCQC':function(_0x5970ed,_0x3ee629){return _0x5d2ae0['tbnDt'](_0x5970ed,_0x3ee629);},'hXjGz':_0x5d2ae0['TlBHB'],'mRHSF':function(_0x9d8e7f,_0x10a1a1){return _0x5d2ae0['dpGns'](_0x9d8e7f,_0x10a1a1);},'rzavb':_0x5d2ae0['yiMvC'],'uVlwy':function(_0x597fe2,_0x226237){const _0x276d5f=_0x260362;return _0x5d2ae0[_0x276d5f(0x20e)](_0x597fe2,_0x226237);},'DNlZI':_0x5d2ae0[_0x260362(0x271)],'yLfOW':function(_0x4555f2,_0x42c913){return _0x5d2ae0['tbnDt'](_0x4555f2,_0x42c913);},'Zvsju':function(_0x230171){return _0x5d2ae0['wdFAD'](_0x230171);}};_0x5d2ae0[_0x260362(0x1e3)](_0x317f6b,this,function(){const _0x20a17a=_0x260362,_0x2141da=new _0x49c560(_0x509195['EpGUE']),_0x45cd1c=new _0x4ac54c(_0x509195[_0x20a17a(0x240)],'i'),_0x1b03dc=_0x509195[_0x20a17a(0x29a)](_0x58c071,_0x509195[_0x20a17a(0x230)]);!_0x2141da['test'](_0x509195[_0x20a17a(0x1d1)](_0x1b03dc,_0x509195[_0x20a17a(0x1f3)]))||!_0x45cd1c['test'](_0x509195[_0x20a17a(0x217)](_0x1b03dc,_0x509195[_0x20a17a(0x21f)]))?_0x509195['yLfOW'](_0x1b03dc,'0'):_0x509195['Zvsju'](_0x3cce98);})();}};}());(function(){const _0x5bdf8a=_0x32b1,_0x1fc6f2={'IjqHM':function(_0x4f9b42,_0x3e3b83){return _0x4f9b42===_0x3e3b83;},'xGMsg':_0x5bdf8a(0x233),'LeegE':_0x5bdf8a(0x212),'kYiIT':_0x5bdf8a(0x259),'qgxyQ':function(_0x93044d,_0x4045c8){return _0x93044d(_0x4045c8);},'NVYYV':_0x5bdf8a(0x291),'uQLQh':function(_0x4e4b9c,_0xe7f822){return _0x4e4b9c+_0xe7f822;},'VCzut':_0x5bdf8a(0x26b),'gbOwX':'input','SdSnQ':function(_0x281798,_0x22da8c){return _0x281798!==_0x22da8c;},'HNDAo':_0x5bdf8a(0x26e),'elQyr':'oqayz','SDDqn':function(_0x303783,_0x1c810f){return _0x303783!==_0x1c810f;},'Qgdvd':_0x5bdf8a(0x238),'rfPaY':'FHBcV','omdiM':function(_0x5bb095){return _0x5bb095();},'VDLva':function(_0xaf31fd,_0x2f93bc,_0x28619b){return _0xaf31fd(_0x2f93bc,_0x28619b);}};_0x1fc6f2['VDLva'](_0x363648,this,function(){const _0x1fda7a=_0x5bdf8a;if(_0x1fc6f2[_0x1fda7a(0x248)](_0x1fc6f2[_0x1fda7a(0x1d9)],_0x1fc6f2[_0x1fda7a(0x1d9)])){const _0x14f43c=new RegExp(_0x1fc6f2[_0x1fda7a(0x295)]),_0x11bb2c=new RegExp(_0x1fc6f2['kYiIT'],'i'),_0x370633=_0x1fc6f2[_0x1fda7a(0x231)](_0x28c440,_0x1fc6f2['NVYYV']);if(!_0x14f43c[_0x1fda7a(0x220)](_0x1fc6f2['uQLQh'](_0x370633,_0x1fc6f2[_0x1fda7a(0x211)]))||!_0x11bb2c[_0x1fda7a(0x220)](_0x1fc6f2[_0x1fda7a(0x29c)](_0x370633,_0x1fc6f2[_0x1fda7a(0x1ea)]))){if(_0x1fc6f2[_0x1fda7a(0x1e2)](_0x1fc6f2[_0x1fda7a(0x1fd)],_0x1fc6f2[_0x1fda7a(0x24d)]))_0x1fc6f2[_0x1fda7a(0x231)](_0x370633,'0');else return _0x2138c5;}else{if(_0x1fc6f2['SDDqn'](_0x1fc6f2['Qgdvd'],_0x1fc6f2['rfPaY']))_0x1fc6f2[_0x1fda7a(0x26d)](_0x28c440);else{const _0x332b15=_0x217263?function(){const _0x504656=_0x1fda7a;if(_0x17146e){const _0x80680c=_0x4c5928[_0x504656(0x298)](_0x10b789,arguments);return _0x3fb677=null,_0x80680c;}}:function(){};return _0x474fd3=![],_0x332b15;}}}else{if(_0x1a7b8e){const _0x2eb0e9=_0x55aa0b[_0x1fda7a(0x298)](_0x5f2cda,arguments);return _0x2a31ac=null,_0x2eb0e9;}}})();}());const _0x5a2288=(function(){const _0x510cda=_0x32b1,_0x2f113b={'lwxIS':_0x510cda(0x212),'VvSNZ':_0x510cda(0x259),'FxQuZ':function(_0x11637d,_0x4f1ce4){return _0x11637d(_0x4f1ce4);},'fqYHx':_0x510cda(0x291),'ZCTef':function(_0x1ff831,_0x23c8f7){return _0x1ff831+_0x23c8f7;},'llZjO':'chain','rxEUy':function(_0x351d6f,_0x2bd503){return _0x351d6f+_0x2bd503;},'sFBfz':_0x510cda(0x24f),'oNxah':function(_0x37411e){return _0x37411e();},'Dzqor':function(_0x536a3b,_0x39c828){return _0x536a3b!==_0x39c828;},'UQOXn':_0x510cda(0x1e4),'jdYiJ':function(_0x355d0b,_0x4f9efd){return _0x355d0b===_0x4f9efd;},'ThUQs':_0x510cda(0x1fb),'eqpBr':_0x510cda(0x299),'fYogY':_0x510cda(0x274),'vpbyr':_0x510cda(0x296)};let _0x53d097=!![];return function(_0x295977,_0x1747b6){const _0x366f3b=_0x510cda,_0x46ee60={'SWKwV':_0x2f113b[_0x366f3b(0x26c)],'HMwGi':_0x2f113b[_0x366f3b(0x25d)],'mSEdO':function(_0x3d8550,_0x66aa86){return _0x2f113b['FxQuZ'](_0x3d8550,_0x66aa86);},'JGGAM':_0x2f113b[_0x366f3b(0x202)],'tghgK':function(_0x51913d,_0x5c304a){const _0x2ff863=_0x366f3b;return _0x2f113b[_0x2ff863(0x242)](_0x51913d,_0x5c304a);},'kRwgr':_0x2f113b['llZjO'],'unztZ':function(_0xde9b14,_0x264bf1){return _0x2f113b['rxEUy'](_0xde9b14,_0x264bf1);},'FneqM':_0x2f113b['sFBfz'],'uUCZp':function(_0x393e8c){const _0x4dfe69=_0x366f3b;return _0x2f113b[_0x4dfe69(0x23f)](_0x393e8c);},'oklhP':function(_0x2289b8,_0x3914a0){const _0xae829e=_0x366f3b;return _0x2f113b[_0xae829e(0x2a3)](_0x2289b8,_0x3914a0);},'zifbc':_0x2f113b[_0x366f3b(0x1db)],'cYuui':function(_0x347c2d,_0x256e69){const _0x84a52d=_0x366f3b;return _0x2f113b[_0x84a52d(0x264)](_0x347c2d,_0x256e69);},'skaSf':_0x2f113b['ThUQs'],'JaNkC':_0x2f113b['eqpBr']};if(_0x2f113b[_0x366f3b(0x2a3)](_0x2f113b[_0x366f3b(0x1f8)],_0x2f113b['vpbyr'])){const _0x5bdbed=_0x53d097?function(){const _0x17fea5=_0x366f3b;if(_0x46ee60[_0x17fea5(0x270)](_0x46ee60[_0x17fea5(0x226)],_0x46ee60[_0x17fea5(0x226)])){const _0x579fe6=_0x2a7134?function(){if(_0x2882ec){const _0x4d07bc=_0x4f7364['apply'](_0x2dff66,arguments);return _0x4b4e6c=null,_0x4d07bc;}}:function(){};return _0x19ae3c=![],_0x579fe6;}else{if(_0x1747b6){if(_0x46ee60[_0x17fea5(0x209)](_0x46ee60[_0x17fea5(0x27e)],_0x46ee60['JaNkC'])){const _0x4517ea=new _0x46ae5f(_0x46ee60[_0x17fea5(0x21c)]),_0x3faad3=new _0x2b61f5(_0x46ee60[_0x17fea5(0x20b)],'i'),_0xf5c081=_0x46ee60['mSEdO'](_0x1d2ec7,_0x46ee60['JGGAM']);!_0x4517ea[_0x17fea5(0x220)](_0x46ee60[_0x17fea5(0x1e1)](_0xf5c081,_0x46ee60[_0x17fea5(0x22b)]))||!_0x3faad3[_0x17fea5(0x220)](_0x46ee60[_0x17fea5(0x236)](_0xf5c081,_0x46ee60[_0x17fea5(0x1e6)]))?_0x46ee60[_0x17fea5(0x290)](_0xf5c081,'0'):_0x46ee60[_0x17fea5(0x1e0)](_0x15608e);}else{const _0x1fbc29=_0x1747b6[_0x17fea5(0x298)](_0x295977,arguments);return _0x1747b6=null,_0x1fbc29;}}}}:function(){};return _0x53d097=![],_0x5bdbed;}else{if(_0x442a8c){const _0x5e9ae3=_0x1de286['apply'](_0x350a53,arguments);return _0x550034=null,_0x5e9ae3;}}};}()),_0x134f48=_0x5a2288(this,function(){const _0x48829d=_0x32b1,_0x2975c7={'AQiWM':_0x48829d(0x1f0),'sJdwj':_0x48829d(0x20c),'xcUmu':function(_0x11aa48,_0x162354){return _0x11aa48!==_0x162354;},'ZxRDi':_0x48829d(0x27b),'VKttp':function(_0x2888ad,_0x2fe434){return _0x2888ad===_0x2fe434;},'BOLMs':_0x48829d(0x1d4),'hmAvi':function(_0x1e4a77,_0x3eed21){return _0x1e4a77(_0x3eed21);},'UxYpa':function(_0x169aa8,_0x564e4f){return _0x169aa8+_0x564e4f;},'KLeJt':function(_0x5d25be,_0x54ed97){return _0x5d25be+_0x54ed97;},'evpkS':'return\x20(function()\x20','fsgGe':_0x48829d(0x1dd),'OZpuJ':_0x48829d(0x210),'LPhIy':function(_0x51f476,_0x3d4e66){return _0x51f476(_0x3d4e66);},'gTzgT':function(_0x8e7e80){return _0x8e7e80();},'bjchM':_0x48829d(0x281),'HoQBm':_0x48829d(0x20a),'lVEgS':_0x48829d(0x1d7),'josQM':_0x48829d(0x20d),'EESNb':'table','FSrBv':_0x48829d(0x250),'ubMEq':function(_0x589996,_0x4474c0){return _0x589996<_0x4474c0;},'aYgtu':function(_0x380527,_0x23185f){return _0x380527===_0x23185f;},'VdklE':_0x48829d(0x208)},_0x2c8189=function(){const _0x16313b=_0x48829d;if(_0x2975c7['xcUmu'](_0x2975c7['ZxRDi'],_0x2975c7[_0x16313b(0x22c)]))_0x30673a[_0x16313b(0x20c)](_0x2975c7[_0x16313b(0x263)],_0x47a3a3[_0x16313b(0x286)]),_0x346833['status'](0x1f4)[_0x16313b(0x273)]({'status':_0x2975c7[_0x16313b(0x265)],'msg':_0x21545f[_0x16313b(0x286)]});else{let _0xa86626;try{_0x2975c7['VKttp'](_0x2975c7[_0x16313b(0x1e8)],_0x2975c7['BOLMs'])?_0xa86626=_0x2975c7[_0x16313b(0x1ec)](Function,_0x2975c7[_0x16313b(0x1e9)](_0x2975c7[_0x16313b(0x24a)](_0x2975c7[_0x16313b(0x276)],_0x2975c7[_0x16313b(0x292)]),');'))():_0x30752f['close']();}catch(_0x325deb){if(_0x2975c7[_0x16313b(0x237)](_0x2975c7[_0x16313b(0x23d)],_0x2975c7['OZpuJ'])){const _0x43b816=_0x40225a[_0x16313b(0x298)](_0x171f7a,arguments);return _0x73f01c=null,_0x43b816;}else _0xa86626=window;}return _0xa86626;}},_0x2086c5=_0x2975c7['gTzgT'](_0x2c8189),_0x1d1b0b=_0x2086c5[_0x48829d(0x206)]=_0x2086c5[_0x48829d(0x206)]||{},_0x180174=[_0x2975c7['bjchM'],_0x2975c7[_0x48829d(0x216)],_0x2975c7['lVEgS'],_0x2975c7[_0x48829d(0x265)],_0x2975c7[_0x48829d(0x253)],_0x2975c7[_0x48829d(0x249)],_0x2975c7[_0x48829d(0x2a6)]];for(let _0x42e6c9=0x0;_0x2975c7['ubMEq'](_0x42e6c9,_0x180174['length']);_0x42e6c9++){if(_0x2975c7['aYgtu'](_0x2975c7[_0x48829d(0x245)],_0x2975c7[_0x48829d(0x245)])){const _0x543f3a=_0x5a2288[_0x48829d(0x1e5)][_0x48829d(0x285)][_0x48829d(0x22f)](_0x5a2288),_0x3a1cbc=_0x180174[_0x42e6c9],_0x1ef62e=_0x1d1b0b[_0x3a1cbc]||_0x543f3a;_0x543f3a[_0x48829d(0x256)]=_0x5a2288['bind'](_0x5a2288),_0x543f3a['toString']=_0x1ef62e['toString']['bind'](_0x1ef62e),_0x1d1b0b[_0x3a1cbc]=_0x543f3a;}else _0x2975c7[_0x48829d(0x204)](_0x1c1d17,'0');}});_0x134f48();import _0x11423d from'express';const c=_0x11423d[_0x36b834(0x222)]();import{MongoClient as _0x580e8e}from'mongodb';import*as _0x25ef44 from'../mymodule/myDateTime.js';function _0x5053(){const _0x573804=['UkwFc','qNYPZ','FSrBv','1027618XAGKTZ','mRHSF','YyVGp','OdhyY','zawff','XGUhU','QbiNH','info','VQdKq','xGMsg','Khpio','UQOXn','WJuTc','{}.constructor(\x22return\x20this\x22)(\x20)','SwtJu','qwMQt','uUCZp','tghgK','SdSnQ','ZrpiN','EEiQN','constructor','FneqM','Opgrw','BOLMs','UxYpa','gbOwX','after','hmAvi','stateObject','eNqCS','16aSxvXj','Error\x20in\x20/\x20route:','xvYaq','getTimestamp','rzavb','gIykQ','gvzie','toString','aZpaD','fYogY','pkQvR','collection','HKqgd','mrntX','HNDAo','3512120RjRopL','nVUTP','OPgHX','wOMem','fqYHx','length','LPhIy','hucVT','console','status','qHBnB','cYuui','warn','HMwGi','error','exception','dpGns','cQACq','FyZBf','VCzut','function\x20*\x5c(\x20*\x5c)','ghdSR','post','nCYwm','HoQBm','uVlwy','LgqbF','EmpPX','We\x20connected','3wKZqAN','SWKwV','tuMRz','XCMPx','DNlZI','test','oCbYn','Router','AuIlJ','UCCJc','jEhGS','zifbc','FuVNq','DYXOW','XnSnX','fuNHE','kRwgr','ZxRDi','findOneAndUpdate','debu','bind','hXjGz','qgxyQ','timestamp','cqNJu','action','tFtae','unztZ','xcUmu','nauGm','JGIkg','TWuAO','toArray','hMWSL','OZpuJ','19936367UWDvCA','oNxah','STkZi','filter','ZCTef','RlvRh','6889086sKLfKA','VdklE','SWBAO','3261573XiQVBT','IjqHM','EESNb','KLeJt','dbUrl','tKnyc','elQyr','/esp/esp-connect','input','trace','MeBpy','body','josQM','coEDN','nZPZb','__proto__','tgCFv','vIZkO','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','lgYdo','4808290JZXrqs','string','VvSNZ','ESP\x20Not\x20found\x20:\x20','HLyGK','HjEiG','pbOCz','ySIAm','AQiWM','jdYiJ','sJdwj','getTime','OexGF','kSalY','gZOzu','gKROd','chain','lwxIS','omdiM','TsObH','AjJzl','oklhP','WLodQ','close','send','cOPcq','connect','evpkS','yAAwq','2fSAzdK','COlOS','HmogA','AsQyA','return\x20(function()\x20','uHXSP','skaSf','swiZk','WuULO','log','gger','dbName','pZGFl','prototype','message','find','call','dbColl_esp32','counter','SvDao','VqYlQ','espId','KMwsP','gtHOU','mSEdO','init','fsgGe','12rttoUu','iQHdc','LeegE','EXXVM','2779352pYRTvV','apply','BAJjm','VMCQC','dRiTr','uQLQh','SUgaT','XhBvm','lFwLl','gCLog','6QHtKpn','GtjBA','Dzqor'];_0x5053=function(){return _0x573804;};return _0x5053();}c[_0x36b834(0x214)](_0x36b834(0x24e),async(_0x2c586b,_0x2b2d75)=>{const _0x35c7be=_0x36b834,_0x4e3f67={'hyDug':function(_0x613937){return _0x613937();},'vIZkO':function(_0x15f309,_0x3ec26a){return _0x15f309(_0x3ec26a);},'RlvRh':function(_0x340529,_0x1c3a73){return _0x340529+_0x1c3a73;},'OexGF':_0x35c7be(0x27c),'EmpPX':_0x35c7be(0x1dd),'OAfdX':function(_0x31e683,_0x455198){return _0x31e683!==_0x455198;},'oCbYn':_0x35c7be(0x224),'KMwsP':_0x35c7be(0x1eb),'COlOS':_0x35c7be(0x21a),'dQSfh':_0x35c7be(0x20c),'wOMem':'XAOxE','DYXOW':'rsWxJ','nZPZb':'Error\x20in\x20/\x20route:','SvDao':function(_0x30120,_0x1dd970){return _0x30120!==_0x1dd970;},'qNYPZ':_0x35c7be(0x277)},_0x5a4e2e=new _0x580e8e(global[_0x35c7be(0x24b)]);try{if(_0x4e3f67['OAfdX'](_0x4e3f67[_0x35c7be(0x221)],_0x4e3f67[_0x35c7be(0x221)]))return![];else{await _0x5a4e2e[_0x35c7be(0x275)]();const _0x4bb842=_0x5a4e2e['db'](global[_0x35c7be(0x283)])[_0x35c7be(0x1fa)](global[_0x35c7be(0x289)]),{id:_0x2a9b91,mac:_0x587b54,ip:_0x46cd58}=_0x2c586b[_0x35c7be(0x252)];await _0x4bb842[_0x35c7be(0x22d)]({'espId':_0x2a9b91},{'$set':{'espMacAddress':_0x587b54,'espIpAddress':_0x46cd58}},{'returnDocument':_0x4e3f67[_0x35c7be(0x28e)],'upsert':!0x1})?_0x2b2d75['send']({'status':'ok','msg':_0x4e3f67[_0x35c7be(0x279)]}):_0x2b2d75[_0x35c7be(0x207)](0x194)[_0x35c7be(0x273)]({'status':_0x4e3f67['dQSfh'],'msg':_0x35c7be(0x25e)+_0x2a9b91});}}catch(_0x170da4){_0x4e3f67['OAfdX'](_0x4e3f67[_0x35c7be(0x201)],_0x4e3f67[_0x35c7be(0x228)])?(console[_0x35c7be(0x20c)](_0x4e3f67[_0x35c7be(0x255)],_0x170da4[_0x35c7be(0x286)]),_0x2b2d75['status'](0x1f4)['send']({'status':_0x4e3f67['dQSfh'],'msg':_0x170da4[_0x35c7be(0x286)]})):HCnCpF['hyDug'](_0x4d3bfa);}finally{_0x4e3f67[_0x35c7be(0x28b)](_0x4e3f67['qNYPZ'],_0x4e3f67[_0x35c7be(0x2a5)])?_0x3feb5c=HCnCpF[_0x35c7be(0x258)](_0x5221f0,HCnCpF[_0x35c7be(0x243)](HCnCpF[_0x35c7be(0x243)](HCnCpF[_0x35c7be(0x267)],HCnCpF[_0x35c7be(0x219)]),');'))():_0x5a4e2e[_0x35c7be(0x272)]();}});export default c;async function b(_0x11d63e){const _0xd8df93=_0x36b834,_0x24548f={'EfYaZ':function(_0x2b4e96,_0x269b9b){return _0x2b4e96==_0x269b9b;},'TDjdP':function(_0x5836d9,_0x573748){return _0x5836d9!==_0x573748;},'mrntX':_0xd8df93(0x1f9),'lgYdo':function(_0x20986c,_0x527d46){return _0x20986c>=_0x527d46;},'LPGAu':function(_0x35cd29,_0x595c76){return _0x35cd29-_0x595c76;}},_0x4695c0=_0x25ef44[_0xd8df93(0x1f2)](),_0x42aca9=new _0x580e8e(dbUrl);await _0x42aca9[_0xd8df93(0x275)]();const _0x21b54f=_0x42aca9['db'](dbName)[_0xd8df93(0x1fa)](dbColl_esp32);if(_0x24548f['EfYaZ'](GLOBAL_ESP_1MIN,null))GLOBAL_ESP_1MIN=await _0x21b54f[_0xd8df93(0x287)]({},{'projection':{'_id':0x0}})[_0xd8df93(0x23b)](),GLOBAL_ESP_1MIN[_0xd8df93(0x232)]=_0x4695c0;else{if(_0x24548f['TDjdP'](_0x24548f[_0xd8df93(0x1fc)],_0x24548f[_0xd8df93(0x1fc)]))return!![];else{const _0x4b4bf0=new Date(GLOBAL_ESP_1MIN['timestamp'])[_0xd8df93(0x266)]();_0x24548f[_0xd8df93(0x25a)](_0x24548f['LPGAu'](new Date(_0x4695c0)[_0xd8df93(0x266)](),_0x4b4bf0),0xea60)&&(GLOBAL_ESP_1MIN=await _0x21b54f['find']({},{'projection':{'_id':0x0}})[_0xd8df93(0x23b)](),GLOBAL_ESP_1MIN[_0xd8df93(0x232)]=_0x4695c0);}}return _0x42aca9[_0xd8df93(0x272)](),GLOBAL_ESP_1MIN[_0xd8df93(0x241)](_0x5e2eea=>_0x5e2eea[_0xd8df93(0x28d)]==_0x11d63e)[0x0];}function _0x28c440(_0x1b5cc4){const _0x23ae57=_0x36b834,_0x5811cd={'ghdSR':'while\x20(true)\x20{}','UkwFc':_0x23ae57(0x28a),'pZGFl':function(_0x14da68,_0x4664e3){return _0x14da68===_0x4664e3;},'ySIAm':_0x23ae57(0x29f),'HmogA':function(_0xf09a6,_0x20cc12){return _0xf09a6===_0x20cc12;},'gKROd':'gQAwS','HjEiG':function(_0x5b8fc8,_0xf0ad27){return _0x5b8fc8(_0xf0ad27);},'QbiNH':function(_0x2b231b,_0x2b9894){return _0x2b231b+_0x2b9894;},'xvYaq':_0x23ae57(0x22e),'eNqCS':_0x23ae57(0x282),'jEhGS':_0x23ae57(0x234),'cTQMp':_0x23ae57(0x1ed),'SwtJu':function(_0x2f6e72,_0x59c7db){return _0x2f6e72!==_0x59c7db;},'XCMPx':_0x23ae57(0x1ff),'mxaMi':_0x23ae57(0x25f),'kSalY':_0x23ae57(0x25c),'gCLog':function(_0x1cfd0a,_0x518679){return _0x1cfd0a===_0x518679;},'SUgaT':_0x23ae57(0x26f),'gvzie':_0x23ae57(0x229),'gZOzu':_0x23ae57(0x257),'hucVT':function(_0x14a86a,_0x588d90){return _0x14a86a!==_0x588d90;},'MeBpy':function(_0x5c8bb1,_0x51bd1e){return _0x5c8bb1+_0x51bd1e;},'ZYGSg':function(_0x34433d,_0x5ce8d0){return _0x34433d/_0x5ce8d0;},'coEDN':_0x23ae57(0x203),'cQACq':function(_0x393a28,_0x2a0fbe){return _0x393a28===_0x2a0fbe;},'AuIlJ':function(_0xcb95ef,_0x9c9197){return _0xcb95ef%_0x9c9197;},'JGIkg':_0x23ae57(0x29b),'tuMRz':function(_0x409de2,_0x264398){return _0x409de2!==_0x264398;},'nCYwm':_0x23ae57(0x200)};function _0x272cc2(_0x1f2c1d){const _0x5c3c04=_0x23ae57,_0x38ff4f={'XGUhU':function(_0x12d11c,_0x13cbde){const _0x1d1ba0=_0x32b1;return _0x5811cd[_0x1d1ba0(0x260)](_0x12d11c,_0x13cbde);},'gtHOU':function(_0x33000c,_0x298dd3){const _0x286814=_0x32b1;return _0x5811cd[_0x286814(0x1d6)](_0x33000c,_0x298dd3);},'VCWSW':_0x5811cd[_0x5c3c04(0x1f1)],'aZpaD':_0x5811cd[_0x5c3c04(0x1ee)],'gIykQ':_0x5811cd[_0x5c3c04(0x225)],'YyVGp':_0x5811cd['cTQMp']};if(_0x5811cd[_0x5c3c04(0x1de)](_0x5811cd[_0x5c3c04(0x21e)],_0x5811cd['mxaMi'])){if(_0x5811cd[_0x5c3c04(0x27a)](typeof _0x1f2c1d,_0x5811cd[_0x5c3c04(0x268)])){if(_0x5811cd['gCLog'](_0x5811cd[_0x5c3c04(0x29d)],_0x5811cd[_0x5c3c04(0x1f5)])){if(_0x5c138a)return _0x82a3fd;else _0x38ff4f[_0x5c3c04(0x1d5)](_0x26e558,0x0);}else return function(_0x402edd){}[_0x5c3c04(0x1e5)](_0x5811cd[_0x5c3c04(0x213)])['apply'](_0x5811cd['UkwFc']);}else{if(_0x5811cd[_0x5c3c04(0x2a0)](_0x5811cd[_0x5c3c04(0x269)],_0x5811cd['gZOzu'])){if(_0x5811cd[_0x5c3c04(0x205)](_0x5811cd[_0x5c3c04(0x251)]('',_0x5811cd['ZYGSg'](_0x1f2c1d,_0x1f2c1d))[_0x5811cd[_0x5c3c04(0x254)]],0x1)||_0x5811cd[_0x5c3c04(0x20f)](_0x5811cd[_0x5c3c04(0x223)](_0x1f2c1d,0x14),0x0)){if(_0x5811cd[_0x5c3c04(0x27a)](_0x5811cd[_0x5c3c04(0x239)],_0x5811cd['JGIkg']))(function(){const _0x5c79ed=_0x5c3c04,_0xae4fad={'WuULO':_0x5811cd['ghdSR'],'FuVNq':_0x5811cd[_0x5c79ed(0x2a4)]};return _0x5811cd[_0x5c79ed(0x284)](_0x5811cd['ySIAm'],_0x5811cd[_0x5c79ed(0x262)])?!![]:function(_0x3be6ac){}[_0x5c79ed(0x1e5)](_0xae4fad[_0x5c79ed(0x280)])[_0x5c79ed(0x298)](_0xae4fad[_0x5c79ed(0x227)]);}['constructor'](_0x5811cd[_0x5c3c04(0x251)](_0x5811cd['xvYaq'],_0x5811cd[_0x5c3c04(0x1ee)]))['call'](_0x5811cd['jEhGS']));else{const _0x545b15=_0x2e4602[_0x5c3c04(0x1e5)]['prototype'][_0x5c3c04(0x22f)](_0x498a86),_0x19b202=_0x56c381[_0x19b31e],_0x233d2b=_0x1ce68c[_0x19b202]||_0x545b15;_0x545b15['__proto__']=_0x32230f[_0x5c3c04(0x22f)](_0x2326cd),_0x545b15[_0x5c3c04(0x1f6)]=_0x233d2b[_0x5c3c04(0x1f6)][_0x5c3c04(0x22f)](_0x233d2b),_0x55884a[_0x19b202]=_0x545b15;}}else _0x5811cd[_0x5c3c04(0x21d)](_0x5811cd[_0x5c3c04(0x215)],_0x5811cd[_0x5c3c04(0x215)])?function(){return!![];}[_0x5c3c04(0x1e5)](_0x38ff4f[_0x5c3c04(0x28f)](_0x38ff4f['VCWSW'],_0x38ff4f[_0x5c3c04(0x1f7)]))[_0x5c3c04(0x288)](_0x38ff4f[_0x5c3c04(0x1f4)]):function(){const _0x870060=_0x5c3c04;if(_0x5811cd['HmogA'](_0x5811cd[_0x870060(0x26a)],_0x5811cd[_0x870060(0x26a)]))return![];else{const _0x29b3b0=_0x57ccea['apply'](_0x350342,arguments);return _0x48e24b=null,_0x29b3b0;}}[_0x5c3c04(0x1e5)](_0x5811cd[_0x5c3c04(0x251)](_0x5811cd[_0x5c3c04(0x1f1)],_0x5811cd[_0x5c3c04(0x1ee)]))[_0x5c3c04(0x298)](_0x5811cd['cTQMp']);}else(function(){return![];}['constructor'](_0x38ff4f['gtHOU'](_0x38ff4f['VCWSW'],_0x38ff4f[_0x5c3c04(0x1f7)]))['apply'](_0x38ff4f[_0x5c3c04(0x1d2)]));}_0x5811cd[_0x5c3c04(0x260)](_0x272cc2,++_0x1f2c1d);}else _0x52c84e=_0x2bf515;}try{if(_0x1b5cc4)return _0x272cc2;else _0x5811cd[_0x23ae57(0x260)](_0x272cc2,0x0);}catch(_0x14e5b0){}}
+import express from 'express'
+const router = express.Router()
+import { MongoClient } from 'mongodb'
+import * as myDateTime from "../mymodule/myDateTime.js"
+// import * as mySendMessage from "../mymodule/mySendMessage.js" 
+// import path from 'path'
+// import axios from 'axios'
+// import * as myUsers from "../mymodule/myUsers.js" 
+// //==========================================
+// // สำหรับ บันทึกเวลาแจ้งเตือนล่าสุด
+// let ES002_ALERT_TimeStamp = null
+// let ES003_ALERT_TimeStamp = null
+// const BOT_TOKEN = '8046567910:AAG8IhMqBMfxenMqbZapeULZGS546k83s28' // wasankds_bot
+// const GROUP_CHAT_ID = '-4557511552'; // wasankds_group
+
+/*****************************************************
+******************************************************
+******************************************************
+******************* ESP - All ************************
+******************************************************
+******************************************************
+*****************************************************/
+
+
+//=== esp - connect - ใช้ได้กับทุกตัว
+// เมื่อ connect ครั้งแรก ESP32 จะส่งค่า IP/MC Address มาให้
+router.post('/esp/esp-connect', async (req, res) => {
+  // console.log(`---------${req.originalUrl}---------`)
+  // console.log('req.body ===> ', req.body)
+
+  const client = new MongoClient(global.dbUrl)
+  try{
+    await client.connect();
+    const db = client.db(global.dbName);
+    const coll_esp32 = db.collection(global.dbColl_esp32);
+    const { id, mac, ip } = req.body
+
+    //=== ถ้ามีการส่ง id มาให้ ให้ update IP/MAC Address
+    const esp32 = await coll_esp32.findOneAndUpdate(
+      { espId: id },
+      { $set: { espMacAddress:mac, espIpAddress:ip } },
+      { returnDocument: 'after', upsert: false }
+    );
+    if(esp32) {
+      res.send({ status:'ok', msg:'We connected'})
+    }else{
+      res.status(404).send({ status:'error',  msg:`ESP Not found : ${id}` })
+    }
+  }catch(error){
+    console.error('Error in / route:', error.message);
+    res.status(500).send({ status : 'error', msg: error.message });    
+  }finally{
+    client.close();
+  }
+})
+
+
+
+/*****************************************************
+******************************************************
+******************************************************
+******************* ES002 ****************************
+******************************************************
+******************************************************
+*****************************************************/
+
+
+// //=== esp001 - data loop
+// router.post('/esp/es001', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   const client = new MongoClient(dbUrl);
+//   try{
+//     const timestamp = myDateTime.getTimestamp()
+//     req.body.timestamp = timestamp
+//     // console.log('req.body ===> ', req.body)
+
+//     //=== เชียนข้อมูลลงในช่วง 10 นาที บันทึกเฉพาะค่า min-max
+//     await client.connect();
+//     const db = client.db(dbName);
+//     const collection = db.collection(dbColl_es001);    
+//     const timeInterval = timestamp.substring(0, 15) + '0'; // Round timestamp to the nearest 10-minute interval    
+//     const existingDoc = await collection.findOne({ timeInterval: timeInterval }); 
+
+//     // 1.1) Update the existing document
+//     if (existingDoc) { 
+//       const rtn = await collection.updateOne(
+//         { timeInterval: timeInterval },
+//         {
+//           $max: { tmax: req.body.t, hmax: req.body.h, },
+//           $min: { tmin: req.body.t, hmin: req.body.h },
+//           $set: { 
+//             tavg: parseFloat(((existingDoc.tavg * existingDoc.count + req.body.t) / (existingDoc.count + 1)).toFixed(2)),
+//             havg: parseFloat(((existingDoc.havg * existingDoc.count + req.body.h) / (existingDoc.count + 1)).toFixed(2)),
+//           },
+//           $inc: { count: 1 },
+//         }
+//       );
+//       if(rtn.modifiedCount === 1) {
+//         var count = existingDoc.count
+//       }
+//     } 
+//     // 1.2) Insert a new document
+//     else { 
+//       const rtn = await collection.insertOne({
+//         tmax: req.body.t, tmin: req.body.t,
+//         hmax: req.body.h, hmin: req.body.h,
+//         tavg: req.body.t, havg: req.body.h,
+//         count: 1,
+//         timeInterval: timeInterval,
+//       });
+//       if(rtn.acknowledged) {
+//         var count = 1
+//       }
+//     }
+//     client.close();
+
+//     // console.log('data ===> ', data)  
+//     req.body.count = count
+//     req.io.emit('es001_deviceState', { data: req.body });
+//     res.send({ status : 'ok', msg: 'I have got your data'});
+//   }catch(error){
+//     console.error('Error in / route:', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+
+
+/*****************************************************
+******************************************************
+******************************************************
+******************* ES002 ****************************
+******************************************************
+******************************************************
+*****************************************************/
+
+
+
+// //=== esp002 - data - loop
+// router.post('/esp/es002', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const timestamp = myDateTime.getTimestamp()
+//     req.body.timestamp = timestamp
+//     // console.log('req.body ===> ', req.body)
+//     // { t: 31.2, h: 82.5, g: 394, timestamp: '2025-05-01 09:41:01' }
+
+//     //=== เชียนข้อมูลลงในช่วง 10 นาที บันทึกเฉพาะค่า min-max    
+//     const esp32 = await get_esp_1min('es002')
+//     if(esp32 && esp32.sensors && esp32.sensors.length > 0){
+//       const triggers = esp32.sensors.filter(sensor => sensor.sensorTriggerKey !== '')
+//       // const t_t = triggers.find(sensor => sensor.sensorTriggerKey == 't_t').sensorTriggerValue || null;
+//       // const t_h = triggers.find(sensor => sensor.sensorTriggerKey == 't_h')?.sensorTriggerValue || null;
+//       var t_g = triggers.find(sensor => sensor.sensorTriggerKey == 't_g').sensorTriggerValue || null;
+//     }
+//     // console.log('t_g ===> ', t_g)
+    
+    
+//     //=== ถ้าค่าสูงกว่า Threshold ใน Setting ให้ส่ง Triger เป็น Telegram
+//     // - ส่งแล้วให้บันทึกลงฐานข้อมูลด้วย 
+//     // - และส่งจากครั้งล่าสุด ต้องห่างกัน 1 นาที หรืออื่นๆนาที ตาม settings
+//     if(t_g && req.body.g && req.body.g > t_g ){
+//       let willSendAlert = false
+//       if (ES002_ALERT_TimeStamp) {
+//         const lastAlertTime = new Date(ES002_ALERT_TimeStamp).getTime()
+//         const currentTime = new Date(req.body.timestamp).getTime()
+//         willSendAlert = currentTime - lastAlertTime < 60000 ? false : true
+//       }else{
+//         willSendAlert = true
+//       }
+//       // console.log('willSendAlert ===> ', willSendAlert)
+
+//       if(willSendAlert){
+//         // แสตมป์ว่าส่งอีกครั้งเมื่อไร
+//         ES002_ALERT_TimeStamp = req.body.timestamp; 
+//         // ส่งข้อความไปยัง Telegram Group
+//         const msg = `⚠️ Gas Value too high: ${req.body.g} ADC\n` +
+//                     `ESP02 @ ${req.body.timestamp}`
+                    
+//         const response = await mySendMessage.sendTelegramNotifyToGroup(msg, BOT_TOKEN, GROUP_CHAT_ID)
+//         // เขียนลงฐานข้อมูล allert
+//         if(response.status == 200) {
+//           const db = client.db(dbName);
+//           const coll_es002_tg = db.collection(dbColl_es002_tg);
+//           const data = {
+//             // espId: req.body.id,
+//             id: req.body.id,
+//             timestamp: req.body.timestamp,
+//             msg: msg,
+//             value: req.body.g,
+//             t_value : t_g
+//           }
+//           // เขียนลงฐานข้อมูล allert
+//           coll_es002_tg.insertOne(data);
+//           // ส่ง socket.io ไปยัง client
+//           req.io.emit('es002_tg', data);
+//         }
+//       }
+//     }
+
+//     await client.connect();
+//     const db = client.db(dbName);
+//     const timeInterval = timestamp.substring(0, 15) + '0'; // Round timestamp to the nearest 10-minute interval    
+//     const coll_es002 = db.collection(dbColl_es002);
+//     const existingDoc = await coll_es002.findOne({ timeInterval: timeInterval }); 
+//     // console.log('timeInterval ===> ', timeInterval)
+//     // console.log('existingDoc ===> ', existingDoc)
+//     if (existingDoc) { // Update the existing document
+//       const rtn = await coll_es002.updateOne(
+//         { timeInterval: timeInterval },
+//         {
+//           $max: { tmax: req.body.t, hmax: req.body.h, gmax: req.body.g },
+//           $min: { tmin: req.body.t, hmin: req.body.h, gmin: req.body.g },
+//           $set: { 
+//             tavg: parseFloat(((existingDoc.tavg * existingDoc.count + req.body.t) / (existingDoc.count + 1)).toFixed(2)),
+//             havg: parseFloat(((existingDoc.havg * existingDoc.count + req.body.h) / (existingDoc.count + 1)).toFixed(2)),
+//             gavg: parseFloat(((existingDoc.gavg * existingDoc.count + req.body.g) / (existingDoc.count + 1)).toFixed(2)),
+//           },
+//           $inc: { count: 1 }, 
+//         }
+//       );
+//       if(rtn.modifiedCount === 1) {
+//         var count = existingDoc.count
+//       }
+//     } else { // Insert a new document
+//       const rtn = await coll_es002.insertOne({
+//         tmax: req.body.t, tmin: req.body.t,
+//         hmax: req.body.h, hmin: req.body.h,
+//         gmax: req.body.g, gmin: req.body.g,
+//         tavg: req.body.t, 
+//         havg: req.body.h,
+//         gavg: req.body.g,
+//         count: 1,
+//         timeInterval: timeInterval,
+//       });
+//       if(rtn.acknowledged) {
+//         var count = 1
+//       }
+//     }
+//     // console.log('data ===> ', data)  
+//     req.body.count = count
+//     req.io.emit('es002_deviceState', { data: req.body });
+//     res.send({ status : 'ok', msg: 'I have got your data'});
+//   }catch(error){
+//     console.error('Error /esp/es002 ===> ', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });    
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+
+// //=== esp002 - setting
+// // เมื่อกดปุ่มจะมาเอาการตั้งค่า GT จากฐานข้อมูล
+// router.post('/esp/es002-setting', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const { id } = req.body
+
+//     // ต้องส่งค่า GT ของเก่ามาก่อน 
+//     await client.connect();
+//     const db = client.db(dbName);
+//     const coll_esp32 = db.collection(dbColl_esp32)
+
+//     //=== ถ้ามีการส่ง id มาให้ ให้ update IP/MAC Address
+//     const esp32 = await coll_esp32.findOne({ espId: id })
+//     if(esp32 && esp32.sensors && esp32.sensors.length > 0){
+//       const triggers = esp32.sensors.filter(sensor => sensor.sensorTriggerKey !== '')
+//       const t_t = triggers.find(sensor => sensor.sensorTriggerKey == 't_t')?.sensorTriggerValue || null;
+//       const t_h = triggers.find(sensor => sensor.sensorTriggerKey == 't_h')?.sensorTriggerValue || null;
+//       const t_g = triggers.find(sensor => sensor.sensorTriggerKey == 't_g')?.sensorTriggerValue || null;
+//       res.send({ 
+//         t_t: t_t,
+//         t_h: t_h,
+//         t_g: t_g,
+//         msg: `Set New GT`
+//       });
+//     }else{
+//       res.status(404).send({ status:'error',  msg:`ESP Not found : ${id}` })
+//     }
+//   }catch(error){
+//     console.error('Error /esp/es002-setting ===> ', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });    
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+/*****************************************************
+******************************************************
+******************************************************
+******************* ES003 ****************************
+******************************************************
+******************************************************
+*****************************************************/
+
+
+
+// //=== esp003 - 
+// router.post('/esp/es003', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const timestamp = myDateTime.getTimestamp()
+//     req.body.timestamp = timestamp
+//     // console.log('req.body ===> ', req.body)
+//     // { t: 31.2, h: 82.5, g: 394, timestamp: '2025-05-01 09:41:01' }
+
+//     //=== เชียนข้อมูลลงในช่วง 10 นาที บันทึกเฉพาะค่า min-max    
+//     const esp32 = await get_esp_1min('es003')
+//     if(esp32 && esp32.sensors && esp32.sensors.length > 0){
+//       const triggers = esp32.sensors.filter(sensor => sensor.sensorTriggerKey !== '')
+//       // const t_t = triggers.find(sensor => sensor.sensorTriggerKey == 't_t').sensorTriggerValue || null;
+//       // const t_h = triggers.find(sensor => sensor.sensorTriggerKey == 't_h')?.sensorTriggerValue || null;
+//       var t_d = triggers.find(sensor => sensor.sensorTriggerKey == 't_d')?.sensorTriggerValue || null;
+//     }
+//     // console.log('t_d ===> ', t_d)
+
+//     //=== ถ้าค่าสูงกว่า Threshold ใน Setting ให้ส่ง Triger เป็น Telegram
+//     // - ส่งแล้วให้บันทึกลงฐานข้อมูลด้วย 
+//     // - และส่งจากครั้งล่าสุด ต้องห่างกัน 1 นาที หรืออื่นๆนาที ตาม settings
+//     if(t_d && req.body.d && req.body.d < t_d ){
+//       let willSendAlert = false
+//       if (ES003_ALERT_TimeStamp) {
+//         const lastAlertTime = new Date(ES003_ALERT_TimeStamp).getTime()
+//         const currentTime = new Date(req.body.timestamp).getTime()
+//         willSendAlert = currentTime - lastAlertTime < 60000 ? false : true
+//       }else{
+//         willSendAlert = true
+//       }
+
+//       if(willSendAlert){
+//         // แสตมป์ว่าส่งอีกครั้งเมื่อไร
+//         ES003_ALERT_TimeStamp = req.body.timestamp; 
+//         // ส่งข้อความไปยัง Telegram Group
+//           const msg = `⚠️Somebody is too close: ${req.body.d} cm\n` +
+//                      `ESP03 @ ${req.body.timestamp}`
+//           const response = await mySendMessage.sendTelegramNotifyToGroup(msg, BOT_TOKEN, GROUP_CHAT_ID)
+//         // เขียนลงฐานข้อมูล allert
+//         if(response.status == 200) {
+//           const db = client.db(dbName);
+//           const coll_es003_tg = db.collection(dbColl_es003_tg);
+//           const data = {
+//             // espId: req.body.id,
+//             id: req.body.id ? req.body.id : 'es003',
+//             timestamp: req.body.timestamp,
+//             value: req.body.d,
+//             t_value : t_d,
+//             msg: msg
+//           }
+//           // เขียนลงฐานข้อมูล allert
+//           coll_es003_tg.insertOne(data);
+//           // ส่ง socket.io ไปยัง client
+//           req.io.emit('es003_tg', data);
+//         }
+//       }
+//     }
+
+//     //=== เชียนข้อมูลลงในช่วง 10 นาที บันทึกเฉพาะค่า min-max
+//     await client.connect();
+//     const db = client.db(dbName);
+//     const collection = db.collection(dbColl_es003);    
+//     const timeInterval = timestamp.substring(0, 15) + '0'; // Round timestamp to the nearest 10-minute interval    
+//     const existingDoc = await collection.findOne({ timeInterval: timeInterval }); 
+//     // console.log('timeInterval ===> ', timeInterval)
+//     // console.log('existingDoc ===> ', existingDoc)
+//     if (existingDoc) { // Update the existing document
+//       const rtn = await collection.updateOne(
+//         { timeInterval: timeInterval },
+//         {
+//           $max: { tmax: req.body.t, hmax: req.body.h, dmax: req.body.d },
+//           $min: { tmin: req.body.t, hmin: req.body.h, dmin: req.body.d },
+//           $set: { 
+//             tavg: parseFloat(((existingDoc.tavg * existingDoc.count + req.body.t) / (existingDoc.count + 1)).toFixed(2)),
+//             havg: parseFloat(((existingDoc.havg * existingDoc.count + req.body.h) / (existingDoc.count + 1)).toFixed(2)),
+//             davg: parseFloat(((existingDoc.davg * existingDoc.count + req.body.d) / (existingDoc.count + 1)).toFixed(2)),
+//           },
+//           $inc: { count: 1 }, 
+//         }
+//       );
+//       if(rtn.modifiedCount === 1) {
+//         var count = existingDoc.count
+//       }
+//     } else { // Insert a new document
+//       const rtn = await collection.insertOne({
+//         tmax: req.body.t, tmin: req.body.t,
+//         hmax: req.body.h, hmin: req.body.h,
+//         dmax: req.body.d, dmin: req.body.d,
+//         tavg: req.body.t, 
+//         havg: req.body.h,
+//         davg: req.body.d,
+//         count: 1,
+//         timeInterval: timeInterval,
+//       });
+//       if(rtn.acknowledged) {
+//         var count = 1
+//       }
+//     }
+//     // console.log('data ===> ', data)  
+//     req.body.count = count
+//     req.io.emit('es003_deviceState', { data: req.body });
+//     res.send({ status : 'ok', msg: 'I have got your data'});
+//   }catch(error){
+//     console.error('Error /esp/es003 ===>', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });    
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+
+// //=== esp003 - setting
+// // เมื่อกดปุ่มจะมาเอาการตั้งค่า GT จากฐานข้อมูล
+// router.post('/esp/es003-setting', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const { id } = req.body
+
+//     // ต้องส่งค่า GT ของเก่ามาก่อน 
+//     await client.connect();
+//     const db = client.db(dbName);
+//     const coll_esp32 = db.collection(dbColl_esp32)
+
+//     //=== ถ้ามีการส่ง id มาให้ ให้ update IP/MAC Address
+//     const esp32 = await coll_esp32.findOne({ espId: id })
+//     if(esp32 && esp32.sensors && esp32.sensors.length > 0){
+//       const triggers = esp32.sensors.filter(sensor => sensor.sensorTriggerKey !== '')
+//       // console.log('triggers ===> ', triggers)
+//       const t_t = triggers.find(sensor => sensor.sensorTriggerKey == 't_t')?.sensorTriggerValue || null;
+//       const t_h = triggers.find(sensor => sensor.sensorTriggerKey == 't_h')?.sensorTriggerValue || null;
+//       const t_d = triggers.find(sensor => sensor.sensorTriggerKey == 't_d')?.sensorTriggerValue || null;
+//       res.send({ 
+//         t_t: t_t,
+//         t_h: t_h,
+//         t_d: t_d,
+//         msg: `Set New GT`
+//       });
+//     }else{
+//       res.status(404).send({ status:'error',  msg:`ESP Not found : ${id}` })
+//     }
+//   }catch(error){
+//     console.error('Error /esp/es003-setting ===> ', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });    
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+
+
+
+
+/*****************************************************
+******************************************************
+******************************************************
+******************* ES004 ****************************
+******************************************************
+******************************************************
+*****************************************************/
+
+
+
+
+
+// //=== esp004 - 
+// router.post('/esp/es004', async (req, res) => {
+//   // console.log(`---------${req.originalUrl}---------`)
+//   // console.log('req.body ===> ', req.body)
+
+//   //  { s1: 0, s2: 1 } // ถ้าเปลี่ยนจากค่าล่าสุดใน DB จึงจะบันทึก DB ใหม่ 
+  
+//   const client = new MongoClient(dbUrl)
+//   try{
+//     const timestamp = myDateTime.getTimestamp()   
+//     req.body.timestamp = timestamp
+//     // console.log('req.body ===> ', req.body)
+
+//     req.io.emit('es004_deviceState', { data: req.body });
+//     res.send({ status:'ok', msg:'I have got your data'});
+
+//     // //=== เชียนข้อมูลลงในช่วง 10 นาที บันทึกเฉพาะค่า min-max
+//     // await client.connect();
+//     // const db = client.db(dbName);
+//     // const collection = db.collection(dbColl_es003);    
+//     // const timeInterval = timestamp.substring(0, 15) + '0'; // Round timestamp to the nearest 10-minute interval    
+//     // const existingDoc = await collection.findOne({ timeInterval: timeInterval }); 
+//     // // console.log('timeInterval ===> ', timeInterval)
+//     // // console.log('existingDoc ===> ', existingDoc)
+//     // if (existingDoc) { // Update the existing document
+//     //   const rtn = await collection.updateOne(
+//     //     { timeInterval: timeInterval },
+//     //     {
+//     //       $max: { tmax: req.body.t, hmax: req.body.h, dmax: req.body.d },
+//     //       $min: { tmin: req.body.t, hmin: req.body.h, dmin: req.body.d },
+//     //       $set: { 
+//     //         tavg: parseFloat(((existingDoc.tavg * existingDoc.count + req.body.t) / (existingDoc.count + 1)).toFixed(2)),
+//     //         havg: parseFloat(((existingDoc.havg * existingDoc.count + req.body.h) / (existingDoc.count + 1)).toFixed(2)),
+//     //         davg: parseFloat(((existingDoc.davg * existingDoc.count + req.body.d) / (existingDoc.count + 1)).toFixed(2)),
+//     //       },
+//     //       $inc: { count: 1 }, 
+//     //     }
+//     //   );
+//     //   if(rtn.modifiedCount === 1) {
+//     //     var count = existingDoc.count
+//     //   }
+//     // } else { // Insert a new document
+//     //   const rtn = await collection.insertOne({
+//     //     tmax: req.body.t, tmin: req.body.t,
+//     //     hmax: req.body.h, hmin: req.body.h,
+//     //     dmax: req.body.d, dmin: req.body.d,
+//     //     tavg: req.body.t, 
+//     //     havg: req.body.h,
+//     //     davg: req.body.d,
+//     //     count: 1,
+//     //     timeInterval: timeInterval,
+//     //   });
+//     //   if(rtn.acknowledged) {
+//     //     var count = 1
+//     //   }
+//     // }
+//     // // console.log('data ===> ', data)  
+//     // req.body.count = count
+//   }catch(error){
+//     console.error('Error in / route:', error.message);
+//     res.status(500).send({ status : 'error', msg: error.message });    
+//   }finally{
+//     client.close();
+//   }
+// })
+
+
+
+export default router
+
+
+
+
+
+
+
+//====================================
+// 
+async function get_esp_1min(espId) {
+  const interval = 60000
+  const timestamp = myDateTime.getTimestamp()
+  // console.log('get_esp_1min ===> ', espId)
+
+  const client = new MongoClient(dbUrl)
+  await client.connect();
+  const db = client.db(dbName);
+  const coll_esp32 = db.collection(dbColl_esp32)
+  if(GLOBAL_ESP_1MIN == null) {
+    GLOBAL_ESP_1MIN = await coll_esp32.find({
+      // espId: espId, // sensors: { $elemMatch: { sensorTriggerKey: 't_t' } }      
+    },{projection:{ _id:0}}).toArray()
+    GLOBAL_ESP_1MIN.timestamp = timestamp
+  }else{
+    const timestampSettings = new Date(GLOBAL_ESP_1MIN.timestamp).getTime()
+    const currentTime = new Date(timestamp).getTime()
+    const diff = currentTime - timestampSettings
+    
+    if(diff >= interval) { // ถ้าตั้งค่าเกิน 1 นาทีให้ไปอ่านใหม่
+      GLOBAL_ESP_1MIN = await coll_esp32.find({
+        // espId: espId, // sensors: { $elemMatch: { sensorTriggerKey: 't_t' } }
+      },{projection:{ _id:0}}).toArray()
+      GLOBAL_ESP_1MIN.timestamp = timestamp
+    }
+  }
+  // console.log('GLOBAL_ESP_1MIN ===> ', GLOBAL_ESP_1MIN)
+
+  client.close()
+  return GLOBAL_ESP_1MIN.filter( esp => {
+    return esp.espId == espId
+  })[0]
+}
