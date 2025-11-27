@@ -13,7 +13,7 @@ global.PROJECT_DIR = process.cwd()
 global.DOMAIN_ALLOW = process.env.PORT_DEPLOY == 0 ? `${process.env.LOCALHOST_ALLOW}:${global.PORT}` : `${process.env.DOMAIN_ALLOW}`
 const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
 global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
-await import(`./${global.mymoduleFolder}/myScheduleBackupDatabase.js`)
+await import(`./${global.mymoduleFolder}/myScheduleBackupDb.js`)
 await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)
 process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
 const app = express()
@@ -79,6 +79,7 @@ app.use((await import(`./${routesFolder}/dashboardSwitchRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataInSwitchRouter.js`)).default);
 app.use((await import(`./${routesFolder}/alertsRouter.js`)).default);
 app.use((await import(`./${routesFolder}/reportByIdRouter.js`)).default);
+app.use((await import(`./${routesFolder}/mapRouter.js`)).default);
 app.use( (err, req, res, next) => {
   res.status(err.status || 500);
   const errHtml = `<h1 style="color:blue">กำลังอัปเดทข้อมูล</h1>

@@ -38,6 +38,7 @@ global.dbColl_docs = 'docs' // เก็บไว้ก่อน แม้ไม
 // ระบบ
 global.PAGE_HOME = 'MMS'
 global.PAGE_DASHBOARD = 'แดชบอร์ด'
+global.PAGE_MAP = 'แผนที่'
 global.PAGE_DEVICES = 'คอนโทรลเลอร์'
 global.PAGE_DEVICES_SORTING = 'เรียงลำดับคอนโทรลเลอร์'
 global.PAGE_ALERTS = 'แจ้งเตือน'
@@ -115,7 +116,8 @@ global.PASSWORD_DESCRIPTION = "อักษรที่สามารถใช�
 global.EMAIL_PATTERN = "^[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
 global.PHONE_PATTERN = "^[0-9]{9,10}$"
 global.PHONE_DESCRIPTION = "เบอร์โทรศัพท์ 9-10 หลัก"
-global.DEVICE_PATTERN = "^e\\d{3}$"
+global.DEVICE_PATTERN_STRING = "^e\\d{3}$" // /^e\d{3}$/
+global.DEVICE_REGEX = new RegExp(global.DEVICE_PATTERN_STRING)
 global.DEVICE_DESCRIPTION = "รูปแบบไอดีอุปกรณ์ e + ตัวเลข 3 หลัก เช่น e001, e123"
 global.TELEGRAM_BOT_TOKEN_PATTERN = "^[0-9]+:[A-Za-z0-9_]+$"
 global.TELEGRAM_BOT_TOKEN_DESCRIPTION = "โทเค็นบ็อต Telegram เช่น 123456789:AAH..."
@@ -128,6 +130,7 @@ global.folderImages = pathToFolder('public','images')
 global.folderViews = pathToFolder('views')
 global.folderPartials = pathToFolder('views','partials')
 global.folderForms = pathToFolder('views','forms')
+global.folderDevices = pathToFolder('devices')
 global.file404 = pathToFolder('public','static', '404.html')
 function pathToFolder( ...args){  
   const rootFolder = process.cwd()
@@ -184,6 +187,14 @@ global.NAV_LEFT = [
     userAuthorities: ['O','A'],
     separator: false,
   },
+  { // map
+    path: '/map', 
+    title: PAGE_MAP,
+    icon: 'fas fa-map',
+    menuColor : 'menu-green',
+    userAuthorities: ['O','A','U'],
+    separator: false,
+  }
 ]
 
 

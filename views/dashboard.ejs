@@ -77,6 +77,14 @@
             <a class="clickable" href="<%= PATH_DATA_BY_ID %>/<%= obj.deviceId %>" target="_blank" title="ดูกราฟข้อมูล">
               <i class="fas fa-chart-line fc-black"></i>
             </a>
+            <!-- <a class="clickable mg-l-l" href="<%= PATH_DEVICE_IMAGES %>/<%= obj.deviceId %>" target="_blank" title="ดูกราฟข้อมูล">
+              <i class="fas fa-camera fc-black"></i>
+            </a> -->
+            <span class="clickable mg-l-l show-device-image"
+                  data-device-id="<%= obj.deviceId %>"
+                  title="ดูภาพอุปกรณ์">
+              <i class="fas fa-camera fc-black"></i>
+            </span>
           </span>
 
           <span class="card-header-center">            
@@ -178,6 +186,7 @@
     const dataDevices = JSON.parse(`<%- JSON.stringify(dataDevices) %>`)  ;
     const socket = io();
     const PATH_GET_ALERTS = `<%= global.PATH_GET_ALERTS_USER %>`;
+    const PATH_DEVICE_IMAGES = `<%= PATH_DEVICE_IMAGES %>`;
   </script>
   <% if(!IS_PRODUCTION) { %>
   <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>

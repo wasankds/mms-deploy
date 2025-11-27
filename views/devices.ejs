@@ -3,12 +3,12 @@
 <head>
   <%- include('partials/meta',{ time:time}) %>
   <title><%= title %></title>  
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 
   <!-- Font Awesome -->
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
   <!-- SweetAlert2 -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
   <script src="/cdn/sweetalert2.all.min.js"></script>
  
   <% if(!IS_PRODUCTION) { %>
@@ -64,7 +64,9 @@
 
       <form id="mainForm" class="" autocomplete="off" 
             onsubmit="createSpinner()"
-            action="<%= PATH_SAVE %>" method="post">
+            action="<%= PATH_SAVE %>" 
+            method="post"
+            enctype="multipart/form-data">
 
         <!-- hidden -->
         <input type="hidden" name="rpp" value="<%= rpp %>">
@@ -223,6 +225,48 @@
             </div>
           </div> <!-- Row5 -->
 
+          <!-- Row6 -->
+          <div class="flex-row mg-t-s">
+
+            <!--  -->
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s al-l" title="แจ้งเตือน">
+                <i class="fas fa-map-marker-alt"></i> พิกัดละติจูด
+              </label>
+              <input class="pd-l-m al-l" type="number" placeholder="พิกัดละติจูด" 
+                     step="any"
+                     id="deviceLatitude" name="deviceLatitude" 
+                     value="<%= isItem ? item.deviceLatitude : '' %>">
+            </div>
+
+            <!--  -->
+            <div class="col-sm-5 input-group">
+              <label class="pd-r-s al-l" title="แจ้งเตือน">
+                <i class="fas fa-map-marker-alt"></i> พิกัดลองจิจูด
+              </label>
+              <input class="pd-l-m al-l" type="number" placeholder="พิกัดลองจิจูด" 
+                     step="any"
+                     id="deviceLongitude" name="deviceLongitude" 
+                     value="<%= isItem ? item.deviceLongitude : '' %>">
+            </div>
+
+          </div> <!-- Row6 -->
+
+          <!-- Row7 -->
+          <div class="flex-row mg-t-s">
+            <div class="col-f input-group">
+              <label class="pd-r-s">
+                <!-- <i class="fas fa-image"></i> -->
+                 <i class="fas fa-camera"></i>
+                <span>อัปโหลดภาพ</span>
+              </label>
+              <input class="al-l pd-l-m" type="file" 
+                    title="ไฟล์ภาพ .jpg, .jpeg, .png ไม่เกิน 10MB"
+                    accept="image/jpeg, image/jpg, image/png"
+                    id="deviceImage" name="deviceImage" >
+            </div>
+          </div>  <!-- Row7 -->
+
           <!-- Row#Add -->
           <section class="mg-t-l">
                             
@@ -287,6 +331,18 @@
             <% } %>
             </div>
           </section>
+
+          <!-- Row#Imaage -->
+          <% if( isItem && item.deviceImageBase64 ){ %>
+          <div class="flex-row mg-t-l">
+            <div class="col-f">
+              <img class="device-image-preview" 
+                   style="width: 100%; height: auto;"
+                   src="<%= item.deviceImageBase64 %>" 
+                   alt="Device Image">
+            </div>
+          </div>
+          <% } %>
 
         </div>
 

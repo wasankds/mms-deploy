@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/meta',{ time:time}) %>
+  <title><%= title %></title>
+ 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/cdn/fontawesome/css/all.min.css">
+  <!-- Flatpkr -->
+  <!-- <link rel="stylesheet" href="/cdn/flatpickr.min.css"> -->
+  <!-- <script src="/cdn/flatpickr.js"></script> -->
+  <!-- Socket.IO -->
+  <!-- <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script> -->
+  <script src="/cdn/socket.io.min.js"></script>
+  
+  <!-- ช่วยในการสร้าง Masonry Layout -->
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+  <!-- <script src="/cdn/masonry.pkgd.min.js"></script> -->
+
+  <!-- ใน <head> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
+  <link rel="stylesheet" href="/cdn/leaflet.css" />
+  <script src="/cdn/leaflet.js"></script>
+
+  <% if(!IS_PRODUCTION) { %>
+  <link rel="stylesheet" href="/css/utils.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/fonts.css?v=<%= time %>">
+  <!-- <link rel="stylesheet" href="/css/alink.css?v=<%= time %>"> -->
+  <link rel="stylesheet" href="/css/toast.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/footer.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/nav.css?v=<%= time %>">
+  <!-- <link rel="stylesheet" href="/css/modalAlerts.css?v=<%= time %>"> -->
+  <!-- <link rel="stylesheet" href="/css/flexNew.css?v=<%= time %>"> -->
+  <link rel="stylesheet" href="/css/same.css?v=<%= time %>">
+  <link rel="stylesheet" href="/css/map.css?v=<%= time %>"> 
+  <% } else { %>
+  <link rel="stylesheet" href="/css-min/map.min.css?v=<%= time %>">
+  <% }  %>
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+  <%- include('partials/notify.ejs', {msg:msg}) %>   
+
+  <header class="header-alert-title bg-dodgerblue">
+
+    <p class="al-c" title="เรียงลำดับ">
+    </p>
+
+    <p class="al-c fc-white">
+      <i class="fas fa-map mg-r-l"></i> <%= title  %>
+    </p>
+
+    <p class="al-c fc-white">
+    </p>
+
+  </header>
+
+  <main>
+    <div id="map" style="height:800px;"></div>
+  </main>
+
+  <!--  -->
+  <%- include('partials/footer') %>
+
+  <!--  -->
+  <script>
+    const socket = io();
+    const DEVICES = JSON.parse(`<%- JSON.stringify(devices) %>`) ;  
+    const KEYS_DEFINITION = JSON.parse(`<%- JSON.stringify(global.KEYS_DEFINITION) %>`) ;
+  </script>
+  <% if(!IS_PRODUCTION) { %>
+  <script type="text/javascript" src="/js/script_all.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/nav.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/notify.js?v=<%= time %>"></script>
+  <script type="text/javascript" src="/js/map.js?v=<%= time %>"></script>
+  <% } else { %>
+  <script src="/js-min/map.obf.js"></script>
+  <% }  %>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<div class="flex-row justify-content-between bb-d lh-n mg-b-m ">
+  <div class="mg-l-m fw-b">
+    <i class="fas fa-clock" title="เวลา"></i>
+    <span class="<= item.fontColor > <= obj.deviceId >-<= item.key >-timestamp">-</span>
+  </div>
+  <div class="<= item.fontColor > mg-r-m fw-b fs-xl <= obj.deviceId >-<= item.key >-lastValue">-</div>
+</div>
+
+<div class="al-c">
+  <div class="fc-gray">
+    <i class="fas fa-history" title="ช่วงเวลา10นาที"></i>
+    <span class="<= obj.deviceId >-<= item.key >-timeInterval"><= item.timeInterval ></span>
+  </div>
+</div>
+
+<div class="flex-row justify-content-between mg-b-m">
+  <div class="pd-l-s fc-plum <= obj.deviceId >-<= item.key >-min"><= item.min ></div>
+  <div class="fc-orange <= obj.deviceId >-<= item.key >-max"><= item.max ></div>
+  <div class="pd-r-s fc-dodgerblue <= obj.deviceId >-<= item.key >-avg"><= item.avg %></div>
+</div> 
+-->      

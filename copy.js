@@ -16,12 +16,21 @@ const sourceProject = 'D:\\aWK_LeaseSystem\\MMS';
 
 //=== โฟลเดอร์ที่จะก๊อปปี้ ใช้กับทั้งต้นทาง และ ปลายทาง
 const folderNames = [
-  // โฟลเดอร์ระบบ
-  'middleware', 'routes-min', 'mymodule-min',  'views',  'commandSystem-min',
-  // โฟลเดอร์ public แยกย่อยด้วย 
-  'public/cdn', 'public/css-min', 'public/fonts', 'public/images', 'public/js-min', 'public/static', 'public/sounds', 
-  // โฟลเดอร์สำหรับเก็บข้อมูลเอนทิตี้ - ไม่เอา backup เพราะจะสำรองข้อมูลแยกกัน 
-  // 'items', 'warehouse-in', 'warehouse-out' ,'sales', 'return'
+  //== โฟลเดอร์ระบบ
+  'middleware', 
+  'routes-min', 
+  'mymodule-min',  
+  'views',  
+  'commandSystem-min', 
+  //== โฟลเดอร์ public แยกย่อยด้วย 
+  'public/images', 
+  'public/fonts', 
+  'public/static', 
+  'public/cdn', 
+  'public/css-min', 
+  'public/js-min', 
+  //=== โฟลเดอร์สำหรับเก็บข้อมูลเอนทิตี้ - ไม่เอา backup เพราะจะสำรองข้อมูลแยกกัน 
+  // 'devices',
 ];
 
 //=== ไฟล์ที่จะก๊อปปี้ ใช้กับทั้งต้นทาง และ ปลายทาง 
