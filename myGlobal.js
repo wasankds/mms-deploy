@@ -7,7 +7,7 @@ import path from 'path'
 import { MongoClient } from 'mongodb'
 global.SYS_NAME = 'MMS'
 global.SYS_NAME2 = ''
-global.SYS_VERSION = '1.1.2'
+global.SYS_VERSION = '2.0.0'
 // System Setup value
 global.SYS_KEYS = process.env.SYS_KEYS ? process.env.SYS_KEYS.split(',') : []
 global.SYS_KEYS_SWITCH = process.env.SYS_KEYS_SWITCH ? process.env.SYS_KEYS_SWITCH.split(',') : []
