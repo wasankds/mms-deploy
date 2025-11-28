@@ -182,6 +182,7 @@
 
   <!--  -->
   <script>
+    const deviceIds = JSON.parse(`<%- JSON.stringify(deviceIds) %>`)  ;
     const dataDevices = JSON.parse(`<%- JSON.stringify(dataDevices) %>`)  ;
     const socket = io();
     const PATH_GET_ALERTS = `<%= global.PATH_GET_ALERTS_USER %>`;

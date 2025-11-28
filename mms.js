@@ -6,27 +6,55 @@ import flash from 'connect-flash'
 import MongoDBSession from 'connect-mongodb-session' 
 import { createServer } from 'node:http';
 import { Server } from 'socket.io'
-await import(`./myGlobal.js`)
-global.IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false ;
-global.PORT = process.env.PORT_DEPLOY == 0 ? process.env.PORT_DEV : process.env.PORT_SERVER
+const IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false
+const LOCALHOST = process.env.LOCALHOST
+const DOMAIN_URL = process.env.DOMAIN_URL
+const DOMAIN_WWW_URL = process.env.DOMAIN_WWW_URL
+const PORT = IS_PRODUCTION == 0 ? process.env.PORT_DEV : process.env.PORT_PRODUCTION
+const RANDOM_DATA = process.env.RANDOM_DATA == 1 ? true : false
+const routesFolder = IS_PRODUCTION ? 'routes-min' : 'routes'
+global.IS_PRODUCTION = IS_PRODUCTION
 global.PROJECT_DIR = process.cwd()
-global.DOMAIN_ALLOW = process.env.PORT_DEPLOY == 0 ? `${process.env.LOCALHOST_ALLOW}:${global.PORT}` : `${process.env.DOMAIN_ALLOW}`
-const routesFolder = global.IS_PRODUCTION ? 'routes-min' : 'routes'
-global.mymoduleFolder = global.IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
+global.DOMAIN_ALLOW = IS_PRODUCTION == 0 ? `${LOCALHOST}:${PORT}` : `${DOMAIN_URL}`
+global.mymoduleFolder = IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
+await import(`./myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDb.js`)
-await import(`./${global.mymoduleFolder}/myScheduleDevices.js`)
-process.env.RANDOM_DATA == '1' ? await import(`./${global.mymoduleFolder}/myRandomData.js`) : null
+if(RANDOM_DATA) await import(`./${global.mymoduleFolder}/myRandomData.js`)
 const app = express()
 const server = createServer(app)
 const io = new Server(server)
 global.io = io;
+
+//=== เข้าใช้ได้จากภายนอกเฉพาะ โดเมนที่กำหนดไว้
+// - เข้าจากเลข IP โดยตรงจะไม่ผ่าน
+// - ดูเหมือนเข้าจาก www. จะยังไม่ผ่าน อาจจะติด cloudflare tunnel ก็ได้
+if(IS_PRODUCTION){
+  const allowedHosts = [
+    DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
+    DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase(),
+    DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
+    DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase()
+  ];
+  if (IS_PRODUCTION == 0) {
+    allowedHosts.push(LOCALHOST.toLowerCase());
+    allowedHosts.push(LOCALHOST.replace(/https:\/\/|http:\/\//, '').toLowerCase());
+  }
+  app.use((req, res, next) => {
+    const host = req.headers.host && req.headers.host.split(':')[0];
+    if (!allowedHosts.includes(host)) {
+      return res.status(403).send('Forbidden');
+    }
+    next();
+  });
+}
+
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
 app.use(session({
   secret: 'mms.node.apps.key.sign.cookie',
   cookie: {
     maxAge: 1000*60*60*24*30,
-    // secure: process.env.DEPLOY == 'dev' ? false : true,
+    // secure: IS_PRODUCTION ? true : false,
     httpOnly: IS_PRODUCTION ? true : false,
   },
   resave: false,
@@ -45,8 +73,8 @@ app.use(express.urlencoded({extended:true,limit:'50mb'}))
 app.use(express.static(global.folderPublic))
 app.use((req, res, next) => {
   const allowedOrigins = [ global.DOMAIN_ALLOW ]
-  if(!IS_PRODUCTION){
-    allowedOrigins.push(`${process.env.LOCALHOST_ALLOW}:${global.PORT}`)
+  if(!IS_PRODUCTION){ // development - เพิ่ม localhost และ Five Server
+    allowedOrigins.push(`${LOCALHOST}:${PORT}`)
     allowedOrigins.push(`http://127.0.0.1:5500`)
   }
   const origin = req.headers.origin
@@ -91,39 +119,22 @@ app.use( (err, req, res, next) => {
 app.get('*', (req,res) => {
   res.status(404).sendFile(file404)
 })
-server.listen(global.PORT, () => {
+server.listen(PORT, () => {
   console.log(`========== Server@${DOMAIN_ALLOW} ===========`)
-  console.log("IS_PRODUCTION ", global.IS_PRODUCTION)
-  console.log("global.DOMAIN_ALLOW ", global.DOMAIN_ALLOW)
-  console.log("Process PID:", process.pid)
+  console.log("IS_PRODUCTION ===> ", IS_PRODUCTION)
+  console.log("global.DOMAIN_ALLOW ===> ", global.DOMAIN_ALLOW)
+  console.log("Process PID ===>", process.pid)
 })
 
 
 
-
-
-
-/*
-
-{
-  "key": "7127000",
-  "id": "e100",
-  "t1": 0,
-  "s1": 0,
-  "v1": 0,
-  "a1": 0,
-  "w1": 0,
-  "t2": 0,
-  "s2": 0,
-  "v2": 0,
-  "t4": 0,
-  "s4": 0,
-  "c1": 0,
-  "c2": 0,
-  "c3": 0,
-  "c4": 0,
-  "c6": 0,
-  "c7": 0
-} 
-  
-*/
+// =============================================================
+// เสียงแจ้งเตือน
+// uncaughtException = จับข้อผิดพลาดที่ไม่ได้จับไว้
+// unhandledRejection = จับ Promise ที่ไม่ได้จับข้อผิดพลาดไว้
+process.on('uncaughtException', (err) => {
+  console.error('There was an uncaught error', err)
+})
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason)
+})

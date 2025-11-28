@@ -53,21 +53,31 @@
     <!--  -->
     <section class="" id="tableRowsCtn">
       <% data.forEach( (obj,index) => { %>
+        <%
+          const backgroundColor = obj.deviceBgClassColor ? obj.deviceBgClassColor : '' ;
+        %>
         <div class="tableRows">
           <input class="btn btn-sm al-c bg-up" type="button" value="&#9650;" tabindex = "-1"               
                 onclick="moveListUp(this)">
           <input class="btn btn-sm al-c bg-dn" type="button" value="&#9660;" tabindex = "-1" 
                 onclick="moveListDn(this)">
 
-          <input class="deviceId al-c pd-r-s <%= obj.deviceBgClassColor %>" type="text" 
+          <input class="deviceId al-c pd-r-s <%= backgroundColor %>" type="text" 
                   required readonly
-                  name="deviceId" placeholder="ไอดีอุปกรณ์"
+                  name="deviceId" placeholder="ไอดีอุปกรณ์"s
                   value="<%= obj.deviceId %>">
                 
-          <input class="deviceName al-l pd-l-s <%= obj.deviceBgClassColor %>" type="text" 
+          <input class="deviceName al-l pd-l-s <%= backgroundColor %>" type="text" 
                  readonly
                  name="deviceName" placeholder="ชื่ออุปกรณ์"
                  value="<%= obj.deviceName %>">
+          <select  class="deviceShow al-c <%= backgroundColor %>"
+                   required
+                   name="deviceShow">
+            <option value="" <%= !obj.deviceShow == '' ? 'selected' : '' %>>-</option>
+            <option value="1" <%= obj.deviceShow == 1 ? 'selected' : '' %>>แสดง</option>
+            <option value="0" <%= obj.deviceShow == 0 ? 'selected' : '' %>>ซ่อน</option>
+          </select>
         </div>
       <% }) %>
     </section>

@@ -3,30 +3,23 @@
 // // กลุ่ม  wasankds_group
 // global.botToken = '8046567910:AAG8IhMqBMfxenMqbZapeULZGS546k83s28';
 // global.groupChatId = '-4557511552';
+// 
 import path from 'path'
-import { MongoClient } from 'mongodb'
+const myData = await import(`./${global.mymoduleFolder}/myData.js`)
 global.SYS_NAME = 'MMS'
 global.SYS_NAME2 = ''
 global.SYS_VERSION = '2.0.0'
-// System Setup value
-global.SYS_KEYS = process.env.SYS_KEYS ? process.env.SYS_KEYS.split(',') : []
-global.SYS_KEYS_SWITCH = process.env.SYS_KEYS_SWITCH ? process.env.SYS_KEYS_SWITCH.split(',') : []
-global.LOOP_TIME_DATA_DEVICES = process.env.LOOP_TIME_DATA_DEVICES || 30
-global.TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || ''
-// ใช้ในหน้า term and conditions
 global.SYS_OWNER_FULLNAME = 'นายวสันต์ คุณดิลกเศวต'
 global.SYS_OWNER_EMAIL = 'wasankds@gmail.com'
 global.SYS_OWNER_PHONE = '081-459-8343'
 // PATH ใช้เหมือนกันหมด
 global.PATH_GET_ALERTS_USER = `/get-alerts-user`     // alertsRouter.js
 global.PATH_GET_ALERTS_USER_DEVICE = `/get-alerts-user-device` // alertsRouter.js
-
 // Database
 global.dbName = process.env.DB_NAME
 global.dbUrl = process.env.DB_URL
 global.dbColl_settings = 'settings'
 global.dbColl_settingsSystem = 'settingsSystem'
-// global.dbColl_settingsSystemEmail = 'settingsSystemEmail'
 global.dbColl_sessions = 'sessions'
 global.dbColl_users = 'users'
 global.dbColl_usersResetPassword = 'usersResetPassword'
@@ -35,28 +28,32 @@ global.dbColl_deviceSorting = 'deviceSorting'
 global.dbColl_alerts = 'alerts'
 global.dbColl_keysDefinition = 'keysDefinition'
 global.dbColl_docs = 'docs' // เก็บไว้ก่อน แม้ไม่ได้ใช้ตอนนี้
-// ระบบ
+// ชื่อหน้าเว็บ
 global.PAGE_HOME = 'MMS'
 global.PAGE_DASHBOARD = 'แดชบอร์ด'
 global.PAGE_MAP = 'แผนที่'
 global.PAGE_DEVICES = 'คอนโทรลเลอร์'
-global.PAGE_DEVICES_SORTING = 'เรียงลำดับคอนโทรลเลอร์'
+global.PAGE_DEVICES_SORTING = 'ซ่อน/แสดง และเรียงลำดับอุปกรณ์'
 global.PAGE_ALERTS = 'แจ้งเตือน'
 global.PAGE_KEYS_DEFINITION = 'จัดการคีย์'
 global.PAGE_DASHBOARD_SWITCH = 'แดชบอร์ดสวิตช์'
 global.PAGE_TERM = 'ข้อกำหนดและเงื่อนไข'
 global.PAGE_SYSTEM_MANUAL = 'การใช้งานระบบ'
 global.PAGE_LOGIN = 'เข้าสู่ระบบ'
-global.PAGE_MANAGE_USERS = 'จัดการผู้ใช้งาน'
-global.PAGE_MANAGE_SETTINGS = 'ตั้งค่า'
-global.PAGE_MANAGE_SETTINGS_SYSTEM = 'ตั้งค่าระบบ'
-global.PAGE_MANAGE_SESSIONS = 'จัดการเซสชั่น'
 global.PAGE_USERS = 'ผู้ใช้งาน'
 global.PAGE_USER_INFO = 'ข้อมูลผู้ใช้งาน'
 global.PAGE_PASSWORD_FORGOT = 'ลืมรหัสผ่าน'
 global.PAGE_PASSWORD_RESET = 'รีเซ็ตรหัสผ่าน'
 global.PAGE_REPORT = 'รายงาน'
-// ให้จับจาก .env เวลาขึ้น Server หรือ Update จะได้ไม่มีปัญหา
+global.PAGE_MANAGE_USERS = 'จัดการผู้ใช้งาน'
+global.PAGE_MANAGE_SETTINGS = 'ตั้งค่า'
+global.PAGE_MANAGE_SETTINGS_SYSTEM = 'ตั้งค่าระบบ'
+global.PAGE_MANAGE_SESSIONS = 'จัดการเซสชั่น'
+//=== ค่าคงที่ทั่วระบบ
+// MAX_POINTS
+// จำนวนจุดสูงสุดของข้อมูลที่ต้องการแสดง (แกน x) - ในชาร์ต ใน dataById
+// 12ชั่วโมง = 72 จุด, 8ชั่มโมง = 48 จุด, 6ชั่วโมง = 36 จุด, 3ชั่วโมง = 18 จุด
+global.MAX_POINTS = 48
 global.BCRYPT_NUMBER = 12
 global.USER_AUTHORITIES = ["O", "A", "U"]
 global.USER_AUTHORITIES_TABLE = [ 
@@ -69,32 +66,7 @@ global.USER_AUTHORITIES_TITLE = global.USER_AUTHORITIES_TABLE.reduce( (acc, obj)
   return acc
 }, 'สิทธิ์ของผู้ใช้งาน\n\n');
 
-
-//=== จับ KEYS_DEFINITION จากฐานข้อมูลมาเก็บใน global
-// - ถ้าไม่มีในฐานข้อมูล ให้ตั้งค่ามาตรฐานไปก่อน
-const client = new MongoClient(global.dbUrl)
-await client.connect()
-const db = client.db(global.dbName)
-const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)
-const dataKeysDefinition = await coll_keysDefinition.find({}, { projection: { _id:0 } }).toArray()
-client.close()
-if(dataKeysDefinition.length  > 0){
-  global.KEYS_DEFINITION = dataKeysDefinition
-}else{
-  global.KEYS_DEFINITION = [
-    { key : 't', keyName : 'อุณหภูมิ', keyUnit: '°C' , bgColor: 'bg-dkcyan', fontColor : 'fc-darkcyan'   } , 
-    { key : 'h', keyName : 'ความชื้น', keyUnit: '%' , bgColor: 'bg-dodgerblue', fontColor : 'fc-dodgerblue' } ,
-    { key : 'i', keyName : 'กระแสไฟฟ้า', keyUnit: 'A' , bgColor: 'bg-lislateblue', fontColor : 'fc-slateblue' } , 
-    { key : 'v', keyName : 'โวลต์', keyUnit: 'V' , bgColor: 'bg-goldrod', fontColor : 'fc-goldrod' } ,
-    { key : 'd', keyName : 'ระยะทาง', keyUnit: 'cm' , bgColor: 'bg-forestgreen', fontColor : 'fc-forestgreen' } ,
-    { key : 'g', keyName : 'แก๊ส', keyUnit: 'ADC' , bgColor: 'bg-orchid', fontColor : 'fc-darkorchid' } ,
-    { key : 'sw', keyName : 'สวิตช์', keyUnit: '' , bgColor: 'bg-mediumturquoise', fontColor : 'fc-cornblue' } ,
-  ]
-}
-//=== เริ่มต้นให้จับจาก sxxx ทั้งหมดมาก่อน *** ห้ามลบ ****
-global.SWITCHES = []
-
-// ค่าคงที่ใช้ทุกที่ *** ใชำทำ dropwn เลือกสีอุปกรณ์  ***
+//=== ค่าคงที่ใช้ทุกที่ *** ใช้ทำ dropwn เลือกสีอุปกรณ์  ***
 global.DEVICES_COLOR =  [
   { bgClassColor : 'bg-liblue', bgName : 'ฟ้าอ่อน' } ,
   { bgClassColor : 'bg-cornblue', bgName : 'ฟ้าดอกไม้' } ,
@@ -104,9 +76,7 @@ global.DEVICES_COLOR =  [
   { bgClassColor : 'bg-ligreen', bgName : 'เขียวอ่อน' } ,
   { bgClassColor : 'bg-goldenrod', bgName : 'เหลืองทอง' } ,
 ]
-// จำนวนจุดสูงสุดของข้อมูลที่ต้องการแสดง (แกน x) - ในชาร์ต ใน dataById
-// 12ชั่วโมง = 72 จุด, 8ชั่มโมง = 48 จุด, 6ชั่วโมง = 36 จุด, 3ชั่วโมง = 18 จุด
-global.MAX_POINTS = 48
+
 // Message ต่างๆ
 global.USERNAME_PATTERN = "^[a-z0-9_\\.\\-]{6,}$"
 global.USERNAME_DESCRIPTION = "อักษรที่สามารถใช้เป็นชื่อยูสเซอร์ได้ a-z, 0-9, . , - อย่างน้อย 6 ตัวอักษร"
@@ -119,24 +89,33 @@ global.PHONE_DESCRIPTION = "เบอร์โทรศัพท์ 9-10 หล�
 global.DEVICE_PATTERN_STRING = "^e\\d{3}$" // /^e\d{3}$/
 global.DEVICE_REGEX = new RegExp(global.DEVICE_PATTERN_STRING)
 global.DEVICE_DESCRIPTION = "รูปแบบไอดีอุปกรณ์ e + ตัวเลข 3 หลัก เช่น e001, e123"
+global.DEVICE_KEY_PATTERN_STRING = "^[a-zA-Z0-9!@#$%^&+\\-]{7,10}$"
+global.DEVICE_KEY_REGEX = new RegExp(global.DEVICE_KEY_PATTERN_STRING)
+global.DEVICE_KEY_DESCRIPTION = "รูปแบบคีย์อุปกรณ์ ความยาว 7-10 ตัวอักษร a-z, A-Z, 0-9, !, @, #, $, %, ^, &, +, -"
 global.TELEGRAM_BOT_TOKEN_PATTERN = "^[0-9]+:[A-Za-z0-9_]+$"
 global.TELEGRAM_BOT_TOKEN_DESCRIPTION = "โทเค็นบ็อต Telegram เช่น 123456789:AAH..."
 global.GROUP_CHAT_ID_PATTERN = "^-?[0-9]{9,}$"
 global.GROUP_CHAT_ID_DESCRIPTION = "ไอดีกลุ่ม Telegram เช่น -123456789"
-// ไฟล์และโฟลเดอร์
-global.folderBackup = pathToFolder('backup')
+//=== ไฟล์และโฟลเดอร์
 global.folderPublic = pathToFolder('public')
 global.folderImages = pathToFolder('public','images')
 global.folderViews = pathToFolder('views')
 global.folderPartials = pathToFolder('views','partials')
 global.folderForms = pathToFolder('views','forms')
 global.folderDevices = pathToFolder('devices')
+global.folderBackup = pathToFolder('backup')
 global.file404 = pathToFolder('public','static', '404.html')
 function pathToFolder( ...args){  
   const rootFolder = process.cwd()
   return path.join(rootFolder, ...args)
 }
-
+//==== ค่าที่ต้องจับจากฐานข้อมูล - อยุ่ล่างๆเพราะต้องใช้ค่าคงที่ฐานข้อมูล
+global.SYS_KEYS_SWITCH = process.env.SYS_KEYS_SWITCH ? process.env.SYS_KEYS_SWITCH.split(',') : []
+global.KEYS_DEFINITION = await myData.getKeyDefinition()
+global.DATA_DEVICES = await myData.getDataDevices()
+global.SWITCHES = [] // เก็บคีย์ที่เป็นสวิตช์
+// global.TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || ''
+// global.LOOP_TIME_DATA_DEVICES = Number(process.env.LOOP_TIME_DATA_DEVICES) || 30
 
 global.NAV_LEFT = [
   { // 
@@ -413,3 +392,7 @@ global.NAV_RIGHT = [
 // ]
 // global.DEVICES = MICROCONTROLLER
 // global.MICROCONTROLLER = MICROCONTROLLER
+
+
+
+// global.SYS_KEYS = process.env.SYS_KEYS ? process.env.SYS_KEYS.split(',') : [] //
