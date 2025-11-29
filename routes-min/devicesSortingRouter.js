@@ -26,6 +26,9 @@ const PATH_SAVE = `${PATH_MAIN}/save`
 // 
 // 
 router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
+  console.log(`-----------------${req.originalUrl}------------------`)
+
+  
   const client = new MongoClient(global.dbUrl)
   try{
     await client.connect()
