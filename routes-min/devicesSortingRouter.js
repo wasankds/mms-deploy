@@ -26,8 +26,7 @@ const PATH_SAVE = `${PATH_MAIN}/save`
 // 
 // 
 router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
-  console.log(`-----------------${req.originalUrl}------------------`)
-
+  process.stdout.write(`req.originalUrl ===> ${req.originalUrl}\n`);
   
   const client = new MongoClient(global.dbUrl)
   try{
@@ -39,7 +38,8 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     // - จับข้อมูลแบบ Lightweight ระบุเป็น step=1
     const devices = await myData.getDataDevices(1)
     devices.forEach(element => delete element.triggerRows );
-    console.log('devices ===> ', devices)
+    // console.log('devices ===> ', devices)
+    process.stdout.write(`devices.length ===> ${devices.length}\n`);
 
     //=== 2.) เรียงตามอาเรย์ devicesRow ที่ใช้เรียงลำดับ ถ้ามีในอาเรย์นี้
     // - ดึง sortArrays จากฐานข้อมูล
@@ -48,7 +48,8 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
       { userId : user.userId  }, // ค้นหาตาม userId ที่ล็อกอินอยู่
       { projection: { _id:0 } }
     )
-    console.log('devicesSorting_ByUserId ===> ', devicesSorting_ByUserId)
+    // console.log('devicesSorting_ByUserId ===> ', devicesSorting_ByUserId)
+    process.stdout.write(`devicesSorting_ByUserId ===> ${JSON.stringify(devicesSorting_ByUserId)}\n`);
 
     if(devicesSorting_ByUserId){
       const devicesRow = devicesSorting_ByUserId.devicesRow || []
@@ -62,7 +63,8 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
         return indexA - indexB;
       });
     }
-    console.log('devices after sorting ===> ', devices)
+    // console.log('devices after sorting ===> ', devices)
+    process.stdout.write(`devices after sorting ===> ${JSON.stringify(devices)}\n`);
 
     //=== 3.) จับค่า devicesRow จาก devicesSorting_ByUserId ไปให้ dataDevices
     const dataDevices = devices.map( deviceInfo => {
@@ -80,7 +82,8 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
         deviceShow: deviceShow,              // 4
       }
     })
-    console.log('dataDevices ===> ', dataDevices)
+    // console.log('dataDevices ===> ', dataDevices)
+    process.stdout.write(`dataDevices ===> ${JSON.stringify(dataDevices)}\n`);
 
     //=== 4.) Render View
     const html = await myModule.renderView("devicesSorting", res, {
@@ -96,6 +99,7 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     res.send(html)
   }catch(err){
     console.log(err)
+    process.stdout.write(`Error: ${err}\n`);
     res.status(404).sendFile(file404)
   }finally{
     client.close()
