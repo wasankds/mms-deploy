@@ -17,7 +17,6 @@ global.IS_PRODUCTION = IS_PRODUCTION
 global.PROJECT_DIR = process.cwd()
 global.DOMAIN_ALLOW = IS_PRODUCTION == 0 ? `${LOCALHOST}:${PORT}` : `${DOMAIN_URL}`
 global.mymoduleFolder = IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
-console.log("1 ===> ", 1);
 await import(`./myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDb.js`)
 if(RANDOM_DATA) await import(`./${global.mymoduleFolder}/myRandomData.js`)
@@ -121,11 +120,11 @@ app.get('*', (req,res) => {
   res.status(404).sendFile(file404)
 })
 server.listen(PORT, () => {
-  // process.stdout.write(`========== Server@${DOMAIN_ALLOW} ===========\n`);
-  console.log(`========== Server@${DOMAIN_ALLOW} ===========`)
-  console.log("IS_PRODUCTION ===> ", IS_PRODUCTION)
-  console.log("global.DOMAIN_ALLOW ===> ", global.DOMAIN_ALLOW)
-  console.log("Process PID ===>", process.pid)
+  //  process.stdout - แจ้งใน terminal แน่นอน
+  process.stdout.write(`========== Server@${DOMAIN_ALLOW} ===========\n`);
+  process.stdout.write(`IS_PRODUCTION ===> ${IS_PRODUCTION}\n`);
+  process.stdout.write(`global.DOMAIN_ALLOW ===> ${global.DOMAIN_ALLOW}\n`);
+  process.stdout.write(`Process PID ===> ${process.pid}\n`);
 })
 
 
