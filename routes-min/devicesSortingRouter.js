@@ -40,6 +40,7 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     devices.forEach(element => delete element.triggerRows );
     // console.log('devices ===> ', devices)
     process.stdout.write(`devices.length ===> ${devices.length}\n`);
+    // vps - devices.length ===> 4
 
     //=== 2.) เรียงตามอาเรย์ devicesRow ที่ใช้เรียงลำดับ ถ้ามีในอาเรย์นี้
     // - ดึง sortArrays จากฐานข้อมูล
@@ -50,6 +51,10 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     )
     // console.log('devicesSorting_ByUserId ===> ', devicesSorting_ByUserId)
     process.stdout.write(`devicesSorting_ByUserId ===> ${JSON.stringify(devicesSorting_ByUserId)}\n`);
+    // devicesSorting_ByUserId ===> {
+    // "userId":1000,
+    // "devicesSortingRows":["e001","e002","e003","e100","e004"]
+    // }
 
     if(devicesSorting_ByUserId){
       const devicesRow = devicesSorting_ByUserId.devicesRow || []
@@ -65,12 +70,20 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     }
     // console.log('devices after sorting ===> ', devices)
     process.stdout.write(`devices after sorting ===> ${JSON.stringify(devices)}\n`);
+    // devices after sorting ===> [
+    //   {"deviceId":"e001","deviceName":"โรงจอดรถ","deviceBgClassColor":"bg-liblue"},
+    //   {"deviceId":"e002","deviceName":"ห้องทำงาน","deviceBgClassColor":"bg-plum"},
+    //   {"deviceId":"e003","deviceName":"ห้องนั่งเล่น","deviceBgClassColor":"bg-ligreen"},
+    //   {"deviceId":"e100","deviceName":"อวยชัย","deviceBgClassColor":"bg-goldenrod"}
+    // ]
 
     //=== 3.) จับค่า devicesRow จาก devicesSorting_ByUserId ไปให้ dataDevices
     const dataDevices = devices.map( deviceInfo => {
       let deviceShow = '';
-      if (devicesSorting_ByUserId) {
-        const foundRow = devicesSorting_ByUserId.devicesRow.find(row => row.deviceId === deviceInfo.deviceId);
+      if (devicesSorting_ByUserId && Array.isArray(devicesSorting_ByUserId.devicesRow)) {
+        const foundRow = devicesSorting_ByUserId.devicesRow.find(row => {
+          return row.deviceId === deviceInfo.deviceId
+        });
         if (foundRow) {
           deviceShow = foundRow.deviceShow;
         }
@@ -99,6 +112,7 @@ router.get(PATH_MAIN, mainAuth.isAuth , async (req, res) => {
     res.send(html)
   }catch(err){
     console.log(err)
+    // Error: TypeError: Cannot read properties of undefined (reading 'find')
     process.stdout.write(`Error: ${err}\n`);
     res.status(404).sendFile(file404)
   }finally{
