@@ -19,7 +19,9 @@ const folderNames = [
   //== โฟลเดอร์ระบบ
   'middleware', 
   'routes-min', 
+  'routes', 
   'mymodule-min',  
+  'mymodule',  
   'views',  
   'commandSystem-min', 
   //== โฟลเดอร์ public แยกย่อยด้วย 

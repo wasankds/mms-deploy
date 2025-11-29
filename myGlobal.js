@@ -5,6 +5,7 @@
 // global.groupChatId = '-4557511552';
 // 
 import path from 'path'
+// import { MongoClient } from 'mongodb';
 const myData = await import(`./${global.mymoduleFolder}/myData.js`)
 global.SYS_NAME = 'MMS'
 global.SYS_NAME2 = ''
@@ -111,11 +112,62 @@ function pathToFolder( ...args){
 }
 //==== ค่าที่ต้องจับจากฐานข้อมูล - อยุ่ล่างๆเพราะต้องใช้ค่าคงที่ฐานข้อมูล
 global.SYS_KEYS_SWITCH = process.env.SYS_KEYS_SWITCH ? process.env.SYS_KEYS_SWITCH.split(',') : []
+global.SWITCHES = [] // เก็บคีย์ที่เป็นสวิตช์
 global.KEYS_DEFINITION = await myData.getKeyDefinition()
 global.DATA_DEVICES = await myData.getDataDevices()
-global.SWITCHES = [] // เก็บคีย์ที่เป็นสวิตช์
 // global.TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || ''
 // global.LOOP_TIME_DATA_DEVICES = Number(process.env.LOOP_TIME_DATA_DEVICES) || 30
+// //=== จับข้อมุลเองจากฐานข้อมูล เพราะไฟล์ myData.js ยังโหลดไม่ได้
+// const client = new MongoClient(global.dbUrl)
+// await client.connect();
+// try {
+//   const db = client.db(global.dbName)
+
+//   //=== จับ KEYS_DEFINITION
+//   const coll_keysDefinition = db.collection(global.dbColl_keysDefinition)
+//   const keysDefinition = await coll_keysDefinition.find(  
+//     {}, // ทุกเอกสาร
+//     { projection: { _id:0 } }
+//   ).toArray()
+//   if(keysDefinition.length  > 0){
+//       global.KEYS_DEFINITION = keysDefinition ;
+//     }else{
+//       global.KEYS_DEFINITION = [
+//         { key : 't', keyName : 'อุณหภูมิ', keyUnit: '°C' , bgColor: 'bg-dkcyan', fontColor : 'fc-darkcyan'   } , 
+//         { key : 'h', keyName : 'ความชื้น', keyUnit: '%' , bgColor: 'bg-dodgerblue', fontColor : 'fc-dodgerblue' } ,
+//         { key : 'i', keyName : 'กระแสไฟฟ้า', keyUnit: 'A' , bgColor: 'bg-lislateblue', fontColor : 'fc-slateblue' } , 
+//         { key : 'v', keyName : 'โวลต์', keyUnit: 'V' , bgColor: 'bg-goldrod', fontColor : 'fc-goldrod' } ,
+//         { key : 'd', keyName : 'ระยะทาง', keyUnit: 'cm' , bgColor: 'bg-forestgreen', fontColor : 'fc-forestgreen' } ,
+//         { key : 'g', keyName : 'แก๊ส', keyUnit: 'ADC' , bgColor: 'bg-orchid', fontColor : 'fc-darkorchid' } ,
+//         { key : 'sw', keyName : 'สวิตช์', keyUnit: '' , bgColor: 'bg-mediumturquoise', fontColor : 'fc-cornblue' } ,
+//       ]
+//     }
+
+//   const coll_devices = db.collection(global.dbColl_devices)
+//   const devices =  await coll_devices.find(
+//     { deviceStatus : 'active'}, // ทุกเอกสาร
+//     { projection: { 
+//         // deviceKey : 1,
+//         _id: 0,
+//         changesHistory:0 ,
+//         dateTimeCanDelete:0,
+//         triggerRows:0 ,
+//         dateTimeCanDelete : 0,
+//         deviceTelegramGroupChatId : 0,
+//         deviceTelegramNote : 0,
+//         deviceTelegramNotify : 0,
+//         deviceLatitude : 0,
+//         deviceLongitude : 0,
+//       } 
+//     }
+//   ).toArray()
+//   global.DATA_DEVICES = devices || []
+// } catch(err) {
+//   console.log('Error myGlobal.js : ', err.message)
+// } finally {
+//   await client.close();
+// }
+
 
 global.NAV_LEFT = [
   { // 

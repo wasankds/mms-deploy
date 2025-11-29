@@ -13,10 +13,12 @@ const DOMAIN_WWW_URL = process.env.DOMAIN_WWW_URL
 const PORT = IS_PRODUCTION == 0 ? process.env.PORT_DEV : process.env.PORT_PRODUCTION
 const RANDOM_DATA = process.env.RANDOM_DATA == 1 ? true : false
 const routesFolder = IS_PRODUCTION ? 'routes-min' : 'routes'
+// const routesFolder = IS_PRODUCTION ? 'routes' : 'routes'
 global.IS_PRODUCTION = IS_PRODUCTION
 global.PROJECT_DIR = process.cwd()
 global.DOMAIN_ALLOW = IS_PRODUCTION == 0 ? `${LOCALHOST}:${PORT}` : `${DOMAIN_URL}`
 global.mymoduleFolder = IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
+// global.mymoduleFolder = IS_PRODUCTION ? 'mymodule' : 'mymodule'
 await import(`./myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDb.js`)
 if(RANDOM_DATA) await import(`./${global.mymoduleFolder}/myRandomData.js`)
