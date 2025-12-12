@@ -17,7 +17,8 @@ global.IS_PRODUCTION = IS_PRODUCTION
 global.PROJECT_DIR = process.cwd()
 global.DOMAIN_ALLOW = IS_PRODUCTION == 0 ? `${LOCALHOST}:${PORT}` : `${DOMAIN_URL}`
 global.mymoduleFolder = IS_PRODUCTION ? 'mymodule-min' : 'mymodule'
-await import(`./myGlobal.js`)
+// await import(`./myGlobal.js`)
+await import(`./${global.mymoduleFolder}/myGlobal.js`)
 await import(`./${global.mymoduleFolder}/myScheduleBackupDb.js`)
 if(RANDOM_DATA) await import(`./${global.mymoduleFolder}/myRandomData.js`)
 const app = express()
@@ -107,7 +108,7 @@ app.use((await import(`./${routesFolder}/dashboardSwitchRouter.js`)).default);
 app.use((await import(`./${routesFolder}/dataInSwitchRouter.js`)).default);
 app.use((await import(`./${routesFolder}/alertsRouter.js`)).default);
 app.use((await import(`./${routesFolder}/reportByIdRouter.js`)).default);
-app.use((await import(`./${routesFolder}/mapRouter.js`)).default);
+// app.use((await import(`./${routesFolder}/mapRouter.js`)).default);
 app.use( (err, req, res, next) => {
   res.status(err.status || 500);
   const errHtml = `<h1 style="color:blue">กำลังอัปเดทข้อมูล</h1>

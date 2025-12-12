@@ -41,6 +41,7 @@
     "restart-name": "pm2 restart mms-main",
     "delete-name": "pm2 delete mms-main",
     "git1": "git add . && git commit -m \"%date% %time%\" && git push origin main",
+    "git-force-pull": "git fetch --all && git reset --hard origin/main",
     "use-nvm": "nvm use 22.16.0"
   },
   "keywords": [],
