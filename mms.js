@@ -29,7 +29,8 @@ global.io = io;
 //=== เข้าใช้ได้จากภายนอกเฉพาะ โดเมนที่กำหนดไว้
 // - เข้าจากเลข IP โดยตรงจะไม่ผ่าน
 // - ดูเหมือนเข้าจาก www. จะยังไม่ผ่าน อาจจะติด cloudflare tunnel ก็ได้
-if(IS_PRODUCTION){
+const allowAccessByIpAddress = process.env.ALLOW_ACCESS_BY_IP_ADDRESS == 1 ? true : false
+if(allowAccessByIpAddress){
   const allowedHosts = [
     DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
     DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase(),
