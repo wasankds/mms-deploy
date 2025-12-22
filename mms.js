@@ -53,6 +53,7 @@ global.io = io;
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
 app.use(session({
+  name: 'mms.sid',
   secret: 'mms.node.apps.key.sign.cookie',
   cookie: {
     maxAge: 1000*60*60*24*30,
