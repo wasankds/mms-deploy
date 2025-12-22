@@ -26,29 +26,29 @@ const server = createServer(app)
 const io = new Server(server)
 global.io = io;
 
-//=== เข้าใช้ได้จากภายนอกเฉพาะ โดเมนที่กำหนดไว้
-// - เข้าจากเลข IP โดยตรงจะไม่ผ่าน
-// - ดูเหมือนเข้าจาก www. จะยังไม่ผ่าน อาจจะติด cloudflare tunnel ก็ได้
-const allowAccessByIpAddress = process.env.ALLOW_ACCESS_BY_IP_ADDRESS == 1 ? true : false
-if(allowAccessByIpAddress){
-  const allowedHosts = [
-    DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
-    DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase(),
-    DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
-    DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase()
-  ];
-  if (IS_PRODUCTION == 0) {
-    allowedHosts.push(LOCALHOST.toLowerCase());
-    allowedHosts.push(LOCALHOST.replace(/https:\/\/|http:\/\//, '').toLowerCase());
-  }
-  app.use((req, res, next) => {
-    const host = req.headers.host && req.headers.host.split(':')[0];
-    if (!allowedHosts.includes(host)) {
-      return res.status(403).send('Forbidden');
-    }
-    next();
-  });
-}
+// //=== เข้าใช้ได้จากภายนอกเฉพาะ โดเมนที่กำหนดไว้
+// // - เข้าจากเลข IP โดยตรงจะไม่ผ่าน
+// // - ดูเหมือนเข้าจาก www. จะยังไม่ผ่าน อาจจะติด cloudflare tunnel ก็ได้
+// const allowAccessByIpAddress = process.env.ALLOW_ACCESS_BY_IP_ADDRESS == 1 ? true : false
+// if(allowAccessByIpAddress){
+//   const allowedHosts = [
+//     DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
+//     DOMAIN_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase(),
+//     DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').toLowerCase(),
+//     DOMAIN_WWW_URL.replace(/https:\/\/|http:\/\//, '').replace(/^www\./, '').toLowerCase()
+//   ];
+//   if (IS_PRODUCTION == 0) {
+//     allowedHosts.push(LOCALHOST.toLowerCase());
+//     allowedHosts.push(LOCALHOST.replace(/https:\/\/|http:\/\//, '').toLowerCase());
+//   }
+//   app.use((req, res, next) => {
+//     const host = req.headers.host && req.headers.host.split(':')[0];
+//     if (!allowedHosts.includes(host)) {
+//       return res.status(403).send('Forbidden');
+//     }
+//     next();
+//   });
+// }
 
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
