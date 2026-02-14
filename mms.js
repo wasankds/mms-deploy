@@ -9,7 +9,7 @@ import { Server } from 'socket.io'
 const IS_PRODUCTION = process.env.IS_PRODUCTION == 1 ? true : false
 const LOCALHOST = process.env.LOCALHOST
 const DOMAIN_URL = process.env.DOMAIN_URL
-const DOMAIN_WWW_URL = process.env.DOMAIN_WWW_URL
+// const DOMAIN_WWW_URL = process.env.DOMAIN_WWW_URL
 const PORT = IS_PRODUCTION == 0 ? process.env.PORT_DEV : process.env.PORT_PRODUCTION
 const RANDOM_DATA = process.env.RANDOM_DATA == 1 ? true : false
 const routesFolder = IS_PRODUCTION ? 'routes-min' : 'routes'
@@ -53,7 +53,7 @@ global.io = io;
 //=== Sessionss
 const MongoStore = MongoDBSession(session)
 app.use(session({
-  name: 'mms.sid',
+  name: 'mms.sid',  // เพิ่มชื่อคุกกี้สำหรับเซสชัน - ชื่อควรไม่ซ้ำกับแอปอื่นๆ
   secret: 'mms.node.apps.key.sign.cookie',
   cookie: {
     maxAge: 1000*60*60*24*30,
